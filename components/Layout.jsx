@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
       <header>
         <Navigation />
       </header>
-      <main>{children}</main>
+      <main className="bg-black">{children}</main>
       <Footer />
     </div>
   );

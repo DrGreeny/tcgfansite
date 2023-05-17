@@ -1,6 +1,7 @@
 [
   {
     "name": "Heavy Artillery",
+    "id": 8,
     "Type": "Hero",
     "Realm": ["Beast", "Digital"],
     "WordCost": 0,
@@ -11,6 +12,7 @@
   },
   {
     "name": "Greater Saber",
+    "id": 9,
     "Type": "Hero",
     "Realm": ["Digital", "Human"],
     "WordCost": 0,
@@ -21,6 +23,7 @@
   },
   {
     "name": "Original Ruler",
+    "id": 10,
     "Type": "Hero",
     "Realm": ["Cosmic", "Human"],
     "WordCost": 0,
@@ -31,6 +34,7 @@
   },
   {
     "name": "King of Ornaments",
+    "id": 11,
     "Type": "Hero",
     "Realm": ["Mythic"],
     "WordCost": 0,
@@ -41,6 +45,7 @@
   },
   {
     "name": "Angeldust Fox",
+    "id": 12,
     "Type": "Hero",
     "Realm": ["Angelic", "Beast"],
     "WordCost": 0,
@@ -51,6 +56,7 @@
   },
   {
     "name": "Blackhole magician",
+    "id": 13,
     "Type": "Hero",
     "Realm": ["Cosmic", "Mythic"],
     "WordCost": 0,
@@ -61,6 +67,7 @@
   },
   {
     "name": "Vapor Shaman",
+    "id": 14,
     "Type": "Hero",
     "Realm": ["Psychadelic"],
     "WordCost": 0,
@@ -71,6 +78,7 @@
   },
   {
     "name": "Basis Warrior",
+    "id": 0,
     "Type": "Hero",
     "Realm": ["Human"],
     "WordCost": 0,
@@ -81,6 +89,7 @@
   },
   {
     "name": "Immortal Flame",
+    "id": 1,
     "Type": "Hero",
     "Realm": ["Undead"],
     "WordCost": 0,
@@ -91,6 +100,7 @@
   },
   {
     "name": "World Eater",
+    "id": 2,
     "Type": "Hero",
     "Realm": ["Beast", "Cosmic"],
     "WordCost": 0,
@@ -101,6 +111,7 @@
   },
   {
     "name": "Witch of Mind",
+    "id": 3,
     "Type": "Hero",
     "Realm": ["Human", "Demonic"],
     "WordCost": 0,
@@ -111,6 +122,7 @@
   },
   {
     "name": "Cosmic Puppeteer",
+    "id": 4,
     "Type": "Hero",
     "Realm": ["Cosmic"],
     "WordCost": 0,
@@ -121,6 +133,7 @@
   },
   {
     "name": "Guard of the Rabbit Hole",
+    "id": 5,
     "Type": "Hero",
     "Realm": ["Beast", "Mythic"],
     "WordCost": 0,
@@ -131,6 +144,7 @@
   },
   {
     "name": "Queen of Cosmic Orbits",
+    "id": 6,
     "Type": "Hero",
     "Realm": ["Cosmic"],
     "WordCost": 0,
@@ -141,6 +155,7 @@
   },
   {
     "name": "Cybernetic Droid",
+    "id": 7,
     "Type": "Hero",
     "Realm": ["Digital"],
     "WordCost": 0,
@@ -151,6 +166,7 @@
   },
   {
     "name": "Master of the Forest Imps",
+    "id": 186,
     "Type": "Hero",
     "Realm": ["Mythic", "Human"],
     "WordCost": 0,
@@ -161,6 +177,7 @@
   },
   {
     "name": "Split Arrow Archer",
+    "id": 40,
     "Type": "Creature",
     "Realm": ["Digital", "Human"],
     "WordCost": 3,
@@ -171,6 +188,7 @@
   },
   {
     "name": "Fractal Feathers",
+    "id": 41,
     "Type": "Creature",
     "Realm": ["Angelic", "Beast"],
     "WordCost": 3,
@@ -181,6 +199,7 @@
   },
   {
     "name": "Bladesaw Runner",
+    "id": 187,
     "Type": "Creature",
     "Realm": ["Digital", "Mythic"],
     "WordCost": 4,
@@ -191,6 +210,7 @@
   },
   {
     "name": "Betrayer Moon",
+    "id": 188,
     "Type": "Creature",
     "Realm": ["Cosmic"],
     "WordCost": 4,
@@ -201,6 +221,7 @@
   },
   {
     "name": "Null",
+    "id": 189,
     "Type": "Creature",
     "Realm": ["Cosmic"],
     "WordCost": 4,
@@ -211,6 +232,7 @@
   },
   {
     "name": "Mochi Roll",
+    "id": 190,
     "Type": "Creature",
     "Realm": ["Angelic", "Mythic"],
     "WordCost": 3,
@@ -221,6 +243,7 @@
   },
   {
     "name": "Soul Envoy",
+    "id": 191,
     "Type": "Creature",
     "Realm": ["Angelic"],
     "WordCost": 4,
@@ -231,6 +254,7 @@
   },
   {
     "name": "Shrieker",
+    "id": 198,
     "Type": "Creature",
     "Realm": ["Mythic"],
     "WordCost": 7,
@@ -241,6 +265,7 @@
   },
   {
     "name": "The Bleark Sun´s Ember",
+    "id": 199,
     "Type": "Creature",
     "Realm": ["Cosmic", "Mythic"],
     "WordCost": 4,
@@ -251,6 +276,7 @@
   },
   {
     "name": "FatherAI",
+    "id": 171,
     "Type": "Creature",
     "Realm": ["Angelic", "Digital"],
     "WordCost": 7,
@@ -261,6 +287,7 @@
   },
   {
     "name": "Frontier Knight",
+    "id": 15,
     "Type": "Creature",
     "Realm": ["Angelic", "Human"],
     "WordCost": 1,
@@ -271,6 +298,7 @@
   },
   {
     "name": "Spellsworm Dragon",
+    "id": 16,
     "Type": "Creature",
     "Realm": ["Dragon"],
     "WordCost": 4,
@@ -281,6 +309,7 @@
   },
   {
     "name": "Curseworm Dragon",
+    "id": 17,
     "Type": "Creature",
     "Realm": ["Dragon"],
     "WordCost": 4,
@@ -291,6 +320,7 @@
   },
   {
     "name": "Fusion Dragon",
+    "id": 18,
     "Type": "Creature",
     "Realm": ["Dragon"],
     "WordCost": 0,
@@ -301,6 +331,7 @@
   },
   {
     "name": "Scarecrow",
+    "id": 19,
     "Type": "Creature",
     "Realm": ["Undead"],
     "WordCost": 1,
@@ -311,6 +342,7 @@
   },
   {
     "name": "Mage of the Dying Sun",
+    "id": 20,
     "Type": "Creature",
     "Realm": ["Angelic", "Human"],
     "WordCost": 3,
@@ -321,6 +353,7 @@
   },
   {
     "name": "Hypersonic Eagle",
+    "id": 21,
     "Type": "Creature",
     "Realm": ["Beast", "Digital"],
     "WordCost": 2,
@@ -331,6 +364,7 @@
   },
   {
     "name": "The Witch´s Shy Doll",
+    "id": 22,
     "Type": "Creature",
     "Realm": ["Mythic"],
     "WordCost": 3,
@@ -341,6 +375,7 @@
   },
   {
     "name": "Pure Opal",
+    "id": 23,
     "Type": "Creature",
     "Realm": ["Angelic"],
     "WordCost": 0,
@@ -351,6 +386,7 @@
   },
   {
     "name": "Blitz Demon",
+    "id": 24,
     "Type": "Creature",
     "Realm": ["Demonic"],
     "WordCost": 2,
@@ -361,6 +397,7 @@
   },
   {
     "name": "Ancient Psychonaut",
+    "id": 25,
     "Type": "Creature",
     "Realm": ["Psychadelic"],
     "WordCost": 3,
@@ -371,6 +408,7 @@
   },
   {
     "name": "Slipway Rogue",
+    "id": 26,
     "Type": "Creature",
     "Realm": ["Human"],
     "WordCost": 3,
@@ -381,6 +419,7 @@
   },
   {
     "name": "Swamp Dweller",
+    "id": 27,
     "Type": "Creature",
     "Realm": ["Mythic"],
     "WordCost": 0,
@@ -391,6 +430,7 @@
   },
   {
     "name": "A Humming Voice",
+    "id": 28,
     "Type": "Creature",
     "Realm": ["Angelic", "Human"],
     "WordCost": 2,
@@ -401,6 +441,7 @@
   },
   {
     "name": "Impish Imp",
+    "id": 29,
     "Type": "Creature",
     "Realm": ["Mythic"],
     "WordCost": 0,
@@ -411,6 +452,7 @@
   },
   {
     "name": "Piggy Bank",
+    "id": 30,
     "Type": "Creature",
     "Realm": ["Beast", "Demonic"],
     "WordCost": 3,
@@ -421,6 +463,7 @@
   },
   {
     "name": "Decorated Warrior",
+    "id": 31,
     "Type": "Creature",
     "Realm": ["Human"],
     "WordCost": 3,
@@ -431,6 +474,7 @@
   },
   {
     "name": "The Celestial´s Trinket",
+    "id": 32,
     "Type": "Creature",
     "Realm": ["Cosmic"],
     "WordCost": 4,
@@ -441,6 +485,7 @@
   },
   {
     "name": "Psycho Virus",
+    "id": 33,
     "Type": "Creature",
     "Realm": ["Psychadelic"],
     "WordCost": 4,
@@ -451,6 +496,7 @@
   },
   {
     "name": "v1",
+    "id": 34,
     "Type": "Creature",
     "Realm": ["Digital"],
     "WordCost": 1,
@@ -461,6 +507,7 @@
   },
   {
     "name": "v2",
+    "id": 35,
     "Type": "Creature",
     "Realm": ["Digital"],
     "WordCost": 3,
@@ -471,6 +518,7 @@
   },
   {
     "name": "v3",
+    "id": 36,
     "Type": "Creature",
     "Realm": ["Digital"],
     "WordCost": 5,
@@ -481,6 +529,7 @@
   },
   {
     "name": "vFinal",
+    "id": 37,
     "Type": "Creature",
     "Realm": ["Digital"],
     "WordCost": 0,
@@ -491,6 +540,7 @@
   },
   {
     "name": "Mysic Spellcaster",
+    "id": 38,
     "Type": "Creature",
     "Realm": ["Human", "Mythic"],
     "WordCost": 3,
@@ -501,6 +551,7 @@
   },
   {
     "name": "Skill Shot Maverick",
+    "id": 39,
     "Type": "Creature",
     "Realm": ["Human"],
     "WordCost": 2,
@@ -511,6 +562,7 @@
   },
   {
     "name": "Abomination",
+    "id": 42,
     "Type": "Creature",
     "Realm": ["Angelic", "Demonic"],
     "WordCost": 10,
@@ -521,6 +573,7 @@
   },
   {
     "name": "Sapphire Knight",
+    "id": 43,
     "Type": "Creature",
     "Realm": ["Human"],
     "WordCost": 5,
@@ -531,6 +584,7 @@
   },
   {
     "name": "Emerald Knight",
+    "id": 44,
     "Type": "Creature",
     "Realm": ["Human"],
     "WordCost": 6,
@@ -541,6 +595,7 @@
   },
   {
     "name": "Obsidian Knight",
+    "id": 45,
     "Type": "Creature",
     "Realm": ["Human"],
     "WordCost": 7,
@@ -551,6 +606,7 @@
   },
   {
     "name": "The All Knight",
+    "id": 46,
     "Type": "Creature",
     "Realm": ["Human", "Cosmic"],
     "WordCost": 0,
@@ -561,6 +617,7 @@
   },
   {
     "name": "Cyber Lynx",
+    "id": 47,
     "Type": "Creature",
     "Realm": ["Beast", "Digital"],
     "WordCost": 3,
@@ -571,6 +628,7 @@
   },
   {
     "name": "Hallow Bear",
+    "id": 48,
     "Type": "Creature",
     "Realm": ["Beast"],
     "WordCost": 0,
@@ -581,6 +639,7 @@
   },
   {
     "name": "Chosen Mind",
+    "id": 49,
     "Type": "Creature",
     "Realm": ["Angelic", "Psychadelic"],
     "WordCost": 0,
@@ -591,6 +650,7 @@
   },
   {
     "name": "Damned Mind",
+    "id": 50,
     "Type": "Creature",
     "Realm": ["Demonic", "Psychadelic"],
     "WordCost": 0,
@@ -601,6 +661,7 @@
   },
   {
     "name": "Holo-Knight",
+    "id": 51,
     "Type": "Creature",
     "Realm": ["Digital", "Human"],
     "WordCost": 5,
@@ -611,6 +672,7 @@
   },
   {
     "name": "Cleric of Fire",
+    "id": 52,
     "Type": "Creature",
     "Realm": ["Mythic"],
     "WordCost": 5,
@@ -621,6 +683,7 @@
   },
   {
     "name": "Cleric of Water",
+    "id": 53,
     "Type": "Creature",
     "Realm": ["Mythic"],
     "WordCost": 0,
@@ -631,6 +694,7 @@
   },
   {
     "name": "Saber Dancer",
+    "id": 54,
     "Type": "Creature",
     "Realm": ["Cosmic", "Human"],
     "WordCost": 3,
@@ -641,6 +705,7 @@
   },
   {
     "name": "Baby Skull",
+    "id": 55,
     "Type": "Creature",
     "Realm": ["Undead"],
     "WordCost": 5,
@@ -651,6 +716,7 @@
   },
   {
     "name": "Royal Skull",
+    "id": 56,
     "Type": "Creature",
     "Realm": ["Undead"],
     "WordCost": 4,
@@ -661,6 +727,7 @@
   },
   {
     "name": "Hell´s Dragon",
+    "id": 57,
     "Type": "Creature",
     "Realm": ["Demonic", "Dragon"],
     "WordCost": 5,
@@ -671,6 +738,7 @@
   },
   {
     "name": "Bloom Dragon",
+    "id": 58,
     "Type": "Creature",
     "Realm": ["Dragon", "Psychadelic"],
     "WordCost": 4,
@@ -681,6 +749,7 @@
   },
   {
     "name": "Underwolf",
+    "id": 59,
     "Type": "Creature",
     "Realm": ["Beast"],
     "WordCost": 3,
@@ -691,6 +760,7 @@
   },
   {
     "name": "Small Flame",
+    "id": 60,
     "Type": "Creature",
     "Realm": ["Demonic", "Dragon"],
     "WordCost": 3,
@@ -701,6 +771,7 @@
   },
   {
     "name": "Big Flame",
+    "id": 61,
     "Type": "Creature",
     "Realm": ["Demonic", "Dragon"],
     "WordCost": 5,
@@ -711,6 +782,7 @@
   },
   {
     "name": "Steelframe Rhino",
+    "id": 62,
     "Type": "Creature",
     "Realm": ["Beast", "Digital"],
     "WordCost": 3,
@@ -721,6 +793,7 @@
   },
   {
     "name": "Nightingale",
+    "id": 63,
     "Type": "Creature",
     "Realm": ["Human"],
     "WordCost": 0,
@@ -731,6 +804,7 @@
   },
   {
     "name": "Pluff",
+    "id": 64,
     "Type": "Creature",
     "Realm": ["Beast", "Mythic"],
     "WordCost": 2,
@@ -741,6 +815,7 @@
   },
   {
     "name": "The Pharao´s Gravekeeper",
+    "id": 65,
     "Type": "Creature",
     "Realm": ["Undead"],
     "WordCost": 1,
@@ -751,6 +826,7 @@
   },
   {
     "name": "Photon Paladin",
+    "id": 66,
     "Type": "Creature",
     "Realm": ["Cosmic"],
     "WordCost": 5,
@@ -761,6 +837,7 @@
   },
   {
     "name": "Bookkeeper",
+    "id": 67,
     "Type": "Creature",
     "Realm": ["Angelic"],
     "WordCost": 4,
@@ -771,6 +848,7 @@
   },
   {
     "name": "Bolt Samurai",
+    "id": 68,
     "Type": "Creature",
     "Realm": ["Human"],
     "WordCost": 6,
@@ -781,6 +859,7 @@
   },
   {
     "name": "Blacksea Predator",
+    "id": 69,
     "Type": "Creature",
     "Realm": ["Beast", "Digital"],
     "WordCost": 4,
@@ -791,6 +870,7 @@
   },
   {
     "name": "Ceremonial Dragon",
+    "id": 70,
     "Type": "Creature",
     "Realm": ["Dragon", "Psychadelic"],
     "WordCost": 4,
@@ -801,6 +881,7 @@
   },
   {
     "name": "Oracle of the Sun Empire",
+    "id": 71,
     "Type": "Creature",
     "Realm": ["Human", "Mythic"],
     "WordCost": 5,
@@ -811,6 +892,7 @@
   },
   {
     "name": "Eclipse Fairy",
+    "id": 72,
     "Type": "Creature",
     "Realm": ["Angelic", "Mythic"],
     "WordCost": 1,
@@ -821,6 +903,7 @@
   },
   {
     "name": "Octane Sniper",
+    "id": 73,
     "Type": "Creature",
     "Realm": ["Digital", "Human"],
     "WordCost": 6,
@@ -831,6 +914,7 @@
   },
   {
     "name": "Revive.exe",
+    "id": 74,
     "Type": "Creature",
     "Realm": ["Digital", "Undead"],
     "WordCost": 3,
@@ -841,6 +925,7 @@
   },
   {
     "name": "Soulbound Reaper",
+    "id": 75,
     "Type": "Creature",
     "Realm": ["Undead"],
     "WordCost": 3,
@@ -851,6 +936,7 @@
   },
   {
     "name": "Gravebound Digger",
+    "id": 76,
     "Type": "Creature",
     "Realm": ["Undead"],
     "WordCost": 5,
@@ -861,6 +947,7 @@
   },
   {
     "name": "Blessed Fox",
+    "id": 77,
     "Type": "Creature",
     "Realm": ["Beast", "Mythic"],
     "WordCost": 4,
@@ -871,6 +958,7 @@
   },
   {
     "name": "Samurai Toad",
+    "id": 78,
     "Type": "Creature",
     "Realm": ["Beast", "Mythic"],
     "WordCost": 1,
@@ -881,6 +969,7 @@
   },
   {
     "name": "Greater Demon",
+    "id": 79,
     "Type": "Creature",
     "Realm": ["Demonic"],
     "WordCost": 6,
@@ -891,6 +980,7 @@
   },
   {
     "name": "Decay Wyvern",
+    "id": 80,
     "Type": "Creature",
     "Realm": ["Dragon", "Undead"],
     "WordCost": 6,
@@ -901,6 +991,7 @@
   },
   {
     "name": "Freakshot",
+    "id": 81,
     "Type": "Creature",
     "Realm": ["Cosmic", "Psychadelic"],
     "WordCost": 4,
@@ -911,6 +1002,7 @@
   },
   {
     "name": "Dilapidated Surgeon",
+    "id": 82,
     "Type": "Creature",
     "Realm": ["Psychadelic", "Undead"],
     "WordCost": 4,
@@ -921,6 +1013,7 @@
   },
   {
     "name": "Greater Scarecrow",
+    "id": 83,
     "Type": "Creature",
     "Realm": ["Undead"],
     "WordCost": 4,
@@ -931,6 +1024,7 @@
   },
   {
     "name": "The Dragon´s Trinket",
+    "id": 84,
     "Type": "Creature",
     "Realm": ["Digital", "Dragon"],
     "WordCost": 4,
@@ -941,6 +1035,7 @@
   },
   {
     "name": "Cosmic Seer",
+    "id": 85,
     "Type": "Creature",
     "Realm": ["Cosmic"],
     "WordCost": 5,
@@ -951,6 +1046,7 @@
   },
   {
     "name": "Dead Dust",
+    "id": 86,
     "Type": "Creature",
     "Realm": ["Cosmic", "Undead"],
     "WordCost": 3,
@@ -961,6 +1057,7 @@
   },
   {
     "name": "Wicked Dust",
+    "id": 87,
     "Type": "Creature",
     "Realm": ["Cosmic", "Demonic"],
     "WordCost": 4,
@@ -971,6 +1068,7 @@
   },
   {
     "name": "Hallowed Dust",
+    "id": 88,
     "Type": "Creature",
     "Realm": ["Angelic", "Cosmic"],
     "WordCost": 5,
@@ -981,6 +1079,7 @@
   },
   {
     "name": "Barakat",
+    "id": 89,
     "Type": "Creature",
     "Realm": ["Cosmic", "Human"],
     "WordCost": 4,
@@ -991,6 +1090,7 @@
   },
   {
     "name": "Play Soldier",
+    "id": 90,
     "Type": "Creature",
     "Realm": ["Mythic"],
     "WordCost": 4,
@@ -1001,6 +1101,7 @@
   },
   {
     "name": "The Menace",
+    "id": 91,
     "Type": "Creature",
     "Realm": ["Demonic", "Mythic"],
     "WordCost": 3,
@@ -1011,6 +1112,7 @@
   },
   {
     "name": "Spitfire",
+    "id": 92,
     "Type": "Creature",
     "Realm": ["Dragon", "Mythic"],
     "WordCost": 1,
@@ -1021,6 +1123,7 @@
   },
   {
     "name": "Invincible Monarch",
+    "id": 93,
     "Type": "Creature",
     "Realm": ["Cosmic", "Psychadelic"],
     "WordCost": 0,
@@ -1031,6 +1134,7 @@
   },
   {
     "name": "Greater Imp",
+    "id": 94,
     "Type": "Creature",
     "Realm": ["Mythic"],
     "WordCost": 5,
@@ -1041,6 +1145,7 @@
   },
   {
     "name": "Edgewalker",
+    "id": 183,
     "Type": "Creature",
     "Realm": ["Beast", "Mythic"],
     "WordCost": 1,
@@ -1051,6 +1156,7 @@
   },
   {
     "name": "The Lote Tree",
+    "id": 116,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 4,
@@ -1061,6 +1167,7 @@
   },
   {
     "name": "Prayer Beads",
+    "id": 174,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 0,
@@ -1071,6 +1178,7 @@
   },
   {
     "name": "Unbearable Light",
+    "id": 177,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 5,
@@ -1081,6 +1189,7 @@
   },
   {
     "name": "Alluring Fragrance",
+    "id": 95,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 2,
@@ -1091,6 +1200,7 @@
   },
   {
     "name": "Calligraphic Saber",
+    "id": 96,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 2,
@@ -1101,6 +1211,7 @@
   },
   {
     "name": "Inversion Core",
+    "id": 97,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 0,
@@ -1111,6 +1222,7 @@
   },
   {
     "name": "Poisoned Apple",
+    "id": 98,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 0,
@@ -1121,6 +1233,7 @@
   },
   {
     "name": "Sudden Healing Potion",
+    "id": 99,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 0,
@@ -1131,6 +1244,7 @@
   },
   {
     "name": "Foolish Sands",
+    "id": 100,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 4,
@@ -1141,6 +1255,7 @@
   },
   {
     "name": "Bloodmoon Crest",
+    "id": 101,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 5,
@@ -1151,6 +1266,7 @@
   },
   {
     "name": "Prickly Shield",
+    "id": 102,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 3,
@@ -1161,6 +1277,7 @@
   },
   {
     "name": "Shrine of Exchange",
+    "id": 103,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 3,
@@ -1171,6 +1288,7 @@
   },
   {
     "name": "Map of Hidden Dimensions",
+    "id": 104,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 0,
@@ -1181,6 +1299,7 @@
   },
   {
     "name": "Bloodflame Scimitar",
+    "id": 105,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 4,
@@ -1191,6 +1310,7 @@
   },
   {
     "name": "Hyper Armor",
+    "id": 106,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 3,
@@ -1201,6 +1321,7 @@
   },
   {
     "name": "Blissful Nights",
+    "id": 107,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 7,
@@ -1211,6 +1332,7 @@
   },
   {
     "name": "Dragon Egg",
+    "id": 108,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 3,
@@ -1221,6 +1343,7 @@
   },
   {
     "name": "Reroll",
+    "id": 109,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 2,
@@ -1231,6 +1354,7 @@
   },
   {
     "name": "All Knights Awakening",
+    "id": 110,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 5,
@@ -1241,6 +1365,7 @@
   },
   {
     "name": "Last Resort",
+    "id": 111,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 0,
@@ -1251,6 +1376,7 @@
   },
   {
     "name": "Nepotism",
+    "id": 112,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 0,
@@ -1261,6 +1387,7 @@
   },
   {
     "name": "Armor Piercing",
+    "id": 113,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 0,
@@ -1271,6 +1398,7 @@
   },
   {
     "name": "Pools of Vitality",
+    "id": 114,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 1,
@@ -1281,6 +1409,7 @@
   },
   {
     "name": "Chalice of Abundance",
+    "id": 115,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 3,
@@ -1291,6 +1420,7 @@
   },
   {
     "name": "Reupload",
+    "id": 117,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 3,
@@ -1301,6 +1431,7 @@
   },
   {
     "name": "Freedom",
+    "id": 118,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 0,
@@ -1311,6 +1442,7 @@
   },
   {
     "name": "Flaming Typhoon",
+    "id": 119,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 3,
@@ -1321,6 +1453,7 @@
   },
   {
     "name": "Seeking Higher Power",
+    "id": 120,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 6,
@@ -1331,6 +1464,7 @@
   },
   {
     "name": "Twin Void",
+    "id": 121,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 2,
@@ -1341,6 +1475,7 @@
   },
   {
     "name": "Backroom Deals",
+    "id": 122,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 2,
@@ -1351,6 +1486,7 @@
   },
   {
     "name": "Powertrip",
+    "id": 123,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 5,
@@ -1361,6 +1497,7 @@
   },
   {
     "name": "Obliterate",
+    "id": 124,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 8,
@@ -1371,6 +1508,7 @@
   },
   {
     "name": "Pray for Gold",
+    "id": 125,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 1,
@@ -1381,6 +1519,7 @@
   },
   {
     "name": "Scrolls of Sacrifice",
+    "id": 126,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 2,
@@ -1391,6 +1530,7 @@
   },
   {
     "name": "Breaker Shield",
+    "id": 127,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 3,
@@ -1401,6 +1541,7 @@
   },
   {
     "name": "Shrine of Greater Exchange",
+    "id": 128,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 5,
@@ -1411,6 +1552,7 @@
   },
   {
     "name": "Last Stand",
+    "id": 129,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 3,
@@ -1421,6 +1563,7 @@
   },
   {
     "name": "Blissful Mornings",
+    "id": 130,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 0,
@@ -1431,6 +1574,7 @@
   },
   {
     "name": "Dimensions",
+    "id": 131,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 4,
@@ -1441,6 +1585,7 @@
   },
   {
     "name": "The Woodman´s Mask",
+    "id": 132,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 5,
@@ -1451,6 +1596,7 @@
   },
   {
     "name": "The Penblade",
+    "id": 133,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 0,
@@ -1461,6 +1607,7 @@
   },
   {
     "name": "Ender Blade",
+    "id": 134,
     "Type": "Spell",
     "Realm": [""],
     "WordCost": 4,
@@ -1471,6 +1618,7 @@
   },
   {
     "name": "Mutual Destruction",
+    "id": 142,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 1,
@@ -1481,6 +1629,7 @@
   },
   {
     "name": "Knotmouth",
+    "id": 143,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 7,
@@ -1491,6 +1640,7 @@
   },
   {
     "name": "Warp",
+    "id": 144,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 3,
@@ -1501,6 +1651,7 @@
   },
   {
     "name": "Deep Forest Witchcraft",
+    "id": 145,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 3,
@@ -1511,6 +1662,7 @@
   },
   {
     "name": "Waves of Sickness",
+    "id": 146,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 3,
@@ -1521,6 +1673,7 @@
   },
   {
     "name": "Annihilation Core",
+    "id": 147,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 3,
@@ -1531,6 +1684,7 @@
   },
   {
     "name": "Ring of Contriction",
+    "id": 148,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 3,
@@ -1541,6 +1695,7 @@
   },
   {
     "name": "Runaway Fruits",
+    "id": 149,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 3,
@@ -1551,6 +1706,7 @@
   },
   {
     "name": "Soul Eject",
+    "id": 150,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 8,
@@ -1561,6 +1717,7 @@
   },
   {
     "name": "Deep Mirror",
+    "id": 151,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 2,
@@ -1571,6 +1728,7 @@
   },
   {
     "name": "Blitzwave",
+    "id": 152,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 2,
@@ -1581,6 +1739,7 @@
   },
   {
     "name": "Despision",
+    "id": 153,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 4,
@@ -1591,6 +1750,7 @@
   },
   {
     "name": "Rude Awakening",
+    "id": 154,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 8,
@@ -1601,6 +1761,7 @@
   },
   {
     "name": "Solemn Effigy",
+    "id": 155,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 0,
@@ -1611,6 +1772,7 @@
   },
   {
     "name": "Ignition",
+    "id": 156,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 3,
@@ -1621,6 +1783,7 @@
   },
   {
     "name": "Griplocked",
+    "id": 157,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 4,
@@ -1631,6 +1794,7 @@
   },
   {
     "name": "Essential Sacrifice",
+    "id": 158,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 0,
@@ -1641,6 +1805,7 @@
   },
   {
     "name": "Hyperloop",
+    "id": 159,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 4,
@@ -1651,6 +1816,7 @@
   },
   {
     "name": "Walkway",
+    "id": 160,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 2,
@@ -1661,6 +1827,7 @@
   },
   {
     "name": "Crystalization",
+    "id": 161,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 2,
@@ -1671,6 +1838,7 @@
   },
   {
     "name": "Fury",
+    "id": 162,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 4,
@@ -1681,6 +1849,7 @@
   },
   {
     "name": "Dancing with Fire",
+    "id": 163,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 4,
@@ -1691,6 +1860,7 @@
   },
   {
     "name": "Unwanted VIsitors",
+    "id": 164,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 2,
@@ -1701,6 +1871,7 @@
   },
   {
     "name": "Evil Contracts",
+    "id": 165,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 0,
@@ -1711,6 +1882,7 @@
   },
   {
     "name": "Black Scroll Ritual",
+    "id": 166,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 4,
@@ -1721,6 +1893,7 @@
   },
   {
     "name": "Virus in Paradise",
+    "id": 167,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 1,
@@ -1731,6 +1904,7 @@
   },
   {
     "name": "Soul Chained",
+    "id": 168,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 4,
@@ -1741,6 +1915,7 @@
   },
   {
     "name": "Black Mirror",
+    "id": 192,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 4,
@@ -1751,6 +1926,7 @@
   },
   {
     "name": "Rose of Vanta Gold",
+    "id": 193,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 0,
@@ -1761,6 +1937,7 @@
   },
   {
     "name": "Evil Eye",
+    "id": 194,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 2,
@@ -1771,6 +1948,7 @@
   },
   {
     "name": "Fragrance of Hatred",
+    "id": 195,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 2,
@@ -1781,6 +1959,7 @@
   },
   {
     "name": "Divine Protection",
+    "id": 196,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 3,
@@ -1791,6 +1970,7 @@
   },
   {
     "name": "Fractal Prism",
+    "id": 178,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 0,
@@ -1801,6 +1981,7 @@
   },
   {
     "name": "Devilish Mayhem",
+    "id": 135,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 3,
@@ -1811,6 +1992,7 @@
   },
   {
     "name": "Wormhole",
+    "id": 136,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 3,
@@ -1821,6 +2003,7 @@
   },
   {
     "name": "Back to Beginners",
+    "id": 137,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 2,
@@ -1831,6 +2014,7 @@
   },
   {
     "name": "Disarmed",
+    "id": 138,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 1,
@@ -1841,6 +2025,7 @@
   },
   {
     "name": "Pestilence",
+    "id": 139,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 3,
@@ -1851,6 +2036,7 @@
   },
   {
     "name": "Shattermouth",
+    "id": 140,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 5,
@@ -1861,6 +2047,7 @@
   },
   {
     "name": "Think Twice",
+    "id": 141,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 1,
@@ -1871,6 +2058,7 @@
   },
   {
     "name": "Infliction",
+    "id": 185,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 2,
@@ -1881,6 +2069,7 @@
   },
   {
     "name": "Phantomization",
+    "id": 182,
     "Type": "Curse",
     "Realm": [""],
     "WordCost": 2,
@@ -1891,6 +2080,7 @@
   },
   {
     "name": "The First Tree",
+    "id": 169,
     "Type": "Realm",
     "Realm": [""],
     "WordCost": "",
@@ -1901,6 +2091,7 @@
   },
   {
     "name": "Deeper Pits",
+    "id": 170,
     "Type": "Realm",
     "Realm": ["Demonic"],
     "WordCost": "",
@@ -1911,6 +2102,7 @@
   },
   {
     "name": "Cybernet",
+    "id": 172,
     "Type": "Realm",
     "Realm": ["Digital"],
     "WordCost": "",
@@ -1921,6 +2113,7 @@
   },
   {
     "name": "The Rabbit Hole",
+    "id": 173,
     "Type": "Realm",
     "Realm": ["Mythic"],
     "WordCost": "",
@@ -1931,6 +2124,7 @@
   },
   {
     "name": "Spiral Skies",
+    "id": 175,
     "Type": "Realm",
     "Realm": ["Dragon"],
     "WordCost": "",
@@ -1941,6 +2135,7 @@
   },
   {
     "name": "Feeding Pool",
+    "id": 176,
     "Type": "Realm",
     "Realm": ["Beast"],
     "WordCost": "",
@@ -1951,6 +2146,7 @@
   },
   {
     "name": "New Frontiers",
+    "id": 179,
     "Type": "Realm",
     "Realm": ["Human"],
     "WordCost": "",
@@ -1961,6 +2157,7 @@
   },
   {
     "name": "Solar Sands",
+    "id": 180,
     "Type": "Realm",
     "Realm": ["Cosmic"],
     "WordCost": "",
@@ -1971,6 +2168,7 @@
   },
   {
     "name": "Graveside Manor",
+    "id": 181,
     "Type": "Realm",
     "Realm": ["Undead"],
     "WordCost": "",
@@ -1981,6 +2179,7 @@
   },
   {
     "name": "Gateway to Light",
+    "id": 197,
     "Type": "Realm",
     "Realm": ["Angelic"],
     "WordCost": "",
@@ -1991,6 +2190,7 @@
   },
   {
     "name": "Spectral Forest",
+    "id": 184,
     "Type": "Realm",
     "Realm": ["Psychadelic"],
     "WordCost": "",
