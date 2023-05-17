@@ -145,6 +145,30 @@ const DeckBuilder = () => {
 
   return (
     <div className="p-4">
+      <div className="grid grid-cols-5">
+        <div class="col-span-2  bg-red-100">left</div>
+        <div class="col-span-1 bg-yellow-100">
+          <div className="flex-col w-full items-cent">
+            <div className="w-full flex justify-between">
+              <div></div>
+              <div>Name</div>
+              <div className="">Words</div>
+            </div>
+            <div className="flex-col">
+              <div className="flex justify-center w-32 h-32">Image</div>
+              <div className="flex justify-between">
+                <div>Type</div>
+                <div>DP/HP</div>
+              </div>
+              <div className="">
+                <p>Das ist der Text für die Karte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-2 bg-green-200">right</div>
+      </div>
+
       <div className="bg-black text-white flex gap-3 p-2 sticky top-0">
         <div className="flex-col h-full justify-between">
           <input
