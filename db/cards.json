@@ -1,0 +1,2002 @@
+[
+  {
+    "name": "Heavy Artillery",
+    "Type": "Hero",
+    "Realm": ["Beast", "Digital"],
+    "WordCost": 0,
+    "DP": 3,
+    "HP": 70,
+    "Continuous/ Equip": "",
+    "Description": "This card can attack and block while retreated"
+  },
+  {
+    "name": "Greater Saber",
+    "Type": "Hero",
+    "Realm": ["Digital", "Human"],
+    "WordCost": 0,
+    "DP": 6,
+    "HP": 50,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can reduce the DP of a Creature by 2"
+  },
+  {
+    "name": "Original Ruler",
+    "Type": "Hero",
+    "Realm": ["Cosmic", "Human"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 45,
+    "Continuous/ Equip": "",
+    "Description": "When a Creature you control is destroyed, place 1 counter on this card. You can remove counters to: \n1 counter: Negate an attack\n2 counters: Inflict 1 DP to a Realm\n3 counters: Negate a card Effect\n4 counters: Draw 2 cards"
+  },
+  {
+    "name": "King of Ornaments",
+    "Type": "Hero",
+    "Realm": ["Mythic"],
+    "WordCost": 0,
+    "DP": 3,
+    "HP": 50,
+    "Continuous/ Equip": "",
+    "Description": "This card gains Abilities based on the number of cards equipped to it:\n1: Increase ist DP by 1\n2: Heal its HP by 1 at the end of your turns\n3: It can attack twice per Battle Phase \n4: It is impervious to Abilities"
+  },
+  {
+    "name": "Angeldust Fox",
+    "Type": "Hero",
+    "Realm": ["Angelic", "Beast"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 50,
+    "Continuous/ Equip": "",
+    "Description": "Generate 1 Word during your Word Phases. Once per turn, you can use Words to increase the DP or HP of a card you control by the number of Words used until the end of the turn"
+  },
+  {
+    "name": "Blackhole magician",
+    "Type": "Hero",
+    "Realm": ["Cosmic", "Mythic"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 45,
+    "Continuous/ Equip": "",
+    "Description": "Creatures that target this card for an attack are flipped face-down after damage calculation"
+  },
+  {
+    "name": "Vapor Shaman",
+    "Type": "Hero",
+    "Realm": ["Psychadelic"],
+    "WordCost": 0,
+    "DP": 7,
+    "HP": 50,
+    "Continuous/ Equip": "",
+    "Description": "Once per turn, you can redo a card Effect that involved chance"
+  },
+  {
+    "name": "Basis Warrior",
+    "Type": "Hero",
+    "Realm": ["Human"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 55,
+    "Continuous/ Equip": "",
+    "Description": "Increase the DP of all creatures you control by 3."
+  },
+  {
+    "name": "Immortal Flame",
+    "Type": "Hero",
+    "Realm": ["Undead"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 50,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can excavate the top card of your deck. If it is an Undead-type card, speak it without Words."
+  },
+  {
+    "name": "World Eater",
+    "Type": "Hero",
+    "Realm": ["Beast", "Cosmic"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 45,
+    "Continuous/ Equip": "",
+    "Description": "You can skip your Battle Phase to inflict 1 DP to an opponent´s Realm. This Ability cannot be used during the first turn."
+  },
+  {
+    "name": "Witch of Mind",
+    "Type": "Hero",
+    "Realm": ["Human", "Demonic"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 50,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can use 4 Words to take control of 1 of your opponent´s Creatures until the end of the turn."
+  },
+  {
+    "name": "Cosmic Puppeteer",
+    "Type": "Hero",
+    "Realm": ["Cosmic"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 50,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, during your Main Phase, you can target 1 Creature you control: it gains 5 DP and HP. You can only target 1 Creature you control at a time."
+  },
+  {
+    "name": "Guard of the Rabbit Hole",
+    "Type": "Hero",
+    "Realm": ["Beast", "Mythic"],
+    "WordCost": 0,
+    "DP": 4,
+    "HP": 50,
+    "Continuous/ Equip": "",
+    "Description": "You can use 4 Words to bounce a Creature"
+  },
+  {
+    "name": "Queen of Cosmic Orbits",
+    "Type": "Hero",
+    "Realm": ["Cosmic"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 45,
+    "Continuous/ Equip": "",
+    "Description": "You can use 5 Words to exchange a Creature you control for a Creature your opponent controls"
+  },
+  {
+    "name": "Cybernetic Droid",
+    "Type": "Hero",
+    "Realm": ["Digital"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 50,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can destroy a Digital-type Creature you control to increase this card´s DP by 1"
+  },
+  {
+    "name": "Master of the Forest Imps",
+    "Type": "Hero",
+    "Realm": ["Mythic", "Human"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 50,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can spawn 1 \"Imp\" Creature (Mythic / 1DP / 1HP)"
+  },
+  {
+    "name": "Split Arrow Archer",
+    "Type": "Creature",
+    "Realm": ["Digital", "Human"],
+    "WordCost": 3,
+    "DP": 3,
+    "HP": 7,
+    "Continuous/ Equip": "",
+    "Description": "This card can attack twice during your Battle Phase"
+  },
+  {
+    "name": "Fractal Feathers",
+    "Type": "Creature",
+    "Realm": ["Angelic", "Beast"],
+    "WordCost": 3,
+    "DP": 3,
+    "HP": 5,
+    "Continuous/ Equip": "",
+    "Description": "Generate 2 Words every time this card attacks"
+  },
+  {
+    "name": "Bladesaw Runner",
+    "Type": "Creature",
+    "Realm": ["Digital", "Mythic"],
+    "WordCost": 4,
+    "DP": 1,
+    "HP": 7,
+    "Continuous/ Equip": "",
+    "Description": "Creatures attacked by this card are destroyed at the end of the turn"
+  },
+  {
+    "name": "Betrayer Moon",
+    "Type": "Creature",
+    "Realm": ["Cosmic"],
+    "WordCost": 4,
+    "DP": 0,
+    "HP": 1,
+    "Continuous/ Equip": "",
+    "Description": "This card cannot be destroyed by battle. Cards attacking this card gain Piercing damage during their attack"
+  },
+  {
+    "name": "Null",
+    "Type": "Creature",
+    "Realm": ["Cosmic"],
+    "WordCost": 4,
+    "DP": 0,
+    "HP": 1,
+    "Continuous/ Equip": "",
+    "Description": "At the end of the turn that this card is spoken, it is impervious to Effects, cannot be attacked, and cannot defend a Hero. If there are 3 copies of this card on your field, you lose the game"
+  },
+  {
+    "name": "Mochi Roll",
+    "Type": "Creature",
+    "Realm": ["Angelic", "Mythic"],
+    "WordCost": 3,
+    "DP": 0,
+    "HP": 7,
+    "Continuous/ Equip": "",
+    "Description": "Place 2 Counters on this card during each Word Phase (Max 10). When this card is destroyed, generate 1 Word for every Counter on it"
+  },
+  {
+    "name": "Soul Envoy",
+    "Type": "Creature",
+    "Realm": ["Angelic"],
+    "WordCost": 4,
+    "DP": 6,
+    "HP": 10,
+    "Continuous/ Equip": "",
+    "Description": "While you have more Words than your opponent, this card gains 2 DP, 5 HP, and, once per turn, can negate an attack"
+  },
+  {
+    "name": "Shrieker",
+    "Type": "Creature",
+    "Realm": ["Mythic"],
+    "WordCost": 7,
+    "DP": 5,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, flip all other Creatures on the field facedown. This card gains 1 DP for every facedown Creature on the field"
+  },
+  {
+    "name": "The Bleark Sun´s Ember",
+    "Type": "Creature",
+    "Realm": ["Cosmic", "Mythic"],
+    "WordCost": 4,
+    "DP": 4,
+    "HP": 12,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can reduce the Max HP of this card by 2 to inflict 2 DP to all Creatures your opponent controls"
+  },
+  {
+    "name": "FatherAI",
+    "Type": "Creature",
+    "Realm": ["Angelic", "Digital"],
+    "WordCost": 7,
+    "DP": 6,
+    "HP": 18,
+    "Continuous/ Equip": "",
+    "Description": "While you have more Words than your opponent, you can, once per turn, negate the speaking of a Spell or Curse"
+  },
+  {
+    "name": "Frontier Knight",
+    "Type": "Creature",
+    "Realm": ["Angelic", "Human"],
+    "WordCost": 1,
+    "DP": 3,
+    "HP": 5,
+    "Continuous/ Equip": "",
+    "Description": "If your Hero were to be destroyed while this card is on your field, destroy this card instead"
+  },
+  {
+    "name": "Spellsworm Dragon",
+    "Type": "Creature",
+    "Realm": ["Dragon"],
+    "WordCost": 4,
+    "DP": 4,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, excavate the top 5 cards of your deck. If any were Spells, you can add those Spells to your hand"
+  },
+  {
+    "name": "Curseworm Dragon",
+    "Type": "Creature",
+    "Realm": ["Dragon"],
+    "WordCost": 4,
+    "DP": 4,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, excavate the top 5 cards of your deck. If any were Curses, you can add those Curses to your hand"
+  },
+  {
+    "name": "Fusion Dragon",
+    "Type": "Creature",
+    "Realm": ["Dragon"],
+    "WordCost": 0,
+    "DP": 8,
+    "HP": 12,
+    "Continuous/ Equip": "",
+    "Description": "This card can only be spoken by discarding 2 Spells or Curses from your hand. This card is impervious to Enchantments. Once per your turn, you can add 1 Spell or Curse from the Silence to your hand"
+  },
+  {
+    "name": "Scarecrow",
+    "Type": "Creature",
+    "Realm": ["Undead"],
+    "WordCost": 1,
+    "DP": 0,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "Your opponent can only target “scarecrow” cards for an attack"
+  },
+  {
+    "name": "Mage of the Dying Sun",
+    "Type": "Creature",
+    "Realm": ["Angelic", "Human"],
+    "WordCost": 3,
+    "DP": 1,
+    "HP": 5,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, you can inflict 1 DP to a Realm your opponent controls"
+  },
+  {
+    "name": "Hypersonic Eagle",
+    "Type": "Creature",
+    "Realm": ["Beast", "Digital"],
+    "WordCost": 2,
+    "DP": 3,
+    "HP": 5,
+    "Continuous/ Equip": "",
+    "Description": "This card can attack your opponent's Hero even if it is Retreated behind Creatures"
+  },
+  {
+    "name": "The Witch´s Shy Doll",
+    "Type": "Creature",
+    "Realm": ["Mythic"],
+    "WordCost": 3,
+    "DP": 1,
+    "HP": 1,
+    "Continuous/ Equip": "",
+    "Description": "This card cannot be attacked. During their Main Phase, your opponent can use 4 Words to destroy this card"
+  },
+  {
+    "name": "Pure Opal",
+    "Type": "Creature",
+    "Realm": ["Angelic"],
+    "WordCost": 0,
+    "DP": 0,
+    "HP": 1,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, generate 2 Words. If you control another Angelic-type card, this card gains 3 DP"
+  },
+  {
+    "name": "Blitz Demon",
+    "Type": "Creature",
+    "Realm": ["Demonic"],
+    "WordCost": 2,
+    "DP": 3,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "This card gains 3 DP while attacking a Hero"
+  },
+  {
+    "name": "Ancient Psychonaut",
+    "Type": "Creature",
+    "Realm": ["Psychadelic"],
+    "WordCost": 3,
+    "DP": 9,
+    "HP": 12,
+    "Continuous/ Equip": "",
+    "Description": "A traveler simply stopping between worlds"
+  },
+  {
+    "name": "Slipway Rogue",
+    "Type": "Creature",
+    "Realm": ["Human"],
+    "WordCost": 3,
+    "DP": 4,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "If this card is discarded from your hand, speak it without Words. If this card is spoken this way, increase its DP and HP by 4"
+  },
+  {
+    "name": "Swamp Dweller",
+    "Type": "Creature",
+    "Realm": ["Mythic"],
+    "WordCost": 0,
+    "DP": 2,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "A group of fungi that learned how to shape themselves into various forms"
+  },
+  {
+    "name": "A Humming Voice",
+    "Type": "Creature",
+    "Realm": ["Angelic", "Human"],
+    "WordCost": 2,
+    "DP": 0,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, heal and increase the max HP of all other Creatures and Realms you control by 2"
+  },
+  {
+    "name": "Impish Imp",
+    "Type": "Creature",
+    "Realm": ["Mythic"],
+    "WordCost": 0,
+    "DP": 2,
+    "HP": 5,
+    "Continuous/ Equip": "",
+    "Description": "A peculiar creature, if you watch it long enough"
+  },
+  {
+    "name": "Piggy Bank",
+    "Type": "Creature",
+    "Realm": ["Beast", "Demonic"],
+    "WordCost": 3,
+    "DP": 2,
+    "HP": 5,
+    "Continuous/ Equip": "",
+    "Description": "During each Draw Phase, place 1 counter on this card. When this card is destroyed, draw cards equal to the number of counters on it (max 5)"
+  },
+  {
+    "name": "Decorated Warrior",
+    "Type": "Creature",
+    "Realm": ["Human"],
+    "WordCost": 3,
+    "DP": 3,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "Your equip cards require no Words to equip to this card"
+  },
+  {
+    "name": "The Celestial´s Trinket",
+    "Type": "Creature",
+    "Realm": ["Cosmic"],
+    "WordCost": 4,
+    "DP": 1,
+    "HP": 5,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, you can search your deck for a Cosmic-type card and speak it without Words; at the end of the turn, return that card to the deck, unless it was removed from the field"
+  },
+  {
+    "name": "Psycho Virus",
+    "Type": "Creature",
+    "Realm": ["Psychadelic"],
+    "WordCost": 4,
+    "DP": 1,
+    "HP": 1,
+    "Continuous/ Equip": "",
+    "Description": "If this card is destroyed by battle, equip this card to the card that destroyed it: it must attack during its Battle Phase and its target is determined by a coin flip: Heads: Attack allied Creatures (if present) Tails: Attack normally"
+  },
+  {
+    "name": "v1",
+    "Type": "Creature",
+    "Realm": ["Digital"],
+    "WordCost": 1,
+    "DP": 3,
+    "HP": 4,
+    "Continuous/ Equip": "",
+    "Description": "If this card is destroyed by an Effect, draw a card"
+  },
+  {
+    "name": "v2",
+    "Type": "Creature",
+    "Realm": ["Digital"],
+    "WordCost": 3,
+    "DP": 5,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "If this card is destroyed by an Effect, reduce your opponent’s Words by 2"
+  },
+  {
+    "name": "v3",
+    "Type": "Creature",
+    "Realm": ["Digital"],
+    "WordCost": 5,
+    "DP": 7,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "If this card is destroyed by an Effect, you can speak a Creature from the silence without Words"
+  },
+  {
+    "name": "vFinal",
+    "Type": "Creature",
+    "Realm": ["Digital"],
+    "WordCost": 0,
+    "DP": 5,
+    "HP": 15,
+    "Continuous/ Equip": "",
+    "Description": "This card can only be spoken if “v1,” v2,” and “v3” were spoken before it, in any order. This card is impervious to your opponent’s Enchantments, and gains 1 DP for every Digital-type card in the Silence"
+  },
+  {
+    "name": "Mysic Spellcaster",
+    "Type": "Creature",
+    "Realm": ["Human", "Mythic"],
+    "WordCost": 3,
+    "DP": 4,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "Once per turn, you can use 2 Words to add a Spell from the Silence to your hand"
+  },
+  {
+    "name": "Skill Shot Maverick",
+    "Type": "Creature",
+    "Realm": ["Human"],
+    "WordCost": 2,
+    "DP": 4,
+    "HP": 5,
+    "Continuous/ Equip": "",
+    "Description": "You can use 3 Words to negate an Ability for the remainder of the turn"
+  },
+  {
+    "name": "Abomination",
+    "Type": "Creature",
+    "Realm": ["Angelic", "Demonic"],
+    "WordCost": 10,
+    "DP": 15,
+    "HP": 25,
+    "Continuous/ Equip": "",
+    "Description": "An unknown mercenary who defuncted from his kingdom"
+  },
+  {
+    "name": "Sapphire Knight",
+    "Type": "Creature",
+    "Realm": ["Human"],
+    "WordCost": 5,
+    "DP": 8,
+    "HP": 12,
+    "Continuous/ Equip": "",
+    "Description": "An unknown mercenary who defuncted from his kingdom"
+  },
+  {
+    "name": "Emerald Knight",
+    "Type": "Creature",
+    "Realm": ["Human"],
+    "WordCost": 6,
+    "DP": 9,
+    "HP": 13,
+    "Continuous/ Equip": "",
+    "Description": "An unknown mercenary who defuncted from his kingdom"
+  },
+  {
+    "name": "Obsidian Knight",
+    "Type": "Creature",
+    "Realm": ["Human"],
+    "WordCost": 7,
+    "DP": 10,
+    "HP": 15,
+    "Continuous/ Equip": "",
+    "Description": "An unknown mercenary who defuncted from his kingdom"
+  },
+  {
+    "name": "The All Knight",
+    "Type": "Creature",
+    "Realm": ["Human", "Cosmic"],
+    "WordCost": 0,
+    "DP": 15,
+    "HP": 20,
+    "Continuous/ Equip": "",
+    "Description": "This card can only be spoken via \"All Knight’s Awakening.” When this card is spoken, you can destroy a Realm. Once per turn, you can negate an Effect and destroy the card"
+  },
+  {
+    "name": "Cyber Lynx",
+    "Type": "Creature",
+    "Realm": ["Beast", "Digital"],
+    "WordCost": 3,
+    "DP": 5,
+    "HP": 3,
+    "Continuous/ Equip": "",
+    "Description": "This card cannot be attacked by Creatures with a DP less than 5"
+  },
+  {
+    "name": "Hallow Bear",
+    "Type": "Creature",
+    "Realm": ["Beast"],
+    "WordCost": 0,
+    "DP": 6,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "If this card is destroyed by your opponent, they can generate 3 Words"
+  },
+  {
+    "name": "Chosen Mind",
+    "Type": "Creature",
+    "Realm": ["Angelic", "Psychadelic"],
+    "WordCost": 0,
+    "DP": 7,
+    "HP": 3,
+    "Continuous/ Equip": "",
+    "Description": "When this card destroys a Creature, increase its DP by 2 and attack again. At the end of your turn, reset its DP to normal"
+  },
+  {
+    "name": "Damned Mind",
+    "Type": "Creature",
+    "Realm": ["Demonic", "Psychadelic"],
+    "WordCost": 0,
+    "DP": 3,
+    "HP": 7,
+    "Continuous/ Equip": "",
+    "Description": "Once per turn, you can use 3 Words to negate the speaking or activation of a Spell or Curse"
+  },
+  {
+    "name": "Holo-Knight",
+    "Type": "Creature",
+    "Realm": ["Digital", "Human"],
+    "WordCost": 5,
+    "DP": 8,
+    "HP": 12,
+    "Continuous/ Equip": "",
+    "Description": "If you are in debt, you can speak this card without Words"
+  },
+  {
+    "name": "Cleric of Fire",
+    "Type": "Creature",
+    "Realm": ["Mythic"],
+    "WordCost": 5,
+    "DP": 7,
+    "HP": 10,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, reduce your opponent's Words by 2"
+  },
+  {
+    "name": "Cleric of Water",
+    "Type": "Creature",
+    "Realm": ["Mythic"],
+    "WordCost": 0,
+    "DP": 2,
+    "HP": 3,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, reset your Words to 0."
+  },
+  {
+    "name": "Saber Dancer",
+    "Type": "Creature",
+    "Realm": ["Cosmic", "Human"],
+    "WordCost": 3,
+    "DP": 5,
+    "HP": 7,
+    "Continuous/ Equip": "",
+    "Description": "This card cannot be attacked by Creatures with a DP less than 5"
+  },
+  {
+    "name": "Baby Skull",
+    "Type": "Creature",
+    "Realm": ["Undead"],
+    "WordCost": 5,
+    "DP": 2,
+    "HP": 2,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can search your deck for an Undead-type card and send it to the Silence. If there is another Undead-type Creature on your field besides “Baby Skull,” this card cannot be attacked"
+  },
+  {
+    "name": "Royal Skull",
+    "Type": "Creature",
+    "Realm": ["Undead"],
+    "WordCost": 4,
+    "DP": 6,
+    "HP": 10,
+    "Continuous/ Equip": "",
+    "Description": "This card gains 1 DP for every Undead-type card in the Silence"
+  },
+  {
+    "name": "Hell´s Dragon",
+    "Type": "Creature",
+    "Realm": ["Demonic", "Dragon"],
+    "WordCost": 5,
+    "DP": 7,
+    "HP": 13,
+    "Continuous/ Equip": "",
+    "Description": "This card inflicts Piercing damage"
+  },
+  {
+    "name": "Bloom Dragon",
+    "Type": "Creature",
+    "Realm": ["Dragon", "Psychadelic"],
+    "WordCost": 4,
+    "DP": 4,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, reveal your opponent’s hand: generate 1 Word for every Spell"
+  },
+  {
+    "name": "Underwolf",
+    "Type": "Creature",
+    "Realm": ["Beast"],
+    "WordCost": 3,
+    "DP": 4,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "If this card is flipped by a Creature's attack, destroy the attacking Creature after damage calculation"
+  },
+  {
+    "name": "Small Flame",
+    "Type": "Creature",
+    "Realm": ["Demonic", "Dragon"],
+    "WordCost": 3,
+    "DP": 4,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can use 1 Word to inflict 2 DP to your opponent’s Hero"
+  },
+  {
+    "name": "Big Flame",
+    "Type": "Creature",
+    "Realm": ["Demonic", "Dragon"],
+    "WordCost": 5,
+    "DP": 6,
+    "HP": 10,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can use 2 Words to inflict 4 DP to your opponent’s Hero"
+  },
+  {
+    "name": "Steelframe Rhino",
+    "Type": "Creature",
+    "Realm": ["Beast", "Digital"],
+    "WordCost": 3,
+    "DP": 2,
+    "HP": 15,
+    "Continuous/ Equip": "",
+    "Description": "A cybernetic Rhino with unknown origins, often found grazing abondoned factories"
+  },
+  {
+    "name": "Nightingale",
+    "Type": "Creature",
+    "Realm": ["Human"],
+    "WordCost": 0,
+    "DP": 4,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "If this card is destroyed by your opponent, they can generate 3 Words"
+  },
+  {
+    "name": "Pluff",
+    "Type": "Creature",
+    "Realm": ["Beast", "Mythic"],
+    "WordCost": 2,
+    "DP": 1,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "If a card you control were to be affected by an Effect or Ability, you can redirect it to this card instead"
+  },
+  {
+    "name": "The Pharao´s Gravekeeper",
+    "Type": "Creature",
+    "Realm": ["Undead"],
+    "WordCost": 1,
+    "DP": 2,
+    "HP": 3,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, you can: use 3 words to add a Curse from the Silence to your hand, or, use 6 Words to add a Curse from your deck to your hand"
+  },
+  {
+    "name": "Photon Paladin",
+    "Type": "Creature",
+    "Realm": ["Cosmic"],
+    "WordCost": 5,
+    "DP": 5,
+    "HP": 10,
+    "Continuous/ Equip": "",
+    "Description": "If this card is removed from the field, you can use 4 Words to speak it back onto the field"
+  },
+  {
+    "name": "Bookkeeper",
+    "Type": "Creature",
+    "Realm": ["Angelic"],
+    "WordCost": 4,
+    "DP": 2,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "While you have more Words than your opponent, this card gains 2 DP. Once per turn, you can reduce the max HP of this card by 1 to generate 1 Word"
+  },
+  {
+    "name": "Bolt Samurai",
+    "Type": "Creature",
+    "Realm": ["Human"],
+    "WordCost": 6,
+    "DP": 6,
+    "HP": 14,
+    "Continuous/ Equip": "",
+    "Description": "When this card destroys a Creature, increase its DP by 2 and attack again. At the end of your turn, reset its DP to normal"
+  },
+  {
+    "name": "Blacksea Predator",
+    "Type": "Creature",
+    "Realm": ["Beast", "Digital"],
+    "WordCost": 4,
+    "DP": 5,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "Facedown cards attacked by this card cannot be flipped"
+  },
+  {
+    "name": "Ceremonial Dragon",
+    "Type": "Creature",
+    "Realm": ["Dragon", "Psychadelic"],
+    "WordCost": 4,
+    "DP": 2,
+    "HP": 9,
+    "Continuous/ Equip": "",
+    "Description": "When this card attacks, roll a die: increase this card’s DP by the number rolled. At the end of the turn, reset its DP to normal"
+  },
+  {
+    "name": "Oracle of the Sun Empire",
+    "Type": "Creature",
+    "Realm": ["Human", "Mythic"],
+    "WordCost": 5,
+    "DP": 7,
+    "HP": 10,
+    "Continuous/ Equip": "",
+    "Description": "Once per turn, you can use 3 Words to negate the speaking or activation of a Spell or Curse"
+  },
+  {
+    "name": "Eclipse Fairy",
+    "Type": "Creature",
+    "Realm": ["Angelic", "Mythic"],
+    "WordCost": 1,
+    "DP": 2,
+    "HP": 4,
+    "Continuous/ Equip": "",
+    "Description": "If this card is destroyed by an Effect, generate 5 Words"
+  },
+  {
+    "name": "Octane Sniper",
+    "Type": "Creature",
+    "Realm": ["Digital", "Human"],
+    "WordCost": 6,
+    "DP": 8,
+    "HP": 12,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can reveal the next 5 cards in your opponent’s deck and send one to the Silence. If this Effect is used, this card cannot attack this turn"
+  },
+  {
+    "name": "Revive.exe",
+    "Type": "Creature",
+    "Realm": ["Digital", "Undead"],
+    "WordCost": 3,
+    "DP": 2,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "If a Creature you control is sent to the Silence, you can speak this card from your hand without Words. When this card is destroyed, you can use 3 Words to add it to your hand"
+  },
+  {
+    "name": "Soulbound Reaper",
+    "Type": "Creature",
+    "Realm": ["Undead"],
+    "WordCost": 3,
+    "DP": 4,
+    "HP": 5,
+    "Continuous/ Equip": "",
+    "Description": "Once per turn, you can inflict 5 DP to your Hero to speak this card from the Silence without Words"
+  },
+  {
+    "name": "Gravebound Digger",
+    "Type": "Creature",
+    "Realm": ["Undead"],
+    "WordCost": 5,
+    "DP": 5,
+    "HP": 10,
+    "Continuous/ Equip": "",
+    "Description": "When this card destroys a Creature, you can speak an Undead-type card from the Silence without Words"
+  },
+  {
+    "name": "Blessed Fox",
+    "Type": "Creature",
+    "Realm": ["Beast", "Mythic"],
+    "WordCost": 4,
+    "DP": 4,
+    "HP": 10,
+    "Continuous/ Equip": "",
+    "Description": "At the end of each Battle Phase, restore this card’s HP"
+  },
+  {
+    "name": "Samurai Toad",
+    "Type": "Creature",
+    "Realm": ["Beast", "Mythic"],
+    "WordCost": 1,
+    "DP": 3,
+    "HP": 5,
+    "Continuous/ Equip": "",
+    "Description": "You can bounce this card at the end of your turn, and if you do, place a Counter on it. This card gains 2 DP and HP for every counter on it"
+  },
+  {
+    "name": "Greater Demon",
+    "Type": "Creature",
+    "Realm": ["Demonic"],
+    "WordCost": 6,
+    "DP": 6,
+    "HP": 15,
+    "Continuous/ Equip": "",
+    "Description": "Double the DP inflicted to Heroes by your Demonic-type Abilities. This Ability cannot stack with other copies of this card you control. Once per your turn, you can inflict 1 DP to your opponent’s Hero"
+  },
+  {
+    "name": "Decay Wyvern",
+    "Type": "Creature",
+    "Realm": ["Dragon", "Undead"],
+    "WordCost": 6,
+    "DP": 6,
+    "HP": 12,
+    "Continuous/ Equip": "",
+    "Description": "When this card destroys a Creature, you can speak it onto your side of the field without Words, Muted"
+  },
+  {
+    "name": "Freakshot",
+    "Type": "Creature",
+    "Realm": ["Cosmic", "Psychadelic"],
+    "WordCost": 4,
+    "DP": 2,
+    "HP": 10,
+    "Continuous/ Equip": "",
+    "Description": "Once per turn, you can block an attack with this card. If you do, flip a coin: Heads: inflict damage to the attacking card instead Tails: calculate damage normally"
+  },
+  {
+    "name": "Dilapidated Surgeon",
+    "Type": "Creature",
+    "Realm": ["Psychadelic", "Undead"],
+    "WordCost": 4,
+    "DP": 3,
+    "HP": 9,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can target a Creature and roll a die: 1-2: destroy it 3-6: restore its HP"
+  },
+  {
+    "name": "Greater Scarecrow",
+    "Type": "Creature",
+    "Realm": ["Undead"],
+    "WordCost": 4,
+    "DP": 2,
+    "HP": 15,
+    "Continuous/ Equip": "",
+    "Description": "Your opponent can only target “scarecrow” cards for an attack"
+  },
+  {
+    "name": "The Dragon´s Trinket",
+    "Type": "Creature",
+    "Realm": ["Digital", "Dragon"],
+    "WordCost": 4,
+    "DP": 1,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, you can search your deck for a Dragon-type card and speak it without Words; at the end of the turn, return that card to the deck, unless it was removed from the field"
+  },
+  {
+    "name": "Cosmic Seer",
+    "Type": "Creature",
+    "Realm": ["Cosmic"],
+    "WordCost": 5,
+    "DP": 5,
+    "HP": 12,
+    "Continuous/ Equip": "",
+    "Description": "Once per your turn, you can view the top 3 cards of your deck. Then, arrange them in any order and return them to the top of your deck"
+  },
+  {
+    "name": "Dead Dust",
+    "Type": "Creature",
+    "Realm": ["Cosmic", "Undead"],
+    "WordCost": 3,
+    "DP": 10,
+    "HP": 6,
+    "Continuous/ Equip": "",
+    "Description": "When this card destroys a Creature, return it to its owner’s hand"
+  },
+  {
+    "name": "Wicked Dust",
+    "Type": "Creature",
+    "Realm": ["Cosmic", "Demonic"],
+    "WordCost": 4,
+    "DP": 4,
+    "HP": 10,
+    "Continuous/ Equip": "",
+    "Description": "When this card destroys a Creature, inflict DP to your opponent’s Hero equal to the DP of the destroyed Creature"
+  },
+  {
+    "name": "Hallowed Dust",
+    "Type": "Creature",
+    "Realm": ["Angelic", "Cosmic"],
+    "WordCost": 5,
+    "DP": 6,
+    "HP": 12,
+    "Continuous/ Equip": "",
+    "Description": "When this card destroys a Creature, heal your Hero equal to the DP of the destroyed Creature"
+  },
+  {
+    "name": "Barakat",
+    "Type": "Creature",
+    "Realm": ["Cosmic", "Human"],
+    "WordCost": 4,
+    "DP": 6,
+    "HP": 8,
+    "Continuous/ Equip": "",
+    "Description": "When this card destroys a Creature, draw a card"
+  },
+  {
+    "name": "Play Soldier",
+    "Type": "Creature",
+    "Realm": ["Mythic"],
+    "WordCost": 4,
+    "DP": 1,
+    "HP": 7,
+    "Continuous/ Equip": "",
+    "Description": "This card can attack Realms and its attack cannot be blocked by Heroes. This card’s DP cannot be altered by any Effects"
+  },
+  {
+    "name": "The Menace",
+    "Type": "Creature",
+    "Realm": ["Demonic", "Mythic"],
+    "WordCost": 3,
+    "DP": 12,
+    "HP": 20,
+    "Continuous/ Equip": "",
+    "Description": "When this card is spoken, halve the HP of your Hero"
+  },
+  {
+    "name": "Spitfire",
+    "Type": "Creature",
+    "Realm": ["Dragon", "Mythic"],
+    "WordCost": 1,
+    "DP": 12,
+    "HP": 1,
+    "Continuous/ Equip": "",
+    "Description": "Destroy this card after it deals damage"
+  },
+  {
+    "name": "Invincible Monarch",
+    "Type": "Creature",
+    "Realm": ["Cosmic", "Psychadelic"],
+    "WordCost": 0,
+    "DP": 8,
+    "HP": 15,
+    "Continuous/ Equip": "",
+    "Description": "This card can only be spoken by sacrificing 3 Creatures you control. When this card is spoken, it is impervious to Effects for the next 3 turns. Once per your turn, you can flip a coin: if Heads, increase the DP of this card by 3"
+  },
+  {
+    "name": "Greater Imp",
+    "Type": "Creature",
+    "Realm": ["Mythic"],
+    "WordCost": 5,
+    "DP": 15,
+    "HP": 20,
+    "Continuous/ Equip": "",
+    "Description": "This card can only be spoken if “Impish Imp” has been on the field for 5 or more turns. When this card is spoken, destroy all Creatures you control. This card is impervious to Effects"
+  },
+  {
+    "name": "Edgewalker",
+    "Type": "Creature",
+    "Realm": ["Beast", "Mythic"],
+    "WordCost": 1,
+    "DP": 1,
+    "HP": 1,
+    "Continuous/ Equip": "",
+    "Description": "This card can only attack if you are 9 Words in debt. If this card deals damage to your opponent’s Hero, you win the game"
+  },
+  {
+    "name": "The Lote Tree",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Heal your Hero and Creatures by 1 HP at the end of each turn"
+  },
+  {
+    "name": "Prayer Beads",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Generate 1 Word for every Creature of yours in the Silence"
+  },
+  {
+    "name": "Unbearable Light",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 5,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Flip all Creatures, Spells, and Curses facedown"
+  },
+  {
+    "name": "Alluring Fragrance",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "You can equip this card to a Creature: it gains 2 HP at the end of your turns"
+  },
+  {
+    "name": "Calligraphic Saber",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip to a Hero or Creature: increase its DP by 3"
+  },
+  {
+    "name": "Inversion Core",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Once per your turn, you can use 3 Words to switch the DP and HP of all Creatures on the field"
+  },
+  {
+    "name": "Poisoned Apple",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Restore a Creature's HP. Then, at the start of each players turn, reduce its max HP by 2"
+  },
+  {
+    "name": "Sudden Healing Potion",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Heal a Hero by 5 HP or a Creature by 10 HP"
+  },
+  {
+    "name": "Foolish Sands",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Once per your turn, you can destroy a Creature, Spell, or Curse. This Effect cannot be negated and this card cannot be removed from the field. After 5 turns, you lose the game"
+  },
+  {
+    "name": "Bloodmoon Crest",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 5,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip to a Creature you control: during your turns, its original DP is doubled; during your opponents turns, its original HP is halved"
+  },
+  {
+    "name": "Prickly Shield",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip to a Creature: Creatures that attack it are destroyed after damage calculation"
+  },
+  {
+    "name": "Shrine of Exchange",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Draw a card"
+  },
+  {
+    "name": "Map of Hidden Dimensions",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Generate 1 Word. Both players can then search their deck for a Realm and add it to their hand"
+  },
+  {
+    "name": "Bloodflame Scimitar",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip to a Hero or Creature: it gains Piercing damage"
+  },
+  {
+    "name": "Hyper Armor",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip to a Creature: if it is to be removed from the field by an Effect, you can destroy this card instead"
+  },
+  {
+    "name": "Blissful Nights",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 7,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Neither player needs to use Words to speak cards until the end of your opponent’s turn"
+  },
+  {
+    "name": "Dragon Egg",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Search your deck for a Dragon-type card and add it to your hand. Then, skip your next Draw Phase"
+  },
+  {
+    "name": "Reroll",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Once per turn, you can use 1 Word to redo an Effect or Ability that involved chance. Your opponent can do the same, but at a cost of 2 Words"
+  },
+  {
+    "name": "All Knights Awakening",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 5,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "You can speak this card if Sapphire Knight, Emerald Knight, and Obsidian Knight are in the Silence. Speak The All Knight from your deck, hand, or Silence onto the field"
+  },
+  {
+    "name": "Last Resort",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "You can speak this card if your Hero has 10 HP or less. Draw 5 cards and generate 10 Words. Then, send the remaining cards in your deck to the Silence"
+  },
+  {
+    "name": "Nepotism",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip to a Creature you control: if it is destroyed, speak a Creature with the same or less Word cost from your hand without Words"
+  },
+  {
+    "name": "Armor Piercing",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "You can activate this card during your attack: inflict Piercing damage"
+  },
+  {
+    "name": "Pools of Vitality",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 1,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Heal and increase a Hero or Creature’s max HP by 5"
+  },
+  {
+    "name": "Chalice of Abundance",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Generate 1 Word every time a Creature you control is destroyed"
+  },
+  {
+    "name": "Reupload",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Add a card from the Silence to your hand"
+  },
+  {
+    "name": "Freedom",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Rest your Word count to 0"
+  },
+  {
+    "name": "Flaming Typhoon",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Negate the speaking of, or destroy, a Spell or Curse. For an additional 3 Words, you can use this card during your opponent’s turn"
+  },
+  {
+    "name": "Seeking Higher Power",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 6,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Search your deck for a Spell or Curse and add it to your hand"
+  },
+  {
+    "name": "Twin Void",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Mute a Creature you control and a Creature your opponent controls"
+  },
+  {
+    "name": "Backroom Deals",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Once per your turn, you can use 2 Words to shuffle a card from your hand into your deck. Then, draw 1 card"
+  },
+  {
+    "name": "Powertrip",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 5,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Set the DP of all Creatures you control equal to the highest DP among them. Then, destroy them at the end of your turn"
+  },
+  {
+    "name": "Obliterate",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 8,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Destroy all Creatures on the field"
+  },
+  {
+    "name": "Pray for Gold",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 1,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Excavate the top card of your deck. You can then use Words equal to its cost to add it to your hand"
+  },
+  {
+    "name": "Scrolls of Sacrifice",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Destroy a Creature you control and draw 1 card"
+  },
+  {
+    "name": "Breaker Shield",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip to a Creature you control: it can block attacks. If it is destroyed,draw a card."
+  },
+  {
+    "name": "Shrine of Greater Exchange",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 5,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Draw 2 cards"
+  },
+  {
+    "name": "Last Stand",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "If you control no Creatures, your Hero gains 5 DP and can negate 1 attack per turn. You can only control 1 “Last Stand” on your field"
+  },
+  {
+    "name": "Blissful Mornings",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Both players generate 5 Words"
+  },
+  {
+    "name": "Dimensions",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Discard a card. Then, search your deck for a Psychedelic type Creature and speak it without Words"
+  },
+  {
+    "name": "The Woodman´s Mask",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 5,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Creatures you destroy by battle can be spoken onto your field without Words, Muted"
+  },
+  {
+    "name": "The Penblade",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "When this card is spoken, use a number of Words 1-5: for the rest of the turn, increase the DP of all Creatures you control equal to the number of Words used"
+  },
+  {
+    "name": "Ender Blade",
+    "Type": "Spell",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip to a Creature you control: when it attacks, inflict its DP to all Creatures your opponent controls. Then, destroy the equipped Creature, and return this card to your hand"
+  },
+  {
+    "name": "Mutual Destruction",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 1,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "If this card is on the field 3 turns after its speaking, destroy all cards. During either turn, a player can use 3 Words to destroy this card, and it cannot be destroyed by other ways"
+  },
+  {
+    "name": "Knotmouth",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 7,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "You can activate this card after your opponents Draw Phase: end their turn"
+  },
+  {
+    "name": "Warp",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Bounce a Creature"
+  },
+  {
+    "name": "Deep Forest Witchcraft",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Destroy a Creature that has an equipped card. Then, inflict 4 DP to your opponents Hero"
+  },
+  {
+    "name": "Waves of Sickness",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Inflict 3 DP to a Creature, 2 DP to a Hero, and 1 DP to a Realm"
+  },
+  {
+    "name": "Annihilation Core",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Destroy 2 Creatures you control and 2 Creatures your opponent controls"
+  },
+  {
+    "name": "Ring of Contriction",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": ""
+  },
+  {
+    "name": "Runaway Fruits",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Take 2 Words from your opponent"
+  },
+  {
+    "name": "Soul Eject",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 8,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "You can activate this card during your opponent’s attack: negate the attack and mute all Creatures they control"
+  },
+  {
+    "name": "Deep Mirror",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Destroy a Creature. Then, its owner generates Words equal to its cost"
+  },
+  {
+    "name": "Blitzwave",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Inflict 1 DP to an opponent's Realm card"
+  },
+  {
+    "name": "Despision",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Destroy all Creatures with a DP less than 4"
+  },
+  {
+    "name": "Rude Awakening",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 8,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Advance your opponent's Hero"
+  },
+  {
+    "name": "Solemn Effigy",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "At the start of your opponents Main Phase, you can use 3 Words and declare a card name: your opponent cannot speak a card with that name for the remainder of their turn"
+  },
+  {
+    "name": "Ignition",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip to a Creature: it cannot be destroyed by battle (HP stalls at 1). If this card is destroyed, destroy the Creature"
+  },
+  {
+    "name": "Griplocked",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Your opponent cannot advance their Hero"
+  },
+  {
+    "name": "Essential Sacrifice",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Sacrifice a Creature you control and inflict 5 DP to your opponent's Hero or a Creature"
+  },
+  {
+    "name": "Hyperloop",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Search your deck for a Creature and speak it without Words, Muted"
+  },
+  {
+    "name": "Walkway",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "You can speak this card after a Creature you control is destroyed. Search your deck for a card that shares a Type and speak it onto the field"
+  },
+  {
+    "name": "Crystalization",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip to a Creature: if it is to be destroyed, Mute it instead and restore its HP"
+  },
+  {
+    "name": "Fury",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Your opponent cannot block attacks with their Hero"
+  },
+  {
+    "name": "Dancing with Fire",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Once per your turn, you can use any number of Words to inflict DP to your opponent’s Hero equal to that number of Words"
+  },
+  {
+    "name": "Unwanted VIsitors",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Destroy 2 Creatures your opponent controls. Then, speak 2 Creatures from the Silence to their field without Words, Muted"
+  },
+  {
+    "name": "Evil Contracts",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "During your Main Phases, you can inflict 10 DP to your Hero to draw a card"
+  },
+  {
+    "name": "Black Scroll Ritual",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Speak a Creature from your hand without Words. Then, Mute it at the end of the turn"
+  },
+  {
+    "name": "Virus in Paradise",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 1,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "If your opponent’s Hero has more HP than your Hero, flip a coin at the start of their Battle Phases: Heads: Their Hero cannot attack this turn Tails: No Effect"
+  },
+  {
+    "name": "Soul Chained",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Your opponent cannot speak Creatures onto the field if they would exceed the number of Creatures you control +1"
+  },
+  {
+    "name": "Black Mirror",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 4,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Negate the speaking of a Creature and send it to the Silence"
+  },
+  {
+    "name": "Rose of Vanta Gold",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip to an opponent’s Creature: double its DP. Each time it attacks, reduce its DP by 2"
+  },
+  {
+    "name": "Evil Eye",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Discard a random card in your opponent’s hand"
+  },
+  {
+    "name": "Fragrance of Hatred",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Destroy all Creatures on the field that have more than 1 Type"
+  },
+  {
+    "name": "Divine Protection",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "This card can only be spoken during an attack: negate it and end the Battle Phase"
+  },
+  {
+    "name": "Fractal Prism",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 0,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "You can use 4 Words to block an attack with this card. If you do, add Counters to this card equal to the DP blocked. You can destroy this card to inflict DP equal to its Counters to a Creature your opponent controls"
+  },
+  {
+    "name": "Devilish Mayhem",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "At the end of each player's turn, inflict 1 DP to all Creatures on the field"
+  },
+  {
+    "name": "Wormhole",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Negate an Effect and destroy the card"
+  },
+  {
+    "name": "Back to Beginners",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Negate all Abilities until the end of this turn"
+  },
+  {
+    "name": "Disarmed",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 1,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Reduce a Creature’s DP to 0"
+  },
+  {
+    "name": "Pestilence",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 3,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Destroy a Creature"
+  },
+  {
+    "name": "Shattermouth",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 5,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Continuous",
+    "Description": "Neither player can generate Words. At the end of each turn, inflict 3 DP to your Hero or destroy this card"
+  },
+  {
+    "name": "Think Twice",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 1,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "You can speak this card when your opponent declares an attack: they must discard 1 card, otherwise, negate the attack"
+  },
+  {
+    "name": "Infliction",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Single",
+    "Description": "Reduce your opponent’s Words by 1 for every Creature they control"
+  },
+  {
+    "name": "Phantomization",
+    "Type": "Curse",
+    "Realm": [""],
+    "WordCost": 2,
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "Equip",
+    "Description": "Equip this card to a Creature you control: it cannot be targeted for an attack by your opponent’s Hero"
+  },
+  {
+    "name": "The First Tree",
+    "Type": "Realm",
+    "Realm": [""],
+    "WordCost": "",
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "",
+    "Description": "Create a realm for All card types"
+  },
+  {
+    "name": "Deeper Pits",
+    "Type": "Realm",
+    "Realm": ["Demonic"],
+    "WordCost": "",
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "",
+    "Description": "Create a realm for Demonic cards types"
+  },
+  {
+    "name": "Cybernet",
+    "Type": "Realm",
+    "Realm": ["Digital"],
+    "WordCost": "",
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "",
+    "Description": "Create a realm for Digital card types"
+  },
+  {
+    "name": "The Rabbit Hole",
+    "Type": "Realm",
+    "Realm": ["Mythic"],
+    "WordCost": "",
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "",
+    "Description": "Create a realm for Mythic card types"
+  },
+  {
+    "name": "Spiral Skies",
+    "Type": "Realm",
+    "Realm": ["Dragon"],
+    "WordCost": "",
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "",
+    "Description": "Create a realm for Dragon card types"
+  },
+  {
+    "name": "Feeding Pool",
+    "Type": "Realm",
+    "Realm": ["Beast"],
+    "WordCost": "",
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "",
+    "Description": "Create a realm for Beast card types"
+  },
+  {
+    "name": "New Frontiers",
+    "Type": "Realm",
+    "Realm": ["Human"],
+    "WordCost": "",
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "",
+    "Description": "Create a realm for Human card types"
+  },
+  {
+    "name": "Solar Sands",
+    "Type": "Realm",
+    "Realm": ["Cosmic"],
+    "WordCost": "",
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "",
+    "Description": "Create a realm for Cosmic card types"
+  },
+  {
+    "name": "Graveside Manor",
+    "Type": "Realm",
+    "Realm": ["Undead"],
+    "WordCost": "",
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "",
+    "Description": "Create a realm for Undead card types"
+  },
+  {
+    "name": "Gateway to Light",
+    "Type": "Realm",
+    "Realm": ["Angelic"],
+    "WordCost": "",
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "",
+    "Description": "Create a realm for Angelic card types"
+  },
+  {
+    "name": "Spectral Forest",
+    "Type": "Realm",
+    "Realm": ["Psychadelic"],
+    "WordCost": "",
+    "DP": "",
+    "HP": "",
+    "Continuous/ Equip": "",
+    "Description": "Create a realm for Psychedelic card types"
+  }
+]
