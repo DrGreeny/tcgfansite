@@ -12,15 +12,14 @@ const links = [
 
 const Navigation = () => {
   return (
-    <nav className="bg-gray-900">
+    <nav className="bg-black py-4">
       <ul className="flex justify-center">
         {links.map((link) => (
-          <li key={link.href} className="mx-4 text-red-300">
+          <li key={link.href} className="mx-4 text-gray-500">
             <Link href={link.href}>{link.label}</Link>
           </li>
         ))}
       </ul>
-      <ConnectButton />
     </nav>
   );
 };
