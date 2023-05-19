@@ -227,7 +227,7 @@ const DeckBuilder = () => {
   };
   return (
     <div className="">
-      <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-56 border-b-2 ">
+      <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 border-b-2 ">
         <div className="col-span-2 ">
           <div className="flex justify-center p-2">
             <h3 className="font-bold">Filter Options</h3>
@@ -239,7 +239,7 @@ const DeckBuilder = () => {
                 <label className="block">Filter by Realm:</label>
                 <select
                   multiple
-                  className="p-2 rounded w-full text-black"
+                  className="p-2 rounded w-full text-white bg-black"
                   onChange={handleRealmSelect}
                 >
                   <option value="all">All</option>
@@ -418,9 +418,9 @@ const DeckBuilder = () => {
           <h2 className="text-lg font-bold text-white">Your Deck</h2>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <div className="flex flex-wrap gap-4 sticky top-64 h-96 overflow-y-auto">
+      <div className="grid grid-cols-2 gap-4 ">
+        <div className="h-96">
+          <div className="flex flex-wrap gap-4 sticky top-64 h-full overflow-y-auto">
             {filteredCards.map((card) => (
               <div
                 key={card.name}
@@ -451,8 +451,8 @@ const DeckBuilder = () => {
             ))}
           </div>
         </div>
-        <div className="">
-          <div className=" flex-col flex-wrap gap-4 sticky top-64 h-96 overflow-y-auto pr-2">
+        <div className="h-96">
+          <div className=" flex-col flex-wrap gap-4 sticky top-64 h-full overflow-y-auto pr-2">
             {filteredSelectedCards.some((card) => card.Type === "Hero") ? (
               <div className="border-gray-400 border-b px-2 font-bold my-1">
                 <h3 className="text-gray-300">Hero</h3>
