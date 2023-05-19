@@ -227,7 +227,7 @@ const DeckBuilder = () => {
   };
   return (
     <div className="h-screen">
-      <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 border-b-2 ">
+      <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 shadow-lg shadow-gray-300">
         <div className="col-span-2 ">
           <div className="flex justify-center p-2">
             <h3 className="font-bold">Filter Options</h3>
@@ -340,7 +340,7 @@ const DeckBuilder = () => {
           </div>
           <div></div>
         </div>
-        <div className="col-span-1 p-2 overflow-hidden border-l border-r  ">
+        <div className="col-span-1 p-2 overflow-hidden  bg-gray-900">
           {hoveredCard && (
             <div className="flex-col w-full items-center text-xs/[0.9]">
               <div className="w-full flex justify-center">

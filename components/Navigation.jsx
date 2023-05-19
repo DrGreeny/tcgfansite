@@ -12,7 +12,7 @@ const links = [
 
 const Navigation = () => {
   return (
-    <nav className="bg-black py-1">
+    <nav className="bg-black py-1 h-8">
       <ul className="flex justify-center">
         {links.map((link) => (
           <li key={link.href} className="mx-4 text-gray-500">
