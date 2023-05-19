@@ -226,7 +226,7 @@ const DeckBuilder = () => {
     setWordCostRange(values);
   };
   return (
-    <div className="">
+    <div className="h-screen">
       <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 border-b-2 ">
         <div className="col-span-2 ">
           <div className="flex justify-center p-2">
@@ -418,7 +418,7 @@ const DeckBuilder = () => {
           <h2 className="text-lg font-bold text-white">Your Deck</h2>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-4 ">
+      <div className="grid grid-cols-2 gap-4">
         <div className="h-96">
           <div className="flex flex-wrap gap-4 sticky top-64 h-full overflow-y-auto">
             {filteredCards.map((card) => (
