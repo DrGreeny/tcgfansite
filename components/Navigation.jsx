@@ -5,14 +5,14 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/deckbuilder", label: "Deckbuilder" },
   { href: "/tournaments", label: "Tournaments" },
-  /*   { href: "/news", label: "News" },
-  { href: "/community", label: "Community" },
+  { href: "/faq", label: "FAQ" },
+  /*{ href: "/community", label: "Community" },
   { href: "/resources", label: "Resources" }, */
 ];
 
 const Navigation = () => {
   return (
-    <nav className="bg-black py-4">
+    <nav className="bg-black py-1">
       <ul className="flex justify-center">
         {links.map((link) => (
           <li key={link.href} className="mx-4 text-gray-500">

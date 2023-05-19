@@ -227,25 +227,14 @@ const DeckBuilder = () => {
   };
   return (
     <div className="">
-      <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-64 border-b-2 border-orange-600 border-t-2">
+      <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-56 border-b-2 ">
         <div className="col-span-2 ">
           <div className="flex justify-center p-2">
             <h3 className="font-bold">Filter Options</h3>
           </div>
 
-          <div className="bg-black text-white flex gap-3 p-2  top-0">
-            <div className="flex-col h-full justify-between">
-              <label className="flex items-center">
-                Filter Deck cards
-                <input
-                  type="checkbox"
-                  className="ml-2"
-                  checked={filterSelectedCards}
-                  onChange={(e) => setFilterSelectedCards(e.target.checked)}
-                />
-              </label>
-            </div>
-            <div className="flex gap-6">
+          <div className="bg-black text-white p-2">
+            <div className="flex justify-between">
               <div className="">
                 <label className="block">Filter by Realm:</label>
                 <select
@@ -302,37 +291,56 @@ const DeckBuilder = () => {
                   />
                   Curse
                 </label>
+                <label className="block">
+                  <input
+                    type="checkbox"
+                    name="realm"
+                    checked={selectedTypes.includes("realm")}
+                    onChange={handleTypeSelect}
+                  />
+                  Realm
+                </label>
+              </div>
+              <div className=" flex-col">
+                <div>
+                  <p>
+                    Word Cost Range: {wordCostRange[0]} - {wordCostRange[1]}
+                  </p>
+                  {/* Add the range slider component */}
+                  <Range
+                    range
+                    min={0}
+                    max={10}
+                    value={wordCostRange}
+                    onChange={handleSliderChange}
+                  />
+                </div>
+                <div className="flex mt-2">
+                  <input
+                    type="text"
+                    placeholder="Search cards..."
+                    className="p-2 rounded text-black h-6"
+                    value={searchQuery}
+                    onChange={handleSearch}
+                  />
+                </div>
+                <div className="flex-col h-full justify-between mt-2">
+                  <label className="flex items-center">
+                    Filter Deck cards
+                    <input
+                      type="checkbox"
+                      className="ml-2"
+                      checked={filterSelectedCards}
+                      onChange={(e) => setFilterSelectedCards(e.target.checked)}
+                    />
+                  </label>
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <div className="p-1">
-              <div>
-                <p>
-                  Word Cost Range: {wordCostRange[0]} - {wordCostRange[1]}
-                </p>
-                {/* Add the range slider component */}
-                <Range
-                  range
-                  min={0}
-                  max={10}
-                  value={wordCostRange}
-                  onChange={handleSliderChange}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-center">
-            <input
-              type="text"
-              placeholder="Search cards..."
-              className="p-2 rounded text-black"
-              value={searchQuery}
-              onChange={handleSearch}
-            />
-          </div>
+          <div></div>
         </div>
-        <div className="col-span-1 p-2 overflow-hidden border-l border-r border-orange-500 ">
+        <div className="col-span-1 p-2 overflow-hidden border-l border-r  ">
           {hoveredCard && (
             <div className="flex-col w-full items-center text-xs/[0.9]">
               <div className="w-full flex justify-center">
@@ -340,13 +348,13 @@ const DeckBuilder = () => {
                 <div className="">{hoveredCard.WordCost}</div>
               </div>
               <div className="flex-col items-center">
-                <div className="flex justify-center w-full h-32 ">
+                <div className="flex justify-center w-full h-24 ">
                   <Image
                     className="aboslute object-cover"
                     src={`/Speak_Cards/${hoveredCard.id}.jpg`}
                     alt={hoveredCard.name}
-                    width={150}
-                    height={150}
+                    width={100}
+                    height={100}
                   />
                 </div>
                 <div className="flex justify-between">
@@ -367,46 +375,37 @@ const DeckBuilder = () => {
             <h3 className="">Data and Statistics</h3>
           </div>
 
-          <div className="flex gap-4">
-            <div className="grid grid-cols-2 gap-x-2">
-              <p>Overall Card Count: </p>
-              <p className="">{selectedCards.length}</p>
-              <p className="">Heros: </p>
-              <p>{countByType("hero")}</p>
-              <p>Creatures: </p>
-              <p>{countByType("creature")}</p>
-              <p>Curses: </p>
-              <p>{countByType("curse")}</p>
-              <p>Spells: </p>
-              <p>{countByType("spell")}</p>
+          <div className="flex gap-1 justify-between text-xs">
+            <div className="">
+              {/*grid grid-cols-2 gap-x-2 */}
+              <p>
+                Overall Card Count:{" "}
+                {selectedCards.reduce((count, card) => count + card.count, 0)}
+              </p>
+              <p className="">Heros:{countByType("hero")}</p>
+              <p>Creatures:{countByType("creature")}</p>
+              <p>Curses:{countByType("curse")}</p>
+              <p>Spells: {countByType("spell")}</p>
+              <p>Realms: {countByType("realm")}</p>
             </div>
 
-            <div className="grid grid-cols-2 gap-x-2">
-              <p className="-ml-24">Creature WordCost: </p>
-              <p>{creatureWordCost}</p>
-              <p className="-ml-24">Spell WordCost: </p>
-              <p>{spellWordCost}</p>
-              <p className="-ml-24">Curse WordCost: </p>
-              <p>{curseWordCost}</p>
-              <p className="-ml-24">Total WordCost: </p>
-              <p>{totalWordCost}</p>
+            <div className="">
+              {/*grid grid-cols-2 gap-x-2*/}
+              <p className="">Creature WordCost: {creatureWordCost}</p>
+              <p className="">Spell WordCost: {spellWordCost}</p>
+              <p className="">Curse WordCost:{curseWordCost}</p>
+              <p className="">Total WordCost: {totalWordCost}</p>
             </div>
-            <div className="text-white grid grid-cols-2 gap-x-2">
-              <p>Equip Spells: </p>
-              <p>{equipSpellsCount}</p>
-              <p>Equip Curses: </p>
-              <p>{equipCursesCount}</p>
-              <p>Single Spells: </p>
-              <p>{singleSpellsCount}</p>
-              <p>Single Curses: </p>
-              <p>{singleCursesCount}</p>
-              <p>Continuous Spells: </p>
-              <p>{continuousSpellsCount}</p>
-              <p>Continuous Curses: </p>
-              <p>{continuousCursesCount}</p>
+            <div className="text-white ">
+              <p>Equip Spells: {equipSpellsCount}</p>
+              <p>Equip Curses: {equipCursesCount}</p>
+              <p>Single Spells: {singleSpellsCount}</p>
+              <p>Single Curses: {singleCursesCount}</p>
+              <p>Continuous Spells:{continuousSpellsCount}</p>
+              <p>Continuous Curses:{continuousCursesCount}</p>
             </div>
           </div>
-          <div className=" ">
+          <div className="flex justify-center mt-4">
             <SaveDeck selectedCards={selectedCards} />
           </div>
         </div>
@@ -466,7 +465,7 @@ const DeckBuilder = () => {
                 .map((card) => (
                   <div
                     key={card.name}
-                    className="p-2  rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
+                    className="relative p-1 rounded mb-2 flex-col overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
                       backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
@@ -485,23 +484,28 @@ const DeckBuilder = () => {
                       )}
                     </div>
 
-                    <p className="w-full text-xs font-bold">
-                      {card.name} ({card.count})
-                    </p>
+                    <p className="w-full text-xs font-bold">{card.name}</p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
                     <p className="w-full text-[0.60rem]">{card.Description}</p>
-                    <button
-                      className="bg-blue-500 text-white px-2 py-1 rounded"
-                      onClick={() => handleCardClick(card)}
-                    >
-                      Add
-                    </button>
-                    <button
-                      className="bg-red-500 text-white px-2 py-1 rounded"
-                      onClick={() => handleRemoveCard(card)}
-                    >
-                      Remove
-                    </button>
+                    <div className="absolute flex bottom-0 justify-between w-full">
+                      <div className="-translate-x-1">
+                        <button
+                          className="bg-gray-400 text-white font-bold h-7 w-7 opacity-80"
+                          onClick={() => handleCardClick(card)}
+                        >
+                          +
+                        </button>
+                        <button
+                          className="bg-gray-600  text-white font-bold h-7 w-7 opacity-80"
+                          onClick={() => handleRemoveCard(card)}
+                        >
+                          -
+                        </button>
+                      </div>
+                      <div className="bg-gray-600  text-red-600 font-bold h-7 w-7  text-center">
+                        {card.count}
+                      </div>
+                    </div>
                   </div>
                 ))}
             </div>
@@ -517,7 +521,7 @@ const DeckBuilder = () => {
                 .map((card) => (
                   <div
                     key={card.name}
-                    className="p-2  rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
+                    className="relative p-1  rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
                       backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
@@ -541,18 +545,25 @@ const DeckBuilder = () => {
                     </p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
                     <p className="w-full text-[0.60rem]">{card.Description}</p>
-                    <button
-                      className="bg-blue-500 text-white px-2 py-1 rounded"
-                      onClick={() => handleCardClick(card)}
-                    >
-                      Add
-                    </button>
-                    <button
-                      className="bg-red-500 text-white px-2 py-1 rounded"
-                      onClick={() => handleRemoveCard(card)}
-                    >
-                      Remove
-                    </button>
+                    <div className="absolute flex bottom-0 justify-between w-full">
+                      <div className="-translate-x-1">
+                        <button
+                          className="bg-gray-400 text-white font-bold h-7 w-7 opacity-80"
+                          onClick={() => handleCardClick(card)}
+                        >
+                          +
+                        </button>
+                        <button
+                          className="bg-gray-600  text-white font-bold h-7 w-7 opacity-80"
+                          onClick={() => handleRemoveCard(card)}
+                        >
+                          -
+                        </button>
+                      </div>
+                      <div className="bg-gray-600  text-red-500 font-bold h-7 w-7 text-center">
+                        {card.count}
+                      </div>
+                    </div>
                   </div>
                 ))}
             </div>
@@ -567,7 +578,7 @@ const DeckBuilder = () => {
                 .map((card) => (
                   <div
                     key={card.name}
-                    className="p-2  rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
+                    className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
                       backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
@@ -591,18 +602,25 @@ const DeckBuilder = () => {
                     </p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
                     <p className="w-full text-[0.60rem]">{card.Description}</p>
-                    <button
-                      className="bg-blue-500 text-white px-2 py-1 rounded"
-                      onClick={() => handleCardClick(card)}
-                    >
-                      Add
-                    </button>
-                    <button
-                      className="bg-red-500 text-white px-2 py-1 rounded"
-                      onClick={() => handleRemoveCard(card)}
-                    >
-                      Remove
-                    </button>
+                    <div className="absolute flex bottom-0 justify-between w-full">
+                      <div className="-translate-x-1">
+                        <button
+                          className="bg-gray-400 text-white font-bold h-7 w-7 opacity-80"
+                          onClick={() => handleCardClick(card)}
+                        >
+                          +
+                        </button>
+                        <button
+                          className="bg-gray-600  text-white font-bold h-7 w-7 opacity-80"
+                          onClick={() => handleRemoveCard(card)}
+                        >
+                          -
+                        </button>
+                      </div>
+                      <div className="bg-gray-600  text-red-500 font-bold h-7 w-7 text-center">
+                        {card.count}
+                      </div>
+                    </div>
                   </div>
                 ))}
             </div>
@@ -617,7 +635,7 @@ const DeckBuilder = () => {
                 .map((card) => (
                   <div
                     key={card.name}
-                    className="p-2  rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
+                    className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
                       backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
@@ -641,18 +659,82 @@ const DeckBuilder = () => {
                     </p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
                     <p className="w-full text-[0.60rem]">{card.Description}</p>
-                    <button
-                      className="bg-blue-500 text-white px-2 py-1 rounded"
-                      onClick={() => handleCardClick(card)}
-                    >
-                      Add
-                    </button>
-                    <button
-                      className="bg-red-500 text-white px-2 py-1 rounded"
-                      onClick={() => handleRemoveCard(card)}
-                    >
-                      Remove
-                    </button>
+                    <div className="absolute flex bottom-0 justify-between w-full">
+                      <div className="-translate-x-1">
+                        <button
+                          className="bg-gray-400 text-white font-bold h-7 w-7 opacity-80"
+                          onClick={() => handleCardClick(card)}
+                        >
+                          +
+                        </button>
+                        <button
+                          className="bg-gray-600  text-white font-bold h-7 w-7 opacity-80"
+                          onClick={() => handleRemoveCard(card)}
+                        >
+                          -
+                        </button>
+                      </div>
+                      <div className="bg-gray-600  text-red-500 font-bold h-7 w-7 text-center">
+                        {card.count}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </div>
+            {filteredSelectedCards.some((card) => card.Type === "Realm") ? (
+              <div className="border-gray-400 border-b px-2 font-bold my-1">
+                <h3 className="text-gray-300">Realms</h3>
+              </div>
+            ) : null}
+            <div className="flex gap-2 flex-wrap">
+              {filteredSelectedCards
+                .filter((card) => card.Type === "Realm")
+                .map((card) => (
+                  <div
+                    key={card.name}
+                    className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
+                    onMouseEnter={() => handleCardHover(card)}
+                    style={{
+                      backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  >
+                    <div className="flex justify-between w-full">
+                      <p className=" text-xs font-bold ">{card.WordCost}</p>
+                      {card.DP && card.HP ? (
+                        <p className=" text-xs font-bold ">
+                          {card.DP} / {card.HP}
+                        </p>
+                      ) : (
+                        <></>
+                      )}
+                    </div>
+
+                    <p className="w-full text-xs font-bold">
+                      {card.name} ({card.count})
+                    </p>
+                    <p className="w-full text-[0.60rem] italic">{card.Type}</p>
+                    <p className="w-full text-[0.60rem]">{card.Description}</p>
+                    <div className="absolute flex bottom-0 justify-between w-full">
+                      <div className="-translate-x-1">
+                        <button
+                          className="bg-gray-400 text-white font-bold h-7 w-7 opacity-80"
+                          onClick={() => handleCardClick(card)}
+                        >
+                          +
+                        </button>
+                        <button
+                          className="bg-gray-600  text-white font-bold h-7 w-7 opacity-80"
+                          onClick={() => handleRemoveCard(card)}
+                        >
+                          -
+                        </button>
+                      </div>
+                      <div className="bg-gray-600  text-red-500 font-bold h-7 w-7 text-center">
+                        {card.count}
+                      </div>
+                    </div>
                   </div>
                 ))}
             </div>
