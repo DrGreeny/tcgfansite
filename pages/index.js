@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>Test</div>
+      <div className="text-white h-screen">Coming soon...</div>
     </div>
   );
 }

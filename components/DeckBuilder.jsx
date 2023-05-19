@@ -226,9 +226,13 @@ const DeckBuilder = () => {
     setWordCostRange(values);
   };
   return (
-    <div className="pb-4">
+    <div className="">
       <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-64 border-b-2 border-orange-600 border-t-2">
-        <div className="col-span-2  ">
+        <div className="col-span-2 ">
+          <div className="flex justify-center p-2">
+            <h3 className="font-bold">Filter Options</h3>
+          </div>
+
           <div className="bg-black text-white flex gap-3 p-2  top-0">
             <div className="flex-col h-full justify-between">
               <label className="flex items-center">
@@ -302,7 +306,7 @@ const DeckBuilder = () => {
             </div>
           </div>
           <div>
-            <div className="p-2">
+            <div className="p-1">
               <div>
                 <p>
                   Word Cost Range: {wordCostRange[0]} - {wordCostRange[1]}
@@ -322,13 +326,13 @@ const DeckBuilder = () => {
             <input
               type="text"
               placeholder="Search cards..."
-              className="p-2 mt-6 rounded text-black"
+              className="p-2 rounded text-black"
               value={searchQuery}
               onChange={handleSearch}
             />
           </div>
         </div>
-        <div className="col-span-1 p-2 overflow-hidden border-l border-r border-orange-500">
+        <div className="col-span-1 p-2 overflow-hidden border-l border-r border-orange-500 ">
           {hoveredCard && (
             <div className="flex-col w-full items-center text-xs/[0.9]">
               <div className="w-full flex justify-center">
@@ -358,7 +362,7 @@ const DeckBuilder = () => {
             </div>
           )}
         </div>
-        <div className="col-span-2 p-2 flex-col ">
+        <div className="col-span-2 p-2 flex-col bg-black">
           <div className="flex justify-center mb-4 font-bold">
             <h3 className="">Data and Statistics</h3>
           </div>
@@ -407,14 +411,17 @@ const DeckBuilder = () => {
           </div>
         </div>
       </div>
-
+      <div className="flex justify-around">
+        <div className="flex justify-center mb-3">
+          <h2 className="text-lg font-bold text-white">All Cards</h2>
+        </div>
+        <div className="flex justify-center mb-3">
+          <h2 className="text-lg font-bold text-white">Your Deck</h2>
+        </div>
+      </div>
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <div className="flex justify-center mb-3">
-            <h2 className="text-lg font-bold text-white">All Cards</h2>
-          </div>
-
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 sticky top-64 h-96 overflow-y-auto">
             {filteredCards.map((card) => (
               <div
                 key={card.name}
@@ -445,13 +452,14 @@ const DeckBuilder = () => {
             ))}
           </div>
         </div>
-        <div>
-          <div className="flex justify-center mb-3">
-            <h2 className="text-lg font-bold text-white">Your Deck</h2>
-          </div>
+        <div className="">
+          <div className=" flex-col flex-wrap gap-4 sticky top-64 h-96 overflow-y-auto pr-2">
+            {filteredSelectedCards.some((card) => card.Type === "Hero") ? (
+              <div className="bg-gray-300 px-2 font-bold my-1">
+                <h3 className="">Hero</h3>
+              </div>
+            ) : null}
 
-          <div className="flex flex-col flex-wrap gap-4">
-            <h3 className="text-white">Hero</h3>
             <div className="flex gap-2 flex-wrap">
               {filteredSelectedCards
                 .filter((card) => card.Type === "Hero")
@@ -497,7 +505,12 @@ const DeckBuilder = () => {
                   </div>
                 ))}
             </div>
-            <h3 className="text-white">Creature</h3>
+
+            {filteredSelectedCards.some((card) => card.Type === "Creature") ? (
+              <div className="bg-gray-300 px-2 font-bold my-1">
+                <h3 className="">Creatures</h3>
+              </div>
+            ) : null}
             <div className="flex gap-2 flex-wrap">
               {filteredSelectedCards
                 .filter((card) => card.Type === "Creature")
@@ -543,7 +556,11 @@ const DeckBuilder = () => {
                   </div>
                 ))}
             </div>
-            <h3 className="text-white">Spell</h3>
+            {filteredSelectedCards.some((card) => card.Type === "Spell") ? (
+              <div className="bg-gray-300 px-2 font-bold my-1">
+                <h3 className="">Spells</h3>
+              </div>
+            ) : null}
             <div className="flex gap-2 flex-wrap">
               {filteredSelectedCards
                 .filter((card) => card.Type === "Spell")
@@ -589,7 +606,11 @@ const DeckBuilder = () => {
                   </div>
                 ))}
             </div>
-            <h3 className="text-white">Curse</h3>
+            {filteredSelectedCards.some((card) => card.Type === "Curse") ? (
+              <div className="bg-gray-300 px-2 font-bold my-1">
+                <h3 className="">Curses</h3>
+              </div>
+            ) : null}
             <div className="flex gap-2 flex-wrap">
               {filteredSelectedCards
                 .filter((card) => card.Type === "Curse")
