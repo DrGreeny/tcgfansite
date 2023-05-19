@@ -455,8 +455,8 @@ const DeckBuilder = () => {
         <div className="">
           <div className=" flex-col flex-wrap gap-4 sticky top-64 h-96 overflow-y-auto pr-2">
             {filteredSelectedCards.some((card) => card.Type === "Hero") ? (
-              <div className="bg-gray-300 px-2 font-bold my-1">
-                <h3 className="">Hero</h3>
+              <div className="border-gray-400 border-b px-2 font-bold my-1">
+                <h3 className="text-gray-300">Hero</h3>
               </div>
             ) : null}
 
@@ -507,8 +507,8 @@ const DeckBuilder = () => {
             </div>
 
             {filteredSelectedCards.some((card) => card.Type === "Creature") ? (
-              <div className="bg-gray-300 px-2 font-bold my-1">
-                <h3 className="">Creatures</h3>
+              <div className="border-gray-400 border-b px-2 font-bold my-1">
+                <h3 className="text-gray-300">Creatures</h3>
               </div>
             ) : null}
             <div className="flex gap-2 flex-wrap">
@@ -557,8 +557,8 @@ const DeckBuilder = () => {
                 ))}
             </div>
             {filteredSelectedCards.some((card) => card.Type === "Spell") ? (
-              <div className="bg-gray-300 px-2 font-bold my-1">
-                <h3 className="">Spells</h3>
+              <div className="border-gray-400 border-b px-2 font-bold my-1">
+                <h3 className="text-gray-300">Spells</h3>
               </div>
             ) : null}
             <div className="flex gap-2 flex-wrap">
@@ -607,8 +607,8 @@ const DeckBuilder = () => {
                 ))}
             </div>
             {filteredSelectedCards.some((card) => card.Type === "Curse") ? (
-              <div className="bg-gray-300 px-2 font-bold my-1">
-                <h3 className="">Curses</h3>
+              <div className="border-gray-400 border-b px-2 font-bold my-1">
+                <h3 className="text-gray-300">Curses</h3>
               </div>
             ) : null}
             <div className="flex gap-2 flex-wrap">
