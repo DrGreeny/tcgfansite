@@ -419,7 +419,7 @@ const DeckBuilder = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 gap-4">
-        <div className="h-96">
+        <div className="h-[600px]">
           <div className="flex flex-wrap gap-4 sticky top-64 h-full overflow-y-auto">
             {filteredCards.map((card) => (
               <div
@@ -451,7 +451,7 @@ const DeckBuilder = () => {
             ))}
           </div>
         </div>
-        <div className="h-96">
+        <div className="h-[600px]">
           <div className=" flex-col flex-wrap gap-4 sticky top-64 h-full overflow-y-auto pr-2">
             {filteredSelectedCards.some((card) => card.Type === "Hero") ? (
               <div className="border-gray-400 border-b px-2 font-bold my-1">
