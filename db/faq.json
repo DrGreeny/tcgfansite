@@ -1,0 +1,18 @@
+[
+  {
+    "summary": "Queen chained by creature destruction",
+    "question": "I play Queen and announce a swap. My opponent announces that he plays Deep mirror to destroy my creature that I wanted to swap. What happens? \n 1: the creature on my side gets destroyed and swap fails because there is no more creature to swap. I lose 5 words for the attempted swap. \n 2: swap will be fulfilled and creature that was destroyed gets destroyed on opponents side.",
+    "answer": "so deep mirror was activated last, so it executes first. it destroys their creature, then hero eff executes, which tries to move it to opponents field. since the conditions are not able to be filled anymore, the effect would be cancelled (NOT negated). the same way you cant speak for example unwanted visitors unless you have 2 creatures in your silence\nso it would be as if the player did not use her ability and did not lose the word cost\nofc, these are all novel situations and id love to hear your thought process as well before we finalize any advanced rule sets\nthis, to me however, seems the most logical",
+    "tags": ["super", "dumme", "Frage"],
+    "date": "2023-05-01",
+    "author": "GreenyT"
+  },
+  {
+    "summary": "Hero not advanced, when attacking",
+    "question": "Warum verliere ich dauernd ?",
+    "answer": "Du musst mehr üben",
+    "tags": ["super", "mega", "Antwort"],
+    "date": "2023-05-02",
+    "author": "arti"
+  }
+]
