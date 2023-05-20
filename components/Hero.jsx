@@ -51,13 +51,15 @@ export default function Hero() {
         </div>
       </div>
       <div className="relative w-1/2 h-screen flex justify-center">
-        <div className="absolute top-1/2 -translate-y-[258px]">
-          <Image
-            src="/Speak_Cards/104-removebg.png"
-            alt="Abomination"
-            width={500}
-            height={500}
-          />
+        <div className="absolute top-1/2 -translate-y-[258px] animate-pulse-slow ">
+          <div className="animate-spin-slow">
+            <Image
+              src="/Speak_Cards/104-removebg.png"
+              alt="Abomination"
+              width={500}
+              height={500}
+            />
+          </div>
         </div>
       </div>
     </div>

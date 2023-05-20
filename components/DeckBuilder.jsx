@@ -340,7 +340,7 @@ const DeckBuilder = () => {
           </div>
           <div></div>
         </div>
-        <div className="col-span-1 p-2 overflow-hidden  bg-gradient-to-r from-gray-600 to-blue-500 hover:from-blue-500 hover:to-gray-500 mb-1 rounded-lg">
+        <div className="col-span-1 p-2 overflow-hidden  bg-gradient-to-r from-[#081C34] via-[#BC4618] to-[#E6C463]  mb-1 rounded-lg">
           {hoveredCard && (
             <div className="flex-col w-full items-center text-xs/[0.9]">
               <div className="w-full flex justify-center">

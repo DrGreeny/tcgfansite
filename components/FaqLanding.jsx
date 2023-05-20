@@ -14,12 +14,18 @@ export default function FaqLanding() {
             the next level. Speak is a classic TCG using new approaches and
             technologies to bring gamer experience to the next level.
           </p>
-          <div className="mt-4">
+          <div className="flex gap-x-4 mt-4">
             <Link
               href="/faq/gameRulesFaq"
               className="px-4 py-1 border border-orange-400 rounded-xl"
             >
               Go to FAQ
+            </Link>
+            <Link
+              href="/faq/cardExplanations"
+              className="px-4 py-1 border border-orange-400 rounded-xl"
+            >
+              Go to Card explanations
             </Link>
           </div>
         </div>
