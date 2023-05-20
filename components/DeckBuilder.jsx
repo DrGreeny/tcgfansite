@@ -227,14 +227,14 @@ const DeckBuilder = () => {
   };
   return (
     <div className="h-screen">
-      <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 shadow-lg shadow-gray-300">
+      <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 shadow-lg shadow-gray-300 z-10">
         <div className="col-span-2 ">
           <div className="flex justify-center p-2">
             <h3 className="font-bold">Filter Options</h3>
           </div>
 
           <div className="bg-black text-white p-2">
-            <div className="flex justify-between">
+            <div className="flex justify-around">
               <div className="">
                 <label className="block">Filter by Realm:</label>
                 <select
@@ -340,12 +340,12 @@ const DeckBuilder = () => {
           </div>
           <div></div>
         </div>
-        <div className="col-span-1 p-2 overflow-hidden  bg-gray-900">
+        <div className="col-span-1 p-2 overflow-hidden  bg-gradient-to-r from-gray-600 to-blue-500 hover:from-blue-500 hover:to-gray-500 mb-1 rounded-lg">
           {hoveredCard && (
             <div className="flex-col w-full items-center text-xs/[0.9]">
               <div className="w-full flex justify-center">
-                <div className="mb-1 mx-auto">{hoveredCard.name}</div>
-                <div className="">{hoveredCard.WordCost}</div>
+                <div className="mb-1 mx-auto text-lg">{hoveredCard.name}</div>
+                <div className="text-lg">{hoveredCard.WordCost}</div>
               </div>
               <div className="flex-col items-center">
                 <div className="flex justify-center w-full h-24 ">
@@ -358,9 +358,9 @@ const DeckBuilder = () => {
                   />
                 </div>
                 <div className="flex justify-between">
-                  <div className="italic">{hoveredCard.Type}</div>
-                  <div className="italic my-1">
-                    {hoveredCard.DP}/{hoveredCard.HP}
+                  <div className="italic ">{hoveredCard.Type}</div>
+                  <div className="italic my-1 ">
+                    DP {hoveredCard.DP} / HP {hoveredCard.HP}
                   </div>
                 </div>
                 <div className="">
@@ -375,7 +375,7 @@ const DeckBuilder = () => {
             <h3 className="">Data and Statistics</h3>
           </div>
 
-          <div className="flex gap-1 justify-between text-xs">
+          <div className="flex gap-1 justify-around text-xs">
             <div className="">
               {/*grid grid-cols-2 gap-x-2 */}
               <p>
@@ -446,7 +446,7 @@ const DeckBuilder = () => {
 
                 <p className="w-full text-xs font-bold">{card.name}</p>
                 <p className="w-full text-[0.60rem] italic">{card.Type}</p>
-                <p className="w-full text-[0.60rem]">{card.Description}</p>
+                {/* <p className="w-full text-[0.60rem]">{card.Description}</p> */}
               </div>
             ))}
           </div>
@@ -486,7 +486,7 @@ const DeckBuilder = () => {
 
                     <p className="w-full text-xs font-bold">{card.name}</p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
-                    <p className="w-full text-[0.60rem]">{card.Description}</p>
+                    {/* <p className="w-full text-[0.60rem]">{card.Description}</p> */}
                     <div className="absolute flex bottom-0 justify-between w-full">
                       <div className="-translate-x-1">
                         <button
@@ -544,7 +544,7 @@ const DeckBuilder = () => {
                       {card.name} ({card.count})
                     </p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
-                    <p className="w-full text-[0.60rem]">{card.Description}</p>
+                    {/* <p className="w-full text-[0.60rem]">{card.Description}</p> */}
                     <div className="absolute flex bottom-0 justify-between w-full">
                       <div className="-translate-x-1">
                         <button
@@ -601,7 +601,7 @@ const DeckBuilder = () => {
                       {card.name} ({card.count})
                     </p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
-                    <p className="w-full text-[0.60rem]">{card.Description}</p>
+                    {/*  <p className="w-full text-[0.60rem]">{card.Description}</p> */}
                     <div className="absolute flex bottom-0 justify-between w-full">
                       <div className="-translate-x-1">
                         <button
@@ -658,7 +658,7 @@ const DeckBuilder = () => {
                       {card.name} ({card.count})
                     </p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
-                    <p className="w-full text-[0.60rem]">{card.Description}</p>
+                    {/* <p className="w-full text-[0.60rem]">{card.Description}</p> */}
                     <div className="absolute flex bottom-0 justify-between w-full">
                       <div className="-translate-x-1">
                         <button
