@@ -44,7 +44,7 @@ const Spotlight = () => {
   }, [currentIndex, carouselItems.length]);
 
   return (
-    <div className="text-white ">
+    <div className="text-white h-screen">
       <div className="flex justify-center mb-6">
         <h1 className="text-4xl">Spotlight</h1>
       </div>

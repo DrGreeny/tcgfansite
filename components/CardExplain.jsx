@@ -42,28 +42,33 @@ const CardExplain = () => {
   return (
     <div className="text-white">
       <div className="p-4">
-        <h2 className="text-lg font-bold m-2">Search for your card</h2>
-        <input
-          type="text"
-          placeholder="Search for a card"
-          value={searchQuery}
-          onChange={handleSearchChange}
-          className="w-1/3 text-black px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
-        {searchQuery.length >= 3 && (
-          <div className="mt-2">
-            {filteredCards.map((card) => (
-              <div
-                key={card.id}
-                onClick={() => handleCardSelect(card)}
-                className="cursor-pointer p-2 border border-gray-300 rounded-md hover:bg-gray-100 w-1/3"
-              >
-                {card.name}
+        <div className="flex justify-center ">
+          <div className=" flex-col ">
+            <h2 className="text-lg font-bold m-2">Search for your card</h2>
+            <input
+              type="text"
+              placeholder="Search for a card"
+              value={searchQuery}
+              onChange={handleSearchChange}
+              className=" text-black px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            {searchQuery.length >= 3 && (
+              <div className="mt-2">
+                {filteredCards.map((card) => (
+                  <div
+                    key={card.id}
+                    onClick={() => handleCardSelect(card)}
+                    className="cursor-pointer p-2 border border-gray-300 rounded-md hover:bg-gray-100 w-1/3"
+                  >
+                    {card.name}
+                  </div>
+                ))}
               </div>
-            ))}
+            )}
           </div>
-        )}
-        <div className="flex justify-between gap-4 mt-4">
+        </div>
+
+        <div className="flex justify-center gap-4 mt-4">
           <button
             onClick={toggleShowAllCards}
             className="px-4 py-2 text-white rounded-md bg-gradient-to-r from-orange-500 to-gray-500 hover:from-violet-800 hover:to-gray-800 h-10"
@@ -71,7 +76,7 @@ const CardExplain = () => {
             {showAllCards ? "Hide All Cards" : "Show All Cards"}
           </button>
           {!showAllCards ? null : (
-            <div className="flex-col">
+            <div className="flex gap-4">
               <div>Select Type</div>
               <select
                 onChange={(e) => handleFilterType(e.target.value)}

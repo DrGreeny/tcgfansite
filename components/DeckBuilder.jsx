@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import cards from "../db/cards.json";
 import SaveDeck from "./SaveDeck";
 import Image from "next/image";
@@ -13,6 +13,24 @@ const DeckBuilder = () => {
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [hoveredCard, setHoveredCard] = useState(null); // New state variable for the hovered card
   const [wordCostRange, setWordCostRange] = useState([0, 10]);
+
+  // Function to load selected cards from local storage
+  const loadSelectedCards = () => {
+    const storedCards = localStorage.getItem("selectedCards");
+    if (storedCards) {
+      setSelectedCards(JSON.parse(storedCards));
+    }
+  };
+
+  // Load selected cards from local storage when the component mounts
+  useEffect(() => {
+    loadSelectedCards();
+  }, []);
+
+  // Save selected cards to local storage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("selectedCards", JSON.stringify(selectedCards));
+  }, [selectedCards]);
 
   const handleCardClick = (card) => {
     const existingCard = selectedCards.find((c) => c.name === card.name);
@@ -44,6 +62,42 @@ const DeckBuilder = () => {
       setSelectedCards([...selectedCards, newCard]);
     }
   };
+  function handleImportJson(event) {
+    const file = event.target.files[0];
+
+    // Check file extension
+    if (!file.name.endsWith(".json")) {
+      alert("Invalid file format. Please select a JSON file.");
+      return;
+    }
+
+    // Read file content
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      try {
+        // Parse file content as JSON
+        const jsonData = JSON.parse(e.target.result);
+
+        // Extract the IDs and counts from the JSON data
+        const idCountMap = new Map(
+          jsonData.map((item) => [item.id, item.count])
+        );
+
+        // Create selectedCards based on the IDs and update the count property
+        const updatedSelectedCards = cards
+          .filter((card) => idCountMap.has(card.id))
+          .map((card) => ({
+            ...card,
+            count: idCountMap.get(card.id),
+          }));
+
+        setSelectedCards(updatedSelectedCards);
+      } catch (error) {
+        alert("Invalid JSON format. Please select a valid JSON file.");
+      }
+    };
+    reader.readAsText(file);
+  }
 
   const handleRemoveCard = (card) => {
     const updatedCards = selectedCards
@@ -405,8 +459,29 @@ const DeckBuilder = () => {
               <p>Continuous Curses:{continuousCursesCount}</p>
             </div>
           </div>
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-4 gap-x-4 items-center">
             <SaveDeck selectedCards={selectedCards} />
+            <button
+              className="px-4 py-1 ml-2 bg-red-500 text-white rounded"
+              onClick={() => setSelectedCards([])}
+            >
+              Clear deck
+            </button>
+            <div className="cursor-pointer">
+              <label
+                htmlfor="import-json"
+                class="relative border border-orange-600 px-4 py-1 rounded-md text-white"
+              >
+                <span class="inline-block ">Import json</span>
+                <input
+                  id="import-json"
+                  type="file"
+                  accept=".json"
+                  onChange={handleImportJson}
+                  class="opacity-0 absolute top-0 left-0 w-full h-full "
+                />
+              </label>
+            </div>
           </div>
         </div>
       </div>

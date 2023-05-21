@@ -8,7 +8,8 @@
     "DP": 3,
     "HP": 70,
     "Continuous/ Equip": "",
-    "Description": "This card can attack and block while retreated"
+    "Description": "This card can attack and block while retreated",
+    "explanations": [""]
   },
   {
     "name": "Greater Saber",
@@ -19,7 +20,8 @@
     "DP": 6,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can reduce the DP of a Creature by 2"
+    "Description": "Once per your turn, you can reduce the DP of a Creature by 2",
+    "explanations": [""]
   },
   {
     "name": "Original Ruler",
@@ -30,7 +32,10 @@
     "DP": 5,
     "HP": 45,
     "Continuous/ Equip": "",
-    "Description": "When a Creature you control is destroyed, place 1 counter on this card. You can remove counters to: \n1 counter: Negate an attack\n2 counters: Inflict 1 DP to a Realm\n3 counters: Negate a card Effect\n4 counters: Draw 2 cards"
+    "Description": "When a Creature you control is destroyed, place 1 counter on this card. You can remove counters to: \n1 counter: Negate an attack\n2 counters: Inflict 1 DP to a Realm\n3 counters: Negate a card Effect\n4 counters: Draw 2 cards",
+    "explanations": [
+      "You can use the counters of this card at any time in the game, even during opponent`s turn."
+    ]
   },
   {
     "name": "King of Ornaments",
@@ -41,7 +46,8 @@
     "DP": 3,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "This card gains Abilities based on the number of cards equipped to it:\n1: Increase ist DP by 1\n2: Heal its HP by 1 at the end of your turns\n3: It can attack twice per Battle Phase \n4: It is impervious to Abilities"
+    "Description": "This card gains Abilities based on the number of cards equipped to it:\n1: Increase ist DP by 1\n2: Heal its HP by 1 at the end of your turns\n3: It can attack twice per Battle Phase \n4: It is impervious to Abilities",
+    "explanations": [""]
   },
   {
     "name": "Angeldust Fox",
@@ -52,7 +58,8 @@
     "DP": 5,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "Generate 1 Word during your Word Phases. Once per turn, you can use Words to increase the DP or HP of a card you control by the number of Words used until the end of the turn"
+    "Description": "Generate 1 Word during your Word Phases. Once per turn, you can use Words to increase the DP or HP of a card you control by the number of Words used until the end of the turn",
+    "explanations": [""]
   },
   {
     "name": "Blackhole magician",
@@ -63,7 +70,8 @@
     "DP": 5,
     "HP": 45,
     "Continuous/ Equip": "",
-    "Description": "Creatures that target this card for an attack are flipped face-down after damage calculation"
+    "Description": "Creatures that target this card for an attack are flipped face-down after damage calculation",
+    "explanations": [""]
   },
   {
     "name": "Vapor Shaman",
@@ -74,7 +82,8 @@
     "DP": 7,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "Once per turn, you can redo a card Effect that involved chance"
+    "Description": "Once per turn, you can redo a card Effect that involved chance",
+    "explanations": [""]
   },
   {
     "name": "Basis Warrior",
@@ -85,7 +94,8 @@
     "DP": 5,
     "HP": 55,
     "Continuous/ Equip": "",
-    "Description": "Increase the DP of all creatures you control by 3."
+    "Description": "Increase the DP of all creatures you control by 3.",
+    "explanations": [""]
   },
   {
     "name": "Immortal Flame",
@@ -96,7 +106,8 @@
     "DP": 5,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can excavate the top card of your deck. If it is an Undead-type card, speak it without Words."
+    "Description": "Once per your turn, you can excavate the top card of your deck. If it is an Undead-type card, speak it without Words.",
+    "explanations": [""]
   },
   {
     "name": "World Eater",
@@ -107,7 +118,8 @@
     "DP": 5,
     "HP": 45,
     "Continuous/ Equip": "",
-    "Description": "You can skip your Battle Phase to inflict 1 DP to an opponent´s Realm. This Ability cannot be used during the first turn."
+    "Description": "You can skip your Battle Phase to inflict 1 DP to an opponent´s Realm. This Ability cannot be used during the first turn.",
+    "explanations": [""]
   },
   {
     "name": "Witch of Mind",
@@ -118,7 +130,8 @@
     "DP": 5,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can use 4 Words to take control of 1 of your opponent´s Creatures until the end of the turn."
+    "Description": "Once per your turn, you can use 4 Words to take control of 1 of your opponent´s Creatures until the end of the turn.",
+    "explanations": [""]
   },
   {
     "name": "Cosmic Puppeteer",
@@ -129,7 +142,8 @@
     "DP": 5,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, during your Main Phase, you can target 1 Creature you control: it gains 5 DP and HP. You can only target 1 Creature you control at a time."
+    "Description": "Once per your turn, during your Main Phase, you can target 1 Creature you control: it gains 5 DP and HP. You can only target 1 Creature you control at a time.",
+    "explanations": [""]
   },
   {
     "name": "Guard of the Rabbit Hole",
@@ -140,7 +154,8 @@
     "DP": 4,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "You can use 4 Words to bounce a Creature"
+    "Description": "You can use 4 Words to bounce a Creature",
+    "explanations": [""]
   },
   {
     "name": "Queen of Cosmic Orbits",
@@ -151,7 +166,8 @@
     "DP": 5,
     "HP": 45,
     "Continuous/ Equip": "",
-    "Description": "You can use 5 Words to exchange a Creature you control for a Creature your opponent controls"
+    "Description": "You can use 5 Words to exchange a Creature you control for a Creature your opponent controls",
+    "explanations": [""]
   },
   {
     "name": "Cybernetic Droid",
@@ -162,7 +178,8 @@
     "DP": 5,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can destroy a Digital-type Creature you control to increase this card´s DP by 1"
+    "Description": "Once per your turn, you can destroy a Digital-type Creature you control to increase this card´s DP by 1",
+    "explanations": [""]
   },
   {
     "name": "Master of the Forest Imps",
@@ -173,7 +190,8 @@
     "DP": 5,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can spawn 1 \"Imp\" Creature (Mythic / 1DP / 1HP)"
+    "Description": "Once per your turn, you can spawn 1 \"Imp\" Creature (Mythic / 1DP / 1HP)",
+    "explanations": [""]
   },
   {
     "name": "Split Arrow Archer",
@@ -184,7 +202,8 @@
     "DP": 3,
     "HP": 7,
     "Continuous/ Equip": "",
-    "Description": "This card can attack twice during your Battle Phase"
+    "Description": "This card can attack twice during your Battle Phase",
+    "explanations": [""]
   },
   {
     "name": "Fractal Feathers",
@@ -195,7 +214,8 @@
     "DP": 3,
     "HP": 5,
     "Continuous/ Equip": "",
-    "Description": "Generate 2 Words every time this card attacks"
+    "Description": "Generate 2 Words every time this card attacks",
+    "explanations": [""]
   },
   {
     "name": "Bladesaw Runner",
@@ -206,7 +226,8 @@
     "DP": 1,
     "HP": 7,
     "Continuous/ Equip": "",
-    "Description": "Creatures attacked by this card are destroyed at the end of the turn"
+    "Description": "Creatures attacked by this card are destroyed at the end of the turn",
+    "explanations": [""]
   },
   {
     "name": "Betrayer Moon",
@@ -217,7 +238,8 @@
     "DP": 0,
     "HP": 1,
     "Continuous/ Equip": "",
-    "Description": "This card cannot be destroyed by battle. Cards attacking this card gain Piercing damage during their attack"
+    "Description": "This card cannot be destroyed by battle. Cards attacking this card gain Piercing damage during their attack",
+    "explanations": [""]
   },
   {
     "name": "Null",
@@ -228,7 +250,8 @@
     "DP": 0,
     "HP": 1,
     "Continuous/ Equip": "",
-    "Description": "At the end of the turn that this card is spoken, it is impervious to Effects, cannot be attacked, and cannot defend a Hero. If there are 3 copies of this card on your field, you lose the game"
+    "Description": "At the end of the turn that this card is spoken, it is impervious to Effects, cannot be attacked, and cannot defend a Hero. If there are 3 copies of this card on your field, you lose the game",
+    "explanations": [""]
   },
   {
     "name": "Mochi Roll",
@@ -239,7 +262,8 @@
     "DP": 0,
     "HP": 7,
     "Continuous/ Equip": "",
-    "Description": "Place 2 Counters on this card during each Word Phase (Max 10). When this card is destroyed, generate 1 Word for every Counter on it"
+    "Description": "Place 2 Counters on this card during each Word Phase (Max 10). When this card is destroyed, generate 1 Word for every Counter on it",
+    "explanations": [""]
   },
   {
     "name": "Soul Envoy",
@@ -250,7 +274,8 @@
     "DP": 6,
     "HP": 10,
     "Continuous/ Equip": "",
-    "Description": "While you have more Words than your opponent, this card gains 2 DP, 5 HP, and, once per turn, can negate an attack"
+    "Description": "While you have more Words than your opponent, this card gains 2 DP, 5 HP, and, once per turn, can negate an attack",
+    "explanations": [""]
   },
   {
     "name": "Shrieker",
@@ -261,7 +286,8 @@
     "DP": 5,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, flip all other Creatures on the field facedown. This card gains 1 DP for every facedown Creature on the field"
+    "Description": "When this card is spoken, flip all other Creatures on the field facedown. This card gains 1 DP for every facedown Creature on the field",
+    "explanations": [""]
   },
   {
     "name": "The Bleark Sun´s Ember",
@@ -272,7 +298,8 @@
     "DP": 4,
     "HP": 12,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can reduce the Max HP of this card by 2 to inflict 2 DP to all Creatures your opponent controls"
+    "Description": "Once per your turn, you can reduce the Max HP of this card by 2 to inflict 2 DP to all Creatures your opponent controls",
+    "explanations": [""]
   },
   {
     "name": "FatherAI",
@@ -283,7 +310,8 @@
     "DP": 6,
     "HP": 18,
     "Continuous/ Equip": "",
-    "Description": "While you have more Words than your opponent, you can, once per turn, negate the speaking of a Spell or Curse"
+    "Description": "While you have more Words than your opponent, you can, once per turn, negate the speaking of a Spell or Curse",
+    "explanations": [""]
   },
   {
     "name": "Frontier Knight",
@@ -294,7 +322,8 @@
     "DP": 3,
     "HP": 5,
     "Continuous/ Equip": "",
-    "Description": "If your Hero were to be destroyed while this card is on your field, destroy this card instead"
+    "Description": "If your Hero were to be destroyed while this card is on your field, destroy this card instead",
+    "explanations": [""]
   },
   {
     "name": "Spellsworm Dragon",
@@ -305,7 +334,8 @@
     "DP": 4,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, excavate the top 5 cards of your deck. If any were Spells, you can add those Spells to your hand"
+    "Description": "When this card is spoken, excavate the top 5 cards of your deck. If any were Spells, you can add those Spells to your hand",
+    "explanations": [""]
   },
   {
     "name": "Curseworm Dragon",
@@ -316,7 +346,8 @@
     "DP": 4,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, excavate the top 5 cards of your deck. If any were Curses, you can add those Curses to your hand"
+    "Description": "When this card is spoken, excavate the top 5 cards of your deck. If any were Curses, you can add those Curses to your hand",
+    "explanations": [""]
   },
   {
     "name": "Fusion Dragon",
@@ -327,7 +358,8 @@
     "DP": 8,
     "HP": 12,
     "Continuous/ Equip": "",
-    "Description": "This card can only be spoken by discarding 2 Spells or Curses from your hand. This card is impervious to Enchantments. Once per your turn, you can add 1 Spell or Curse from the Silence to your hand"
+    "Description": "This card can only be spoken by discarding 2 Spells or Curses from your hand. This card is impervious to Enchantments. Once per your turn, you can add 1 Spell or Curse from the Silence to your hand",
+    "explanations": [""]
   },
   {
     "name": "Scarecrow",
@@ -338,7 +370,8 @@
     "DP": 0,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "Your opponent can only target “scarecrow” cards for an attack"
+    "Description": "Your opponent can only target “scarecrow” cards for an attack",
+    "explanations": [""]
   },
   {
     "name": "Mage of the Dying Sun",
@@ -349,7 +382,8 @@
     "DP": 1,
     "HP": 5,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, you can inflict 1 DP to a Realm your opponent controls"
+    "Description": "When this card is spoken, you can inflict 1 DP to a Realm your opponent controls",
+    "explanations": [""]
   },
   {
     "name": "Hypersonic Eagle",
@@ -360,7 +394,8 @@
     "DP": 3,
     "HP": 5,
     "Continuous/ Equip": "",
-    "Description": "This card can attack your opponent's Hero even if it is Retreated behind Creatures"
+    "Description": "This card can attack your opponent's Hero even if it is Retreated behind Creatures",
+    "explanations": [""]
   },
   {
     "name": "The Witch´s Shy Doll",
@@ -371,7 +406,10 @@
     "DP": 1,
     "HP": 1,
     "Continuous/ Equip": "",
-    "Description": "This card cannot be attacked. During their Main Phase, your opponent can use 4 Words to destroy this card"
+    "Description": "This card cannot be attacked. During their Main Phase, your opponent can use 4 Words to destroy this card",
+    "explanations": [
+      "This card can be the last bastion against your enemy. If your hero has retreated and the doll is the only creature on your field, then the opponent cannot launch an attack against you."
+    ]
   },
   {
     "name": "Pure Opal",
@@ -382,7 +420,8 @@
     "DP": 0,
     "HP": 1,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, generate 2 Words. If you control another Angelic-type card, this card gains 3 DP"
+    "Description": "When this card is spoken, generate 2 Words. If you control another Angelic-type card, this card gains 3 DP",
+    "explanations": [""]
   },
   {
     "name": "Blitz Demon",
@@ -393,7 +432,8 @@
     "DP": 3,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "This card gains 3 DP while attacking a Hero"
+    "Description": "This card gains 3 DP while attacking a Hero",
+    "explanations": [""]
   },
   {
     "name": "Ancient Psychonaut",
@@ -404,7 +444,8 @@
     "DP": 9,
     "HP": 12,
     "Continuous/ Equip": "",
-    "Description": "A traveler simply stopping between worlds"
+    "Description": "A traveler simply stopping between worlds",
+    "explanations": [""]
   },
   {
     "name": "Slipway Rogue",
@@ -415,7 +456,8 @@
     "DP": 4,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "If this card is discarded from your hand, speak it without Words. If this card is spoken this way, increase its DP and HP by 4"
+    "Description": "If this card is discarded from your hand, speak it without Words. If this card is spoken this way, increase its DP and HP by 4",
+    "explanations": [""]
   },
   {
     "name": "Swamp Dweller",
@@ -426,7 +468,8 @@
     "DP": 2,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "A group of fungi that learned how to shape themselves into various forms"
+    "Description": "A group of fungi that learned how to shape themselves into various forms",
+    "explanations": [""]
   },
   {
     "name": "A Humming Voice",
@@ -437,7 +480,8 @@
     "DP": 0,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, heal and increase the max HP of all other Creatures and Realms you control by 2"
+    "Description": "When this card is spoken, heal and increase the max HP of all other Creatures and Realms you control by 2",
+    "explanations": [""]
   },
   {
     "name": "Impish Imp",
@@ -448,7 +492,8 @@
     "DP": 2,
     "HP": 5,
     "Continuous/ Equip": "",
-    "Description": "A peculiar creature, if you watch it long enough"
+    "Description": "A peculiar creature, if you watch it long enough",
+    "explanations": [""]
   },
   {
     "name": "Piggy Bank",
@@ -459,7 +504,8 @@
     "DP": 2,
     "HP": 5,
     "Continuous/ Equip": "",
-    "Description": "During each Draw Phase, place 1 counter on this card. When this card is destroyed, draw cards equal to the number of counters on it (max 5)"
+    "Description": "During each Draw Phase, place 1 counter on this card. When this card is destroyed, draw cards equal to the number of counters on it (max 5)",
+    "explanations": [""]
   },
   {
     "name": "Decorated Warrior",
@@ -470,7 +516,8 @@
     "DP": 3,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "Your equip cards require no Words to equip to this card"
+    "Description": "Your equip cards require no Words to equip to this card",
+    "explanations": [""]
   },
   {
     "name": "The Celestial´s Trinket",
@@ -481,7 +528,8 @@
     "DP": 1,
     "HP": 5,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, you can search your deck for a Cosmic-type card and speak it without Words; at the end of the turn, return that card to the deck, unless it was removed from the field"
+    "Description": "When this card is spoken, you can search your deck for a Cosmic-type card and speak it without Words; at the end of the turn, return that card to the deck, unless it was removed from the field",
+    "explanations": [""]
   },
   {
     "name": "Psycho Virus",
@@ -492,7 +540,8 @@
     "DP": 1,
     "HP": 1,
     "Continuous/ Equip": "",
-    "Description": "If this card is destroyed by battle, equip this card to the card that destroyed it: it must attack during its Battle Phase and its target is determined by a coin flip: Heads: Attack allied Creatures (if present) Tails: Attack normally"
+    "Description": "If this card is destroyed by battle, equip this card to the card that destroyed it: it must attack during its Battle Phase and its target is determined by a coin flip: Heads: Attack allied Creatures (if present) Tails: Attack normally",
+    "explanations": [""]
   },
   {
     "name": "v1",
@@ -503,7 +552,8 @@
     "DP": 3,
     "HP": 4,
     "Continuous/ Equip": "",
-    "Description": "If this card is destroyed by an Effect, draw a card"
+    "Description": "If this card is destroyed by an Effect, draw a card",
+    "explanations": [""]
   },
   {
     "name": "v2",
@@ -514,7 +564,8 @@
     "DP": 5,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "If this card is destroyed by an Effect, reduce your opponent’s Words by 2"
+    "Description": "If this card is destroyed by an Effect, reduce your opponent’s Words by 2",
+    "explanations": [""]
   },
   {
     "name": "v3",
@@ -525,7 +576,8 @@
     "DP": 7,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "If this card is destroyed by an Effect, you can speak a Creature from the silence without Words"
+    "Description": "If this card is destroyed by an Effect, you can speak a Creature from the silence without Words",
+    "explanations": [""]
   },
   {
     "name": "vFinal",
@@ -536,7 +588,8 @@
     "DP": 5,
     "HP": 15,
     "Continuous/ Equip": "",
-    "Description": "This card can only be spoken if “v1,” v2,” and “v3” were spoken before it, in any order. This card is impervious to your opponent’s Enchantments, and gains 1 DP for every Digital-type card in the Silence"
+    "Description": "This card can only be spoken if “v1,” v2,” and “v3” were spoken before it, in any order. This card is impervious to your opponent’s Enchantments, and gains 1 DP for every Digital-type card in the Silence",
+    "explanations": [""]
   },
   {
     "name": "Mysic Spellcaster",
@@ -547,7 +600,8 @@
     "DP": 4,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "Once per turn, you can use 2 Words to add a Spell from the Silence to your hand"
+    "Description": "Once per turn, you can use 2 Words to add a Spell from the Silence to your hand",
+    "explanations": [""]
   },
   {
     "name": "Skill Shot Maverick",
@@ -558,7 +612,8 @@
     "DP": 4,
     "HP": 5,
     "Continuous/ Equip": "",
-    "Description": "You can use 3 Words to negate an Ability for the remainder of the turn"
+    "Description": "You can use 3 Words to negate an Ability for the remainder of the turn",
+    "explanations": [""]
   },
   {
     "name": "Abomination",
@@ -569,7 +624,8 @@
     "DP": 15,
     "HP": 25,
     "Continuous/ Equip": "",
-    "Description": "An unknown mercenary who defuncted from his kingdom"
+    "Description": "An unknown mercenary who defuncted from his kingdom",
+    "explanations": [""]
   },
   {
     "name": "Sapphire Knight",
@@ -580,7 +636,8 @@
     "DP": 8,
     "HP": 12,
     "Continuous/ Equip": "",
-    "Description": "An unknown mercenary who defuncted from his kingdom"
+    "Description": "An unknown mercenary who defuncted from his kingdom",
+    "explanations": [""]
   },
   {
     "name": "Emerald Knight",
@@ -591,7 +648,8 @@
     "DP": 9,
     "HP": 13,
     "Continuous/ Equip": "",
-    "Description": "An unknown mercenary who defuncted from his kingdom"
+    "Description": "An unknown mercenary who defuncted from his kingdom",
+    "explanations": [""]
   },
   {
     "name": "Obsidian Knight",
@@ -602,7 +660,8 @@
     "DP": 10,
     "HP": 15,
     "Continuous/ Equip": "",
-    "Description": "An unknown mercenary who defuncted from his kingdom"
+    "Description": "An unknown mercenary who defuncted from his kingdom",
+    "explanations": [""]
   },
   {
     "name": "The All Knight",
@@ -613,7 +672,8 @@
     "DP": 15,
     "HP": 20,
     "Continuous/ Equip": "",
-    "Description": "This card can only be spoken via \"All Knight’s Awakening.” When this card is spoken, you can destroy a Realm. Once per turn, you can negate an Effect and destroy the card"
+    "Description": "This card can only be spoken via \"All Knight’s Awakening.” When this card is spoken, you can destroy a Realm. Once per turn, you can negate an Effect and destroy the card",
+    "explanations": [""]
   },
   {
     "name": "Cyber Lynx",
@@ -624,7 +684,8 @@
     "DP": 5,
     "HP": 3,
     "Continuous/ Equip": "",
-    "Description": "This card cannot be attacked by Creatures with a DP less than 5"
+    "Description": "This card cannot be attacked by Creatures with a DP less than 5",
+    "explanations": [""]
   },
   {
     "name": "Hallow Bear",
@@ -635,7 +696,8 @@
     "DP": 6,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "If this card is destroyed by your opponent, they can generate 3 Words"
+    "Description": "If this card is destroyed by your opponent, they can generate 3 Words",
+    "explanations": [""]
   },
   {
     "name": "Chosen Mind",
@@ -646,7 +708,8 @@
     "DP": 7,
     "HP": 3,
     "Continuous/ Equip": "",
-    "Description": "When this card destroys a Creature, increase its DP by 2 and attack again. At the end of your turn, reset its DP to normal"
+    "Description": "When this card destroys a Creature, increase its DP by 2 and attack again. At the end of your turn, reset its DP to normal",
+    "explanations": [""]
   },
   {
     "name": "Damned Mind",
@@ -657,7 +720,8 @@
     "DP": 3,
     "HP": 7,
     "Continuous/ Equip": "",
-    "Description": "Once per turn, you can use 3 Words to negate the speaking or activation of a Spell or Curse"
+    "Description": "Once per turn, you can use 3 Words to negate the speaking or activation of a Spell or Curse",
+    "explanations": [""]
   },
   {
     "name": "Holo-Knight",
@@ -668,7 +732,8 @@
     "DP": 8,
     "HP": 12,
     "Continuous/ Equip": "",
-    "Description": "If you are in debt, you can speak this card without Words"
+    "Description": "If you are in debt, you can speak this card without Words",
+    "explanations": [""]
   },
   {
     "name": "Cleric of Fire",
@@ -679,7 +744,8 @@
     "DP": 7,
     "HP": 10,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, reduce your opponent's Words by 2"
+    "Description": "When this card is spoken, reduce your opponent's Words by 2",
+    "explanations": [""]
   },
   {
     "name": "Cleric of Water",
@@ -690,7 +756,8 @@
     "DP": 2,
     "HP": 3,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, reset your Words to 0."
+    "Description": "When this card is spoken, reset your Words to 0.",
+    "explanations": [""]
   },
   {
     "name": "Saber Dancer",
@@ -701,7 +768,8 @@
     "DP": 5,
     "HP": 7,
     "Continuous/ Equip": "",
-    "Description": "This card cannot be attacked by Creatures with a DP less than 5"
+    "Description": "This card cannot be attacked by Creatures with a DP less than 5",
+    "explanations": [""]
   },
   {
     "name": "Baby Skull",
@@ -712,7 +780,8 @@
     "DP": 2,
     "HP": 2,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can search your deck for an Undead-type card and send it to the Silence. If there is another Undead-type Creature on your field besides “Baby Skull,” this card cannot be attacked"
+    "Description": "Once per your turn, you can search your deck for an Undead-type card and send it to the Silence. If there is another Undead-type Creature on your field besides “Baby Skull,” this card cannot be attacked",
+    "explanations": [""]
   },
   {
     "name": "Royal Skull",
@@ -723,7 +792,8 @@
     "DP": 6,
     "HP": 10,
     "Continuous/ Equip": "",
-    "Description": "This card gains 1 DP for every Undead-type card in the Silence"
+    "Description": "This card gains 1 DP for every Undead-type card in the Silence",
+    "explanations": [""]
   },
   {
     "name": "Hell´s Dragon",
@@ -734,7 +804,8 @@
     "DP": 7,
     "HP": 13,
     "Continuous/ Equip": "",
-    "Description": "This card inflicts Piercing damage"
+    "Description": "This card inflicts Piercing damage",
+    "explanations": [""]
   },
   {
     "name": "Bloom Dragon",
@@ -745,7 +816,8 @@
     "DP": 4,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, reveal your opponent’s hand: generate 1 Word for every Spell"
+    "Description": "When this card is spoken, reveal your opponent’s hand: generate 1 Word for every Spell",
+    "explanations": [""]
   },
   {
     "name": "Underwolf",
@@ -756,7 +828,8 @@
     "DP": 4,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "If this card is flipped by a Creature's attack, destroy the attacking Creature after damage calculation"
+    "Description": "If this card is flipped by a Creature's attack, destroy the attacking Creature after damage calculation",
+    "explanations": [""]
   },
   {
     "name": "Small Flame",
@@ -767,7 +840,8 @@
     "DP": 4,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can use 1 Word to inflict 2 DP to your opponent’s Hero"
+    "Description": "Once per your turn, you can use 1 Word to inflict 2 DP to your opponent’s Hero",
+    "explanations": [""]
   },
   {
     "name": "Big Flame",
@@ -778,7 +852,8 @@
     "DP": 6,
     "HP": 10,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can use 2 Words to inflict 4 DP to your opponent’s Hero"
+    "Description": "Once per your turn, you can use 2 Words to inflict 4 DP to your opponent’s Hero",
+    "explanations": [""]
   },
   {
     "name": "Steelframe Rhino",
@@ -789,7 +864,8 @@
     "DP": 2,
     "HP": 15,
     "Continuous/ Equip": "",
-    "Description": "A cybernetic Rhino with unknown origins, often found grazing abondoned factories"
+    "Description": "A cybernetic Rhino with unknown origins, often found grazing abondoned factories",
+    "explanations": [""]
   },
   {
     "name": "Nightingale",
@@ -800,7 +876,8 @@
     "DP": 4,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "If this card is destroyed by your opponent, they can generate 3 Words"
+    "Description": "If this card is destroyed by your opponent, they can generate 3 Words",
+    "explanations": [""]
   },
   {
     "name": "Pluff",
@@ -811,7 +888,8 @@
     "DP": 1,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "If a card you control were to be affected by an Effect or Ability, you can redirect it to this card instead"
+    "Description": "If a card you control were to be affected by an Effect or Ability, you can redirect it to this card instead",
+    "explanations": [""]
   },
   {
     "name": "The Pharao´s Gravekeeper",
@@ -822,7 +900,8 @@
     "DP": 2,
     "HP": 3,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, you can: use 3 words to add a Curse from the Silence to your hand, or, use 6 Words to add a Curse from your deck to your hand"
+    "Description": "When this card is spoken, you can: use 3 words to add a Curse from the Silence to your hand, or, use 6 Words to add a Curse from your deck to your hand",
+    "explanations": [""]
   },
   {
     "name": "Photon Paladin",
@@ -833,7 +912,8 @@
     "DP": 5,
     "HP": 10,
     "Continuous/ Equip": "",
-    "Description": "If this card is removed from the field, you can use 4 Words to speak it back onto the field"
+    "Description": "If this card is removed from the field, you can use 4 Words to speak it back onto the field",
+    "explanations": [""]
   },
   {
     "name": "Bookkeeper",
@@ -844,7 +924,8 @@
     "DP": 2,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "While you have more Words than your opponent, this card gains 2 DP. Once per turn, you can reduce the max HP of this card by 1 to generate 1 Word"
+    "Description": "While you have more Words than your opponent, this card gains 2 DP. Once per turn, you can reduce the max HP of this card by 1 to generate 1 Word",
+    "explanations": [""]
   },
   {
     "name": "Bolt Samurai",
@@ -855,7 +936,8 @@
     "DP": 6,
     "HP": 14,
     "Continuous/ Equip": "",
-    "Description": "When this card destroys a Creature, increase its DP by 2 and attack again. At the end of your turn, reset its DP to normal"
+    "Description": "When this card destroys a Creature, increase its DP by 2 and attack again. At the end of your turn, reset its DP to normal",
+    "explanations": [""]
   },
   {
     "name": "Blacksea Predator",
@@ -866,7 +948,8 @@
     "DP": 5,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "Facedown cards attacked by this card cannot be flipped"
+    "Description": "Facedown cards attacked by this card cannot be flipped",
+    "explanations": [""]
   },
   {
     "name": "Ceremonial Dragon",
@@ -877,7 +960,8 @@
     "DP": 2,
     "HP": 9,
     "Continuous/ Equip": "",
-    "Description": "When this card attacks, roll a die: increase this card’s DP by the number rolled. At the end of the turn, reset its DP to normal"
+    "Description": "When this card attacks, roll a die: increase this card’s DP by the number rolled. At the end of the turn, reset its DP to normal",
+    "explanations": [""]
   },
   {
     "name": "Oracle of the Sun Empire",
@@ -888,7 +972,8 @@
     "DP": 7,
     "HP": 10,
     "Continuous/ Equip": "",
-    "Description": "Once per turn, you can use 3 Words to negate the speaking or activation of a Spell or Curse"
+    "Description": "Once per turn, you can use 3 Words to negate the speaking or activation of a Spell or Curse",
+    "explanations": [""]
   },
   {
     "name": "Eclipse Fairy",
@@ -899,7 +984,8 @@
     "DP": 2,
     "HP": 4,
     "Continuous/ Equip": "",
-    "Description": "If this card is destroyed by an Effect, generate 5 Words"
+    "Description": "If this card is destroyed by an Effect, generate 5 Words",
+    "explanations": [""]
   },
   {
     "name": "Octane Sniper",
@@ -910,7 +996,8 @@
     "DP": 8,
     "HP": 12,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can reveal the next 5 cards in your opponent’s deck and send one to the Silence. If this Effect is used, this card cannot attack this turn"
+    "Description": "Once per your turn, you can reveal the next 5 cards in your opponent’s deck and send one to the Silence. If this Effect is used, this card cannot attack this turn",
+    "explanations": [""]
   },
   {
     "name": "Revive.exe",
@@ -921,7 +1008,8 @@
     "DP": 2,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "If a Creature you control is sent to the Silence, you can speak this card from your hand without Words. When this card is destroyed, you can use 3 Words to add it to your hand"
+    "Description": "If a Creature you control is sent to the Silence, you can speak this card from your hand without Words. When this card is destroyed, you can use 3 Words to add it to your hand",
+    "explanations": [""]
   },
   {
     "name": "Soulbound Reaper",
@@ -932,7 +1020,8 @@
     "DP": 4,
     "HP": 5,
     "Continuous/ Equip": "",
-    "Description": "Once per turn, you can inflict 5 DP to your Hero to speak this card from the Silence without Words"
+    "Description": "Once per turn, you can inflict 5 DP to your Hero to speak this card from the Silence without Words",
+    "explanations": [""]
   },
   {
     "name": "Gravebound Digger",
@@ -943,7 +1032,8 @@
     "DP": 5,
     "HP": 10,
     "Continuous/ Equip": "",
-    "Description": "When this card destroys a Creature, you can speak an Undead-type card from the Silence without Words"
+    "Description": "When this card destroys a Creature, you can speak an Undead-type card from the Silence without Words",
+    "explanations": [""]
   },
   {
     "name": "Blessed Fox",
@@ -954,7 +1044,8 @@
     "DP": 4,
     "HP": 10,
     "Continuous/ Equip": "",
-    "Description": "At the end of each Battle Phase, restore this card’s HP"
+    "Description": "At the end of each Battle Phase, restore this card’s HP",
+    "explanations": [""]
   },
   {
     "name": "Samurai Toad",
@@ -965,7 +1056,8 @@
     "DP": 3,
     "HP": 5,
     "Continuous/ Equip": "",
-    "Description": "You can bounce this card at the end of your turn, and if you do, place a Counter on it. This card gains 2 DP and HP for every counter on it"
+    "Description": "You can bounce this card at the end of your turn, and if you do, place a Counter on it. This card gains 2 DP and HP for every counter on it",
+    "explanations": [""]
   },
   {
     "name": "Greater Demon",
@@ -976,7 +1068,8 @@
     "DP": 6,
     "HP": 15,
     "Continuous/ Equip": "",
-    "Description": "Double the DP inflicted to Heroes by your Demonic-type Abilities. This Ability cannot stack with other copies of this card you control. Once per your turn, you can inflict 1 DP to your opponent’s Hero"
+    "Description": "Double the DP inflicted to Heroes by your Demonic-type Abilities. This Ability cannot stack with other copies of this card you control. Once per your turn, you can inflict 1 DP to your opponent’s Hero",
+    "explanations": [""]
   },
   {
     "name": "Decay Wyvern",
@@ -987,7 +1080,8 @@
     "DP": 6,
     "HP": 12,
     "Continuous/ Equip": "",
-    "Description": "When this card destroys a Creature, you can speak it onto your side of the field without Words, Muted"
+    "Description": "When this card destroys a Creature, you can speak it onto your side of the field without Words, Muted",
+    "explanations": [""]
   },
   {
     "name": "Freakshot",
@@ -998,7 +1092,8 @@
     "DP": 2,
     "HP": 10,
     "Continuous/ Equip": "",
-    "Description": "Once per turn, you can block an attack with this card. If you do, flip a coin: Heads: inflict damage to the attacking card instead Tails: calculate damage normally"
+    "Description": "Once per turn, you can block an attack with this card. If you do, flip a coin: Heads: inflict damage to the attacking card instead Tails: calculate damage normally",
+    "explanations": [""]
   },
   {
     "name": "Dilapidated Surgeon",
@@ -1009,7 +1104,8 @@
     "DP": 3,
     "HP": 9,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can target a Creature and roll a die: 1-2: destroy it 3-6: restore its HP"
+    "Description": "Once per your turn, you can target a Creature and roll a die: 1-2: destroy it 3-6: restore its HP",
+    "explanations": [""]
   },
   {
     "name": "Greater Scarecrow",
@@ -1020,7 +1116,8 @@
     "DP": 2,
     "HP": 15,
     "Continuous/ Equip": "",
-    "Description": "Your opponent can only target “scarecrow” cards for an attack"
+    "Description": "Your opponent can only target “scarecrow” cards for an attack",
+    "explanations": [""]
   },
   {
     "name": "The Dragon´s Trinket",
@@ -1031,7 +1128,8 @@
     "DP": 1,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, you can search your deck for a Dragon-type card and speak it without Words; at the end of the turn, return that card to the deck, unless it was removed from the field"
+    "Description": "When this card is spoken, you can search your deck for a Dragon-type card and speak it without Words; at the end of the turn, return that card to the deck, unless it was removed from the field",
+    "explanations": [""]
   },
   {
     "name": "Cosmic Seer",
@@ -1042,7 +1140,8 @@
     "DP": 5,
     "HP": 12,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can view the top 3 cards of your deck. Then, arrange them in any order and return them to the top of your deck"
+    "Description": "Once per your turn, you can view the top 3 cards of your deck. Then, arrange them in any order and return them to the top of your deck",
+    "explanations": [""]
   },
   {
     "name": "Dead Dust",
@@ -1053,7 +1152,8 @@
     "DP": 10,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "When this card destroys a Creature, return it to its owner’s hand"
+    "Description": "When this card destroys a Creature, return it to its owner’s hand",
+    "explanations": [""]
   },
   {
     "name": "Wicked Dust",
@@ -1064,7 +1164,8 @@
     "DP": 4,
     "HP": 10,
     "Continuous/ Equip": "",
-    "Description": "When this card destroys a Creature, inflict DP to your opponent’s Hero equal to the DP of the destroyed Creature"
+    "Description": "When this card destroys a Creature, inflict DP to your opponent’s Hero equal to the DP of the destroyed Creature",
+    "explanations": [""]
   },
   {
     "name": "Hallowed Dust",
@@ -1075,7 +1176,8 @@
     "DP": 6,
     "HP": 12,
     "Continuous/ Equip": "",
-    "Description": "When this card destroys a Creature, heal your Hero equal to the DP of the destroyed Creature"
+    "Description": "When this card destroys a Creature, heal your Hero equal to the DP of the destroyed Creature",
+    "explanations": [""]
   },
   {
     "name": "Barakat",
@@ -1086,7 +1188,8 @@
     "DP": 6,
     "HP": 8,
     "Continuous/ Equip": "",
-    "Description": "When this card destroys a Creature, draw a card"
+    "Description": "When this card destroys a Creature, draw a card",
+    "explanations": [""]
   },
   {
     "name": "Play Soldier",
@@ -1097,7 +1200,8 @@
     "DP": 1,
     "HP": 7,
     "Continuous/ Equip": "",
-    "Description": "This card can attack Realms and its attack cannot be blocked by Heroes. This card’s DP cannot be altered by any Effects"
+    "Description": "This card can attack Realms and its attack cannot be blocked by Heroes. This card’s DP cannot be altered by any Effects",
+    "explanations": [""]
   },
   {
     "name": "The Menace",
@@ -1108,7 +1212,8 @@
     "DP": 12,
     "HP": 20,
     "Continuous/ Equip": "",
-    "Description": "When this card is spoken, halve the HP of your Hero"
+    "Description": "When this card is spoken, halve the HP of your Hero",
+    "explanations": [""]
   },
   {
     "name": "Spitfire",
@@ -1119,7 +1224,8 @@
     "DP": 12,
     "HP": 1,
     "Continuous/ Equip": "",
-    "Description": "Destroy this card after it deals damage"
+    "Description": "Destroy this card after it deals damage",
+    "explanations": [""]
   },
   {
     "name": "Invincible Monarch",
@@ -1130,7 +1236,8 @@
     "DP": 8,
     "HP": 15,
     "Continuous/ Equip": "",
-    "Description": "This card can only be spoken by sacrificing 3 Creatures you control. When this card is spoken, it is impervious to Effects for the next 3 turns. Once per your turn, you can flip a coin: if Heads, increase the DP of this card by 3"
+    "Description": "This card can only be spoken by sacrificing 3 Creatures you control. When this card is spoken, it is impervious to Effects for the next 3 turns. Once per your turn, you can flip a coin: if Heads, increase the DP of this card by 3",
+    "explanations": [""]
   },
   {
     "name": "Greater Imp",
@@ -1141,7 +1248,8 @@
     "DP": 15,
     "HP": 20,
     "Continuous/ Equip": "",
-    "Description": "This card can only be spoken if “Impish Imp” has been on the field for 5 or more turns. When this card is spoken, destroy all Creatures you control. This card is impervious to Effects"
+    "Description": "This card can only be spoken if “Impish Imp” has been on the field for 5 or more turns. When this card is spoken, destroy all Creatures you control. This card is impervious to Effects",
+    "explanations": [""]
   },
   {
     "name": "Edgewalker",
@@ -1152,7 +1260,8 @@
     "DP": 1,
     "HP": 1,
     "Continuous/ Equip": "",
-    "Description": "This card can only attack if you are 9 Words in debt. If this card deals damage to your opponent’s Hero, you win the game"
+    "Description": "This card can only attack if you are 9 Words in debt. If this card deals damage to your opponent’s Hero, you win the game",
+    "explanations": [""]
   },
   {
     "name": "The Lote Tree",
@@ -1163,7 +1272,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Heal your Hero and Creatures by 1 HP at the end of each turn"
+    "Description": "Heal your Hero and Creatures by 1 HP at the end of each turn",
+    "explanations": [""]
   },
   {
     "name": "Prayer Beads",
@@ -1174,7 +1284,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Generate 1 Word for every Creature of yours in the Silence"
+    "Description": "Generate 1 Word for every Creature of yours in the Silence",
+    "explanations": [""]
   },
   {
     "name": "Unbearable Light",
@@ -1185,7 +1296,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Flip all Creatures, Spells, and Curses facedown"
+    "Description": "Flip all Creatures, Spells, and Curses facedown",
+    "explanations": [""]
   },
   {
     "name": "Alluring Fragrance",
@@ -1196,7 +1308,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "You can equip this card to a Creature: it gains 2 HP at the end of your turns"
+    "Description": "You can equip this card to a Creature: it gains 2 HP at the end of your turns",
+    "explanations": [""]
   },
   {
     "name": "Calligraphic Saber",
@@ -1207,7 +1320,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to a Hero or Creature: increase its DP by 3"
+    "Description": "Equip to a Hero or Creature: increase its DP by 3",
+    "explanations": [""]
   },
   {
     "name": "Inversion Core",
@@ -1218,7 +1332,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Once per your turn, you can use 3 Words to switch the DP and HP of all Creatures on the field"
+    "Description": "Once per your turn, you can use 3 Words to switch the DP and HP of all Creatures on the field",
+    "explanations": [""]
   },
   {
     "name": "Poisoned Apple",
@@ -1229,7 +1344,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Restore a Creature's HP. Then, at the start of each players turn, reduce its max HP by 2"
+    "Description": "Restore a Creature's HP. Then, at the start of each players turn, reduce its max HP by 2",
+    "explanations": [""]
   },
   {
     "name": "Sudden Healing Potion",
@@ -1240,7 +1356,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Heal a Hero by 5 HP or a Creature by 10 HP"
+    "Description": "Heal a Hero by 5 HP or a Creature by 10 HP",
+    "explanations": [""]
   },
   {
     "name": "Foolish Sands",
@@ -1251,7 +1368,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Once per your turn, you can destroy a Creature, Spell, or Curse. This Effect cannot be negated and this card cannot be removed from the field. After 5 turns, you lose the game"
+    "Description": "Once per your turn, you can destroy a Creature, Spell, or Curse. This Effect cannot be negated and this card cannot be removed from the field. After 5 turns, you lose the game",
+    "explanations": [""]
   },
   {
     "name": "Bloodmoon Crest",
@@ -1262,7 +1380,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to a Creature you control: during your turns, its original DP is doubled; during your opponents turns, its original HP is halved"
+    "Description": "Equip to a Creature you control: during your turns, its original DP is doubled; during your opponents turns, its original HP is halved",
+    "explanations": [""]
   },
   {
     "name": "Prickly Shield",
@@ -1273,7 +1392,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to a Creature: Creatures that attack it are destroyed after damage calculation"
+    "Description": "Equip to a Creature: Creatures that attack it are destroyed after damage calculation",
+    "explanations": [""]
   },
   {
     "name": "Shrine of Exchange",
@@ -1284,7 +1404,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Draw a card"
+    "Description": "Draw a card",
+    "explanations": [""]
   },
   {
     "name": "Map of Hidden Dimensions",
@@ -1295,7 +1416,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Generate 1 Word. Both players can then search their deck for a Realm and add it to their hand"
+    "Description": "Generate 1 Word. Both players can then search their deck for a Realm and add it to their hand",
+    "explanations": [""]
   },
   {
     "name": "Bloodflame Scimitar",
@@ -1306,7 +1428,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to a Hero or Creature: it gains Piercing damage"
+    "Description": "Equip to a Hero or Creature: it gains Piercing damage",
+    "explanations": [""]
   },
   {
     "name": "Hyper Armor",
@@ -1317,7 +1440,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to a Creature: if it is to be removed from the field by an Effect, you can destroy this card instead"
+    "Description": "Equip to a Creature: if it is to be removed from the field by an Effect, you can destroy this card instead",
+    "explanations": [""]
   },
   {
     "name": "Blissful Nights",
@@ -1328,7 +1452,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Neither player needs to use Words to speak cards until the end of your opponent’s turn"
+    "Description": "Neither player needs to use Words to speak cards until the end of your opponent’s turn",
+    "explanations": [""]
   },
   {
     "name": "Dragon Egg",
@@ -1339,7 +1464,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Search your deck for a Dragon-type card and add it to your hand. Then, skip your next Draw Phase"
+    "Description": "Search your deck for a Dragon-type card and add it to your hand. Then, skip your next Draw Phase",
+    "explanations": [""]
   },
   {
     "name": "Reroll",
@@ -1350,7 +1476,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Once per turn, you can use 1 Word to redo an Effect or Ability that involved chance. Your opponent can do the same, but at a cost of 2 Words"
+    "Description": "Once per turn, you can use 1 Word to redo an Effect or Ability that involved chance. Your opponent can do the same, but at a cost of 2 Words",
+    "explanations": [""]
   },
   {
     "name": "All Knights Awakening",
@@ -1361,7 +1488,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "You can speak this card if Sapphire Knight, Emerald Knight, and Obsidian Knight are in the Silence. Speak The All Knight from your deck, hand, or Silence onto the field"
+    "Description": "You can speak this card if Sapphire Knight, Emerald Knight, and Obsidian Knight are in the Silence. Speak The All Knight from your deck, hand, or Silence onto the field",
+    "explanations": [""]
   },
   {
     "name": "Last Resort",
@@ -1372,7 +1500,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "You can speak this card if your Hero has 10 HP or less. Draw 5 cards and generate 10 Words. Then, send the remaining cards in your deck to the Silence"
+    "Description": "You can speak this card if your Hero has 10 HP or less. Draw 5 cards and generate 10 Words. Then, send the remaining cards in your deck to the Silence",
+    "explanations": [""]
   },
   {
     "name": "Nepotism",
@@ -1383,7 +1512,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to a Creature you control: if it is destroyed, speak a Creature with the same or less Word cost from your hand without Words"
+    "Description": "Equip to a Creature you control: if it is destroyed, speak a Creature with the same or less Word cost from your hand without Words",
+    "explanations": [""]
   },
   {
     "name": "Armor Piercing",
@@ -1394,7 +1524,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "You can activate this card during your attack: inflict Piercing damage"
+    "Description": "You can activate this card during your attack: inflict Piercing damage",
+    "explanations": [""]
   },
   {
     "name": "Pools of Vitality",
@@ -1405,7 +1536,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Heal and increase a Hero or Creature’s max HP by 5"
+    "Description": "Heal and increase a Hero or Creature’s max HP by 5",
+    "explanations": [""]
   },
   {
     "name": "Chalice of Abundance",
@@ -1416,7 +1548,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Generate 1 Word every time a Creature you control is destroyed"
+    "Description": "Generate 1 Word every time a Creature you control is destroyed",
+    "explanations": [""]
   },
   {
     "name": "Reupload",
@@ -1427,7 +1560,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Add a card from the Silence to your hand"
+    "Description": "Add a card from the Silence to your hand",
+    "explanations": [""]
   },
   {
     "name": "Freedom",
@@ -1438,7 +1572,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Rest your Word count to 0"
+    "Description": "Rest your Word count to 0",
+    "explanations": [""]
   },
   {
     "name": "Flaming Typhoon",
@@ -1449,7 +1584,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Negate the speaking of, or destroy, a Spell or Curse. For an additional 3 Words, you can use this card during your opponent’s turn"
+    "Description": "Negate the speaking of, or destroy, a Spell or Curse. For an additional 3 Words, you can use this card during your opponent’s turn",
+    "explanations": [""]
   },
   {
     "name": "Seeking Higher Power",
@@ -1460,7 +1596,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Search your deck for a Spell or Curse and add it to your hand"
+    "Description": "Search your deck for a Spell or Curse and add it to your hand",
+    "explanations": [""]
   },
   {
     "name": "Twin Void",
@@ -1471,7 +1608,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Mute a Creature you control and a Creature your opponent controls"
+    "Description": "Mute a Creature you control and a Creature your opponent controls",
+    "explanations": [""]
   },
   {
     "name": "Backroom Deals",
@@ -1482,7 +1620,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Once per your turn, you can use 2 Words to shuffle a card from your hand into your deck. Then, draw 1 card"
+    "Description": "Once per your turn, you can use 2 Words to shuffle a card from your hand into your deck. Then, draw 1 card",
+    "explanations": [""]
   },
   {
     "name": "Powertrip",
@@ -1493,7 +1632,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Set the DP of all Creatures you control equal to the highest DP among them. Then, destroy them at the end of your turn"
+    "Description": "Set the DP of all Creatures you control equal to the highest DP among them. Then, destroy them at the end of your turn",
+    "explanations": [""]
   },
   {
     "name": "Obliterate",
@@ -1504,7 +1644,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Destroy all Creatures on the field"
+    "Description": "Destroy all Creatures on the field",
+    "explanations": [""]
   },
   {
     "name": "Pray for Gold",
@@ -1515,7 +1656,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Excavate the top card of your deck. You can then use Words equal to its cost to add it to your hand"
+    "Description": "Excavate the top card of your deck. You can then use Words equal to its cost to add it to your hand",
+    "explanations": [""]
   },
   {
     "name": "Scrolls of Sacrifice",
@@ -1526,7 +1668,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Destroy a Creature you control and draw 1 card"
+    "Description": "Destroy a Creature you control and draw 1 card",
+    "explanations": [""]
   },
   {
     "name": "Breaker Shield",
@@ -1537,7 +1680,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to a Creature you control: it can block attacks. If it is destroyed,draw a card."
+    "Description": "Equip to a Creature you control: it can block attacks. If it is destroyed,draw a card.",
+    "explanations": [""]
   },
   {
     "name": "Shrine of Greater Exchange",
@@ -1548,7 +1692,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Draw 2 cards"
+    "Description": "Draw 2 cards",
+    "explanations": [""]
   },
   {
     "name": "Last Stand",
@@ -1559,7 +1704,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "If you control no Creatures, your Hero gains 5 DP and can negate 1 attack per turn. You can only control 1 “Last Stand” on your field"
+    "Description": "If you control no Creatures, your Hero gains 5 DP and can negate 1 attack per turn. You can only control 1 “Last Stand” on your field",
+    "explanations": [""]
   },
   {
     "name": "Blissful Mornings",
@@ -1570,7 +1716,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Both players generate 5 Words"
+    "Description": "Both players generate 5 Words",
+    "explanations": [""]
   },
   {
     "name": "Dimensions",
@@ -1581,7 +1728,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Discard a card. Then, search your deck for a Psychedelic type Creature and speak it without Words"
+    "Description": "Discard a card. Then, search your deck for a Psychedelic type Creature and speak it without Words",
+    "explanations": [""]
   },
   {
     "name": "The Woodman´s Mask",
@@ -1592,7 +1740,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Creatures you destroy by battle can be spoken onto your field without Words, Muted"
+    "Description": "Creatures you destroy by battle can be spoken onto your field without Words, Muted",
+    "explanations": [""]
   },
   {
     "name": "The Penblade",
@@ -1603,7 +1752,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "When this card is spoken, use a number of Words 1-5: for the rest of the turn, increase the DP of all Creatures you control equal to the number of Words used"
+    "Description": "When this card is spoken, use a number of Words 1-5: for the rest of the turn, increase the DP of all Creatures you control equal to the number of Words used",
+    "explanations": [""]
   },
   {
     "name": "Ender Blade",
@@ -1614,7 +1764,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to a Creature you control: when it attacks, inflict its DP to all Creatures your opponent controls. Then, destroy the equipped Creature, and return this card to your hand"
+    "Description": "Equip to a Creature you control: when it attacks, inflict its DP to all Creatures your opponent controls. Then, destroy the equipped Creature, and return this card to your hand",
+    "explanations": [""]
   },
   {
     "name": "Mutual Destruction",
@@ -1625,7 +1776,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "If this card is on the field 3 turns after its speaking, destroy all cards. During either turn, a player can use 3 Words to destroy this card, and it cannot be destroyed by other ways"
+    "Description": "If this card is on the field 3 turns after its speaking, destroy all cards. During either turn, a player can use 3 Words to destroy this card, and it cannot be destroyed by other ways",
+    "explanations": [""]
   },
   {
     "name": "Knotmouth",
@@ -1636,7 +1788,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "You can activate this card after your opponents Draw Phase: end their turn"
+    "Description": "You can activate this card after your opponents Draw Phase: end their turn",
+    "explanations": [""]
   },
   {
     "name": "Warp",
@@ -1647,7 +1800,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Bounce a Creature"
+    "Description": "Bounce a Creature",
+    "explanations": [""]
   },
   {
     "name": "Deep Forest Witchcraft",
@@ -1658,7 +1812,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Destroy a Creature that has an equipped card. Then, inflict 4 DP to your opponents Hero"
+    "Description": "Destroy a Creature that has an equipped card. Then, inflict 4 DP to your opponents Hero",
+    "explanations": [""]
   },
   {
     "name": "Waves of Sickness",
@@ -1669,7 +1824,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Inflict 3 DP to a Creature, 2 DP to a Hero, and 1 DP to a Realm"
+    "Description": "Inflict 3 DP to a Creature, 2 DP to a Hero, and 1 DP to a Realm",
+    "explanations": [""]
   },
   {
     "name": "Annihilation Core",
@@ -1680,7 +1836,10 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Destroy 2 Creatures you control and 2 Creatures your opponent controls"
+    "Description": "Destroy 2 Creatures you control and 2 Creatures your opponent controls",
+    "explanations": [
+      "This Curse can only be spoken, if you and your opponent have at least 2 creatures, which you can destroy."
+    ]
   },
   {
     "name": "Ring of Contriction",
@@ -1691,7 +1850,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": ""
+    "Description": "Equip to your opponent's Hero or Creature: they must use 1 Word to attack with it",
+    "explanations": [""]
   },
   {
     "name": "Runaway Fruits",
@@ -1702,7 +1862,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Take 2 Words from your opponent"
+    "Description": "Take 2 Words from your opponent",
+    "explanations": [""]
   },
   {
     "name": "Soul Eject",
@@ -1713,7 +1874,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "You can activate this card during your opponent’s attack: negate the attack and mute all Creatures they control"
+    "Description": "You can activate this card during your opponent’s attack: negate the attack and mute all Creatures they control",
+    "explanations": [""]
   },
   {
     "name": "Deep Mirror",
@@ -1724,7 +1886,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Destroy a Creature. Then, its owner generates Words equal to its cost"
+    "Description": "Destroy a Creature. Then, its owner generates Words equal to its cost",
+    "explanations": [""]
   },
   {
     "name": "Blitzwave",
@@ -1735,7 +1898,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Inflict 1 DP to an opponent's Realm card"
+    "Description": "Inflict 1 DP to an opponent's Realm card",
+    "explanations": [""]
   },
   {
     "name": "Despision",
@@ -1746,7 +1910,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Destroy all Creatures with a DP less than 4"
+    "Description": "Destroy all Creatures with a DP less than 4",
+    "explanations": [""]
   },
   {
     "name": "Rude Awakening",
@@ -1757,7 +1922,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Advance your opponent's Hero"
+    "Description": "Advance your opponent's Hero",
+    "explanations": [""]
   },
   {
     "name": "Solemn Effigy",
@@ -1768,7 +1934,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "At the start of your opponents Main Phase, you can use 3 Words and declare a card name: your opponent cannot speak a card with that name for the remainder of their turn"
+    "Description": "At the start of your opponents Main Phase, you can use 3 Words and declare a card name: your opponent cannot speak a card with that name for the remainder of their turn",
+    "explanations": [""]
   },
   {
     "name": "Ignition",
@@ -1779,7 +1946,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to a Creature: it cannot be destroyed by battle (HP stalls at 1). If this card is destroyed, destroy the Creature"
+    "Description": "Equip to a Creature: it cannot be destroyed by battle (HP stalls at 1). If this card is destroyed, destroy the Creature",
+    "explanations": [""]
   },
   {
     "name": "Griplocked",
@@ -1790,7 +1958,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Your opponent cannot advance their Hero"
+    "Description": "Your opponent cannot advance their Hero",
+    "explanations": [""]
   },
   {
     "name": "Essential Sacrifice",
@@ -1801,7 +1970,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Sacrifice a Creature you control and inflict 5 DP to your opponent's Hero or a Creature"
+    "Description": "Sacrifice a Creature you control and inflict 5 DP to your opponent's Hero or a Creature",
+    "explanations": [""]
   },
   {
     "name": "Hyperloop",
@@ -1812,7 +1982,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Search your deck for a Creature and speak it without Words, Muted"
+    "Description": "Search your deck for a Creature and speak it without Words, Muted",
+    "explanations": [""]
   },
   {
     "name": "Walkway",
@@ -1823,7 +1994,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "You can speak this card after a Creature you control is destroyed. Search your deck for a card that shares a Type and speak it onto the field"
+    "Description": "You can speak this card after a Creature you control is destroyed. Search your deck for a card that shares a Type and speak it onto the field",
+    "explanations": [""]
   },
   {
     "name": "Crystalization",
@@ -1834,7 +2006,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to a Creature: if it is to be destroyed, Mute it instead and restore its HP"
+    "Description": "Equip to a Creature: if it is to be destroyed, Mute it instead and restore its HP",
+    "explanations": [""]
   },
   {
     "name": "Fury",
@@ -1845,7 +2018,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Your opponent cannot block attacks with their Hero"
+    "Description": "Your opponent cannot block attacks with their Hero",
+    "explanations": [""]
   },
   {
     "name": "Dancing with Fire",
@@ -1856,7 +2030,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Once per your turn, you can use any number of Words to inflict DP to your opponent’s Hero equal to that number of Words"
+    "Description": "Once per your turn, you can use any number of Words to inflict DP to your opponent’s Hero equal to that number of Words",
+    "explanations": [""]
   },
   {
     "name": "Unwanted VIsitors",
@@ -1867,7 +2042,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Destroy 2 Creatures your opponent controls. Then, speak 2 Creatures from the Silence to their field without Words, Muted"
+    "Description": "Destroy 2 Creatures your opponent controls. Then, speak 2 Creatures from the Silence to their field without Words, Muted",
+    "explanations": [""]
   },
   {
     "name": "Evil Contracts",
@@ -1878,7 +2054,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "During your Main Phases, you can inflict 10 DP to your Hero to draw a card"
+    "Description": "During your Main Phases, you can inflict 10 DP to your Hero to draw a card",
+    "explanations": [""]
   },
   {
     "name": "Black Scroll Ritual",
@@ -1889,7 +2066,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Speak a Creature from your hand without Words. Then, Mute it at the end of the turn"
+    "Description": "Speak a Creature from your hand without Words. Then, Mute it at the end of the turn",
+    "explanations": [""]
   },
   {
     "name": "Virus in Paradise",
@@ -1900,7 +2078,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "If your opponent’s Hero has more HP than your Hero, flip a coin at the start of their Battle Phases: Heads: Their Hero cannot attack this turn Tails: No Effect"
+    "Description": "If your opponent’s Hero has more HP than your Hero, flip a coin at the start of their Battle Phases: Heads: Their Hero cannot attack this turn Tails: No Effect",
+    "explanations": [""]
   },
   {
     "name": "Soul Chained",
@@ -1911,7 +2090,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Your opponent cannot speak Creatures onto the field if they would exceed the number of Creatures you control +1"
+    "Description": "Your opponent cannot speak Creatures onto the field if they would exceed the number of Creatures you control +1",
+    "explanations": [""]
   },
   {
     "name": "Black Mirror",
@@ -1922,7 +2102,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Negate the speaking of a Creature and send it to the Silence"
+    "Description": "Negate the speaking of a Creature and send it to the Silence",
+    "explanations": [""]
   },
   {
     "name": "Rose of Vanta Gold",
@@ -1933,7 +2114,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to an opponent’s Creature: double its DP. Each time it attacks, reduce its DP by 2"
+    "Description": "Equip to an opponent’s Creature: double its DP. Each time it attacks, reduce its DP by 2",
+    "explanations": [""]
   },
   {
     "name": "Evil Eye",
@@ -1944,7 +2126,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Discard a random card in your opponent’s hand"
+    "Description": "Discard a random card in your opponent’s hand",
+    "explanations": [""]
   },
   {
     "name": "Fragrance of Hatred",
@@ -1955,7 +2138,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Destroy all Creatures on the field that have more than 1 Type"
+    "Description": "Destroy all Creatures on the field that have more than 1 Type",
+    "explanations": [""]
   },
   {
     "name": "Divine Protection",
@@ -1966,7 +2150,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "This card can only be spoken during an attack: negate it and end the Battle Phase"
+    "Description": "This card can only be spoken during an attack: negate it and end the Battle Phase",
+    "explanations": [""]
   },
   {
     "name": "Fractal Prism",
@@ -1977,7 +2162,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "You can use 4 Words to block an attack with this card. If you do, add Counters to this card equal to the DP blocked. You can destroy this card to inflict DP equal to its Counters to a Creature your opponent controls"
+    "Description": "You can use 4 Words to block an attack with this card. If you do, add Counters to this card equal to the DP blocked. You can destroy this card to inflict DP equal to its Counters to a Creature your opponent controls",
+    "explanations": [""]
   },
   {
     "name": "Devilish Mayhem",
@@ -1988,7 +2174,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "At the end of each player's turn, inflict 1 DP to all Creatures on the field"
+    "Description": "At the end of each player's turn, inflict 1 DP to all Creatures on the field",
+    "explanations": [""]
   },
   {
     "name": "Wormhole",
@@ -1999,7 +2186,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Negate an Effect and destroy the card"
+    "Description": "Negate an Effect and destroy the card",
+    "explanations": [""]
   },
   {
     "name": "Back to Beginners",
@@ -2010,7 +2198,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Negate all Abilities until the end of this turn"
+    "Description": "Negate all Abilities until the end of this turn",
+    "explanations": [""]
   },
   {
     "name": "Disarmed",
@@ -2021,7 +2210,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Reduce a Creature’s DP to 0"
+    "Description": "Reduce a Creature’s DP to 0",
+    "explanations": [""]
   },
   {
     "name": "Pestilence",
@@ -2032,7 +2222,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Destroy a Creature"
+    "Description": "Destroy a Creature",
+    "explanations": [""]
   },
   {
     "name": "Shattermouth",
@@ -2043,7 +2234,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Continuous",
-    "Description": "Neither player can generate Words. At the end of each turn, inflict 3 DP to your Hero or destroy this card"
+    "Description": "Neither player can generate Words. At the end of each turn, inflict 3 DP to your Hero or destroy this card",
+    "explanations": [""]
   },
   {
     "name": "Think Twice",
@@ -2054,7 +2246,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "You can speak this card when your opponent declares an attack: they must discard 1 card, otherwise, negate the attack"
+    "Description": "You can speak this card when your opponent declares an attack: they must discard 1 card, otherwise, negate the attack",
+    "explanations": [""]
   },
   {
     "name": "Infliction",
@@ -2065,7 +2258,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Single",
-    "Description": "Reduce your opponent’s Words by 1 for every Creature they control"
+    "Description": "Reduce your opponent’s Words by 1 for every Creature they control",
+    "explanations": [""]
   },
   {
     "name": "Phantomization",
@@ -2076,7 +2270,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "Equip this card to a Creature you control: it cannot be targeted for an attack by your opponent’s Hero"
+    "Description": "Equip this card to a Creature you control: it cannot be targeted for an attack by your opponent’s Hero",
+    "explanations": [""]
   },
   {
     "name": "The First Tree",
@@ -2087,7 +2282,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "",
-    "Description": "Create a realm for All card types"
+    "Description": "Create a realm for All card types",
+    "explanations": [""]
   },
   {
     "name": "Deeper Pits",
@@ -2098,7 +2294,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "",
-    "Description": "Create a realm for Demonic cards types"
+    "Description": "Create a realm for Demonic cards types",
+    "explanations": [""]
   },
   {
     "name": "Cybernet",
@@ -2109,7 +2306,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "",
-    "Description": "Create a realm for Digital card types"
+    "Description": "Create a realm for Digital card types",
+    "explanations": [""]
   },
   {
     "name": "The Rabbit Hole",
@@ -2120,7 +2318,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "",
-    "Description": "Create a realm for Mythic card types"
+    "Description": "Create a realm for Mythic card types",
+    "explanations": [""]
   },
   {
     "name": "Spiral Skies",
@@ -2131,7 +2330,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "",
-    "Description": "Create a realm for Dragon card types"
+    "Description": "Create a realm for Dragon card types",
+    "explanations": [""]
   },
   {
     "name": "Feeding Pool",
@@ -2142,7 +2342,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "",
-    "Description": "Create a realm for Beast card types"
+    "Description": "Create a realm for Beast card types",
+    "explanations": [""]
   },
   {
     "name": "New Frontiers",
@@ -2153,7 +2354,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "",
-    "Description": "Create a realm for Human card types"
+    "Description": "Create a realm for Human card types",
+    "explanations": [""]
   },
   {
     "name": "Solar Sands",
@@ -2164,7 +2366,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "",
-    "Description": "Create a realm for Cosmic card types"
+    "Description": "Create a realm for Cosmic card types",
+    "explanations": [""]
   },
   {
     "name": "Graveside Manor",
@@ -2175,7 +2378,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "",
-    "Description": "Create a realm for Undead card types"
+    "Description": "Create a realm for Undead card types",
+    "explanations": [""]
   },
   {
     "name": "Gateway to Light",
@@ -2186,7 +2390,8 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "",
-    "Description": "Create a realm for Angelic card types"
+    "Description": "Create a realm for Angelic card types",
+    "explanations": [""]
   },
   {
     "name": "Spectral Forest",
