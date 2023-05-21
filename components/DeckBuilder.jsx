@@ -80,15 +80,15 @@ const DeckBuilder = () => {
 
         // Extract the IDs and counts from the JSON data
         const idCountMap = new Map(
-          jsonData.map((item) => [item.id, item.count])
+          jsonData.map((item) => [item.tokenId, item.count])
         );
 
         // Create selectedCards based on the IDs and update the count property
         const updatedSelectedCards = cards
-          .filter((card) => idCountMap.has(card.id))
+          .filter((card) => idCountMap.has(card.tokenId))
           .map((card) => ({
             ...card,
-            count: idCountMap.get(card.id),
+            count: idCountMap.get(card.tokenId),
           }));
 
         setSelectedCards(updatedSelectedCards);
@@ -281,7 +281,7 @@ const DeckBuilder = () => {
   };
   return (
     <div className="h-screen">
-      <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 shadow-lg shadow-gray-300 z-10">
+      <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 border-b-4 z-10">
         <div className="col-span-2 ">
           <div className="flex justify-center p-2">
             <h3 className="font-bold">Filter Options</h3>
@@ -405,7 +405,7 @@ const DeckBuilder = () => {
                 <div className="flex justify-center w-full h-24 ">
                   <Image
                     className="aboslute object-cover"
-                    src={`/Speak_Cards/${hoveredCard.id}.jpg`}
+                    src={`/Speak_Cards/${hoveredCard.tokenId}.jpg`}
                     alt={hoveredCard.name}
                     width={100}
                     height={100}
@@ -469,10 +469,10 @@ const DeckBuilder = () => {
             </button>
             <div className="cursor-pointer">
               <label
-                htmlfor="import-json"
+                htmlFor="import-json"
                 class="relative border border-orange-600 px-4 py-1 rounded-md text-white"
               >
-                <span class="inline-block ">Import json</span>
+                <span class="inline-block ">Import Json</span>
                 <input
                   id="import-json"
                   type="file"
@@ -503,7 +503,7 @@ const DeckBuilder = () => {
                 onClick={() => handleCardClick(card)}
                 onMouseEnter={() => handleCardHover(card)}
                 style={{
-                  backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
+                  backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -543,7 +543,7 @@ const DeckBuilder = () => {
                     className="relative p-1 rounded mb-2 flex-col overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
-                      backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
+                      backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
@@ -599,7 +599,7 @@ const DeckBuilder = () => {
                     className="relative p-1  rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
-                      backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
+                      backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
@@ -656,7 +656,7 @@ const DeckBuilder = () => {
                     className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
-                      backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
+                      backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
@@ -713,7 +713,7 @@ const DeckBuilder = () => {
                     className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
-                      backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
+                      backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
@@ -770,7 +770,7 @@ const DeckBuilder = () => {
                     className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
-                      backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
+                      backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}

@@ -5,7 +5,7 @@ import ConnectButton from "./ConnectButton";
 const links = [
   { href: "/", label: "Home" },
   { href: "/deckbuilder", label: "Deckbuilder" },
-  { href: "/tournaments", label: "Tournaments" },
+  /* { href: "/tournaments", label: "Tournaments" }, */
   { href: "/faq", label: "FAQ" },
   /*{ href: "/community", label: "Community" },
   { href: "/resources", label: "Resources" }, */

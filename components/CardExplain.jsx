@@ -43,7 +43,7 @@ const CardExplain = () => {
     <div className="text-white">
       <div className="p-4">
         <div className="flex justify-center ">
-          <div className=" flex-col ">
+          <div className="">
             <h2 className="text-lg font-bold m-2">Search for your card</h2>
             <input
               type="text"
@@ -53,12 +53,12 @@ const CardExplain = () => {
               className=" text-black px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
             {searchQuery.length >= 3 && (
-              <div className="mt-2">
+              <div className="mt-2 ">
                 {filteredCards.map((card) => (
                   <div
-                    key={card.id}
+                    key={card.tokenId}
                     onClick={() => handleCardSelect(card)}
-                    className="cursor-pointer p-2 border border-gray-300 rounded-md hover:bg-gray-100 w-1/3"
+                    className="cursor-pointer p-2 border border-gray-300 rounded-md hover:bg-gray-100"
                   >
                     {card.name}
                   </div>
@@ -102,10 +102,10 @@ const CardExplain = () => {
           <div className="mt-4 flex flex-wrap gap-4">
             {filteredCardsWithType.map((card) => (
               <div
-                key={card.id}
+                key={card.tokenId}
                 className="cursor-pointer w-24 h-24 bg-cover bg-center text-white flex items-center justify-center hover:scale-110 duration-100"
                 style={{
-                  backgroundImage: `url(/Speak_Cards/${card.id}.jpg)`,
+                  backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
                 }}
                 onClick={() => handleCardSelect(card)}
               >
