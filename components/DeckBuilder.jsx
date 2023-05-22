@@ -470,15 +470,15 @@ const DeckBuilder = () => {
             <div className="cursor-pointer">
               <label
                 htmlFor="import-json"
-                class="relative border border-orange-600 px-4 py-1 rounded-md text-white"
+                className="relative border border-orange-600 px-4 py-1 rounded-md text-white"
               >
-                <span class="inline-block ">Import Json</span>
+                <span className="inline-block ">Import Json</span>
                 <input
                   id="import-json"
                   type="file"
                   accept=".json"
                   onChange={handleImportJson}
-                  class="opacity-0 absolute top-0 left-0 w-full h-full "
+                  className="opacity-0 absolute top-0 left-0 w-full h-full "
                 />
               </label>
             </div>
