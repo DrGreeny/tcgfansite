@@ -13,6 +13,11 @@ const DeckBuilder = () => {
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [hoveredCard, setHoveredCard] = useState(null); // New state variable for the hovered card
   const [wordCostRange, setWordCostRange] = useState([0, 10]);
+  const [expanded, setExpanded] = useState(true);
+
+  const toggleExpand = () => {
+    setExpanded(!expanded);
+  };
 
   // Function to load selected cards from local storage
   const loadSelectedCards = () => {
@@ -281,220 +286,233 @@ const DeckBuilder = () => {
   };
   return (
     <div className="h-screen">
-      <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 border-b-4 z-10">
-        <div className="col-span-2 ">
-          <div className="flex justify-center p-2">
-            <h3 className="font-bold">Filter Options</h3>
-          </div>
-
-          <div className="bg-black text-white p-2">
-            <div className="flex justify-around">
-              <div className="">
-                <label className="block">Filter by Realm:</label>
-                <select
-                  multiple
-                  className="p-2 rounded w-full text-white bg-black"
-                  onChange={handleRealmSelect}
-                >
-                  <option value="all">All</option>
-                  <option value="Angelic">Angelic</option>
-                  <option value="Mythic">Mythic</option>
-                  <option value="Human">Human</option>
-                  <option value="Demonic">Demonic</option>
-                  <option value="Undead">Undead</option>
-                  <option value="Dragon">Dragon</option>
-                  <option value="Beast">Beast</option>
-                  <option value="Cosmic">Cosmic</option>
-                </select>
-              </div>
-              <div className="">
-                <label className="block">Filter by Type:</label>
-                <label className="block">
-                  <input
-                    type="checkbox"
-                    name="hero"
-                    checked={selectedTypes.includes("hero")}
-                    onChange={handleTypeSelect}
-                  />
-                  Hero
-                </label>
-                <label className="block">
-                  <input
-                    type="checkbox"
-                    name="creature"
-                    checked={selectedTypes.includes("creature")}
-                    onChange={handleTypeSelect}
-                  />
-                  Creature
-                </label>
-                <label className="block">
-                  <input
-                    type="checkbox"
-                    name="spell"
-                    checked={selectedTypes.includes("spell")}
-                    onChange={handleTypeSelect}
-                  />
-                  Spell
-                </label>
-                <label className="block">
-                  <input
-                    type="checkbox"
-                    name="curse"
-                    checked={selectedTypes.includes("curse")}
-                    onChange={handleTypeSelect}
-                  />
-                  Curse
-                </label>
-                <label className="block">
-                  <input
-                    type="checkbox"
-                    name="realm"
-                    checked={selectedTypes.includes("realm")}
-                    onChange={handleTypeSelect}
-                  />
-                  Realm
-                </label>
-              </div>
-              <div className=" flex-col">
-                <div>
-                  <p>
-                    Word Cost Range: {wordCostRange[0]} - {wordCostRange[1]}
-                  </p>
-                  {/* Add the range slider component */}
-                  <Range
-                    range
-                    min={0}
-                    max={10}
-                    value={wordCostRange}
-                    onChange={handleSliderChange}
-                  />
-                </div>
-                <div className="flex mt-2">
-                  <input
-                    type="text"
-                    placeholder="Search cards..."
-                    className="p-2 rounded text-black h-6"
-                    value={searchQuery}
-                    onChange={handleSearch}
-                  />
-                </div>
-                <div className="flex-col h-full justify-between mt-2">
-                  <label className="flex items-center">
-                    Filter Deck cards
-                    <input
-                      type="checkbox"
-                      className="ml-2"
-                      checked={filterSelectedCards}
-                      onChange={(e) => setFilterSelectedCards(e.target.checked)}
-                    />
-                  </label>
-                </div>
-              </div>
+      {expanded && (
+        <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 border-b-4 z-10">
+          <div className="col-span-2 ">
+            <div className="flex justify-center p-2">
+              <h3 className="font-bold">Filter Options</h3>
             </div>
-          </div>
-          <div></div>
-        </div>
-        <div className="col-span-1 p-2 overflow-hidden  bg-gradient-to-r from-[#081C34] via-[#BC4618] to-[#E6C463]  mb-1 rounded-lg">
-          {hoveredCard && (
-            <div className="flex-col w-full items-center text-xs/[0.9]">
-              <div className="w-full flex justify-center">
-                <div className="mb-1 mx-auto text-lg">{hoveredCard.name}</div>
-                <div className="text-lg">{hoveredCard.WordCost}</div>
-              </div>
-              <div className="flex-col items-center">
-                <div className="flex justify-center w-full h-24 ">
-                  <Image
-                    className="aboslute object-cover"
-                    src={`/Speak_Cards/${hoveredCard.tokenId}.jpg`}
-                    alt={hoveredCard.name}
-                    width={100}
-                    height={100}
-                  />
-                </div>
-                <div className="flex justify-between">
-                  <div className="italic ">{hoveredCard.Type}</div>
-                  <div className="italic my-1 ">
-                    DP {hoveredCard.DP} / HP {hoveredCard.HP}
-                  </div>
+
+            <div className="bg-black text-white p-2">
+              <div className="flex justify-around">
+                <div className="">
+                  <label className="block">Filter by Realm:</label>
+                  <select
+                    multiple
+                    className="p-2 rounded w-full text-white bg-black"
+                    onChange={handleRealmSelect}
+                  >
+                    <option value="all">All</option>
+                    <option value="Angelic">Angelic</option>
+                    <option value="Mythic">Mythic</option>
+                    <option value="Human">Human</option>
+                    <option value="Demonic">Demonic</option>
+                    <option value="Undead">Undead</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Beast">Beast</option>
+                    <option value="Cosmic">Cosmic</option>
+                  </select>
                 </div>
                 <div className="">
-                  <p>{hoveredCard.Description}</p>
+                  <label className="block">Filter by Type:</label>
+                  <label className="block">
+                    <input
+                      type="checkbox"
+                      name="hero"
+                      checked={selectedTypes.includes("hero")}
+                      onChange={handleTypeSelect}
+                    />
+                    Hero
+                  </label>
+                  <label className="block">
+                    <input
+                      type="checkbox"
+                      name="creature"
+                      checked={selectedTypes.includes("creature")}
+                      onChange={handleTypeSelect}
+                    />
+                    Creature
+                  </label>
+                  <label className="block">
+                    <input
+                      type="checkbox"
+                      name="spell"
+                      checked={selectedTypes.includes("spell")}
+                      onChange={handleTypeSelect}
+                    />
+                    Spell
+                  </label>
+                  <label className="block">
+                    <input
+                      type="checkbox"
+                      name="curse"
+                      checked={selectedTypes.includes("curse")}
+                      onChange={handleTypeSelect}
+                    />
+                    Curse
+                  </label>
+                  <label className="block">
+                    <input
+                      type="checkbox"
+                      name="realm"
+                      checked={selectedTypes.includes("realm")}
+                      onChange={handleTypeSelect}
+                    />
+                    Realm
+                  </label>
+                </div>
+                <div className=" flex-col">
+                  <div>
+                    <p>
+                      Word Cost Range: {wordCostRange[0]} - {wordCostRange[1]}
+                    </p>
+                    {/* Add the range slider component */}
+                    <Range
+                      range
+                      min={0}
+                      max={10}
+                      value={wordCostRange}
+                      onChange={handleSliderChange}
+                    />
+                  </div>
+                  <div className="flex mt-2">
+                    <input
+                      type="text"
+                      placeholder="Search cards..."
+                      className="p-2 rounded text-black h-6"
+                      value={searchQuery}
+                      onChange={handleSearch}
+                    />
+                  </div>
+                  <div className="flex-col h-full justify-between mt-2">
+                    <label className="flex items-center">
+                      Filter Deck cards
+                      <input
+                        type="checkbox"
+                        className="ml-2"
+                        checked={filterSelectedCards}
+                        onChange={(e) =>
+                          setFilterSelectedCards(e.target.checked)
+                        }
+                      />
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
-          )}
-        </div>
-        <div className="col-span-2 p-2 flex-col bg-black">
-          <div className="flex justify-center mb-4 font-bold">
-            <h3 className="">Data and Statistics</h3>
           </div>
 
-          <div className="flex gap-1 justify-around text-xs">
-            <div className="">
-              {/*grid grid-cols-2 gap-x-2 */}
-              <p>
-                Overall Card Count:{" "}
-                {selectedCards.reduce((count, card) => count + card.count, 0)}
-              </p>
-              <p className="">Heros:{countByType("hero")}</p>
-              <p>Creatures:{countByType("creature")}</p>
-              <p>Curses:{countByType("curse")}</p>
-              <p>Spells: {countByType("spell")}</p>
-              <p>Realms: {countByType("realm")}</p>
+          <div className="flex items-end justify-center"></div>
+          <div className="col-span-2 p-2 flex-col bg-black">
+            <div className="flex justify-center mb-4 font-bold">
+              <h3 className="">Data and Statistics</h3>
             </div>
 
-            <div className="">
-              {/*grid grid-cols-2 gap-x-2*/}
-              <p className="">Creature WordCost: {creatureWordCost}</p>
-              <p className="">Spell WordCost: {spellWordCost}</p>
-              <p className="">Curse WordCost:{curseWordCost}</p>
-              <p className="">Total WordCost: {totalWordCost}</p>
+            <div className="flex gap-1 justify-around text-xs">
+              <div className="">
+                {/*grid grid-cols-2 gap-x-2 */}
+                <p>
+                  Overall Card Count:{" "}
+                  {selectedCards.reduce((count, card) => count + card.count, 0)}
+                </p>
+                <p className="">Heros:{countByType("hero")}</p>
+                <p>Creatures:{countByType("creature")}</p>
+                <p>Curses:{countByType("curse")}</p>
+                <p>Spells: {countByType("spell")}</p>
+                <p>Realms: {countByType("realm")}</p>
+              </div>
+
+              <div className="">
+                {/*grid grid-cols-2 gap-x-2*/}
+                <p className="">Creature WordCost: {creatureWordCost}</p>
+                <p className="">Spell WordCost: {spellWordCost}</p>
+                <p className="">Curse WordCost:{curseWordCost}</p>
+                <p className="">Total WordCost: {totalWordCost}</p>
+              </div>
+              <div className="text-white ">
+                <p>Equip Spells: {equipSpellsCount}</p>
+                <p>Equip Curses: {equipCursesCount}</p>
+                <p>Single Spells: {singleSpellsCount}</p>
+                <p>Single Curses: {singleCursesCount}</p>
+                <p>Continuous Spells:{continuousSpellsCount}</p>
+                <p>Continuous Curses:{continuousCursesCount}</p>
+              </div>
             </div>
-            <div className="text-white ">
-              <p>Equip Spells: {equipSpellsCount}</p>
-              <p>Equip Curses: {equipCursesCount}</p>
-              <p>Single Spells: {singleSpellsCount}</p>
-              <p>Single Curses: {singleCursesCount}</p>
-              <p>Continuous Spells:{continuousSpellsCount}</p>
-              <p>Continuous Curses:{continuousCursesCount}</p>
-            </div>
-          </div>
-          <div className="flex justify-center mt-4 gap-x-4 items-center">
-            <SaveDeck selectedCards={selectedCards} />
-            <button
-              className="px-4 py-1 ml-2 bg-red-500 text-white rounded"
-              onClick={() => setSelectedCards([])}
-            >
-              Clear deck
-            </button>
-            <div className="cursor-pointer">
-              <label
-                htmlFor="import-json"
-                className="relative border border-orange-600 px-4 py-1 rounded-md text-white"
+            <div className="flex justify-center mt-4 gap-x-4 items-center">
+              <SaveDeck selectedCards={selectedCards} />
+              <button
+                className="px-4 py-1 ml-2 bg-red-500 text-white rounded"
+                onClick={() => setSelectedCards([])}
               >
-                <span className="inline-block ">Import Json</span>
-                <input
-                  id="import-json"
-                  type="file"
-                  accept=".json"
-                  onChange={handleImportJson}
-                  className="opacity-0 absolute top-0 left-0 w-full h-full "
-                />
-              </label>
+                Clear deck
+              </button>
+              <div className="cursor-pointer">
+                <label
+                  htmlFor="import-json"
+                  className="relative border border-orange-600 px-4 py-1 rounded-md text-white"
+                >
+                  <span className="inline-block ">Import Json</span>
+                  <input
+                    id="import-json"
+                    type="file"
+                    accept=".json"
+                    onChange={handleImportJson}
+                    className="opacity-0 absolute top-0 left-0 w-full h-full "
+                  />
+                </label>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
       <div className="flex justify-around">
         <div className="flex justify-center mb-3">
           <h2 className="text-lg font-bold text-white">All Cards</h2>
         </div>
+        <button
+          className="text-gray-200 -translate-y-0 z-20"
+          onClick={toggleExpand}
+        >
+          {expanded ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 inline-block mr-1 transform rotate-180"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 inline-block mr-1"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          )}
+          {expanded ? "Collapse options" : "Expand options"}
+        </button>
         <div className="flex justify-center mb-3">
           <h2 className="text-lg font-bold text-white">Your Deck</h2>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-4">
-        <div className="h-[600px]">
+      <div className="grid grid-cols-7 gap-4  ">
+        <div
+          className="col-span-2 "
+          style={{
+            height: expanded ? `calc(100vh - 250px)` : `calc(100vh - 50px)`,
+          }}
+        >
           <div className="flex flex-wrap gap-4 sticky top-64 h-full overflow-y-auto">
             {filteredCards.map((card) => (
               <div
@@ -526,7 +544,51 @@ const DeckBuilder = () => {
             ))}
           </div>
         </div>
-        <div className="h-[600px]">
+        <div
+          className={`sticky ${
+            expanded ? "top-[250px]" : "top-[50px]"
+          } h-[400px] bg-gradient-to-r from-[#081C34] via-[#BC4618] to-[#E6C463] col-span-1 flex items-center justify-center rounded`}
+        >
+          <div className="mx-2 text-white my-auto h-96 p-2 overflow-hidden bg-black w-full">
+            {hoveredCard && (
+              <div className="flex-col w-full items-center text-xs/[0.9]">
+                <div className="w-full flex justify-center">
+                  <div className="mb-1 mx-auto text-lg">{hoveredCard.name}</div>
+                  <div className="text-lg">{hoveredCard.WordCost}</div>
+                </div>
+                <div className="flex-col items-center">
+                  <div className="flex justify-center w-full h-52 ">
+                    <Image
+                      className="aboslute object-cover"
+                      src={`/Speak_Cards/${hoveredCard.tokenId}.jpg`}
+                      alt={hoveredCard.name}
+                      width={208}
+                      height={200}
+                    />
+                  </div>
+                  <div className="flex justify-between">
+                    <div className="italic">{hoveredCard.Type}</div>
+                    {(hoveredCard.Type === "Creature" ||
+                      hoveredCard.Type === "Hero") && (
+                      <div className="italic my-1">
+                        DP {hoveredCard.DP} / HP {hoveredCard.HP}
+                      </div>
+                    )}
+                  </div>
+                  <div className="">
+                    <p>{hoveredCard.Description}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+        <div
+          style={{
+            height: expanded ? `calc(100vh - 250px)` : `calc(100vh - 50px)`,
+          }}
+          className="col-span-4 border-l pl-2"
+        >
           <div className=" flex-col flex-wrap gap-4 sticky top-64 h-full overflow-y-auto pr-2">
             {filteredSelectedCards.some((card) => card.Type === "Hero") ? (
               <div className="border-gray-400 border-b px-2 font-bold my-1">
@@ -540,7 +602,7 @@ const DeckBuilder = () => {
                 .map((card) => (
                   <div
                     key={card.name}
-                    className="relative p-1 rounded mb-2 flex-col overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
+                    className="relative p-1 rounded mb-2 flex-col overflow-hidden items-center w-44 h-44 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
                       backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
@@ -596,7 +658,7 @@ const DeckBuilder = () => {
                 .map((card) => (
                   <div
                     key={card.name}
-                    className="relative p-1  rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
+                    className="relative p-1  rounded mb-2 flex-col justify-between overflow-hidden items-center w-44 h-44 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
                       backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
@@ -615,9 +677,7 @@ const DeckBuilder = () => {
                       )}
                     </div>
 
-                    <p className="w-full text-xs font-bold">
-                      {card.name} ({card.count})
-                    </p>
+                    <p className="w-full text-xs font-bold">{card.name}</p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
                     {/* <p className="w-full text-[0.60rem]">{card.Description}</p> */}
                     <div className="absolute flex bottom-0 justify-between w-full">
@@ -653,7 +713,7 @@ const DeckBuilder = () => {
                 .map((card) => (
                   <div
                     key={card.name}
-                    className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
+                    className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-44 h-44 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
                       backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
@@ -672,9 +732,7 @@ const DeckBuilder = () => {
                       )}
                     </div>
 
-                    <p className="w-full text-xs font-bold">
-                      {card.name} ({card.count})
-                    </p>
+                    <p className="w-full text-xs font-bold">{card.name}</p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
                     {/*  <p className="w-full text-[0.60rem]">{card.Description}</p> */}
                     <div className="absolute flex bottom-0 justify-between w-full">
@@ -710,7 +768,7 @@ const DeckBuilder = () => {
                 .map((card) => (
                   <div
                     key={card.name}
-                    className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
+                    className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-44 h-44 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
                       backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
@@ -729,9 +787,7 @@ const DeckBuilder = () => {
                       )}
                     </div>
 
-                    <p className="w-full text-xs font-bold">
-                      {card.name} ({card.count})
-                    </p>
+                    <p className="w-full text-xs font-bold">{card.name}</p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
                     {/* <p className="w-full text-[0.60rem]">{card.Description}</p> */}
                     <div className="absolute flex bottom-0 justify-between w-full">
@@ -767,7 +823,7 @@ const DeckBuilder = () => {
                 .map((card) => (
                   <div
                     key={card.name}
-                    className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-32 h-32 text-white shadow-md shadow-white"
+                    className="relative p-1 rounded mb-2 flex-col justify-between overflow-hidden items-center w-44 h-44 text-white shadow-md shadow-white"
                     onMouseEnter={() => handleCardHover(card)}
                     style={{
                       backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
@@ -786,9 +842,7 @@ const DeckBuilder = () => {
                       )}
                     </div>
 
-                    <p className="w-full text-xs font-bold">
-                      {card.name} ({card.count})
-                    </p>
+                    <p className="w-full text-xs font-bold">{card.name}</p>
                     <p className="w-full text-[0.60rem] italic">{card.Type}</p>
                     <p className="w-full text-[0.60rem]">{card.Description}</p>
                     <div className="absolute flex bottom-0 justify-between w-full">
