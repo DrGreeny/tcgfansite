@@ -240,7 +240,7 @@
     "HP": 1,
     "Continuous/ Equip": "",
     "Description": "This card cannot be destroyed by battle. Cards attacking this card gain Piercing damage during their attack",
-    "explanations": [""]
+    "explanations": ["This is a card especially used in combination with the Queen of Cosmic Orbits to swap it onto your opponents side"]
   },
   {
     "name": "Null",
@@ -252,7 +252,7 @@
     "HP": 1,
     "Continuous/ Equip": "",
     "Description": "At the end of the turn that this card is spoken, it is impervious to Effects, cannot be attacked, and cannot defend a Hero. If there are 3 copies of this card on your field, you lose the game",
-    "explanations": [""]
+    "explanations": ["This is a card especially used in combination with the Queen of Cosmic Orbits to swap it onto your opponents side"]
   },
   {
     "name": "Mochi Roll",
@@ -288,7 +288,7 @@
     "HP": 8,
     "Continuous/ Equip": "",
     "Description": "When this card is spoken, flip all other Creatures on the field facedown. This card gains 1 DP for every facedown Creature on the field",
-    "explanations": [""]
+    "explanations": ["Facedown creatures can be flipped back by spending the corresponding Words"]
   },
   {
     "name": "The Bleark Sun´s Ember",
@@ -360,7 +360,7 @@
     "HP": 12,
     "Continuous/ Equip": "",
     "Description": "This card can only be spoken by discarding 2 Spells or Curses from your hand. This card is impervious to Enchantments. Once per your turn, you can add 1 Spell or Curse from the Silence to your hand",
-    "explanations": [""]
+    "explanations": ["The turn you speak this card you cannot use its ability to add 1 spell or curse to your hand"]
   },
   {
     "name": "Scarecrow",
@@ -458,7 +458,7 @@
     "HP": 8,
     "Continuous/ Equip": "",
     "Description": "If this card is discarded from your hand, speak it without Words. If this card is spoken this way, increase its DP and HP by 4",
-    "explanations": [""]
+    "explanations": ["This card`s effect seeming useless in the beginning combined with cards like backroom deals, you can speak this card for free and additionally draw a card"]
   },
   {
     "name": "Swamp Dweller",
@@ -482,7 +482,7 @@
     "HP": 6,
     "Continuous/ Equip": "",
     "Description": "When this card is spoken, heal and increase the max HP of all other Creatures and Realms you control by 2",
-    "explanations": [""]
+    "explanations": ["Ideal to fight Realm destruction decks"]
   },
   {
     "name": "Impish Imp",
@@ -494,7 +494,7 @@
     "HP": 5,
     "Continuous/ Equip": "",
     "Description": "A peculiar creature, if you watch it long enough",
-    "explanations": [""]
+    "explanations": ["Necessary for speaking the Greater Imp Creature"]
   },
   {
     "name": "Piggy Bank",
@@ -554,7 +554,7 @@
     "HP": 4,
     "Continuous/ Equip": "",
     "Description": "If this card is destroyed by an Effect, draw a card",
-    "explanations": [""]
+    "explanations": ["Needed for speaking vFinal","Combined with Cybernetic Droid makes this card shine"]
   },
   {
     "name": "v2",
@@ -566,7 +566,7 @@
     "HP": 6,
     "Continuous/ Equip": "",
     "Description": "If this card is destroyed by an Effect, reduce your opponent’s Words by 2",
-    "explanations": [""]
+    "explanations": ["Needed for speaking vFinal","Combined with Cybernetic Droid makes this card shine"]
   },
   {
     "name": "v3",
@@ -578,7 +578,7 @@
     "HP": 8,
     "Continuous/ Equip": "",
     "Description": "If this card is destroyed by an Effect, you can speak a Creature from the silence without Words",
-    "explanations": [""]
+    "explanations": ["Needed for speaking vFinal","Combined with Cybernetic Droid makes this card shine"]
   },
   {
     "name": "vFinal",
@@ -602,7 +602,7 @@
     "HP": 8,
     "Continuous/ Equip": "",
     "Description": "Once per turn, you can use 2 Words to add a Spell from the Silence to your hand",
-    "explanations": [""]
+    "explanations": ["This card`s effect can also be used during your opponent`s turn"]
   },
   {
     "name": "Skill Shot Maverick",
@@ -626,7 +626,7 @@
     "HP": 25,
     "Continuous/ Equip": "",
     "Description": "An unknown mercenary who defuncted from his kingdom",
-    "explanations": [""]
+    "explanations": ["Often you would want to play this card flipped to be able to pay the huge Word cost by going to debt"]
   },
   {
     "name": "Sapphire Knight",
@@ -638,7 +638,7 @@
     "HP": 12,
     "Continuous/ Equip": "",
     "Description": "An unknown mercenary who defuncted from his kingdom",
-    "explanations": [""]
+    "explanations": ["Needed to summon The All Knight"]
   },
   {
     "name": "Emerald Knight",
@@ -650,7 +650,7 @@
     "HP": 13,
     "Continuous/ Equip": "",
     "Description": "An unknown mercenary who defuncted from his kingdom",
-    "explanations": [""]
+    "explanations": ["Needed to summon The All Knight"]
   },
   {
     "name": "Obsidian Knight",
@@ -662,7 +662,7 @@
     "HP": 15,
     "Continuous/ Equip": "",
     "Description": "An unknown mercenary who defuncted from his kingdom",
-    "explanations": [""]
+    "explanations": ["Needed to summon The All Knight"]
   },
   {
     "name": "The All Knight",
@@ -709,7 +709,7 @@
     "DP": 7,
     "HP": 3,
     "Continuous/ Equip": "",
-    "Description": "When this card destroys a Creature, increase its DP by 2 and attack again. At the end of your turn, reset its DP to normal",
+    "Description": "During their Main phase, your opponent can toss a coin: if heads, destroy this card",
     "explanations": [""]
   },
   {
@@ -782,7 +782,7 @@
     "HP": 2,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, you can search your deck for an Undead-type card and send it to the Silence. If there is another Undead-type Creature on your field besides “Baby Skull,” this card cannot be attacked",
-    "explanations": [""]
+    "explanations": ["In combination with Soulbound Reaper or Royal Skull very useful"]
   },
   {
     "name": "Royal Skull",
@@ -818,7 +818,7 @@
     "HP": 8,
     "Continuous/ Equip": "",
     "Description": "When this card is spoken, reveal your opponent’s hand: generate 1 Word for every Spell",
-    "explanations": [""]
+    "explanations": ["Your opponent must reveal his complete hand, not only the spells"]
   },
   {
     "name": "Underwolf",
@@ -890,7 +890,7 @@
     "HP": 6,
     "Continuous/ Equip": "",
     "Description": "If a card you control were to be affected by an Effect or Ability, you can redirect it to this card instead",
-    "explanations": [""]
+    "explanations": ["This card can also redirect effects from spells or curses"]
   },
   {
     "name": "The Pharao´s Gravekeeper",
@@ -938,7 +938,7 @@
     "HP": 14,
     "Continuous/ Equip": "",
     "Description": "When this card destroys a Creature, increase its DP by 2 and attack again. At the end of your turn, reset its DP to normal",
-    "explanations": [""]
+    "explanations": ["The subsequent attack must be exectuted right after the first attack and cannot be used after other actions were taken"]
   },
   {
     "name": "Blacksea Predator",
@@ -998,7 +998,7 @@
     "HP": 12,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, you can reveal the next 5 cards in your opponent’s deck and send one to the Silence. If this Effect is used, this card cannot attack this turn",
-    "explanations": [""]
+    "explanations": ["Your opponent`s deck gets shuffled automatically after using this effect"]
   },
   {
     "name": "Revive.exe",
@@ -1058,7 +1058,7 @@
     "HP": 5,
     "Continuous/ Equip": "",
     "Description": "You can bounce this card at the end of your turn, and if you do, place a Counter on it. This card gains 2 DP and HP for every counter on it",
-    "explanations": [""]
+    "explanations": ["Bouncing means you can take it back to your hand"]
   },
   {
     "name": "Greater Demon",
@@ -1154,7 +1154,7 @@
     "HP": 6,
     "Continuous/ Equip": "",
     "Description": "When this card destroys a Creature, return it to its owner’s hand",
-    "explanations": [""]
+    "explanations": ["The owner is the original holder of the card, so independant from which side the card is currently on"]
   },
   {
     "name": "Wicked Dust",
@@ -1222,7 +1222,7 @@
     "Type": "Creature",
     "Realm": ["Dragon", "Mythic"],
     "WordCost": 1,
-    "DP": 12,
+    "DP": 9,
     "HP": 1,
     "Continuous/ Equip": "",
     "Description": "Destroy this card after it deals damage",
