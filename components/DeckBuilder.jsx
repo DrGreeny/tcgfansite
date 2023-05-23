@@ -539,7 +539,7 @@ const DeckBuilder = () => {
 
           <div className="relative flex items-end justify-center">
             <Image
-              src="/Speak_Logo.png"
+              src="/Speak_Logo.PNG"
               alt="Speak_logo"
               fill
               className="object-contain"
