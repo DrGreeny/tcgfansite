@@ -13,6 +13,8 @@ const DeckBuilder = () => {
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [hoveredCard, setHoveredCard] = useState(null); // New state variable for the hovered card
   const [wordCostRange, setWordCostRange] = useState([0, 10]);
+  const [dpRange, setDPRange] = useState([0, 20]);
+  const [hpRange, setHPRange] = useState([0, 20]);
   const [expanded, setExpanded] = useState(true);
 
   const toggleExpand = () => {
@@ -166,7 +168,12 @@ const DeckBuilder = () => {
     })
     .filter(
       (card) =>
-        card.WordCost >= wordCostRange[0] && card.WordCost <= wordCostRange[1]
+        card.WordCost >= wordCostRange[0] &&
+        card.WordCost <= wordCostRange[1] &&
+        card.DP >= dpRange[0] &&
+        card.DP <= dpRange[1] &&
+        card.HP >= hpRange[0] &&
+        card.HP <= hpRange[1]
     );
 
   const filteredSelectedCards = selectedCards
@@ -205,7 +212,12 @@ const DeckBuilder = () => {
     })
     .filter(
       (card) =>
-        card.WordCost >= wordCostRange[0] && card.WordCost <= wordCostRange[1]
+        card.WordCost >= wordCostRange[0] &&
+        card.WordCost <= wordCostRange[1] &&
+        card.DP >= dpRange[0] &&
+        card.DP <= dpRange[1] &&
+        card.HP >= hpRange[0] &&
+        card.HP <= hpRange[1]
     );
 
   const countByType = (type) => {
@@ -284,6 +296,16 @@ const DeckBuilder = () => {
   const handleSliderChange = (values) => {
     setWordCostRange(values);
   };
+  // Event handler for DP slider
+  const handleDPSliderChange = (value) => {
+    setDPRange(value);
+  };
+
+  // Event handler for HP slider
+  const handleHPSliderChange = (value) => {
+    setHPRange(value);
+  };
+
   return (
     <div className="h-screen">
       {expanded && (
@@ -364,6 +386,35 @@ const DeckBuilder = () => {
                 <div className=" flex-col">
                   <div>
                     <p>
+                      DP Range: {dpRange[0]} - {dpRange[1]}
+                    </p>
+
+                    <Range
+                      range
+                      min={0}
+                      max={20}
+                      value={dpRange}
+                      onChange={handleDPSliderChange}
+                      className="text-black"
+                    />
+                  </div>
+
+                  <div>
+                    <p>
+                      HP Range: {hpRange[0]} - {hpRange[1]}
+                    </p>
+
+                    <Range
+                      range
+                      min={0}
+                      max={20}
+                      value={hpRange}
+                      onChange={handleHPSliderChange}
+                      className="text-black"
+                    />
+                  </div>
+                  <div>
+                    <p>
                       Word Cost Range: {wordCostRange[0]} - {wordCostRange[1]}
                     </p>
                     {/* Add the range slider component */}
@@ -373,8 +424,11 @@ const DeckBuilder = () => {
                       max={10}
                       value={wordCostRange}
                       onChange={handleSliderChange}
+                      className="text-black"
                     />
                   </div>
+                </div>
+                <div>
                   <div className="flex mt-2">
                     <input
                       type="text"
@@ -567,7 +621,12 @@ const DeckBuilder = () => {
                     />
                   </div>
                   <div className="flex justify-between">
-                    <div className="italic">{hoveredCard.Type}</div>
+                    <div className="italic my-2">
+                      {hoveredCard.Type}
+                      {["Spell", "Curse"].includes(hoveredCard.Type) && (
+                        <span> / {hoveredCard["Continuous/ Equip"]}</span>
+                      )}
+                    </div>
                     {(hoveredCard.Type === "Creature" ||
                       hoveredCard.Type === "Hero") && (
                       <div className="italic my-1">
