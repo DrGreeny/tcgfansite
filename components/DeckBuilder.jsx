@@ -11,6 +11,8 @@ const DeckBuilder = () => {
   const [filterSelectedCards, setFilterSelectedCards] = useState(false);
   const [selectedRealms, setSelectedRealms] = useState([]);
   const [selectedTypes, setSelectedTypes] = useState([]);
+  const [selectedEnchantment, setSelectedEnchantment] = useState([]);
+
   const [hoveredCard, setHoveredCard] = useState(null); // New state variable for the hovered card
   const [wordCostRange, setWordCostRange] = useState([0, 10]);
   const [dpRange, setDPRange] = useState([0, 20]);
@@ -137,10 +139,26 @@ const DeckBuilder = () => {
     }
   };
 
+  const handleEnchantmentSelect = (event) => {
+    const enchantment = event.target.name.toLowerCase();
+    const isChecked = event.target.checked;
+
+    if (isChecked) {
+      setSelectedEnchantment([...selectedEnchantment, enchantment]);
+    } else {
+      setSelectedEnchantment(
+        selectedEnchantment.filter((t) => t !== enchantment)
+      );
+    }
+  };
+
   const filteredCards = cards
     .filter((card) => {
       const name = card.name.toLowerCase();
       const type = card.Type ? card.Type.toLowerCase() : "";
+      const enchantment = card["Continuous/ Equip"]
+        ? card["Continuous/ Equip"].toLowerCase()
+        : "";
       const cardRealms = card.Realm
         ? card.Realm.map((realm) => realm.toLowerCase())
         : [];
@@ -157,6 +175,13 @@ const DeckBuilder = () => {
       if (
         selectedTypes.length > 0 &&
         !selectedTypes.includes(type.toLowerCase())
+      ) {
+        return false;
+      }
+
+      if (
+        selectedEnchantment.length > 0 &&
+        !selectedEnchantment.includes(enchantment.toLowerCase())
       ) {
         return false;
       }
@@ -180,6 +205,9 @@ const DeckBuilder = () => {
     .filter((card) => {
       const name = card.name.toLowerCase();
       const type = card.Type ? card.Type.toLowerCase() : "";
+      const enchantment = card["Continuous/ Equip"]
+        ? card["Continuous/ Equip"].toLowerCase()
+        : "";
       const cardRealms = card.Realm
         ? card.Realm.map((realm) => realm.toLowerCase())
         : [];
@@ -201,6 +229,14 @@ const DeckBuilder = () => {
         filterSelectedCards &&
         selectedTypes.length > 0 &&
         !selectedTypes.includes(type.toLowerCase())
+      ) {
+        return false;
+      }
+
+      if (
+        filterSelectedCards &&
+        selectedEnchantment.length > 0 &&
+        !selectedEnchantment.includes(enchantment.toLowerCase())
       ) {
         return false;
       }
@@ -243,11 +279,25 @@ const DeckBuilder = () => {
       .filter((card) => card.Type === type)
       .reduce((total, card) => total + card.WordCost * card.count, 0);
   };
+  const calculateTotalDp = (type) => {
+    return selectedCards
+      .filter((card) => card.Type === type)
+      .reduce((total, card) => total + card.DP * card.count, 0);
+  };
+
+  const calculateTotalHp = (type) => {
+    return selectedCards
+      .filter((card) => card.Type === type)
+      .reduce((total, card) => total + card.HP * card.count, 0);
+  };
 
   // Calculate the WordCost for creature, spell, and curse types
   const creatureWordCost = calculateTotalWordCost("Creature");
   const spellWordCost = calculateTotalWordCost("Spell");
   const curseWordCost = calculateTotalWordCost("Curse");
+
+  const totalHp = calculateTotalHp("Creature");
+  const totalDp = calculateTotalDp("Creature");
 
   // Calculate the total WordCost for all selected cards
   const totalWordCost = selectedCards.reduce(
@@ -335,6 +385,7 @@ const DeckBuilder = () => {
                     <option value="Cosmic">Cosmic</option>
                   </select>
                 </div>
+
                 <div className="">
                   <label className="block">Filter by Type:</label>
                   <label className="block">
@@ -381,6 +432,36 @@ const DeckBuilder = () => {
                       onChange={handleTypeSelect}
                     />
                     Realm
+                  </label>
+                </div>
+                <div className="">
+                  <label className="block">Filter Affix:</label>
+                  <label className="block">
+                    <input
+                      type="checkbox"
+                      name="continuous"
+                      checked={selectedEnchantment.includes("continuous")}
+                      onChange={handleEnchantmentSelect}
+                    />
+                    Continuous
+                  </label>
+                  <label className="block">
+                    <input
+                      type="checkbox"
+                      name="equip"
+                      checked={selectedEnchantment.includes("equip")}
+                      onChange={handleEnchantmentSelect}
+                    />
+                    Equip
+                  </label>
+                  <label className="block">
+                    <input
+                      type="checkbox"
+                      name="single"
+                      checked={selectedEnchantment.includes("single")}
+                      onChange={handleEnchantmentSelect}
+                    />
+                    Single
                   </label>
                 </div>
                 <div className=" flex-col">
@@ -456,7 +537,7 @@ const DeckBuilder = () => {
             </div>
           </div>
 
-          <div className="flex items-end justify-center">
+          <div className="relative flex items-end justify-center">
             <Image
               src="/Speak_Logo.png"
               alt="Speak_logo"
@@ -489,6 +570,19 @@ const DeckBuilder = () => {
                 <p className="">Spell WordCost: {spellWordCost}</p>
                 <p className="">Curse WordCost:{curseWordCost}</p>
                 <p className="">Total WordCost: {totalWordCost}</p>
+              </div>
+              <div className="">
+                {/*grid grid-cols-2 gap-x-2*/}
+                <p className="">Creature total DP: {totalDp}</p>
+                <p className="">Creature total HP: {totalHp}</p>
+                <p className="">
+                  Average DP:{" "}
+                  {Math.round((totalDp / countByType("creature")) * 10) / 10}
+                </p>
+                <p className="">
+                  Average HP:{" "}
+                  {Math.round((totalHp / countByType("creature")) * 10) / 10}
+                </p>
               </div>
               <div className="text-white ">
                 <p>Equip Spells: {equipSpellsCount}</p>
