@@ -10,7 +10,7 @@ const Faq = ({ summary, question, answer, date, tags, author }) => {
   return (
     <div className=" p-2 mx-2">
       <div className="flex gap-4 mb-2 shadow-md shadow-gray-200 p-2">
-        <h2 className="font-bold text-lg mr-4">{summary}</h2>
+        <h2 className="font-bold text-lg mr-4 w-1/2">{summary}</h2>
         <p>
           <span className="font-bold text-gray-200">Date: </span> {date}
         </p>
