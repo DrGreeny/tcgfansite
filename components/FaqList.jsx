@@ -17,7 +17,7 @@ const FAQList = () => {
     setSearchTerm(e.target.value);
   };
   return (
-    <div className="text-white">
+    <div className="text-white p-6">
       <div className="flex justify-center">
         <input
           className="text-gray-900 my-4"
