@@ -1,46 +1,30 @@
-import dynamic from "next/dynamic";
-import React from "react";
+import {
+  SingleEliminationBracket,
+  DoubleEliminationBracket,
+  Match,
+  MATCH_STATES,
+  SVGViewer,
+} from "@g-loot/react-tournament-brackets";
 
-if (typeof window !== "undefined" && typeof window.navigator !== "undefined") {
-  import("@g-loot/react-tournament-brackets");
-}
-const SingleEliminationBracket = dynamic(
-  () => {
-    return import("@g-loot/react-tournament-brackets").then(
-      (mod) => mod.SingleEliminationBracket
-    );
-  },
-  { ssr: false }
+export const DoubleElimination = () => (
+  <DoubleEliminationBracket
+    matches={matches}
+    matchComponent={Match}
+    svgWrapper={({ children, ...props }) => (
+      <SVGViewer width={500} height={500} {...props}>
+        {children}
+      </SVGViewer>
+    )}
+  />
 );
-
-const Match = dynamic(
-  () => {
-    return import("@g-loot/react-tournament-brackets").then((mod) => mod.Match);
-  },
-  { ssr: false }
-);
-const MATCH_STATES = dynamic(
-  () => {
-    return import("@g-loot/react-tournament-brackets").then(
-      (mod) => mod.MATCH_STATES
-    );
-  },
-  { ssr: false }
-);
-const SVGViewer = dynamic(
-  () => {
-    return import("@g-loot/react-tournament-brackets").then(
-      (mod) => mod.SVGViewer
-    );
-  },
-  { ssr: false }
-);
-
-const createTheme = dynamic(
-  () => {
-    return import("@g-loot/react-tournament-brackets").then(
-      (mod) => mod.createTheme
-    );
-  },
-  { ssr: false }
+export const SingleElimination = () => (
+  <SingleEliminationBracket
+    matches={matches}
+    matchComponent={Match}
+    svgWrapper={({ children, ...props }) => (
+      <SVGViewer width={500} height={500} {...props}>
+        {children}
+      </SVGViewer>
+    )}
+  />
 );
