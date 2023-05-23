@@ -456,7 +456,14 @@ const DeckBuilder = () => {
             </div>
           </div>
 
-          <div className="flex items-end justify-center"></div>
+          <div className="flex items-end justify-center">
+            <Image
+              src="/Speak_Logo.png"
+              alt="Speak_logo"
+              fill
+              className="object-contain"
+            />
+          </div>
           <div className="col-span-2 p-2 flex-col bg-black">
             <div className="flex justify-center mb-4 font-bold">
               <h3 className="">Data and Statistics</h3>
