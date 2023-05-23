@@ -34,7 +34,8 @@
     "Continuous/ Equip": "",
     "Description": "When a Creature you control is destroyed, place 1 counter on this card. You can remove counters to: \n1 counter: Negate an attack\n2 counters: Inflict 1 DP to a Realm\n3 counters: Negate a card Effect\n4 counters: Draw 2 cards",
     "explanations": [
-      "You can use the counters of this card at any time in the game, even during opponent`s turn."
+      "You can use the counters of this card at any time in the game, even during opponent`s turn",
+      "You can have an umlimited amount of counters on this card"
     ]
   },
   {
@@ -59,7 +60,7 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Generate 1 Word during your Word Phases. Once per turn, you can use Words to increase the DP or HP of a card you control by the number of Words used until the end of the turn",
-    "explanations": [""]
+    "explanations": ["Do not forget to add the extra 1 Word manually during your Word phase"]
   },
   {
     "name": "Blackhole magician",
@@ -71,7 +72,7 @@
     "HP": 45,
     "Continuous/ Equip": "",
     "Description": "Creatures that target this card for an attack are flipped face-down after damage calculation",
-    "explanations": [""]
+    "explanations": ["This card needs to be nerfed..."]
   },
   {
     "name": "Vapor Shaman",
@@ -83,7 +84,7 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Once per turn, you can redo a card Effect that involved chance",
-    "explanations": [""]
+    "explanations": ["Be aware, that you can also use it during opponent`s turn"]
   },
   {
     "name": "Basis Warrior",
@@ -95,7 +96,7 @@
     "HP": 55,
     "Continuous/ Equip": "",
     "Description": "Increase the DP of all creatures you control by 3.",
-    "explanations": [""]
+    "explanations": ["In difference to the Cosmic Puppeteer this card permanently increases the DP of all creatures automatically without the need to set it during a specific phase"]
   },
   {
     "name": "Immortal Flame",
@@ -107,7 +108,7 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, you can excavate the top card of your deck. If it is an Undead-type card, speak it without Words.",
-    "explanations": [""]
+    "explanations": ["Excavating means pull one card from your deck and put it on the silence"]
   },
   {
     "name": "World Eater",
@@ -131,7 +132,7 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, you can use 4 Words to take control of 1 of your opponent´s Creatures until the end of the turn.",
-    "explanations": [""]
+    "explanations": ["Be aware, that the ability of this card can be used in your or your opponent`s turn. This means you could also chain this ability into battles or other things, that potentially destroy one of your creatures, so that your attacked creature will be attacked but swapped to your opponents side before it is destroyed"]
   },
   {
     "name": "Cosmic Puppeteer",
@@ -143,7 +144,7 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, during your Main Phase, you can target 1 Creature you control: it gains 5 DP and HP. You can only target 1 Creature you control at a time.",
-    "explanations": [""]
+    "explanations": ["In difference to Basis Warrior Hero, the ability of this cards must be explicitly used in one of your main phases (probably Main Phase 1 to use the DP for your attack)"]
   },
   {
     "name": "Guard of the Rabbit Hole",
@@ -155,7 +156,7 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "You can use 4 Words to bounce a Creature",
-    "explanations": [""]
+    "explanations": ["Bouncing a creature means, that after it gets spoken, it is directly send back to the controllers hand"]
   },
   {
     "name": "Queen of Cosmic Orbits",
@@ -176,10 +177,10 @@
     "Realm": ["Digital"],
     "WordCost": 0,
     "DP": 5,
-    "HP": 50,
+    "HP": 55,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can destroy a Digital-type Creature you control to increase this card´s DP by 1",
-    "explanations": [""]
+    "Description": "Once per your turn, you can destroy a Digital-type Creature you control to heal this card by 5 HP increase its DP by 1",
+    "explanations": ["Be aware, that you can use this card`s ability at any time during your turn, so you are able to attack with a creature, destroy it afterwards to use its effect and then attack with your Hero"]
   },
   {
     "name": "Master of the Forest Imps",
@@ -191,7 +192,7 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, you can spawn 1 \"Imp\" Creature (Mythic / 1DP / 1HP)",
-    "explanations": [""]
+    "explanations": ["At the moment this Hero is not playable due to missing simulator implementation"]
   },
   {
     "name": "Split Arrow Archer",
@@ -203,7 +204,7 @@
     "HP": 7,
     "Continuous/ Equip": "",
     "Description": "This card can attack twice during your Battle Phase",
-    "explanations": [""]
+    "explanations": ["The second attack needs to directly follow the first one, so you cannot attack with other creatures in between"]
   },
   {
     "name": "Fractal Feathers",
@@ -215,7 +216,7 @@
     "HP": 5,
     "Continuous/ Equip": "",
     "Description": "Generate 2 Words every time this card attacks",
-    "explanations": [""]
+    "explanations": ["If word generation is prohibited due to any other card effects, also this card is affected"]
   },
   {
     "name": "Bladesaw Runner",
