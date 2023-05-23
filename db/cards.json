@@ -60,7 +60,9 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Generate 1 Word during your Word Phases. Once per turn, you can use Words to increase the DP or HP of a card you control by the number of Words used until the end of the turn",
-    "explanations": ["Do not forget to add the extra 1 Word manually during your Word phase"]
+    "explanations": [
+      "Do not forget to add the extra 1 Word manually during your Word phase"
+    ]
   },
   {
     "name": "Blackhole magician",
@@ -84,7 +86,9 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Once per turn, you can redo a card Effect that involved chance",
-    "explanations": ["Be aware, that you can also use it during opponent`s turn"]
+    "explanations": [
+      "Be aware, that you can also use it during opponent`s turn"
+    ]
   },
   {
     "name": "Basis Warrior",
@@ -96,7 +100,9 @@
     "HP": 55,
     "Continuous/ Equip": "",
     "Description": "Increase the DP of all creatures you control by 3.",
-    "explanations": ["In difference to the Cosmic Puppeteer this card permanently increases the DP of all creatures automatically without the need to set it during a specific phase"]
+    "explanations": [
+      "In difference to the Cosmic Puppeteer this card permanently increases the DP of all creatures automatically without the need to set it during a specific phase"
+    ]
   },
   {
     "name": "Immortal Flame",
@@ -108,7 +114,9 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, you can excavate the top card of your deck. If it is an Undead-type card, speak it without Words.",
-    "explanations": ["Excavating means pull one card from your deck and put it on the silence"]
+    "explanations": [
+      "Excavating means pull one card from your deck and put it on the silence"
+    ]
   },
   {
     "name": "World Eater",
@@ -132,7 +140,9 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, you can use 4 Words to take control of 1 of your opponent´s Creatures until the end of the turn.",
-    "explanations": ["Be aware, that the ability of this card can be used in your or your opponent`s turn. This means you could also chain this ability into battles or other things, that potentially destroy one of your creatures, so that your attacked creature will be attacked but swapped to your opponents side before it is destroyed"]
+    "explanations": [
+      "Be aware, that the ability of this card can be used in your or your opponent`s turn. This means you could also chain this ability into battles or other things, that potentially destroy one of your creatures, so that your attacked creature will be attacked but swapped to your opponents side before it is destroyed"
+    ]
   },
   {
     "name": "Cosmic Puppeteer",
@@ -144,7 +154,9 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, during your Main Phase, you can target 1 Creature you control: it gains 5 DP and HP. You can only target 1 Creature you control at a time.",
-    "explanations": ["In difference to Basis Warrior Hero, the ability of this cards must be explicitly used in one of your main phases (probably Main Phase 1 to use the DP for your attack)"]
+    "explanations": [
+      "In difference to Basis Warrior Hero, the ability of this cards must be explicitly used in one of your main phases (probably Main Phase 1 to use the DP for your attack)"
+    ]
   },
   {
     "name": "Guard of the Rabbit Hole",
@@ -156,7 +168,9 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "You can use 4 Words to bounce a Creature",
-    "explanations": ["Bouncing a creature means, that after it gets spoken, it is directly send back to the controllers hand"]
+    "explanations": [
+      "Bouncing a creature means, that after it gets spoken, it is directly send back to the controllers hand"
+    ]
   },
   {
     "name": "Queen of Cosmic Orbits",
@@ -180,7 +194,9 @@
     "HP": 55,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, you can destroy a Digital-type Creature you control to heal this card by 5 HP increase its DP by 1",
-    "explanations": ["Be aware, that you can use this card`s ability at any time during your turn, so you are able to attack with a creature, destroy it afterwards to use its effect and then attack with your Hero"]
+    "explanations": [
+      "Be aware, that you can use this card`s ability at any time during your turn, so you are able to attack with a creature, destroy it afterwards to use its effect and then attack with your Hero"
+    ]
   },
   {
     "name": "Master of the Forest Imps",
@@ -192,7 +208,9 @@
     "HP": 50,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, you can spawn 1 \"Imp\" Creature (Mythic / 1DP / 1HP)",
-    "explanations": ["At the moment this Hero is not playable due to missing simulator implementation"]
+    "explanations": [
+      "At the moment this Hero is not playable due to missing simulator implementation"
+    ]
   },
   {
     "name": "Split Arrow Archer",
@@ -204,7 +222,9 @@
     "HP": 7,
     "Continuous/ Equip": "",
     "Description": "This card can attack twice during your Battle Phase",
-    "explanations": ["The second attack needs to directly follow the first one, so you cannot attack with other creatures in between"]
+    "explanations": [
+      "The second attack needs to directly follow the first one, so you cannot attack with other creatures in between"
+    ]
   },
   {
     "name": "Fractal Feathers",
@@ -216,7 +236,9 @@
     "HP": 5,
     "Continuous/ Equip": "",
     "Description": "Generate 2 Words every time this card attacks",
-    "explanations": ["If word generation is prohibited due to any other card effects, also this card is affected"]
+    "explanations": [
+      "If word generation is prohibited due to any other card effects, also this card is affected"
+    ]
   },
   {
     "name": "Bladesaw Runner",
@@ -240,7 +262,9 @@
     "HP": 1,
     "Continuous/ Equip": "",
     "Description": "This card cannot be destroyed by battle. Cards attacking this card gain Piercing damage during their attack",
-    "explanations": ["This is a card especially used in combination with the Queen of Cosmic Orbits to swap it onto your opponents side"]
+    "explanations": [
+      "This is a card especially used in combination with the Queen of Cosmic Orbits to swap it onto your opponents side"
+    ]
   },
   {
     "name": "Null",
@@ -252,7 +276,9 @@
     "HP": 1,
     "Continuous/ Equip": "",
     "Description": "At the end of the turn that this card is spoken, it is impervious to Effects, cannot be attacked, and cannot defend a Hero. If there are 3 copies of this card on your field, you lose the game",
-    "explanations": ["This is a card especially used in combination with the Queen of Cosmic Orbits to swap it onto your opponents side"]
+    "explanations": [
+      "This is a card especially used in combination with the Queen of Cosmic Orbits to swap it onto your opponents side"
+    ]
   },
   {
     "name": "Mochi Roll",
@@ -288,7 +314,9 @@
     "HP": 8,
     "Continuous/ Equip": "",
     "Description": "When this card is spoken, flip all other Creatures on the field facedown. This card gains 1 DP for every facedown Creature on the field",
-    "explanations": ["Facedown creatures can be flipped back by spending the corresponding Words"]
+    "explanations": [
+      "Facedown creatures can be flipped back by spending the corresponding Words"
+    ]
   },
   {
     "name": "The Bleark Sun´s Ember",
@@ -360,7 +388,9 @@
     "HP": 12,
     "Continuous/ Equip": "",
     "Description": "This card can only be spoken by discarding 2 Spells or Curses from your hand. This card is impervious to Enchantments. Once per your turn, you can add 1 Spell or Curse from the Silence to your hand",
-    "explanations": ["The turn you speak this card you cannot use its ability to add 1 spell or curse to your hand"]
+    "explanations": [
+      "The turn you speak this card you cannot use its ability to add 1 spell or curse to your hand"
+    ]
   },
   {
     "name": "Scarecrow",
@@ -458,7 +488,9 @@
     "HP": 8,
     "Continuous/ Equip": "",
     "Description": "If this card is discarded from your hand, speak it without Words. If this card is spoken this way, increase its DP and HP by 4",
-    "explanations": ["This card`s effect seeming useless in the beginning combined with cards like Backroom Deals, you can speak this card for free and additionally draw a card"]
+    "explanations": [
+      "This card`s effect seeming useless in the beginning combined with cards like Backroom Deals, you can speak this card for free and additionally draw a card"
+    ]
   },
   {
     "name": "Swamp Dweller",
@@ -554,7 +586,10 @@
     "HP": 4,
     "Continuous/ Equip": "",
     "Description": "If this card is destroyed by an Effect, draw a card",
-    "explanations": ["Needed for speaking vFinal","Combined with Cybernetic Droid makes this card shine"]
+    "explanations": [
+      "Needed for speaking vFinal",
+      "Combined with Cybernetic Droid makes this card shine"
+    ]
   },
   {
     "name": "v2",
@@ -566,7 +601,10 @@
     "HP": 6,
     "Continuous/ Equip": "",
     "Description": "If this card is destroyed by an Effect, reduce your opponent’s Words by 2",
-    "explanations": ["Needed for speaking vFinal","Combined with Cybernetic Droid makes this card shine"]
+    "explanations": [
+      "Needed for speaking vFinal",
+      "Combined with Cybernetic Droid makes this card shine"
+    ]
   },
   {
     "name": "v3",
@@ -578,7 +616,10 @@
     "HP": 8,
     "Continuous/ Equip": "",
     "Description": "If this card is destroyed by an Effect, you can speak a Creature from the silence without Words",
-    "explanations": ["Needed for speaking vFinal","Combined with Cybernetic Droid makes this card shine"]
+    "explanations": [
+      "Needed for speaking vFinal",
+      "Combined with Cybernetic Droid makes this card shine"
+    ]
   },
   {
     "name": "vFinal",
@@ -602,7 +643,9 @@
     "HP": 8,
     "Continuous/ Equip": "",
     "Description": "Once per turn, you can use 2 Words to add a Spell from the Silence to your hand",
-    "explanations": ["This card`s effect can also be used during your opponent`s turn"]
+    "explanations": [
+      "This card`s effect can also be used during your opponent`s turn"
+    ]
   },
   {
     "name": "Skill Shot Maverick",
@@ -626,7 +669,9 @@
     "HP": 25,
     "Continuous/ Equip": "",
     "Description": "An unknown mercenary who defuncted from his kingdom",
-    "explanations": ["Often you would want to play this card flipped to be able to pay the huge Word cost by going to debt"]
+    "explanations": [
+      "Often you would want to play this card flipped to be able to pay the huge Word cost by going to debt"
+    ]
   },
   {
     "name": "Sapphire Knight",
@@ -782,7 +827,9 @@
     "HP": 2,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, you can search your deck for an Undead-type card and send it to the Silence. If there is another Undead-type Creature on your field besides “Baby Skull,” this card cannot be attacked",
-    "explanations": ["In combination with Soulbound Reaper or Royal Skull very useful"]
+    "explanations": [
+      "In combination with Soulbound Reaper or Royal Skull very useful"
+    ]
   },
   {
     "name": "Royal Skull",
@@ -818,7 +865,9 @@
     "HP": 8,
     "Continuous/ Equip": "",
     "Description": "When this card is spoken, reveal your opponent’s hand: generate 1 Word for every Spell",
-    "explanations": ["Your opponent must reveal his complete hand, not only the spells"]
+    "explanations": [
+      "Your opponent must reveal his complete hand, not only the spells"
+    ]
   },
   {
     "name": "Underwolf",
@@ -890,7 +939,9 @@
     "HP": 6,
     "Continuous/ Equip": "",
     "Description": "If a card you control were to be affected by an Effect or Ability, you can redirect it to this card instead",
-    "explanations": ["This card can also redirect effects from spells or curses"]
+    "explanations": [
+      "This card can also redirect effects from spells or curses"
+    ]
   },
   {
     "name": "The Pharao´s Gravekeeper",
@@ -938,7 +989,9 @@
     "HP": 14,
     "Continuous/ Equip": "",
     "Description": "When this card destroys a Creature, increase its DP by 2 and attack again. At the end of your turn, reset its DP to normal",
-    "explanations": ["The subsequent attack must be exectuted right after the first attack and cannot be used after other actions were taken"]
+    "explanations": [
+      "The subsequent attack must be exectuted right after the first attack and cannot be used after other actions were taken"
+    ]
   },
   {
     "name": "Blacksea Predator",
@@ -998,7 +1051,9 @@
     "HP": 12,
     "Continuous/ Equip": "",
     "Description": "Once per your turn, you can reveal the next 5 cards in your opponent’s deck and send one to the Silence. If this Effect is used, this card cannot attack this turn",
-    "explanations": ["Your opponent`s deck gets shuffled automatically after using this effect"]
+    "explanations": [
+      "Your opponent`s deck gets shuffled automatically after using this effect"
+    ]
   },
   {
     "name": "Revive.exe",
@@ -1154,7 +1209,9 @@
     "HP": 6,
     "Continuous/ Equip": "",
     "Description": "When this card destroys a Creature, return it to its owner’s hand",
-    "explanations": ["The owner is the original holder of the card, so independant from which side the card is currently on"]
+    "explanations": [
+      "The owner is the original holder of the card, so independant from which side the card is currently on"
+    ]
   },
   {
     "name": "Wicked Dust",
@@ -1309,7 +1366,7 @@
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
-    "Description": "You can equip this card to a Creature: it gains 2 HP at the end of your turns",
+    "Description": "You can equip this card to a Creature: heal it by 2 HP at the end of your turns",
     "explanations": [""]
   },
   {
@@ -1317,7 +1374,7 @@
     "tokenId": 96,
     "Type": "Spell",
     "Realm": [""],
-    "WordCost": 2,
+    "WordCost": 3,
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
@@ -1943,7 +2000,7 @@
     "tokenId": 156,
     "Type": "Curse",
     "Realm": [""],
-    "WordCost": 3,
+    "WordCost": 4,
     "DP": "",
     "HP": "",
     "Continuous/ Equip": "Equip",
