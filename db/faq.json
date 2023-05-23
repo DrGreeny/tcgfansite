@@ -3,16 +3,48 @@
     "summary": "Queen chained by creature destruction",
     "question": "I play Queen and announce a swap. My opponent announces that he plays Deep mirror to destroy my creature that I wanted to swap. What happens? \n 1: the creature on my side gets destroyed and swap fails because there is no more creature to swap. I lose 5 words for the attempted swap. \n 2: swap will be fulfilled and creature that was destroyed gets destroyed on opponents side.",
     "answer": "so deep mirror was activated last, so it executes first. it destroys their creature, then hero eff executes, which tries to move it to opponents field. since the conditions are not able to be filled anymore, the effect would be cancelled (NOT negated). the same way you cant speak for example unwanted visitors unless you have 2 creatures in your silence\nso it would be as if the player did not use her ability and did not lose the word cost\nofc, these are all novel situations and id love to hear your thought process as well before we finalize any advanced rule sets\nthis, to me however, seems the most logical",
-    "tags": ["super", "dumme", "Frage"],
+    "tags": ["Queen", "chaining"],
     "date": "2023-05-01",
     "author": "GreenyT"
   },
   {
-    "summary": "Hero not advanced, when attacking",
-    "question": "Warum verliere ich dauernd ?",
-    "answer": "Du musst mehr üben",
-    "tags": ["super", "mega", "Antwort"],
-    "date": "2023-05-02",
+    "summary": "Word generation prohibited",
+    "question": "Does word generation only affect word phase, so cards that prevent generation of words only affect the word phase ?",
+    "answer": "No generally it affects every generation or taking of words.",
+    "tags": ["Words"],
+    "date": "2023-05-23",
     "author": "arti"
-  }
+  },
+    {
+    "summary": "Using effects",
+    "question": "When can effects be used?",
+    "answer": "Any effects can be used between Main Phase 1, Battle Phase, and Main Phase 2, unless stated otherwise on the card. For simplicities sake we simply wrote that battle phase is for battle, but it is correct that you can use effects during it",
+    "tags": ["Phases", "effects"],
+    "date": "2023-05-23",
+    "author": "GreenyT"
+  },
+      {
+    "summary": "Bouncing a creature after Queen swap",
+    "question": "What happens if I swap my creature with the Queen to the opponents side and bounce it afterwards? Does it bounce to my hand?",
+    "answer": "Yep! it returns to its owners hand, not controller's hand",
+    "tags": ["Bounce", "Queen","chaining"],
+    "date": "2023-05-23",
+    "author": "GreenyT"
+  },
+        {
+    "summary": "Bouncing a creature with an equipped card",
+    "question": "If I bounce an opponents creature that has an equipped card, what happens to the equipped card? Does it get destroyed or bounced to the hand as well?",
+    "answer": "The equipped card gets destroyed",
+    "tags": ["Bounce", "Equip"],
+    "date": "2023-05-23",
+    "author": "GreenyT"
+  },
+          {
+    "summary": "Unmuting Creatures by pressing a Realm",
+    "question": "If I mute all of the opponent's creatures with soul eject and the opponent presses a realm, do their creatures get unmuted again?",
+    "answer": "Yes! Since the activation of a Realm is when its effect executes",
+    "tags": ["Mute", "Realm"],
+    "date": "2023-05-23",
+    "author": "GreenyT"
+  },
 ]
