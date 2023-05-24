@@ -3,10 +3,20 @@ const SaveDeck = ({ selectedCards }) => {
     const json = JSON.stringify(selectedCards, null, 2);
     const blob = new Blob([json], { type: "application/json" });
     const url = URL.createObjectURL(blob);
+
     const link = document.createElement("a");
     link.href = url;
     link.download = "deck.json";
-    link.click();
+
+    // Trigger the "Save As" dialog
+    link.dispatchEvent(
+      new MouseEvent("click", {
+        bubbles: true,
+        cancelable: true,
+        view: window,
+      })
+    );
+
     URL.revokeObjectURL(url);
   };
 
