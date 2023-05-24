@@ -46,5 +46,21 @@
     "tags": ["Mute", "Realm"],
     "date": "2023-05-23",
     "author": "GreenyT"
+  },
+            {
+    "summary": "What is bouncing ?",
+    "question": "What does it mean to bounce a creature?",
+    "answer": "Bouncing a creature means, that after speaking it is directly sent back to its speaker`s hand. The Word cost need to payed, but any card effects are not executed.",
+    "tags": ["Bounce"],
+    "date": "2023-05-24",
+    "author": "Petteri"
+  },
+              {
+    "summary": "What is muting ?",
+    "question": "What does it mean to mute a creature?",
+    "answer": "When a creature gets muted it is somehow disabled, which means it cannot attack or use its abilities. A muted creature still has its DP/HP so for defending your Hero it is still useful",
+    "tags": ["Mute"],
+    "date": "2023-05-24",
+    "author": "GreenyT"
   }
 ]
