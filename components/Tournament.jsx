@@ -57,9 +57,9 @@ const Tournament = () => {
   return (
     <div className="text-white ">
       <div
-        className="grid grid-cols-2 items-center mt-10"
+        className="grid grid-cols-2 items-center"
         style={{
-          height: `calc(100vh - 136px)`,
+          height: `calc(100vh - 96px)`,
         }}
       >
         <div className="m-auto ">
