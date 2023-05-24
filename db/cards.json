@@ -634,7 +634,7 @@
     "explanations": [""]
   },
   {
-    "name": "Mysic Spellcaster",
+    "name": "Mystic Spellcaster",
     "tokenId": 38,
     "Type": "Creature",
     "Realm": ["Human", "Mythic"],
@@ -766,7 +766,7 @@
     "DP": 3,
     "HP": 7,
     "Continuous/ Equip": "",
-    "Description": "Once per turn, you can use 3 Words to negate the speaking or activation of a Spell or Curse",
+    "Description": "During their Main phase, your opponent can toss a coin: if heads, they take control of this card",
     "explanations": [""]
   },
   {
