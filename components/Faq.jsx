@@ -37,11 +37,11 @@ const Faq = ({ summary, question, answer, date, tags, author }) => {
             {question}
           </h2>
 
-          <p className="whitespace-pre-line mb-4">
+          <h2 className="whitespace-pre-line mb-4">
             <span className="font-bold">Answer</span>
             <br />
             {answer}
-          </p>
+          </h2>
         </>
       )}
       <button className="text-gray-200 " onClick={toggleExpand}>
