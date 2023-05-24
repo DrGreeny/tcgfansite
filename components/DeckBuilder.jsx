@@ -16,7 +16,7 @@ const DeckBuilder = () => {
   const [hoveredCard, setHoveredCard] = useState(null); // New state variable for the hovered card
   const [wordCostRange, setWordCostRange] = useState([0, 10]);
   const [dpRange, setDPRange] = useState([0, 20]);
-  const [hpRange, setHPRange] = useState([0, 20]);
+  const [hpRange, setHPRange] = useState([0, 100]);
   const [expanded, setExpanded] = useState(true);
 
   const toggleExpand = () => {
@@ -488,7 +488,7 @@ const DeckBuilder = () => {
                     <Range
                       range
                       min={0}
-                      max={20}
+                      max={100}
                       value={hpRange}
                       onChange={handleHPSliderChange}
                       className="text-black"
