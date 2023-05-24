@@ -1,9 +1,9 @@
-import TournamentWrapper from "../components/TournamentWrapper";
+import Tournament from "../components/Tournament";
 
 export default function tournaments() {
   return (
-    <div className="self-center text-white h-screen bg-black">
-      <TournamentWrapper />
+    <div className=" bg-black">
+      <Tournament />
     </div>
   );
 }
