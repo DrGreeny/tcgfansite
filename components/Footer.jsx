@@ -16,7 +16,7 @@ const Footer = () => {
           onClick={handleDiscordLogoClick}
         />
       </div>
-      <p className="my-auto">Speak4Fans &copy; {new Date().getFullYear()}</p>
+      <p className="my-auto">SpeakWords &copy; {new Date().getFullYear()}</p>
       <p className="my-auto">Powered by GreenyT</p>
     </footer>
   );
