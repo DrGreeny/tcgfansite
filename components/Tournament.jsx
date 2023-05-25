@@ -59,7 +59,7 @@ const Tournament = () => {
       <div
         className="grid grid-cols-2 items-center"
         style={{
-          height: `calc(100vh - 96px)`,
+          height: `calc(100vh - 64px)`,
         }}
       >
         <div className="m-auto ">

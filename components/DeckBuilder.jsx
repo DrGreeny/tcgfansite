@@ -357,7 +357,12 @@ const DeckBuilder = () => {
   };
 
   return (
-    <div className="h-screen">
+    <div
+      className=" "
+      style={{
+        height: `calc(100vh - 64px)`,
+      }}
+    >
       {expanded && (
         <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 border-b-4 z-10">
           <div className="col-span-2 ">
@@ -665,7 +670,7 @@ const DeckBuilder = () => {
         <div
           className="col-span-2 "
           style={{
-            height: expanded ? `calc(100vh - 250px)` : `calc(100vh - 50px)`,
+            height: expanded ? `calc(100vh - 312px)` : `calc(100vh - 104px)`,
           }}
         >
           <div className="flex flex-wrap gap-4 sticky top-64 h-full overflow-y-auto">
@@ -745,7 +750,7 @@ const DeckBuilder = () => {
         </div>
         <div
           style={{
-            height: expanded ? `calc(100vh - 250px)` : `calc(100vh - 50px)`,
+            height: expanded ? `calc(100vh - 312px)` : `calc(100vh - 104px)`,
           }}
           className="col-span-4 border-l pl-2"
         >

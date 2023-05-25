@@ -5,7 +5,7 @@ const Footer = () => {
     window.location.href = "https://discord.gg/8cv5tm4pMP";
   };
   return (
-    <footer className="h-16 text-white flex justify-between px-10 border-t">
+    <footer className="h-8 text-white flex justify-between px-10 border-t">
       <div className="flex">
         <Image
           src="/discord-logo-50.png"

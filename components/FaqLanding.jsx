@@ -40,7 +40,12 @@ export default function FaqLanding() {
           </div>
         </div>
       </div>
-      <div className="relative w-1/2 h-screen flex justify-center">
+      <div
+        className="relative w-1/2 flex justify-center"
+        style={{
+          height: `calc(100vh - 64px)`,
+        }}
+      >
         <div className="absolute top-1/2 -translate-y-[258px]">
           <Image
             src="/Speak_Cards/42_removebg.png"

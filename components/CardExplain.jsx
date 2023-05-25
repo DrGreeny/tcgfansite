@@ -58,7 +58,7 @@ const CardExplain = () => {
                   <div
                     key={card.tokenId}
                     onClick={() => handleCardSelect(card)}
-                    className="cursor-pointer p-2 border border-gray-300 rounded-md hover:bg-gray-100"
+                    className="cursor-pointer p-2 border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-800"
                   >
                     {card.name}
                   </div>

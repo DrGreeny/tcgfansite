@@ -4,7 +4,12 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className="flex text-white">
-      <div className="relative w-1/2  h-screen flex justify-center">
+      <div
+        className="relative w-1/2 flex justify-center"
+        style={{
+          height: `calc(100vh - 64px)`,
+        }}
+      >
         <div className="m-auto px-10">
           <h1 className="text-4xl mb-4">
             Welcome to Speak Trading Card Game Fansite!
@@ -50,7 +55,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="relative w-1/2 h-screen flex justify-center">
+      <div className="relative w-1/2 flex justify-center">
         <div className="absolute top-1/2 -translate-y-[258px] animate-pulse-slow ">
           <div className="animate-spin-slow">
             <Image

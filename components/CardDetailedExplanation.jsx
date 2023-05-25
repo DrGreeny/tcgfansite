@@ -119,12 +119,35 @@ export default function CardDetailedExplanation({ selectedCard }) {
             <div>{selectedCard.Type}</div>
             <div>{selectedCard.Realm.map((realm) => realm).join(", ")}</div>
           </div>
-
+          <div>
+            {selectedCard.Type === "Curse" || selectedCard.Type === "Spell" ? (
+              <>
+                <span className="italic">
+                  {selectedCard["Continuous/ Equip"]}
+                </span>{" "}
+                &nbsp;
+              </>
+            ) : null}
+          </div>
           <div>
             <span className="italic">Word cost: </span>
             <span className="font-bold">{selectedCard.WordCost}</span>
           </div>
-          <div className="my-4 mr-5">{selectedCard.Description}</div>
+          <div>
+            {selectedCard.Type === "Creature" ||
+            selectedCard.Type === "Hero" ? (
+              <>
+                <span className="italic">DP: </span>
+                <span className="font-bold">{selectedCard.DP}</span> &nbsp;
+                <span className="italic">HP: </span>
+                <span className="font-bold">{selectedCard.HP}</span>
+              </>
+            ) : null}
+          </div>
+
+          <div className="my-4 mr-5 border-t border-b py-4">
+            {selectedCard.Description}
+          </div>
         </div>
         {hasValidExplanations && (
           <>
@@ -133,10 +156,10 @@ export default function CardDetailedExplanation({ selectedCard }) {
               .map((explanation, index) => (
                 <div
                   key={index}
-                  className="shadow-lg p-2 mr-5 my-10 bg-gradient-to-br from-[#081C34] via-[#BC4618] to-[#E6C463] whitespace-pre-line"
+                  className="shadow-lg p-2 mr-5 my-6 border border-orange-700 rounded whitespace-pre-line"
                 >
-                  <p className="mb-4">
-                    Exp. {index + 1}: {explanation}
+                  <p className="m-auto">
+                    {index + 1}: {explanation}
                   </p>
                 </div>
               ))}

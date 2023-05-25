@@ -1,6 +1,7 @@
 import Faqs from "/db/faq"; // Import the FAQ component
 import Faq from "./Faq";
 import { useState } from "react";
+import Link from "next/link";
 const FAQList = () => {
   const [searchTerm, setSearchTerm] = useState(""); // State for search term
   // Filter FAQs based on search term
@@ -18,9 +19,12 @@ const FAQList = () => {
   };
   return (
     <div className="text-white p-6">
+      <button className="border border-orange-700 py-1 px-3 rounded-xl">
+        <Link href="/faq">&#60; Back</Link>
+      </button>
       <div className="flex justify-center">
         <input
-          className="text-gray-900 my-4"
+          className="text-gray-900 my-4 py-1 px-2 rounded"
           type="text"
           placeholder="Search FAQs"
           value={searchTerm}

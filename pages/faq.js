@@ -2,7 +2,12 @@ import FaqLanding from "../components/FaqLanding";
 
 export default function faq() {
   return (
-    <div className="h-screen text-white">
+    <div
+      className=" text-white"
+      style={{
+        minHeight: `calc(100vh - 64px)`,
+      }}
+    >
       <FaqLanding />
     </div>
   );
