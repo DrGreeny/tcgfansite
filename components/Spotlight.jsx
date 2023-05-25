@@ -10,25 +10,19 @@ const Spotlight = () => {
   const carouselItems = [
     {
       id: 1,
-      headline: "Changes to cards after another round of beta testing",
-      summary:
-        "Atum has made significant changes to some creatures and curses. Beta testers provided feedback during the open Beta, so the game could be balanced again before launch.",
+      headline: "Game rules quiz coming to Shimmer Zealy Campaign",
       redirectTo: "/news/1",
+      summary:
+        "Speak will participate in anm upcoming Shimmer Zealy Campaign to engage with the community and support further growth of the project",
     },
     {
       id: 2,
-      headline: "Changes to cards after another round of beta testing",
-      summary:
-        "Atum has made significant changes to some creatures and curses. Beta testers provided feedback during the open Beta, so the game could be balanced again before launch.",
+      headline: "Coming soon...",
       redirectTo: "/news/2",
-    },
-    {
-      id: 3,
-      headline: "Changes to cards after another round of beta testing",
       summary:
-        "Atum has made significant changes to some creatures and curses. Beta testers provided feedback during the open Beta, so the game could be balanced again before launch.",
-      redirectTo: "/news/3",
+        "Sstay tuned as we find more news to share with our dedicated community",
     },
+
     // ... more items
   ];
 
@@ -44,16 +38,16 @@ const Spotlight = () => {
   }, [currentIndex, carouselItems.length]);
 
   return (
-    <div className="text-white h-screen">
-      <div className="flex justify-center mb-6">
+    <div className="text-white mt-10">
+      {/*       <div className="flex justify-center mb-6">
         <h1 className="text-4xl">Spotlight</h1>
-      </div>
+      </div> */}
 
       <Carousel
         ref={carouselRef}
         showThumbs={false}
         showStatus={false}
-        showIndicators={false}
+        showIndicators={true}
         selectedItem={currentIndex}
         onChange={(index) => setCurrentIndex(index)}
       >

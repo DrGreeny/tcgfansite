@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import cardsData from "../db/cards.json";
 import Image from "next/image";
 import CardDetailedExplanation from "./CardDetailedExplanation";
+import Link from "next/link";
 
 const CardExplain = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -42,6 +43,12 @@ const CardExplain = () => {
   return (
     <div className="text-white">
       <div className="p-4">
+        <Link
+          className="border border-orange-400 py-1 px-3 rounded-xl"
+          href="/faq"
+        >
+          &#60; Back
+        </Link>
         <div className="flex justify-center ">
           <div className="">
             <h2 className="text-lg font-bold m-2">Search for your card</h2>

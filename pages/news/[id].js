@@ -1,23 +1,50 @@
 import React from "react";
 import { useRouter } from "next/router";
+import news from "/db/news.json";
+import ReactHtmlParser from "react-html-parser";
+import Image from "next/image";
 
 const NewsPage = () => {
   const router = useRouter();
   const { id } = router.query;
 
   // Fetch specific news content based on the id parameter
+  const selectedNews = news.find((item) => item.id.toString() === id);
 
-  // Example data for demonstration purposes
-  const news = {
-    id,
-    title: "Sample News Title",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  };
+  if (!selectedNews) {
+    return (
+      <div className="text-white text-center my-10 min-h-screen">
+        Coming soon...
+      </div>
+    );
+  }
 
   return (
-    <div className="text-white">
-      <h1>{news.title}</h1>
-      <p>{news.content}</p>
+    <div className="flex">
+      <div className=" w-1/2 m-auto px-10 flex justify-center">
+        <div className="whitespace-pre-line text-gray-200">
+          <h1 className="text-4xl mb-4">{selectedNews?.headline}</h1>
+          <p className="whitespace-pre-line">
+            {ReactHtmlParser(selectedNews?.text)}
+          </p>
+        </div>
+      </div>
+      <div
+        className="relative w-1/2 flex justify-center"
+        style={{
+          height: `calc(100vh - 64px)`,
+        }}
+      >
+        <div className="m-auto">
+          <Image
+            src={`/news/${id}.png`}
+            alt="Abomination"
+            width={500}
+            height={500}
+          />
+          <div>Leaked Image by Atum</div>
+        </div>
+      </div>
     </div>
   );
 };

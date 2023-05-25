@@ -19,9 +19,13 @@ const FAQList = () => {
   };
   return (
     <div className="text-white p-6">
-      <button className="border border-orange-700 py-1 px-3 rounded-xl">
-        <Link href="/faq">&#60; Back</Link>
-      </button>
+      <Link
+        className="border border-orange-400 py-1 px-3 rounded-xl"
+        href="/faq"
+      >
+        &#60; Back
+      </Link>
+
       <div className="flex justify-center">
         <input
           className="text-gray-900 my-4 py-1 px-2 rounded"

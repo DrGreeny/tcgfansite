@@ -19,6 +19,7 @@
     "react": "18.2.0",
     "react-brackets": "^0.4.7",
     "react-dom": "18.2.0",
+    "react-html-parser": "^2.0.2",
     "react-input-slider": "^6.0.1",
     "react-modal": "^3.16.1",
     "react-resizable": "^3.0.5",

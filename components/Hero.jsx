@@ -5,9 +5,9 @@ export default function Hero() {
   return (
     <div className="flex text-white">
       <div
-        className="relative w-1/2 flex justify-center"
+        className="relative w-1/2 flex justify-center py-10"
         style={{
-          height: `calc(100vh - 64px)`,
+          minHeight: `calc(100vh - 240px)`,
         }}
       >
         <div className="m-auto px-10">

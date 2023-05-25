@@ -3,7 +3,7 @@
     "summary": "Queen chained by creature destruction",
     "question": "I play Queen and announce a swap. My opponent announces that he plays Deep mirror to destroy my creature that I wanted to swap. What happens? \n 1: the creature on my side gets destroyed and swap fails because there is no more creature to swap. I lose 5 words for the attempted swap. \n 2: swap will be fulfilled and creature that was destroyed gets destroyed on opponents side.",
     "answer": "so deep mirror was activated last, so it executes first. it destroys their creature, then hero eff executes, which tries to move it to opponents field. since the conditions are not able to be filled anymore, the effect would be cancelled (NOT negated). the same way you cant speak for example unwanted visitors unless you have 2 creatures in your silence\nso it would be as if the player did not use her ability and did not lose the word cost\nofc, these are all novel situations and id love to hear your thought process as well before we finalize any advanced rule sets\nthis, to me however, seems the most logical",
-    "tags": ["Queen", "chaining"],
+    "tags": ["Queen of Cosmic Orbits", "chaining"],
     "date": "2023-05-01",
     "author": "GreenyT"
   },
@@ -27,7 +27,7 @@
     "summary": "Bouncing a creature after Queen swap",
     "question": "What happens if I swap my creature with the Queen to the opponents side and bounce it afterwards? Does it bounce to my hand?",
     "answer": "Yep! it returns to its owners hand, not controller's hand",
-    "tags": ["Bounce", "Queen","chaining"],
+    "tags": ["Bounce", "Queen of Cosmic Orbits","chaining"],
     "date": "2023-05-23",
     "author": "GreenyT"
   },
@@ -46,5 +46,54 @@
     "tags": ["Mute", "Realm"],
     "date": "2023-05-23",
     "author": "GreenyT"
+  },
+            {
+    "summary": "What is bouncing ?",
+    "question": "What does it mean to bounce a creature?",
+    "answer": "Bouncing a creature means, that after speaking it is directly sent back to its speaker`s hand. The Word cost need to payed, but any card effects are not executed.",
+    "tags": ["Bounce"],
+    "date": "2023-05-24",
+    "author": "Petteri"
+  },
+              {
+    "summary": "What is muting ?",
+    "question": "What does it mean to mute a creature?",
+    "answer": "When a creature gets muted it is somehow disabled, which means it cannot attack or use its abilities. A muted creature still has its DP/HP so for defending your Hero it is still useful",
+    "tags": ["Mute"],
+    "date": "2023-05-24",
+    "author": "GreenyT"
+  },
+              {
+    "summary": "Deep mirror during attack",
+    "question": "What happens to an attack, if I chain a curse like Deep Mirror into my opponents attack to destroy my own creature?",
+    "answer": "The curse will be executed first, so the targeted creature gets destroyed by the curse. The attack is executed but it misses since the creature is already destroyed.",
+    "tags": ["chaining","attack"],
+    "date": "2023-05-24",
+    "author": "arti"
+  },
+                {
+    "summary": "Black Mirror and Word cost",
+    "question": "If I negate the speaking of a Creature with Black Mirror, does my opponent need to pay the words to speak the creature?",
+    "answer": "Yes, the words for the attempted speaking are still spent, even it gets negated.",
+    "tags": ["Words"],
+    "date": "2023-05-24",
+    "author": "arti"
+  },
+                  {
+    "summary": "Mute a creature with equipped card",
+    "question": "When a creature is muted, do equipped spells/curses get muted as well?",
+    "answer": "No, they remain active.",
+    "tags": ["Equip","Mute"],
+    "date": "2023-05-24",
+    "author": "arti"
+  },
+                    {
+    "summary": "Bolt Samurai second attack",
+    "question": "If I destroy a creature with Bolt Samurai, am I able to execute an attack with another creature first before I use Bolt Samurais ability to attack again?",
+    "answer": "No, if Bolt Samurais ability is used, you need to attack again directly after the opponents creature was destroyed.",
+    "tags": ["Bolt Samurai","attack"],
+    "date": "2023-05-24",
+    "author": "arti"
   }
+  
 ]
