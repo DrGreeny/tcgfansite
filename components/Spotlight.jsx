@@ -19,8 +19,7 @@ const Spotlight = () => {
       id: 2,
       headline: "Coming soon...",
       redirectTo: "/news/2",
-      summary:
-        "Sstay tuned as we find more news to share with our dedicated community",
+      summary: "Stay tuned as we find more news to share with you!",
     },
 
     // ... more items
