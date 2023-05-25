@@ -47,6 +47,7 @@ const Spotlight = () => {
         ref={carouselRef}
         showThumbs={false}
         showStatus={false}
+        showArrows={false}
         showIndicators={true}
         selectedItem={currentIndex}
         onChange={(index) => setCurrentIndex(index)}
