@@ -241,20 +241,29 @@ const DeckBuilder = () => {
         return false;
       }
 
-      return (
-        name.includes(searchQuery.toLowerCase()) ||
-        type.includes(searchQuery.toLowerCase())
-      );
+      if (filterSelectedCards) {
+        return (
+          name.includes(searchQuery.toLowerCase()) ||
+          type.includes(searchQuery.toLowerCase())
+        );
+      } else {
+        return true; // No filter applied on searchQuery if filterSelectedCards is false
+      }
     })
-    .filter(
-      (card) =>
-        card.WordCost >= wordCostRange[0] &&
-        card.WordCost <= wordCostRange[1] &&
-        card.DP >= dpRange[0] &&
-        card.DP <= dpRange[1] &&
-        card.HP >= hpRange[0] &&
-        card.HP <= hpRange[1]
-    );
+    .filter((card) => {
+      if (filterSelectedCards) {
+        return (
+          card.WordCost >= wordCostRange[0] &&
+          card.WordCost <= wordCostRange[1] &&
+          card.DP >= dpRange[0] &&
+          card.DP <= dpRange[1] &&
+          card.HP >= hpRange[0] &&
+          card.HP <= hpRange[1]
+        );
+      } else {
+        return true; // No filter applied if filterSelectedCards is false
+      }
+    });
 
   const countByType = (type) => {
     return selectedCards.reduce((count, card) => {
@@ -804,7 +813,11 @@ const DeckBuilder = () => {
                           -
                         </button>
                       </div>
-                      <div className="bg-gray-600  text-red-600 font-bold h-7 w-7  text-center">
+                      <div
+                        className={`bg-gray-700 font-bold h-7 w-7 text-center ${
+                          card.count < 3 ? "text-green-300" : "text-red-300"
+                        }`}
+                      >
                         {card.count}
                       </div>
                     </div>
@@ -860,7 +873,11 @@ const DeckBuilder = () => {
                           -
                         </button>
                       </div>
-                      <div className="bg-gray-600  text-red-500 font-bold h-7 w-7 text-center">
+                      <div
+                        className={`bg-gray-700 font-bold h-7 w-7 text-center ${
+                          card.count < 3 ? "text-green-300" : "text-red-300"
+                        }`}
+                      >
                         {card.count}
                       </div>
                     </div>
@@ -915,7 +932,11 @@ const DeckBuilder = () => {
                           -
                         </button>
                       </div>
-                      <div className="bg-gray-600  text-red-500 font-bold h-7 w-7 text-center">
+                      <div
+                        className={`bg-gray-700 font-bold h-7 w-7 text-center ${
+                          card.count < 3 ? "text-green-300" : "text-red-300"
+                        }`}
+                      >
                         {card.count}
                       </div>
                     </div>
@@ -970,7 +991,11 @@ const DeckBuilder = () => {
                           -
                         </button>
                       </div>
-                      <div className="bg-gray-600  text-red-500 font-bold h-7 w-7 text-center">
+                      <div
+                        className={`bg-gray-700 font-bold h-7 w-7 text-center ${
+                          card.count < 3 ? "text-green-300" : "text-red-300"
+                        }`}
+                      >
                         {card.count}
                       </div>
                     </div>

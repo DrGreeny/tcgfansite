@@ -7,8 +7,8 @@ const links = [
   { href: "/deckbuilder", label: "Deckbuilder" },
   { href: "/tournaments", label: "Tournaments" },
   { href: "/faq", label: "FAQ" },
-  /*{ href: "/community", label: "Community" },
-  { href: "/resources", label: "Resources" }, */
+  { href: "/simulator", label: "Simulator" },
+  /*{ href: "/resources", label: "Resources" }, */
 ];
 
 const Navigation = () => {
