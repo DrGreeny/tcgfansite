@@ -5,10 +5,12 @@ import Deckbuilder_mobile from "../components/deckbuilder_mobile/Deckbuilder_mob
 
 export default function Deckbuilder() {
   const [isMobile, setIsMobile] = useState(false);
+  const [isReady, setIsReady] = useState(false); // Track the readiness of the component
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
+      setIsReady(true); // Set the component as ready after detecting the window width
     };
 
     handleResize();
@@ -18,6 +20,10 @@ export default function Deckbuilder() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  if (!isReady) {
+    return null; // Return null or a loading indicator while the component is not ready
+  }
 
   if (isMobile) {
     return <Deckbuilder_mobile />;
