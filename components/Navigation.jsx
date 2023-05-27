@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import ConnectButton from "./ConnectButton";
+
+import Deckbuilder_nav_mobile from "./deckbuilder_mobile/Deckbuilder_nav_mobile";
 
 const links = [
   { href: "/", label: "Home" },
@@ -13,6 +15,24 @@ const links = [
 
 const Navigation = () => {
   const router = useRouter();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  if (isMobile) {
+    return <Deckbuilder_nav_mobile />;
+  }
 
   return (
     <nav className="bg-black py-1 h-8">
