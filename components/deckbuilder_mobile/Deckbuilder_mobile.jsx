@@ -202,7 +202,7 @@ export default function Deckbuilder_mobile() {
                       return (
                         <div
                           key={card.name}
-                          className="relative p-1 rounded mb-2 flex-col overflow-hidden items-center w-28 h-28 text-white"
+                          className="relative p-1 rounded mb-2 flex-col overflow-hidden items-center w-28 h-28 text-white flex-shrink-0"
                           style={{
                             backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
                             backgroundSize: "cover",
