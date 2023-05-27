@@ -215,7 +215,7 @@ export default function Deckbuilder_mobile() {
                           onTouchStart={(event) => {
                             const longPressTimer = setTimeout(() => {
                               handleCardLongPress(card);
-                            }, 2000);
+                            }, 1000);
 
                             // Store the timer ID in the card element's dataset
                             event.currentTarget.dataset.longPressTimer =
