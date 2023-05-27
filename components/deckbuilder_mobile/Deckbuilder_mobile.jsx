@@ -79,7 +79,7 @@ export default function Deckbuilder_mobile() {
 
   return (
     <div className="flex min-h-screen">
-      <div className="fixed bg-gray-900 w-16 flex flex-col items-center h-full">
+      <div className="fixed bg-gray-900 w-16 flex flex-col items-center h-full text-white">
         <button
           className={`my-4 p-2 ${
             activeButton === "Build" ? "bg-gray-800 text-orange-700" : ""
