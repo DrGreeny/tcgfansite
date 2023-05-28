@@ -88,14 +88,28 @@ export default function Deckbuilder_mobile() {
     const filteredCards = cards.filter(
       (card) =>
         card.name.toLowerCase().includes(query.toLowerCase()) ||
-        card.Description.toLowerCase().includes(query.toLowerCase())
+        card.Description.toLowerCase().includes(query.toLowerCase()) ||
+        card.Type.toLowerCase().includes(query.toLowerCase()) ||
+        (card.Realm &&
+          card.Realm.some((realm) =>
+            realm.toLowerCase().includes(query.toLowerCase())
+          )) ||
+        (card["Continuous/ Equip"] &&
+          card["Continuous/ Equip"].toLowerCase().includes(query.toLowerCase()))
     );
     setCardsFiltered(filteredCards);
 
     const filteredDeck = deck.filter(
       (card) =>
         card.name.toLowerCase().includes(query.toLowerCase()) ||
-        card.Description.toLowerCase().includes(query.toLowerCase())
+        card.Description.toLowerCase().includes(query.toLowerCase()) ||
+        card.Type.toLowerCase().includes(query.toLowerCase()) ||
+        (card.Realm &&
+          card.Realm.some((realm) =>
+            realm.toLowerCase().includes(query.toLowerCase())
+          )) ||
+        (card["Continuous/ Equip"] &&
+          card["Continuous/ Equip"].toLowerCase().includes(query.toLowerCase()))
     );
     setDeckFiltered(filteredDeck);
   };
