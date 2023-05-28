@@ -3,8 +3,23 @@ import Link from "next/link";
 
 export default function FaqLanding() {
   return (
-    <div className="flex">
-      <div className=" w-1/2 m-auto px-10 flex justify-center">
+    <div className="flex-col my-4">
+      <div
+        className="relative w-full flex justify-center"
+        style={{
+          height: `calc(100vh - 64px)`,
+        }}
+      >
+        <div className="absolute top-1/2 -translate-y-[258px]">
+          <Image
+            src="/Speak_Cards/42_removebg.png"
+            alt="Abomination"
+            width={500}
+            height={500}
+          />
+        </div>
+      </div>
+      <div className=" w-full m-auto px-10 flex justify-center">
         <div className="whitespace-pre-line">
           <h1 className="text-4xl mb-4">May the Words be with You</h1>
           <p className="whitespace-pre-line">
@@ -38,21 +53,6 @@ export default function FaqLanding() {
               Go to Card explanations
             </Link>
           </div>
-        </div>
-      </div>
-      <div
-        className="relative w-1/2 flex justify-center"
-        style={{
-          height: `calc(100vh - 64px)`,
-        }}
-      >
-        <div className="absolute top-1/2 -translate-y-[258px]">
-          <Image
-            src="/Speak_Cards/42_removebg.png"
-            alt="Abomination"
-            width={500}
-            height={500}
-          />
         </div>
       </div>
     </div>

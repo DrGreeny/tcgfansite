@@ -95,10 +95,10 @@ export default function CardDetailedExplanation({ selectedCard }) {
 
   return (
     <div
-      className="grid grid-cols-2 items-center justify-center content-center my-auto"
+      className="flex-col md:grid md:grid-cols-2 items-center justify-center content-center my-auto"
       onMouseMove={handleMouseMove}
     >
-      <div ref={imageRef} className="w-96 h-96 m-auto duration-200">
+      <div ref={imageRef} className="w-96 h-96 mx-auto duration-200 my-4">
         <div
           ref={shadowRef}
           className="relative mt-2 p-2 border-gray-300 rounded-md overflow-hidden w-96 h-96 m-auto"

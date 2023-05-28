@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="flex text-white">
+    <div className="relative text-white">
       <div
-        className="relative w-1/2 flex justify-center py-10"
+        className="relative w-full flex-col justify-center py-10"
         style={{
           minHeight: `calc(100vh - 240px)`,
         }}
       >
-        <div className="m-auto px-10">
+        <div className="m-auto px-10 z-10">
           <h1 className="text-4xl mb-4">
             Welcome to Speak Trading Card Game Fansite!
           </h1>
@@ -55,8 +55,8 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="relative w-1/2 flex justify-center">
-        <div className="absolute top-1/2 -translate-y-[258px] animate-pulse-slow ">
+      <div className="flex justify-center">
+        <div className="absolute top-0 translate-y-[100px] animate-pulse-slow mx-auto ">
           <div className="animate-spin-slow">
             <Image
               src="/Speak_Cards/104-removebg.png"

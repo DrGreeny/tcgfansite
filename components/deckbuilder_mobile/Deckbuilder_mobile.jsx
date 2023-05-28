@@ -15,9 +15,22 @@ export default function Deckbuilder_mobile() {
   const [deckFiltered, setDeckFiltered] = useState([]);
 
   useEffect(() => {
-    setCardsFiltered(cards);
-    setDeckFiltered(deck);
-  }, [deck]); // Run this effect only once, on component mount
+    const filteredDeck = deck.filter(
+      (card) =>
+        card.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        card.Description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        card.Type.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        (card.Realm &&
+          card.Realm.some((realm) =>
+            realm.toLowerCase().includes(searchQuery.toLowerCase())
+          )) ||
+        (card["Continuous/ Equip"] &&
+          card["Continuous/ Equip"]
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase()))
+    );
+    setDeckFiltered(filteredDeck);
+  }, [deck, searchQuery]);
 
   const addCard = (card) => {
     const existingCard = deck.find((c) => c.name === card.name);
@@ -29,6 +42,21 @@ export default function Deckbuilder_mobile() {
           c.name === card.name ? { ...c, count: c.count + 1 } : c
         );
         setDeck(updatedCards);
+        const filteredCards = updatedCards.filter(
+          (c) =>
+            c.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            c.Description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            c.Type.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            (c.Realm &&
+              c.Realm.some((realm) =>
+                realm.toLowerCase().includes(searchQuery.toLowerCase())
+              )) ||
+            (c["Continuous/ Equip"] &&
+              c["Continuous/ Equip"]
+                .toLowerCase()
+                .includes(searchQuery.toLowerCase()))
+        );
+        setDeckFiltered(filteredCards);
       }
     } else {
       const newCard = { ...card, count: 1 };
@@ -46,7 +74,23 @@ export default function Deckbuilder_mobile() {
         }
       }
 
-      setDeck([...deck, newCard]);
+      const updatedDeck = [...deck, newCard];
+      setDeck(updatedDeck);
+      const filteredCards = updatedDeck.filter(
+        (c) =>
+          c.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          c.Description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          c.Type.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          (c.Realm &&
+            c.Realm.some((realm) =>
+              realm.toLowerCase().includes(searchQuery.toLowerCase())
+            )) ||
+          (c["Continuous/ Equip"] &&
+            c["Continuous/ Equip"]
+              .toLowerCase()
+              .includes(searchQuery.toLowerCase()))
+      );
+      setDeckFiltered(filteredCards);
     }
   };
 
@@ -117,6 +161,7 @@ export default function Deckbuilder_mobile() {
   const handleInputChange = (e) => {
     handleSearchQuery(e.target.value);
   };
+
   const sections = [
     { headline: "Heroes", type: "Hero" },
     { headline: "Creatures", type: "Creature" },

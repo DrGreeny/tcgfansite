@@ -17,7 +17,7 @@ const Faq = ({ summary, question, answer, date, tags, author }) => {
         <p>
           <span className="font-bold text-gray-200">Author: </span> {author}
         </p>
-        <ul className="flex gap-x-2 text-gray-200">
+        <ul className="flex-col gap-x-2 text-gray-200">
           {tags.map((tag, index) => (
             <li
               key={index}

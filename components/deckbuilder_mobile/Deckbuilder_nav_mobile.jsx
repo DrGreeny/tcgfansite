@@ -73,7 +73,7 @@ const Deckbuilder_nav_mobile = () => {
                 </svg>
               </button>
             </div>
-            <h2 className="text-2xl text-center font-bold mb-4">Speak</h2>
+            <h2 className="text-2xl text-center font-bold mb-4">SpeakWords</h2>
             <ul className="flex flex-col items-center">
               {links.map((link) => (
                 <li
