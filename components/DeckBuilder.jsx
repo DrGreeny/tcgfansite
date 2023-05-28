@@ -397,6 +397,7 @@ const DeckBuilder = () => {
                     <option value="Dragon">Dragon</option>
                     <option value="Beast">Beast</option>
                     <option value="Cosmic">Cosmic</option>
+                    <option value="Digital">Digital</option>
                   </select>
                 </div>
 

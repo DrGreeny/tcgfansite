@@ -1,7 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-export default function CardModal({ handleCloseModal, selectedCard }) {
+export default function CardModal({
+  handleCloseModal,
+  selectedCard,
+  addCard,
+  deck,
+}) {
   const hasValidExplanations =
     selectedCard.explanations &&
     selectedCard.explanations.length > 0 &&
@@ -16,45 +21,73 @@ export default function CardModal({ handleCloseModal, selectedCard }) {
           X
         </button>
       </div>
-      <div className="flex-col bg-white rounded p-2">
-        <div className="flex flex-col items-center justify-center content-center my-auto">
-          <div className="ml-20">
-            <div className="flex-col mb-3">
-              <div className="text-4xl">{selectedCard.name}</div>
-              <div className="flex gap-x-4 italic">
-                <div>{selectedCard.Type}</div>
-                <div>{selectedCard.Realm.map((realm) => realm).join(", ")}</div>
-              </div>
-              <div>
-                {selectedCard.Type === "Curse" ||
-                selectedCard.Type === "Spell" ? (
-                  <>
-                    <span className="italic">
-                      {selectedCard["Continuous/ Equip"]}
-                    </span>{" "}
-                    &nbsp;
-                  </>
-                ) : null}
-              </div>
-              <div>
-                <span className="italic">Word cost: </span>
-                <span className="font-bold">{selectedCard.WordCost}</span>
-              </div>
-              <div>
-                {selectedCard.Type === "Creature" ||
-                selectedCard.Type === "Hero" ? (
-                  <>
-                    <span className="italic">DP: </span>
-                    <span className="font-bold">{selectedCard.DP}</span> &nbsp;
-                    <span className="italic">HP: </span>
-                    <span className="font-bold">{selectedCard.HP}</span>
-                  </>
-                ) : null}
-              </div>
+      <div className="flex-col bg-white rounded p-1 w-full">
+        <div className="flex items-center justify-center content-center my-auto">
+          <div className="w-24 flex-col p-1 text-center">
+            <div className="w-16 h-16 border rounded text-xs flex flex-col items-center justify-center my-2">
+              <h3>deck count</h3>
 
-              <div className="my-4 mr-5 border-t border-b py-4">
-                {selectedCard.Description}
-              </div>
+              {deck.map((card) => {
+                if (card.tokenId === selectedCard.tokenId) {
+                  return (
+                    <h2
+                      key={card.tokenId}
+                      className={`text-xl ${
+                        card.count < 3 && card.count !== 0
+                          ? "text-green-500"
+                          : card.count === 3
+                          ? "text-red-500"
+                          : "text-orange-800"
+                      }`}
+                    >
+                      {card.count}
+                    </h2>
+                  );
+                }
+              })}
+            </div>
+            <div
+              className="w-16 h-16 border rounded text-xs flex flex-col items-center justify-center my-2"
+              onClick={() => addCard(selectedCard)}
+            >
+              add to deck
+            </div>
+          </div>
+          <div className="flex-col mb-3 p-2">
+            <div className="text-4xl">{selectedCard.name}</div>
+            <div className="flex gap-x-4 italic">
+              <div>{selectedCard.Type}</div>
+              <div>{selectedCard.Realm.map((realm) => realm).join(", ")}</div>
+            </div>
+            <div>
+              {selectedCard.Type === "Curse" ||
+              selectedCard.Type === "Spell" ? (
+                <>
+                  <span className="italic">
+                    {selectedCard["Continuous/ Equip"]}
+                  </span>{" "}
+                  &nbsp;
+                </>
+              ) : null}
+            </div>
+            <div>
+              <span className="italic">Word cost: </span>
+              <span className="font-bold">{selectedCard.WordCost}</span>
+            </div>
+            <div>
+              {selectedCard.Type === "Creature" ||
+              selectedCard.Type === "Hero" ? (
+                <>
+                  <span className="italic">DP: </span>
+                  <span className="font-bold">{selectedCard.DP}</span> &nbsp;
+                  <span className="italic">HP: </span>
+                  <span className="font-bold">{selectedCard.HP}</span>
+                </>
+              ) : null}
+            </div>
+
+            <div className="my-4 mr-5 border-t border-b py-4">
+              {selectedCard.Description}
             </div>
             {hasValidExplanations && (
               <>

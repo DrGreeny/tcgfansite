@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Fliter_mobile from "./Fliter_mobile";
 import cards from "../../db/cards.json";
 import CardModal from "./CardModal";
@@ -9,8 +9,17 @@ export default function Deckbuilder_mobile() {
   const [selectedCard, setSelectedCard] = useState(null); // Track the selected card for the modal
   const [showCardModal, setShowCardModal] = useState(false);
   const [deck, setDeck] = useState([]);
+  const [showSearchField, setShowSearchField] = useState(true);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [cardsFiltered, setCardsFiltered] = useState([]);
+  const [deckFiltered, setDeckFiltered] = useState([]);
 
-  const handleCardClick = (card) => {
+  useEffect(() => {
+    setCardsFiltered(cards);
+    setDeckFiltered(deck);
+  }, [deck]); // Run this effect only once, on component mount
+
+  const addCard = (card) => {
     const existingCard = deck.find((c) => c.name === card.name);
 
     if (existingCard) {
@@ -40,7 +49,8 @@ export default function Deckbuilder_mobile() {
       setDeck([...deck, newCard]);
     }
   };
-  const handleCardLongPress = (card) => {
+
+  const handleCardClick = (card) => {
     // Handle long press event here
     setSelectedCard(card);
     setShowCardModal(true);
@@ -68,7 +78,31 @@ export default function Deckbuilder_mobile() {
   const handleCloseCardModal = () => {
     setShowCardModal(false);
   };
+  const handleSearchIconClick = () => {
+    setShowSearchField(true);
+  };
 
+  const handleSearchQuery = (query) => {
+    setSearchQuery(query);
+
+    const filteredCards = cards.filter(
+      (card) =>
+        card.name.toLowerCase().includes(query.toLowerCase()) ||
+        card.Description.toLowerCase().includes(query.toLowerCase())
+    );
+    setCardsFiltered(filteredCards);
+
+    const filteredDeck = deck.filter(
+      (card) =>
+        card.name.toLowerCase().includes(query.toLowerCase()) ||
+        card.Description.toLowerCase().includes(query.toLowerCase())
+    );
+    setDeckFiltered(filteredDeck);
+  };
+
+  const handleInputChange = (e) => {
+    handleSearchQuery(e.target.value);
+  };
   const sections = [
     { headline: "Heroes", type: "Hero" },
     { headline: "Creatures", type: "Creature" },
@@ -121,6 +155,28 @@ export default function Deckbuilder_mobile() {
           >
             Filter
           </button>
+
+          {/* Sliding Search Field */}
+          {showSearchField && (
+            <div className="fixed top-0 left-16 bg-white text-black flex items-center justify-center">
+              <input
+                className="px-2 py-1 pr-8"
+                placeholder="Search cards..."
+                value={searchQuery}
+                onChange={handleInputChange}
+              />
+              {searchQuery && (
+                <button
+                  className="px-2 py-1 bg-gray-400 hover:bg-gray-300 "
+                  onClick={() => {
+                    setSearchQuery("");
+                  }}
+                >
+                  X
+                </button>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Content Rows */}
@@ -132,7 +188,7 @@ export default function Deckbuilder_mobile() {
                   {section.headline}
                 </h2>
                 <div className="flex overflow-x-auto border-t border-b gap-x-4">
-                  {cards.map((card) => {
+                  {cardsFiltered.map((card) => {
                     if (card.Type === section.type) {
                       return (
                         <div
@@ -144,7 +200,7 @@ export default function Deckbuilder_mobile() {
                             backgroundPosition: "center",
                           }}
                           onClick={() => handleCardClick(card)}
-                          onContextMenu={(e) => {
+                          /* onContextMenu={(e) => {
                             e.preventDefault(); // Disable right-click context menu
                             handleCardLongPress(card);
                           }}
@@ -161,7 +217,7 @@ export default function Deckbuilder_mobile() {
                             clearTimeout(
                               e.currentTarget.dataset.longPressTimer
                             );
-                          }}
+                          }} */
                         >
                           <div className="flex justify-between">
                             <p className="text-xs font-bold">{card.WordCost}</p>
@@ -197,7 +253,7 @@ export default function Deckbuilder_mobile() {
                   {section.headline}
                 </h2>
                 <div className="flex overflow-x-auto border-t border-b gap-x-4">
-                  {deck.map((card) => {
+                  {deckFiltered.map((card) => {
                     if (card.Type === section.type) {
                       return (
                         <div
@@ -208,11 +264,11 @@ export default function Deckbuilder_mobile() {
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                           }}
-                          onContextMenu={(e) => {
+                          /*    onContextMenu={(e) => {
                             e.preventDefault(); // Disable right-click context menu
                             handleCardLongPress(card);
-                          }}
-                          onTouchStart={(event) => {
+                          }} */
+                          /*                          onTouchStart={(event) => {
                             const longPressTimer = setTimeout(() => {
                               handleCardLongPress(card);
                             }, 1000);
@@ -225,7 +281,7 @@ export default function Deckbuilder_mobile() {
                             clearTimeout(
                               e.currentTarget.dataset.longPressTimer
                             );
-                          }}
+                          }} */
                         >
                           <div className="flex justify-between w-full">
                             <p className=" text-xs font-bold ">
@@ -251,7 +307,7 @@ export default function Deckbuilder_mobile() {
                             <div className="-translate-x-1">
                               <button
                                 className="bg-gray-400 text-white font-bold h-7 w-7 opacity-80"
-                                onClick={() => handleCardClick(card)}
+                                onClick={() => addCard(card)}
                               >
                                 +
                               </button>
@@ -290,6 +346,8 @@ export default function Deckbuilder_mobile() {
         <CardModal
           handleCloseModal={handleCloseCardModal}
           selectedCard={selectedCard}
+          addCard={addCard}
+          deck={deckFiltered}
         />
       )}
     </div>
