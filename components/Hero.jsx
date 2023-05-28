@@ -61,8 +61,8 @@ export default function Hero() {
             <Image
               src="/Speak_Cards/104-removebg.png"
               alt="Abomination"
-              width={500}
-              height={500}
+              width={300}
+              height={300}
             />
           </div>
         </div>
