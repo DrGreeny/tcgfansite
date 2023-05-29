@@ -8,14 +8,7 @@ const SaveDeck = ({ selectedCards }) => {
     link.href = url;
     link.download = "deck.json";
 
-    // Trigger the "Save As" dialog
-    link.dispatchEvent(
-      new MouseEvent("click", {
-        bubbles: true,
-        cancelable: true,
-        view: window,
-      })
-    );
+    link.click();
 
     URL.revokeObjectURL(url);
   };
