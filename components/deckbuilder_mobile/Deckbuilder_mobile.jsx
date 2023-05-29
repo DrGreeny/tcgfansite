@@ -162,7 +162,11 @@ export default function Deckbuilder_mobile() {
   const handleInputChange = (e) => {
     handleSearchQuery(e.target.value);
   };
-
+  const handleResetSearch = () => {
+    setSearchQuery("");
+    setCardsFiltered(cards); // Reset the filtered cards to the original list
+    setDeckFiltered(deck); // Reset the filtered deck to the original list
+  };
   const sections = [
     { headline: "Heroes", type: "Hero" },
     { headline: "Creatures", type: "Creature" },
@@ -228,9 +232,7 @@ export default function Deckbuilder_mobile() {
               {searchQuery && (
                 <button
                   className="px-2 py-1 bg-gray-400 hover:bg-gray-300 "
-                  onClick={() => {
-                    setSearchQuery("");
-                  }}
+                  onClick={handleResetSearch} // Call the handleResetSearch function on button click
                 >
                   X
                 </button>
