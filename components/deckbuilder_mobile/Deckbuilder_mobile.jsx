@@ -95,6 +95,44 @@ export default function Deckbuilder_mobile() {
     }
   };
 
+  function handleImportJson(event) {
+    const file = event.target.files[0];
+
+    // Check file extension
+    if (!file.name.endsWith(".json")) {
+      alert("Invalid file format. Please select a JSON file.");
+      return;
+    }
+
+    // Read file content
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      try {
+        // Parse file content as JSON
+        const jsonData = JSON.parse(e.target.result);
+
+        // Extract the IDs and counts from the JSON data
+        const idCountMap = new Map(
+          jsonData.map((item) => [item.tokenId, item.count])
+        );
+
+        // Create selectedCards based on the IDs and update the count property
+        const updatedSelectedCards = cards
+          .filter((card) => idCountMap.has(card.tokenId))
+          .map((card) => ({
+            ...card,
+            count: idCountMap.get(card.tokenId),
+          }));
+
+        setDeck(updatedSelectedCards);
+      } catch (error) {
+        alert("Invalid JSON format. Please select a valid JSON file.");
+      }
+    };
+    reader.readAsText(file);
+    setActiveButton("Deck");
+  }
+
   const handleCardClick = (card) => {
     // Handle long press event here
     setSelectedCard(card);
@@ -400,7 +438,25 @@ export default function Deckbuilder_mobile() {
             ))}
           </div>
         )}
-        {activeButton === "Import" && <div>Import content goes here</div>}
+        {activeButton === "Import" && (
+          <div className="text-white flex justify-center mt-4">
+            <div className="cursor-pointer">
+              <label
+                htmlFor="import-json"
+                className="relative border border-orange-600 px-4 py-1 rounded-md text-white"
+              >
+                <span className="inline-block ">Import Json</span>
+                <input
+                  id="import-json"
+                  type="file"
+                  accept=".json"
+                  onChange={handleImportJson}
+                  className="opacity-0 absolute top-0 left-0 w-full h-full "
+                />
+              </label>
+            </div>
+          </div>
+        )}
         {activeButton === "Export" && (
           <div className="flex justify-center pt-10">
             <SaveDeck selectedCards={deck} />
