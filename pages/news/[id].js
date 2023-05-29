@@ -29,17 +29,17 @@ const NewsPage = () => {
           className="object-cover"
         />
       </div>
-      <div className="flex">
-        <div className=" w-1/2 m-auto px-10 flex justify-center">
+      <div className="flex-col md:grid md:grid-cols-2 p-2 my-4">
+        <div className="  m-auto px-10 flex justify-center">
           <div className="whitespace-pre-line text-gray-200">
             <h1 className="text-4xl mb-4">{selectedNews?.headline}</h1>
-            <p className="whitespace-pre-line">
+            <p className="whitespace-pre-line text-justify">
               {ReactHtmlParser(selectedNews?.text)}
             </p>
           </div>
         </div>
         <div
-          className="relative w-1/2  flex justify-center"
+          className="relative flex justify-center"
           style={{
             minHeight: `calc(100vh - 232px)`,
           }}
