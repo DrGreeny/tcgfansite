@@ -218,7 +218,7 @@ export default function Deckbuilder_mobile() {
 
           {/* Sliding Search Field */}
           {showSearchField && (
-            <div className="fixed top-0 left-16 bg-white text-black flex items-center justify-center">
+            <div className="fixed z-20 top-0 left-16 bg-white text-black flex items-center justify-center">
               <input
                 className="px-2 py-1 pr-8"
                 placeholder="Search cards..."
