@@ -179,7 +179,9 @@ const GameSimulator = () => {
       {!selectedRealm ? (
         <div className=" flex justify-center">
           <div>
-            <h2 className="text-xl text-center mt-6">Load your deck</h2>
+            <h2 className="text-xl text-center mt-6">
+              Load your deck (desktop only)
+            </h2>
             <div className="text-xs mb-6 text-center">from json</div>
             <input
               type="file"

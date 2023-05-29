@@ -55,21 +55,18 @@ const rounds = [
 
 const Tournament = () => {
   return (
-    <div className="text-white ">
+    <div className="text-white p-2">
       <div
-        className="grid grid-cols-2 items-center"
+        className="flex-col md:grid md:grid-cols-2 items-center"
         style={{
-          height: `calc(100vh - 64px)`,
+          minHeight: `calc(100vh - 64px)`,
         }}
       >
-        <div className="m-auto ">
-          <Bracket rounds={rounds} />
-        </div>
-        <div className=" pr-20 ">
-          <h1 className="text-4xl mb-12 ">
+        <div className="  flex-col justify-center">
+          <h1 className="text-4xl mb-12 text-center">
             Second Beta Tournamet finished succesfully
           </h1>
-          <p className="whitespace-pre-line">
+          <p className="whitespace-pre-line text-justify">
             The second tournament of the Speak Trading Card Game has concluded,
             leaving behind a trail of excitement and fierce competition.
             Throughout the event, participants engaged in intense battles,
@@ -94,6 +91,9 @@ const Tournament = () => {
             next thrilling chapter in the Speak Trading Card Game`s competitive
             journey.
           </p>
+        </div>
+        <div className="m-auto ">
+          <Bracket rounds={rounds} />
         </div>
       </div>
     </div>

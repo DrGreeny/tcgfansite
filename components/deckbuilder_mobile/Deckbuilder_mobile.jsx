@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Fliter_mobile from "./Fliter_mobile";
 import cards from "../../db/cards.json";
 import CardModal from "./CardModal";
+import SaveDeck from "../SaveDeck";
 
 export default function Deckbuilder_mobile() {
   const [activeButton, setActiveButton] = useState("Build");
@@ -398,7 +399,11 @@ export default function Deckbuilder_mobile() {
           </div>
         )}
         {activeButton === "Import" && <div>Import content goes here</div>}
-        {activeButton === "Export" && <div>Export content goes here</div>}
+        {activeButton === "Export" && (
+          <div className="flex justify-center pt-10">
+            <SaveDeck selectedCards={deck} />
+          </div>
+        )}
       </div>
       {showModal && <Fliter_mobile handleCloseModal={handleCloseModal} />}
       {showCardModal && (

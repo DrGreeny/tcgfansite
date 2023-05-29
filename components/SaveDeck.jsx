@@ -23,7 +23,7 @@ const SaveDeck = ({ selectedCards }) => {
   return (
     <div className="">
       <button
-        className="bg-blue-500 text-white px-4 rounded h-6"
+        className="bg-black text-white px-4 rounded h-6 border-orange-700 border"
         onClick={handleSave}
       >
         Export Json

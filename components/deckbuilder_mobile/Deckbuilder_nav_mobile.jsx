@@ -24,9 +24,9 @@ const Deckbuilder_nav_mobile = () => {
   };
 
   return (
-    <nav className=" bg-black py-1 h-8 border-b ">
+    <nav className="sticky z-10 top-0 bg-black py-1 h-8 border-b">
       <div className="fixed flex justify-between items-center">
-        <div className="ml-4">
+        <div className="ml-4 ">
           <button
             className="text-white focus:outline-none"
             onClick={handleMenuToggle}

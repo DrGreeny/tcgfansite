@@ -22,7 +22,7 @@ export default function FaqLanding() {
       <div className=" w-full m-auto px-10 flex justify-center">
         <div className="whitespace-pre-line">
           <h1 className="text-4xl mb-4">May the Words be with You</h1>
-          <p className="whitespace-pre-line">
+          <p className="whitespace-pre-line text-justify">
             Welcome to the FAQ section of Speak, the trading card game that
             brings strategy and excitement to your fingertips! <br /> Here, we
             have compiled a list of frequently asked questions from various

@@ -13,15 +13,14 @@ export default function CardModal({
     selectedCard.explanations.some((explanation) => explanation.trim() !== "");
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-75 flex justify-center items-center text-black">
-      <div className="">
+      <div className="relative flex-col bg-white rounded p-1 w-full">
         <button
-          className="absolute top-0 right-0 p-2 text-white"
+          className="absolute top-0 right-0 p-2 text-black"
           onClick={handleCloseModal}
         >
           X
         </button>
-      </div>
-      <div className="flex-col bg-white rounded p-1 w-full">
+
         <div className="flex items-center justify-center content-center my-auto">
           <div className="w-24 flex-col p-1 text-center">
             <div className="w-16 h-16 border rounded text-xs flex flex-col items-center justify-center my-2">
