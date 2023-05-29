@@ -11,7 +11,7 @@ export default function Deckbuilder_mobile() {
   const [deck, setDeck] = useState([]);
   const [showSearchField, setShowSearchField] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
-  const [cardsFiltered, setCardsFiltered] = useState([]);
+  const [cardsFiltered, setCardsFiltered] = useState(cards);
   const [deckFiltered, setDeckFiltered] = useState([]);
 
   useEffect(() => {
