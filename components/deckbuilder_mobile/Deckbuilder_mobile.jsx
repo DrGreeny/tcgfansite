@@ -380,8 +380,8 @@ export default function Deckbuilder_mobile() {
           <div className="w-full p-2 text-white flex flex-col justify-between gap-y-2">
             {sections.map((section) => (
               <React.Fragment key={section.type}>
-                <h2 className="text-lg font-bold text-white">
-                  {section.headline}
+                <h2 className="text-lg font-bold text-white ">
+                  {section.headline} &darr;
                 </h2>
                 <div className="flex overflow-x-auto border-t border-b gap-x-4">
                   {cardsFiltered.map((card) => {

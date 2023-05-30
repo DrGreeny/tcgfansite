@@ -9,7 +9,7 @@ export default function Deckbuilder() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth < 1600);
       setIsReady(true); // Set the component as ready after detecting the window width
     };
 
