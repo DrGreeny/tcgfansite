@@ -26,22 +26,39 @@ export default function Deckbuilder_mobile() {
   });
 
   useEffect(() => {
-    const filteredDeck = deck.filter(
-      (card) =>
-        card.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        card.Description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        card.Type.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (card.Realm &&
-          card.Realm.some((realm) =>
-            realm.toLowerCase().includes(searchQuery.toLowerCase())
-          )) ||
-        (card["Continuous/ Equip"] &&
-          card["Continuous/ Equip"]
-            .toLowerCase()
-            .includes(searchQuery.toLowerCase()))
-    );
-    setDeckFiltered(filteredDeck);
-  }, [deck, searchQuery]);
+    if (filterSettings.filterSelectedCards) {
+      const filteredDeck = deck.filter(
+        (card) =>
+          (card.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            card.Description.toLowerCase().includes(
+              searchQuery.toLowerCase()
+            ) ||
+            card.Type.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            (card.Realm &&
+              card.Realm.some((realm) =>
+                realm.toLowerCase().includes(searchQuery.toLowerCase())
+              )) ||
+            (card["Continuous/ Equip"] &&
+              card["Continuous/ Equip"]
+                .toLowerCase()
+                .includes(searchQuery.toLowerCase()))) &&
+          (filterSettings.selectedRealms.length === 0 ||
+            filterSettings.selectedRealms.includes(card.Realm)) &&
+          (filterSettings.selectedTypes.length === 0 ||
+            filterSettings.selectedTypes.includes(card.Type.toLowerCase())) &&
+          (filterSettings.selectedEnchantment.length === 0 ||
+            filterSettings.selectedEnchantment.includes(card.Enchantment)) &&
+          card.WordCost >= filterSettings.wordCostRange[0] &&
+          card.WordCost <= filterSettings.wordCostRange[1] &&
+          card.DP >= filterSettings.dpRange[0] &&
+          card.DP <= filterSettings.dpRange[1] &&
+          card.HP >= filterSettings.hpRange[0] &&
+          card.HP <= filterSettings.hpRange[1]
+      );
+
+      setDeckFiltered(filteredDeck);
+    }
+  }, [deck, cardsFiltered, searchQuery, filterSettings]);
 
   const addCard = (card) => {
     const existingCard = deck.find((c) => c.name === card.name);
@@ -175,10 +192,10 @@ export default function Deckbuilder_mobile() {
     setShowSearchField(true);
   };
 
-  const handleSearchQuery = (query) => {
+  /*   const handleSearchQuery = (query) => {
     setSearchQuery(query);
 
-    const filteredCards = cards.filter(
+    const filteredCards = cardsFiltered.filter(
       (card) =>
         card.name.toLowerCase().includes(query.toLowerCase()) ||
         card.Description.toLowerCase().includes(query.toLowerCase()) ||
@@ -192,7 +209,7 @@ export default function Deckbuilder_mobile() {
     );
     setCardsFiltered(filteredCards);
 
-    const filteredDeck = deck.filter(
+    const filteredDeck = deckFiltered.filter(
       (card) =>
         card.name.toLowerCase().includes(query.toLowerCase()) ||
         card.Description.toLowerCase().includes(query.toLowerCase()) ||
@@ -206,14 +223,15 @@ export default function Deckbuilder_mobile() {
     );
     setDeckFiltered(filteredDeck);
   };
-
+ */
   const handleInputChange = (e) => {
-    handleSearchQuery(e.target.value);
+    setSearchQuery(e.target.value);
+    /* handleSearchQuery(e.target.value); */
   };
   const handleResetSearch = () => {
     setSearchQuery("");
-    setCardsFiltered(cards); // Reset the filtered cards to the original list
-    setDeckFiltered(deck); // Reset the filtered deck to the original list
+    /*   setCardsFiltered(cards); // Reset the filtered cards to the original list
+    setDeckFiltered(deck); // Reset the filtered deck to the original list */
   };
   const sections = [
     { headline: "Heroes", type: "Hero" },
@@ -392,7 +410,7 @@ export default function Deckbuilder_mobile() {
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                           }}
-                          /*    onContextMenu={(e) => {
+                          /*   onContextMenu={(e) => {
                             e.preventDefault(); // Disable right-click context menu
                             handleCardLongPress(card);
                           }} */
