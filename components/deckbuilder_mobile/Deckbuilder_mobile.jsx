@@ -14,6 +14,16 @@ export default function Deckbuilder_mobile() {
   const [searchQuery, setSearchQuery] = useState("");
   const [cardsFiltered, setCardsFiltered] = useState(cards);
   const [deckFiltered, setDeckFiltered] = useState([]);
+  const [isFilterApplied, setIsFilterApplied] = useState(false);
+  const [filterSettings, setFilterSettings] = useState({
+    selectedRealms: [],
+    selectedTypes: [],
+    selectedEnchantment: [],
+    filterSelectedCards: false,
+    wordCostRange: [0, 10],
+    dpRange: [0, 20],
+    hpRange: [0, 100],
+  });
 
   useEffect(() => {
     const filteredDeck = deck.filter(
@@ -251,8 +261,8 @@ export default function Deckbuilder_mobile() {
         <div className="mt-12 flex flex-col itmes-center">
           <button
             className={`my-4 p-2 bg-gray-600 ${
-              activeButton === "Export" ? "bg-gray-800 text-orange-700" : ""
-            }`}
+              activeButton === "Filter" ? "bg-gray-800" : ""
+            } ${isFilterApplied ? "text-orange-700 font-bold" : ""}`}
             onClick={() => handleButtonClick("Filter")}
           >
             Filter
@@ -481,12 +491,15 @@ export default function Deckbuilder_mobile() {
           </div>
         )}
         {activeButton === "Filter" && (
-          <div className="flex justify-center pt-10 text-white">
+          <div className="flex justify-center text-white">
             <Fliter_mobile
               deck={deck}
               setCardsFiltered={setCardsFiltered}
               setDeckFiltered={setDeckFiltered}
               searchQuery={searchQuery}
+              filterSettings={filterSettings}
+              setFilterSettings={setFilterSettings}
+              setIsFilterApplied={setIsFilterApplied}
             />
           </div>
         )}

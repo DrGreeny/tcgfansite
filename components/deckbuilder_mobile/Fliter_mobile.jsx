@@ -8,14 +8,28 @@ export default function Fliter_mobile({
   setCardsFiltered,
   setDeckFiltered,
   searchQuery,
+  filterSettings,
+  setFilterSettings,
+  setIsFilterApplied,
 }) {
-  const [selectedRealms, setSelectedRealms] = useState([]);
-  const [selectedTypes, setSelectedTypes] = useState([]);
-  const [selectedEnchantment, setSelectedEnchantment] = useState([]);
-  const [filterSelectedCards, setFilterSelectedCards] = useState(false);
-  const [wordCostRange, setWordCostRange] = useState([0, 10]);
-  const [dpRange, setDPRange] = useState([0, 20]);
-  const [hpRange, setHPRange] = useState([0, 100]);
+  // Initialize filter state variables with the values from filterSettings
+  const [selectedRealms, setSelectedRealms] = useState(
+    filterSettings.selectedRealms
+  );
+  const [selectedTypes, setSelectedTypes] = useState(
+    filterSettings.selectedTypes
+  );
+  const [selectedEnchantment, setSelectedEnchantment] = useState(
+    filterSettings.selectedEnchantment
+  );
+  const [filterSelectedCards, setFilterSelectedCards] = useState(
+    filterSettings.filterSelectedCards
+  );
+  const [wordCostRange, setWordCostRange] = useState(
+    filterSettings.wordCostRange
+  );
+  const [dpRange, setDPRange] = useState(filterSettings.dpRange);
+  const [hpRange, setHPRange] = useState(filterSettings.hpRange);
 
   const handleRealmSelect = (event) => {
     const selectedOptions = Array.from(event.target.selectedOptions).map(
@@ -78,6 +92,7 @@ export default function Fliter_mobile({
           )
       );
     };
+
     const activateDeckFilter = () => {
       setDeckFiltered(
         deck
@@ -146,7 +161,7 @@ export default function Fliter_mobile({
       );
     };
     activateCardsFilter();
-    activateDeckFilter;
+    activateDeckFilter();
   }, [
     selectedRealms,
     selectedTypes,
@@ -159,6 +174,44 @@ export default function Fliter_mobile({
     setCardsFiltered,
     searchQuery,
     deck,
+  ]);
+
+  useEffect(() => {
+    const defaultFilterSettings = {
+      selectedRealms: [],
+      selectedTypes: [],
+      selectedEnchantment: [],
+      filterSelectedCards: false,
+      wordCostRange: [0, 10],
+      dpRange: [0, 20],
+      hpRange: [0, 100],
+    };
+    setIsFilterApplied(
+      JSON.stringify(filterSettings) !== JSON.stringify(defaultFilterSettings)
+    );
+
+    setFilterSettings({
+      selectedRealms,
+      selectedTypes,
+      selectedEnchantment,
+      filterSelectedCards,
+      wordCostRange,
+      dpRange,
+      hpRange,
+    });
+
+    // ...
+  }, [
+    selectedRealms,
+    selectedTypes,
+    selectedEnchantment,
+    filterSelectedCards,
+    wordCostRange,
+    dpRange,
+    hpRange,
+    setFilterSettings,
+    setIsFilterApplied,
+    filterSettings,
   ]);
   const handleTypeSelect = (event) => {
     const type = event.target.name.toLowerCase();
@@ -196,84 +249,109 @@ export default function Fliter_mobile({
     setHPRange(value);
   };
 
+  const handleResetFilters = () => {
+    const defaultFilterSettings = {
+      selectedRealms: [],
+      selectedTypes: [],
+      selectedEnchantment: [],
+      filterSelectedCards: false,
+      wordCostRange: [0, 10],
+      dpRange: [0, 20],
+      hpRange: [0, 100],
+    };
+
+    setSelectedRealms(defaultFilterSettings.selectedRealms);
+    setSelectedTypes(defaultFilterSettings.selectedTypes);
+    setSelectedEnchantment(defaultFilterSettings.selectedEnchantment);
+    setFilterSelectedCards(defaultFilterSettings.filterSelectedCards);
+    setWordCostRange(defaultFilterSettings.wordCostRange);
+    setDPRange(defaultFilterSettings.dpRange);
+    setHPRange(defaultFilterSettings.hpRange);
+    setFilterSettings(defaultFilterSettings);
+  };
+
   return (
-    <div className="col-span-2 ">
+    <div className="w-full p-4">
       <div className="flex justify-center p-2">
         <h3 className="font-bold">Filter Options</h3>
       </div>
 
-      <div className="bg-black text-white p-2">
-        <div className="flex justify-around">
-          <div className="">
-            <label className="block">Filter by Realm:</label>
-            <select
-              multiple
-              className="p-2 rounded w-full text-white bg-black"
-              onChange={handleRealmSelect}
-            >
-              <option value="all">All</option>
-              <option value="Angelic">Angelic</option>
-              <option value="Mythic">Mythic</option>
-              <option value="Human">Human</option>
-              <option value="Demonic">Demonic</option>
-              <option value="Undead">Undead</option>
-              <option value="Dragon">Dragon</option>
-              <option value="Beast">Beast</option>
-              <option value="Cosmic">Cosmic</option>
-              <option value="Digital">Digital</option>
-            </select>
+      <div className=" text-white p-2">
+        <div className="flex-col justify-around">
+          <div className="flex justify-around">
+            <div className="">
+              <label className="block">Filter by Realm:</label>
+              <select
+                multiple
+                className="p-2 rounded w-full text-white bg-black"
+                onChange={handleRealmSelect}
+                value={selectedRealms.map(
+                  (realm) => realm.charAt(0).toUpperCase() + realm.slice(1)
+                )}
+              >
+                <option value="all">All</option>
+                <option value="Angelic">Angelic</option>
+                <option value="Mythic">Mythic</option>
+                <option value="Human">Human</option>
+                <option value="Demonic">Demonic</option>
+                <option value="Undead">Undead</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Beast">Beast</option>
+                <option value="Cosmic">Cosmic</option>
+                <option value="Digital">Digital</option>
+              </select>
+            </div>
+            <div className="">
+              <label className="block">Filter by Type:</label>
+              <label className="block">
+                <input
+                  type="checkbox"
+                  name="hero"
+                  checked={selectedTypes.includes("hero")}
+                  onChange={handleTypeSelect}
+                />
+                Hero
+              </label>
+              <label className="block">
+                <input
+                  type="checkbox"
+                  name="creature"
+                  checked={selectedTypes.includes("creature")}
+                  onChange={handleTypeSelect}
+                />
+                Creature
+              </label>
+              <label className="block">
+                <input
+                  type="checkbox"
+                  name="spell"
+                  checked={selectedTypes.includes("spell")}
+                  onChange={handleTypeSelect}
+                />
+                Spell
+              </label>
+              <label className="block">
+                <input
+                  type="checkbox"
+                  name="curse"
+                  checked={selectedTypes.includes("curse")}
+                  onChange={handleTypeSelect}
+                />
+                Curse
+              </label>
+              <label className="block">
+                <input
+                  type="checkbox"
+                  name="realm"
+                  checked={selectedTypes.includes("realm")}
+                  onChange={handleTypeSelect}
+                />
+                Realm
+              </label>
+            </div>
           </div>
 
-          <div className="">
-            <label className="block">Filter by Type:</label>
-            <label className="block">
-              <input
-                type="checkbox"
-                name="hero"
-                checked={selectedTypes.includes("hero")}
-                onChange={handleTypeSelect}
-              />
-              Hero
-            </label>
-            <label className="block">
-              <input
-                type="checkbox"
-                name="creature"
-                checked={selectedTypes.includes("creature")}
-                onChange={handleTypeSelect}
-              />
-              Creature
-            </label>
-            <label className="block">
-              <input
-                type="checkbox"
-                name="spell"
-                checked={selectedTypes.includes("spell")}
-                onChange={handleTypeSelect}
-              />
-              Spell
-            </label>
-            <label className="block">
-              <input
-                type="checkbox"
-                name="curse"
-                checked={selectedTypes.includes("curse")}
-                onChange={handleTypeSelect}
-              />
-              Curse
-            </label>
-            <label className="block">
-              <input
-                type="checkbox"
-                name="realm"
-                checked={selectedTypes.includes("realm")}
-                onChange={handleTypeSelect}
-              />
-              Realm
-            </label>
-          </div>
-          <div className="">
-            <label className="block">Filter Affix:</label>
+          <div className=" flex justify-center gap-x-4 my-4">
             <label className="block">
               <input
                 type="checkbox"
@@ -302,7 +380,7 @@ export default function Fliter_mobile({
               Single
             </label>
           </div>
-          <div className=" flex-col">
+          <div className="flex-col space-y-3">
             <div>
               <p>
                 DP Range: {dpRange[0]} - {dpRange[1]}
@@ -348,7 +426,10 @@ export default function Fliter_mobile({
             </div>
           </div>
           <div>
-            <div className="flex-col h-full justify-between mt-2">
+            <div
+              className="flex
+             h-full justify-center mt-2"
+            >
               <label className="flex items-center">
                 Filter Deck cards
                 <input
@@ -359,6 +440,14 @@ export default function Fliter_mobile({
                 />
               </label>
             </div>
+          </div>
+          <div className="flex justify-center">
+            <button
+              className="my-4 p-2 bg-gray-600"
+              onClick={handleResetFilters}
+            >
+              Reset Filters
+            </button>
           </div>
         </div>
       </div>
