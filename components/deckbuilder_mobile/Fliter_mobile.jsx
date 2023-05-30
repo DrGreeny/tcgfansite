@@ -208,9 +208,9 @@ export default function Fliter_mobile({
     wordCostRange,
     dpRange,
     hpRange,
-    setFilterSettings,
+    /*   setFilterSettings,
     setIsFilterApplied,
-    filterSettings,
+    filterSettings, */
   ]);
   const handleTypeSelect = (event) => {
     const type = event.target.name.toLowerCase();

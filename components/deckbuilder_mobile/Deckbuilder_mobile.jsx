@@ -108,7 +108,7 @@ export default function Deckbuilder_mobile() {
     });
 
     setCardsFiltered(filteredCards);
-  }, [cardsFiltered, searchQuery, filterSettings]);
+  }, [searchQuery, filterSettings]);
 
   const addCard = (card) => {
     const existingCard = deck.find((c) => c.name === card.name);
