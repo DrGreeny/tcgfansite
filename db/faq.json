@@ -15,7 +15,7 @@
     "date": "2023-05-23",
     "author": "arti"
   },
-    {
+  {
     "summary": "Using effects",
     "question": "When can effects be used?",
     "answer": "Any effects can be used between Main Phase 1, Battle Phase, and Main Phase 2, unless stated otherwise on the card. For simplicities sake we simply wrote that battle phase is for battle, but it is correct that you can use effects during it",
@@ -23,15 +23,15 @@
     "date": "2023-05-23",
     "author": "GreenyT"
   },
-      {
+  {
     "summary": "Bouncing a creature after Queen swap",
     "question": "What happens if I swap my creature with the Queen to the opponents side and bounce it afterwards? Does it bounce to my hand?",
     "answer": "Yep! it returns to its owners hand, not controller's hand",
-    "tags": ["Bounce", "Queen of Cosmic Orbits","chaining"],
+    "tags": ["Bounce", "Queen of Cosmic Orbits", "chaining"],
     "date": "2023-05-23",
     "author": "GreenyT"
   },
-        {
+  {
     "summary": "Bouncing a creature with an equipped card",
     "question": "If I bounce an opponents creature that has an equipped card, what happens to the equipped card? Does it get destroyed or bounced to the hand as well?",
     "answer": "The equipped card gets destroyed",
@@ -39,7 +39,7 @@
     "date": "2023-05-23",
     "author": "GreenyT"
   },
-          {
+  {
     "summary": "Unmuting Creatures by pressing a Realm",
     "question": "If I mute all of the opponent's creatures with soul eject and the opponent presses a realm, do their creatures get unmuted again?",
     "answer": "Yes! Since the activation of a Realm is when its effect executes",
@@ -47,7 +47,7 @@
     "date": "2023-05-23",
     "author": "GreenyT"
   },
-            {
+  {
     "summary": "What is bouncing ?",
     "question": "What does it mean to bounce a creature?",
     "answer": "Bouncing a creature means, that after speaking it is directly sent back to its speaker`s hand. The Word cost need to payed, but any card effects are not executed.",
@@ -55,7 +55,7 @@
     "date": "2023-05-24",
     "author": "Petteri"
   },
-              {
+  {
     "summary": "What is muting ?",
     "question": "What does it mean to mute a creature?",
     "answer": "When a creature gets muted it is somehow disabled, which means it cannot attack or use its abilities. A muted creature still has its DP/HP so for defending your Hero it is still useful",
@@ -63,15 +63,15 @@
     "date": "2023-05-24",
     "author": "GreenyT"
   },
-              {
+  {
     "summary": "Deep mirror during attack",
     "question": "What happens to an attack, if I chain a curse like Deep Mirror into my opponents attack to destroy my own creature?",
     "answer": "The curse will be executed first, so the targeted creature gets destroyed by the curse. The attack is executed but it misses since the creature is already destroyed.",
-    "tags": ["chaining","attack"],
+    "tags": ["chaining", "attack"],
     "date": "2023-05-24",
     "author": "arti"
   },
-                {
+  {
     "summary": "Black Mirror and Word cost",
     "question": "If I negate the speaking of a Creature with Black Mirror, does my opponent need to pay the words to speak the creature?",
     "answer": "Yes, the words for the attempted speaking are still spent, even it gets negated.",
@@ -79,21 +79,36 @@
     "date": "2023-05-24",
     "author": "arti"
   },
-                  {
+  {
     "summary": "Mute a creature with equipped card",
     "question": "When a creature is muted, do equipped spells/curses get muted as well?",
     "answer": "No, they remain active.",
-    "tags": ["Equip","Mute"],
+    "tags": ["Equip", "Mute"],
     "date": "2023-05-24",
     "author": "arti"
   },
-                    {
+  {
     "summary": "Bolt Samurai second attack",
     "question": "If I destroy a creature with Bolt Samurai, am I able to execute an attack with another creature first before I use Bolt Samurais ability to attack again?",
     "answer": "No, if Bolt Samurais ability is used, you need to attack again directly after the opponents creature was destroyed.",
-    "tags": ["Bolt Samurai","attack"],
+    "tags": ["Bolt Samurai", "attack"],
     "date": "2023-05-24",
     "author": "arti"
+  },
+  {
+    "summary": "Speaking Curses",
+    "question": "Can Curses be spoken during any of my opponent`s phases?",
+    "answer": "No, only during their Main Phase 1, Battle Phase or Main Phase 2, unless stated otherwise on the card.",
+    "tags": ["Phases", "Curse"],
+    "date": "2023-05-30",
+    "author": "GreenyT"
+  },
+  {
+    "summary": "Using Psycho Virus",
+    "question": "What happens if there are no allied creatures on the field, when someone is forced to attack with Psycho Virus?",
+    "answer": "Since it says “if present,” then it’ll only attack if there are allied creatures present. Otherwise it simply will do nothing",
+    "tags": ["Psycho Virus"],
+    "date": "2023-05-30",
+    "author": "GreenyT"
   }
-  
 ]
