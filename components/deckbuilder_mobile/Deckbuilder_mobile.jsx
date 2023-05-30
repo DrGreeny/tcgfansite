@@ -52,7 +52,9 @@ export default function Deckbuilder_mobile() {
           (filterSettings.selectedTypes.length === 0 ||
             filterSettings.selectedTypes.includes(card.Type.toLowerCase())) &&
           (filterSettings.selectedEnchantment.length === 0 ||
-            filterSettings.selectedEnchantment.includes(card.Enchantment)) &&
+            filterSettings.selectedEnchantment.includes(
+              card["Continuous/ Equip"].toLowerCase()
+            )) &&
           card.WordCost >= filterSettings.wordCostRange[0] &&
           card.WordCost <= filterSettings.wordCostRange[1] &&
           card.DP >= filterSettings.dpRange[0] &&
@@ -92,7 +94,9 @@ export default function Deckbuilder_mobile() {
         (filterSettings.selectedTypes.length === 0 ||
           filterSettings.selectedTypes.includes(card.Type.toLowerCase())) &&
         (filterSettings.selectedEnchantment.length === 0 ||
-          filterSettings.selectedEnchantment.includes(card.Enchantment)) &&
+          filterSettings.selectedEnchantment.includes(
+            card["Continuous/ Equip"].toLowerCase()
+          )) &&
         card.WordCost >= filterSettings.wordCostRange[0] &&
         card.WordCost <= filterSettings.wordCostRange[1] &&
         card.DP >= filterSettings.dpRange[0] &&
