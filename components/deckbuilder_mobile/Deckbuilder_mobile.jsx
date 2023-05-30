@@ -27,23 +27,28 @@ export default function Deckbuilder_mobile() {
 
   useEffect(() => {
     if (filterSettings.filterSelectedCards) {
-      const filteredDeck = deck.filter(
-        (card) =>
-          (card.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            card.Description.toLowerCase().includes(
-              searchQuery.toLowerCase()
-            ) ||
-            card.Type.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            (card.Realm &&
-              card.Realm.some((realm) =>
-                realm.toLowerCase().includes(searchQuery.toLowerCase())
-              )) ||
-            (card["Continuous/ Equip"] &&
-              card["Continuous/ Equip"]
-                .toLowerCase()
-                .includes(searchQuery.toLowerCase()))) &&
+      const filteredDeck = deck.filter((card) => {
+        const matchesSearchQuery =
+          card.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          card.Description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          card.Type.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          (card.Realm &&
+            card.Realm.some((realm) =>
+              realm.toLowerCase().includes(searchQuery.toLowerCase())
+            )) ||
+          (card["Continuous/ Equip"] &&
+            card["Continuous/ Equip"]
+              .toLowerCase()
+              .includes(searchQuery.toLowerCase()));
+
+        return (
+          matchesSearchQuery &&
           (filterSettings.selectedRealms.length === 0 ||
-            filterSettings.selectedRealms.includes(card.Realm)) &&
+            filterSettings.selectedRealms.some((selectedRealm) =>
+              card.Realm.some((realm) =>
+                realm.toLowerCase().includes(selectedRealm.toLowerCase())
+              )
+            )) &&
           (filterSettings.selectedTypes.length === 0 ||
             filterSettings.selectedTypes.includes(card.Type.toLowerCase())) &&
           (filterSettings.selectedEnchantment.length === 0 ||
@@ -54,11 +59,51 @@ export default function Deckbuilder_mobile() {
           card.DP <= filterSettings.dpRange[1] &&
           card.HP >= filterSettings.hpRange[0] &&
           card.HP <= filterSettings.hpRange[1]
-      );
+        );
+      });
 
       setDeckFiltered(filteredDeck);
     }
-  }, [deck, cardsFiltered, searchQuery, filterSettings]);
+  }, [deck, searchQuery, filterSettings]);
+
+  useEffect(() => {
+    const filteredCards = cards.filter((card) => {
+      const matchesSearchQuery =
+        card.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        card.Description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        card.Type.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        (card.Realm &&
+          card.Realm.some((realm) =>
+            realm.toLowerCase().includes(searchQuery.toLowerCase())
+          )) ||
+        (card["Continuous/ Equip"] &&
+          card["Continuous/ Equip"]
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase()));
+
+      return (
+        matchesSearchQuery &&
+        (filterSettings.selectedRealms.length === 0 ||
+          filterSettings.selectedRealms.some((selectedRealm) =>
+            card.Realm.some((realm) =>
+              realm.toLowerCase().includes(selectedRealm.toLowerCase())
+            )
+          )) &&
+        (filterSettings.selectedTypes.length === 0 ||
+          filterSettings.selectedTypes.includes(card.Type.toLowerCase())) &&
+        (filterSettings.selectedEnchantment.length === 0 ||
+          filterSettings.selectedEnchantment.includes(card.Enchantment)) &&
+        card.WordCost >= filterSettings.wordCostRange[0] &&
+        card.WordCost <= filterSettings.wordCostRange[1] &&
+        card.DP >= filterSettings.dpRange[0] &&
+        card.DP <= filterSettings.dpRange[1] &&
+        card.HP >= filterSettings.hpRange[0] &&
+        card.HP <= filterSettings.hpRange[1]
+      );
+    });
+
+    setCardsFiltered(filteredCards);
+  }, [cardsFiltered, searchQuery, filterSettings]);
 
   const addCard = (card) => {
     const existingCard = deck.find((c) => c.name === card.name);
