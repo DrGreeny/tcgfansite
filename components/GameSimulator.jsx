@@ -201,27 +201,63 @@ const GameSimulator = () => {
           </button>
         </div>
       )}
-      <div className="text-gray-200">
+      <div className="text-gray-200 w-full">
         {!realmChosen && importedDeck ? (
-          <div className="text-white">
+          <>
             <h2 className="font-bold text-2xl">Choose a Realm:</h2>
-            {importedDeck.map((card) => (
-              <div key={card.tokenId}>
-                {card.Type === "Realm" ? (
-                  <button
-                    className="border border-orange-700 px-1 py-2 rounded-lg"
-                    onClick={() => handleRealmClick(card)}
-                    disabled={selectedRealm !== null}
-                  >
-                    {card.name} ({card.index})
-                  </button>
-                ) : (
-                  <h3>{card.name}</h3>
-                )}
-                {/* Render other card details */}
-              </div>
-            ))}
-          </div>
+            <div className="text-white flex justify-start gap-3 w-full">
+              {importedDeck.map((card, idx) => (
+                <div key={idx} className="my-2" onClick={handleRealmClick}>
+                  {card.Type === "Realm" ? (
+                    <div
+                      key={idx}
+                      className="p-1 border rounded cursor-pointer flex-col w-28 h-28 text-white flex-shrink-0"
+                      style={{
+                        backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                      }}
+
+                      /* onContextMenu={(e) => {
+             e.preventDefault(); // Disable right-click context menu
+             handleCardLongPress(card);
+           }}
+           onTouchStart={(event) => {
+             const longPressTimer = setTimeout(() => {
+               handleCardLongPress(card);
+             }, 2000);
+ 
+             // Store the timer ID in the card element's dataset
+             event.currentTarget.dataset.longPressTimer =
+               longPressTimer;
+           }}
+           onTouchEnd={(e) => {
+             clearTimeout(
+               e.currentTarget.dataset.longPressTimer
+             );
+           }} */
+                    >
+                      <div className="flex justify-between">
+                        <p className="text-xs font-bold">{card.WordCost}</p>
+                        {card.DP && card.HP && (
+                          <p className="text-xs font-bold">
+                            {card.DP} / {card.HP}
+                          </p>
+                        )}
+                      </div>
+
+                      <p className="w-full text-xs font-bold">{card.name}</p>
+                      <p className="w-full text-[0.60rem] italic">
+                        {card.Type}
+                      </p>
+                      {/* <p className="w-full text-[0.60rem]">{card.Description}</p> */}
+                    </div>
+                  ) : null}
+                  {/* Render other card details */}
+                </div>
+              ))}
+            </div>
+          </>
         ) : (
           deck &&
           deck.length != 0 &&
@@ -230,8 +266,8 @@ const GameSimulator = () => {
             <div className="text-white">
               <div>
                 <h2 className="font-bold text-2xl">Deck:</h2>
-                {deck.map((card) => (
-                  <div key={card.tokenId}>
+                {deck.map((card, idx) => (
+                  <div key={idx}>
                     <h3>
                       {card.name} ({card.index})
                     </h3>
@@ -253,8 +289,8 @@ const GameSimulator = () => {
             </div>
           )
         )}
-        {selectedRealm && (
-          <div className=" h-screen my-10">
+        {false && (
+          <div className=" min-h-screen my-10">
             <h1 className="text-3xl text-center">Words: {playerWords}</h1>
             <div className="grid grid-cols-11 grid-rows-2 flex gap-y-6">
               <div className="bg-gray-900 w-32 h-56 rounded flex  m-auto col-span-2">
@@ -324,32 +360,71 @@ const GameSimulator = () => {
                   className=" border  border-orange-700 shadow-lg shadow-orange-700 w-full h-full m-auto "
                   onClick={pullCard}
                 >
-                  Pull a card
+                  Draw a card
                 </button>
               </div>
-            </div>
-            <h2 className="font-bold text-2xl text-center">Hand Cards:</h2>
-            <div className="text-white flex justify-center gap-x-2">
-              {handCards.map((card) => (
-                <div key={card.tokenId}>
-                  <h3>{card.name}</h3>
-                  <div className="relative w-32 h-32">
-                    <Image
-                      src={`/Speak_Cards/${card.tokenId}.jpg`}
-                      alt="handCard"
-                      fill
-                      className="object-cover"
-                      onClick={() => setSelectedCard(card)}
-                    />
-                  </div>
-
-                  {/* Render other card details */}
-                </div>
-              ))}
             </div>
           </div>
         )}
       </div>
+      {selectedRealm && (
+        <>
+          <h2 className="font-bold text-2xl text-center">Hand Cards:</h2>
+          <div className="text-white flex w-full overflow-scroll justify-center gap-x-2 my-10">
+            {handCards.map((card, idx) => (
+              <div
+                key={idx}
+                className="p-1 border rounded cursor-pointer flex-col w-28 h-28 text-white flex-shrink-0"
+                style={{
+                  backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+
+                /* onContextMenu={(e) => {
+            e.preventDefault(); // Disable right-click context menu
+            handleCardLongPress(card);
+          }}
+          onTouchStart={(event) => {
+            const longPressTimer = setTimeout(() => {
+              handleCardLongPress(card);
+            }, 2000);
+
+            // Store the timer ID in the card element's dataset
+            event.currentTarget.dataset.longPressTimer =
+              longPressTimer;
+          }}
+          onTouchEnd={(e) => {
+            clearTimeout(
+              e.currentTarget.dataset.longPressTimer
+            );
+          }} */
+              >
+                <div className="flex justify-between">
+                  <p className="text-xs font-bold">{card.WordCost}</p>
+                  {card.DP && card.HP && (
+                    <p className="text-xs font-bold">
+                      {card.DP} / {card.HP}
+                    </p>
+                  )}
+                </div>
+
+                <p className="w-full text-xs font-bold">{card.name}</p>
+                <p className="w-full text-[0.60rem] italic">{card.Type}</p>
+                {/* <p className="w-full text-[0.60rem]">{card.Description}</p> */}
+              </div>
+            ))}
+          </div>
+          <div className="bg-gray-900 w-32 h-56 rounded flex  m-auto  col-span-2">
+            <button
+              className=" border  border-orange-700 shadow-lg shadow-orange-700 w-full h-full m-auto "
+              onClick={pullCard}
+            >
+              Draw a card
+            </button>
+          </div>
+        </>
+      )}
       <Modal
         isOpen={selectedCard !== null}
         onRequestClose={() => setSelectedCard(null)}
