@@ -222,6 +222,50 @@ export default function Deckbuilder_mobile() {
       .filter((c) => c.count > 0);
 
     setDeck(updatedCards);
+
+    const filteredCards = updatedCards
+      .filter((c) => c.name.toLowerCase().includes(searchQuery.toLowerCase()))
+      .filter((card) =>
+        card.Description.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+      .filter((card) =>
+        card.Realm.some(
+          (realm) =>
+            filterSettings.selectedRealms.length === 0 ||
+            filterSettings.selectedRealms.some((selectedRealm) =>
+              realm.toLowerCase().includes(selectedRealm.toLowerCase())
+            )
+        )
+      )
+      .filter(
+        (card) =>
+          filterSettings.selectedTypes.length === 0 ||
+          filterSettings.selectedTypes.includes(card.Type.toLowerCase())
+      )
+      .filter(
+        (card) =>
+          filterSettings.selectedEnchantment.length === 0 ||
+          filterSettings.selectedEnchantment.includes(
+            card["Continuous/ Equip"].toLowerCase()
+          )
+      )
+      .filter(
+        (card) =>
+          card.WordCost >= filterSettings.wordCostRange[0] &&
+          card.WordCost <= filterSettings.wordCostRange[1]
+      )
+      .filter(
+        (card) =>
+          card.DP >= filterSettings.dpRange[0] &&
+          card.DP <= filterSettings.dpRange[1]
+      )
+      .filter(
+        (card) =>
+          card.HP >= filterSettings.hpRange[0] &&
+          card.HP <= filterSettings.hpRange[1]
+      );
+
+    setDeckFiltered(filteredCards);
   };
 
   const handleButtonClick = (buttonName) => {
