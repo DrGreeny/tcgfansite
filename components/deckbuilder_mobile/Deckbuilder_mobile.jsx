@@ -3,6 +3,7 @@ import Fliter_mobile from "./Fliter_mobile";
 import cards from "../../db/cards.json";
 import CardModal from "./CardModal";
 import SaveDeck from "../SaveDeck";
+import DeckStats from "./DeckStats";
 
 export default function Deckbuilder_mobile() {
   const [activeButton, setActiveButton] = useState("Build");
@@ -571,7 +572,9 @@ export default function Deckbuilder_mobile() {
           </div>
         )}
         {activeButton === "Stats" && (
-          <div className="flex justify-center pt-10 text-white">Stats</div>
+          <div className="flex justify-center pt-6 text-white ">
+            <DeckStats deck={deck} />
+          </div>
         )}
       </div>
 
