@@ -57,12 +57,12 @@ const Tournament = () => {
   return (
     <div className="text-white p-2">
       <div
-        className="flex-col md:grid md:grid-cols-2 items-center"
+        className="flex-col xl:grid xl:grid-cols-2 items-center"
         style={{
           minHeight: `calc(100vh - 64px)`,
         }}
       >
-        <div className="  flex-col justify-center">
+        <div className="p-2 md:p-8 xl:p-12 flex-col justify-center mb-8">
           <h1 className="text-4xl mb-12 text-center">
             Second Beta Tournamet finished succesfully
           </h1>

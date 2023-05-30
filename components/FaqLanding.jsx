@@ -39,7 +39,7 @@ export default function FaqLanding() {
             inquiries, feel free to reach out to us through the provided
             channels. <span className="font-bold">Happy gaming!</span>
           </p>
-          <div className="flex gap-x-4 mt-4">
+          <div className="flex justify-around lg:justify-start lg:gap-x-8 mt-4">
             <Link
               href="/faq/gameRulesFaq"
               className="px-4 py-1 border border-orange-400 rounded-xl"

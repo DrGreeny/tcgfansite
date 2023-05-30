@@ -13,7 +13,7 @@ const Spotlight = () => {
       headline: "Game rules quiz coming to Shimmer Zealy Campaign",
       redirectTo: "/news/1",
       summary:
-        "Speak will participate in anm upcoming Shimmer Zealy Campaign to engage with the community and support further growth of the project",
+        "Speak starts Shimmer Zealy Campaign to engage with the community and support further growth of the project",
     },
     {
       id: 2,

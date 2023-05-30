@@ -248,19 +248,37 @@ export default function Deckbuilder_mobile() {
         >
           Export
         </button>
+        <div className="mt-12 flex flex-col itmes-center">
+          <button
+            className={`my-4 p-2 bg-gray-600 ${
+              activeButton === "Export" ? "bg-gray-800 text-orange-700" : ""
+            }`}
+            onClick={() => handleButtonClick("Filter")}
+          >
+            Filter
+          </button>
+          <button
+            className={`my-4 p-2 bg-gray-600 ${
+              activeButton === "Export" ? "bg-gray-800 text-orange-700" : ""
+            }`}
+            onClick={() => handleButtonClick("Stats")}
+          >
+            Stats
+          </button>
+        </div>
       </div>
       <div className=" ml-16" style={{ width: "calc(100% - 64px)" }}>
         <div className="flex justify-center   text-black">
-          <button
+          {/*    <button
             className="bg-white w-1/2 rounded-lg mt-1"
             onClick={handleFilterClick}
           >
             Filter
-          </button>
+          </button> */}
 
           {/* Sliding Search Field */}
           {showSearchField && (
-            <div className="fixed z-20 top-0 left-16 bg-white text-black flex items-center justify-center">
+            <div className="fixed z-20 top-0 left-16 bg-white text-black flex items-center justify-center h-7">
               <input
                 className="px-2 py-1 pr-8"
                 placeholder="Search cards..."
@@ -462,8 +480,21 @@ export default function Deckbuilder_mobile() {
             <SaveDeck selectedCards={deck} />
           </div>
         )}
+        {activeButton === "Filter" && (
+          <div className="flex justify-center pt-10 text-white">
+            <Fliter_mobile
+              deck={deck}
+              setCardsFiltered={setCardsFiltered}
+              setDeckFiltered={setDeckFiltered}
+              searchQuery={searchQuery}
+            />
+          </div>
+        )}
+        {activeButton === "Stats" && (
+          <div className="flex justify-center pt-10 text-white">Stats</div>
+        )}
       </div>
-      {showModal && <Fliter_mobile handleCloseModal={handleCloseModal} />}
+
       {showCardModal && (
         <CardModal
           handleCloseModal={handleCloseCardModal}

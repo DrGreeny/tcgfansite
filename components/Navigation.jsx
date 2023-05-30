@@ -30,7 +30,7 @@ const Navigation = () => {
     };
   }, []);
 
-  if (isMobile) {
+  if (/* ‚ */ true) {
     return <Deckbuilder_nav_mobile />;
   }
 
