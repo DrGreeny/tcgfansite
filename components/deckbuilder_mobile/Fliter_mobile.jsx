@@ -36,7 +36,7 @@ export default function Fliter_mobile({
       (option) => option.value.toLowerCase()
     );
 
-    setSelectedRealms(selectedOptions);
+    setSelectedRealms(selectedOptions.includes("none") ? [] : selectedOptions);
   };
 
   useEffect(() => {
@@ -53,13 +53,12 @@ export default function Fliter_mobile({
               ? card.Realm.map((realm) => realm.toLowerCase())
               : [];
 
-            if (selectedRealms.length > 0 && !selectedRealms.includes("all")) {
-              const matchingRealms = cardRealms.filter((realm) =>
-                selectedRealms.includes(realm)
-              );
-              if (matchingRealms.length === 0) {
-                return false;
-              }
+            if (
+              selectedRealms.length > 0 &&
+              !selectedRealms.includes("all") &&
+              !cardRealms.some((realm) => selectedRealms.includes(realm))
+            ) {
+              return false;
             }
 
             if (
@@ -289,7 +288,7 @@ export default function Fliter_mobile({
                   (realm) => realm.charAt(0).toUpperCase() + realm.slice(1)
                 )}
               >
-                <option value="all">All</option>
+                <option value="None">None</option>
                 <option value="Angelic">Angelic</option>
                 <option value="Mythic">Mythic</option>
                 <option value="Human">Human</option>
