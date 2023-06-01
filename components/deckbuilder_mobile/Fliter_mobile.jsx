@@ -32,148 +32,15 @@ export default function Fliter_mobile({
   const [hpRange, setHPRange] = useState(filterSettings.hpRange);
 
   const handleRealmSelect = (event) => {
-    const selectedOptions = Array.from(event.target.selectedOptions).map(
-      (option) => option.value.toLowerCase()
-    );
+    const realm = event.target.value.toLowerCase();
+    const isChecked = event.target.checked;
 
-    setSelectedRealms(selectedOptions.includes("none") ? [] : selectedOptions);
+    if (isChecked) {
+      setSelectedRealms([...selectedRealms, realm]);
+    } else {
+      setSelectedRealms(selectedRealms.filter((r) => r !== realm));
+    }
   };
-
-  useEffect(() => {
-    const activateCardsFilter = () => {
-      setCardsFiltered(
-        cards
-          .filter((card) => {
-            const name = card.name.toLowerCase();
-            const type = card.Type ? card.Type.toLowerCase() : "";
-            const enchantment = card["Continuous/ Equip"]
-              ? card["Continuous/ Equip"].toLowerCase()
-              : "";
-            const cardRealms = card.Realm
-              ? card.Realm.map((realm) => realm.toLowerCase())
-              : [];
-
-            if (
-              selectedRealms.length > 0 &&
-              !selectedRealms.includes("all") &&
-              !cardRealms.some((realm) => selectedRealms.includes(realm))
-            ) {
-              return false;
-            }
-
-            if (
-              selectedTypes.length > 0 &&
-              !selectedTypes.includes(type.toLowerCase())
-            ) {
-              return false;
-            }
-
-            if (
-              selectedEnchantment.length > 0 &&
-              !selectedEnchantment.includes(enchantment.toLowerCase())
-            ) {
-              return false;
-            }
-
-            return (
-              name.includes(searchQuery.toLowerCase()) ||
-              type.includes(searchQuery.toLowerCase())
-            );
-          })
-          .filter(
-            (card) =>
-              card.WordCost >= wordCostRange[0] &&
-              card.WordCost <= wordCostRange[1] &&
-              card.DP >= dpRange[0] &&
-              card.DP <= dpRange[1] &&
-              card.HP >= hpRange[0] &&
-              card.HP <= hpRange[1]
-          )
-      );
-    };
-
-    const activateDeckFilter = () => {
-      setDeckFiltered(
-        deck
-          .filter((card) => {
-            const name = card.name.toLowerCase();
-            const type = card.Type ? card.Type.toLowerCase() : "";
-            const enchantment = card["Continuous/ Equip"]
-              ? card["Continuous/ Equip"].toLowerCase()
-              : "";
-            const cardRealms = card.Realm
-              ? card.Realm.map((realm) => realm.toLowerCase())
-              : [];
-
-            if (
-              filterSelectedCards &&
-              selectedRealms.length > 0 &&
-              !selectedRealms.includes("all")
-            ) {
-              const matchingRealms = selectedRealms.filter((realm) =>
-                cardRealms.includes(realm)
-              );
-              if (matchingRealms.length === 0) {
-                return false;
-              }
-            }
-
-            if (
-              filterSelectedCards &&
-              selectedTypes.length > 0 &&
-              !selectedTypes.includes(type.toLowerCase())
-            ) {
-              return false;
-            }
-
-            if (
-              filterSelectedCards &&
-              selectedEnchantment.length > 0 &&
-              !selectedEnchantment.includes(enchantment.toLowerCase())
-            ) {
-              return false;
-            }
-
-            if (filterSelectedCards) {
-              return (
-                name.includes(searchQuery.toLowerCase()) ||
-                type.includes(searchQuery.toLowerCase())
-              );
-            } else {
-              return true; // No filter applied on searchQuery if filterSelectedCards is false
-            }
-          })
-          .filter((card) => {
-            if (filterSelectedCards) {
-              return (
-                card.WordCost >= wordCostRange[0] &&
-                card.WordCost <= wordCostRange[1] &&
-                card.DP >= dpRange[0] &&
-                card.DP <= dpRange[1] &&
-                card.HP >= hpRange[0] &&
-                card.HP <= hpRange[1]
-              );
-            } else {
-              return true; // No filter applied if filterSelectedCards is false
-            }
-          })
-      );
-    };
-    activateCardsFilter();
-    activateDeckFilter();
-  }, [
-    selectedRealms,
-    selectedTypes,
-    selectedEnchantment,
-    filterSelectedCards,
-    wordCostRange,
-    dpRange,
-    hpRange,
-    setDeckFiltered,
-    setCardsFiltered,
-    searchQuery,
-    deck,
-  ]);
 
   useEffect(() => {
     const defaultFilterSettings = {
@@ -208,10 +75,11 @@ export default function Fliter_mobile({
     wordCostRange,
     dpRange,
     hpRange,
-    /*   setFilterSettings,
+    setFilterSettings,
     setIsFilterApplied,
-    filterSettings, */
+    filterSettings,
   ]);
+
   const handleTypeSelect = (event) => {
     const type = event.target.name.toLowerCase();
     const isChecked = event.target.checked;
@@ -268,7 +136,17 @@ export default function Fliter_mobile({
     setHPRange(defaultFilterSettings.hpRange);
     setFilterSettings(defaultFilterSettings);
   };
-
+  const realmOptions = [
+    "Angelic",
+    "Mythic",
+    "Human",
+    "Demonic",
+    "Undead",
+    "Dragon",
+    "Beast",
+    "Cosmic",
+    "Digital",
+  ];
   return (
     <div className="w-full p-4">
       <div className="flex justify-center p-2">
@@ -280,25 +158,19 @@ export default function Fliter_mobile({
           <div className="flex justify-around">
             <div className="">
               <label className="block">Filter by Realm:</label>
-              <select
-                multiple
-                className="p-2 rounded w-full text-white bg-black"
-                onChange={handleRealmSelect}
-                value={selectedRealms.map(
-                  (realm) => realm.charAt(0).toUpperCase() + realm.slice(1)
-                )}
-              >
-                <option value="None">None</option>
-                <option value="Angelic">Angelic</option>
-                <option value="Mythic">Mythic</option>
-                <option value="Human">Human</option>
-                <option value="Demonic">Demonic</option>
-                <option value="Undead">Undead</option>
-                <option value="Dragon">Dragon</option>
-                <option value="Beast">Beast</option>
-                <option value="Cosmic">Cosmic</option>
-                <option value="Digital">Digital</option>
-              </select>
+              <div className="flex-col flex-wrap gap-x-2">
+                {realmOptions.map((realm) => (
+                  <label className="block" key={realm}>
+                    <input
+                      type="checkbox"
+                      value={realm}
+                      checked={selectedRealms.includes(realm.toLowerCase())}
+                      onChange={handleRealmSelect}
+                    />
+                    {realm}
+                  </label>
+                ))}
+              </div>
             </div>
             <div className="">
               <label className="block">Filter by Type:</label>

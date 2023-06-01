@@ -156,6 +156,7 @@ const DeckBuilder = () => {
     .filter((card) => {
       const name = card.name.toLowerCase();
       const type = card.Type ? card.Type.toLowerCase() : "";
+      const description = card.Description.toLowerCase();
       const enchantment = card["Continuous/ Equip"]
         ? card["Continuous/ Equip"].toLowerCase()
         : "";
@@ -188,7 +189,8 @@ const DeckBuilder = () => {
 
       return (
         name.includes(searchQuery.toLowerCase()) ||
-        type.includes(searchQuery.toLowerCase())
+        type.includes(searchQuery.toLowerCase()) ||
+        description.includes(searchQuery.toLowerCase())
       );
     })
     .filter(

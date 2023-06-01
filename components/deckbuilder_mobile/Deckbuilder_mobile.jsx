@@ -26,90 +26,6 @@ export default function Deckbuilder_mobile() {
     hpRange: [0, 100],
   });
 
-  useEffect(() => {
-    if (filterSettings.filterSelectedCards) {
-      const filteredDeck = deck.filter((card) => {
-        const matchesSearchQuery =
-          card.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          card.Description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          card.Type.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          (card.Realm &&
-            card.Realm.some((realm) =>
-              realm.toLowerCase().includes(searchQuery.toLowerCase())
-            )) ||
-          (card["Continuous/ Equip"] &&
-            card["Continuous/ Equip"]
-              .toLowerCase()
-              .includes(searchQuery.toLowerCase()));
-
-        return (
-          matchesSearchQuery &&
-          (filterSettings.selectedRealms.length === 0 ||
-            filterSettings.selectedRealms.some((selectedRealm) =>
-              card.Realm.some((realm) =>
-                realm.toLowerCase().includes(selectedRealm.toLowerCase())
-              )
-            )) &&
-          (filterSettings.selectedTypes.length === 0 ||
-            filterSettings.selectedTypes.includes(card.Type.toLowerCase())) &&
-          (filterSettings.selectedEnchantment.length === 0 ||
-            filterSettings.selectedEnchantment.includes(
-              card["Continuous/ Equip"].toLowerCase()
-            )) &&
-          card.WordCost >= filterSettings.wordCostRange[0] &&
-          card.WordCost <= filterSettings.wordCostRange[1] &&
-          card.DP >= filterSettings.dpRange[0] &&
-          card.DP <= filterSettings.dpRange[1] &&
-          card.HP >= filterSettings.hpRange[0] &&
-          card.HP <= filterSettings.hpRange[1]
-        );
-      });
-
-      setDeckFiltered(filteredDeck);
-    }
-  }, [deck, searchQuery, filterSettings]);
-
-  useEffect(() => {
-    const filteredCards = cards.filter((card) => {
-      const matchesSearchQuery =
-        card.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        card.Description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        card.Type.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (card.Realm &&
-          card.Realm.some((realm) =>
-            realm.toLowerCase().includes(searchQuery.toLowerCase())
-          )) ||
-        (card["Continuous/ Equip"] &&
-          card["Continuous/ Equip"]
-            .toLowerCase()
-            .includes(searchQuery.toLowerCase()));
-
-      return (
-        matchesSearchQuery &&
-        (filterSettings.selectedRealms.length === 0 ||
-          filterSettings.selectedRealms.some((selectedRealm) =>
-            card.Realm.some((realm) =>
-              realm.toLowerCase().includes(selectedRealm.toLowerCase())
-            )
-          )) &&
-        (filterSettings.selectedTypes.length === 0 ||
-          filterSettings.selectedTypes.includes(card.Type.toLowerCase())) &&
-        (filterSettings.selectedEnchantment.length === 0 ||
-          filterSettings.selectedEnchantment.includes(
-            card["Continuous/ Equip"].toLowerCase()
-          )) &&
-        card.WordCost >= filterSettings.wordCostRange[0] &&
-        card.WordCost <= filterSettings.wordCostRange[1] &&
-        card.DP >= filterSettings.dpRange[0] &&
-        card.DP <= filterSettings.dpRange[1] &&
-        card.HP >= filterSettings.hpRange[0] &&
-        card.HP <= filterSettings.hpRange[1]
-      );
-    });
-
-    setCardsFiltered(filteredCards);
-  }, [searchQuery, filterSettings]);
-
   const addCard = (card) => {
     const existingCard = deck.find((c) => c.name === card.name);
 
@@ -222,50 +138,6 @@ export default function Deckbuilder_mobile() {
       .filter((c) => c.count > 0);
 
     setDeck(updatedCards);
-
-    const filteredCards = updatedCards
-      .filter((c) => c.name.toLowerCase().includes(searchQuery.toLowerCase()))
-      .filter((card) =>
-        card.Description.toLowerCase().includes(searchQuery.toLowerCase())
-      )
-      .filter((card) =>
-        card.Realm.some(
-          (realm) =>
-            filterSettings.selectedRealms.length === 0 ||
-            filterSettings.selectedRealms.some((selectedRealm) =>
-              realm.toLowerCase().includes(selectedRealm.toLowerCase())
-            )
-        )
-      )
-      .filter(
-        (card) =>
-          filterSettings.selectedTypes.length === 0 ||
-          filterSettings.selectedTypes.includes(card.Type.toLowerCase())
-      )
-      .filter(
-        (card) =>
-          filterSettings.selectedEnchantment.length === 0 ||
-          filterSettings.selectedEnchantment.includes(
-            card["Continuous/ Equip"].toLowerCase()
-          )
-      )
-      .filter(
-        (card) =>
-          card.WordCost >= filterSettings.wordCostRange[0] &&
-          card.WordCost <= filterSettings.wordCostRange[1]
-      )
-      .filter(
-        (card) =>
-          card.DP >= filterSettings.dpRange[0] &&
-          card.DP <= filterSettings.dpRange[1]
-      )
-      .filter(
-        (card) =>
-          card.HP >= filterSettings.hpRange[0] &&
-          card.HP <= filterSettings.hpRange[1]
-      );
-
-    setDeckFiltered(filteredCards);
   };
 
   const handleButtonClick = (buttonName) => {
@@ -286,38 +158,6 @@ export default function Deckbuilder_mobile() {
     setShowSearchField(true);
   };
 
-  /*   const handleSearchQuery = (query) => {
-    setSearchQuery(query);
-
-    const filteredCards = cardsFiltered.filter(
-      (card) =>
-        card.name.toLowerCase().includes(query.toLowerCase()) ||
-        card.Description.toLowerCase().includes(query.toLowerCase()) ||
-        card.Type.toLowerCase().includes(query.toLowerCase()) ||
-        (card.Realm &&
-          card.Realm.some((realm) =>
-            realm.toLowerCase().includes(query.toLowerCase())
-          )) ||
-        (card["Continuous/ Equip"] &&
-          card["Continuous/ Equip"].toLowerCase().includes(query.toLowerCase()))
-    );
-    setCardsFiltered(filteredCards);
-
-    const filteredDeck = deckFiltered.filter(
-      (card) =>
-        card.name.toLowerCase().includes(query.toLowerCase()) ||
-        card.Description.toLowerCase().includes(query.toLowerCase()) ||
-        card.Type.toLowerCase().includes(query.toLowerCase()) ||
-        (card.Realm &&
-          card.Realm.some((realm) =>
-            realm.toLowerCase().includes(query.toLowerCase())
-          )) ||
-        (card["Continuous/ Equip"] &&
-          card["Continuous/ Equip"].toLowerCase().includes(query.toLowerCase()))
-    );
-    setDeckFiltered(filteredDeck);
-  };
- */
   const handleInputChange = (e) => {
     setSearchQuery(e.target.value);
     /* handleSearchQuery(e.target.value); */
@@ -334,6 +174,124 @@ export default function Deckbuilder_mobile() {
     { headline: "Curses", type: "Curse" },
     { headline: "Realms", type: "Realm" },
   ];
+
+  const filteredCards = cards
+    .filter((card) => {
+      const name = card.name.toLowerCase();
+      const type = card.Type ? card.Type.toLowerCase() : "";
+      const description = card.Description.toLowerCase();
+      const enchantment = card["Continuous/ Equip"]
+        ? card["Continuous/ Equip"].toLowerCase()
+        : "";
+      const cardRealms = card.Realm
+        ? card.Realm.map((realm) => realm.toLowerCase())
+        : [];
+
+      if (
+        filterSettings.selectedRealms.length > 0 &&
+        !filterSettings.selectedRealms.includes("None")
+      ) {
+        const matchingRealms = cardRealms.filter((realm) =>
+          filterSettings.selectedRealms.includes(realm)
+        );
+        if (matchingRealms.length === 0) {
+          return false;
+        }
+      }
+
+      if (
+        filterSettings.selectedTypes.length > 0 &&
+        !filterSettings.selectedTypes.includes(type.toLowerCase())
+      ) {
+        return false;
+      }
+
+      if (
+        filterSettings.selectedEnchantment.length > 0 &&
+        !filterSettings.selectedEnchantment.includes(enchantment.toLowerCase())
+      ) {
+        return false;
+      }
+
+      return (
+        name.includes(searchQuery.toLowerCase()) ||
+        type.includes(searchQuery.toLowerCase()) ||
+        description.includes(searchQuery.toLowerCase())
+      );
+    })
+    .filter(
+      (card) =>
+        card.WordCost >= filterSettings.wordCostRange[0] &&
+        card.WordCost <= filterSettings.wordCostRange[1] &&
+        card.DP >= filterSettings.dpRange[0] &&
+        card.DP <= filterSettings.dpRange[1] &&
+        card.HP >= filterSettings.hpRange[0] &&
+        card.HP <= filterSettings.hpRange[1]
+    );
+
+  const filteredSelectedCards = deck
+    .filter((card) => {
+      const name = card.name.toLowerCase();
+      const type = card.Type ? card.Type.toLowerCase() : "";
+      const enchantment = card["Continuous/ Equip"]
+        ? card["Continuous/ Equip"].toLowerCase()
+        : "";
+      const cardRealms = card.Realm
+        ? card.Realm.map((realm) => realm.toLowerCase())
+        : [];
+
+      if (
+        filterSettings.filterSelectedCards &&
+        filterSettings.selectedRealms.length > 0 &&
+        !filterSettings.selectedRealms.includes("None")
+      ) {
+        const matchingRealms = filterSettings.selectedRealms.filter((realm) =>
+          cardRealms.includes(realm)
+        );
+        if (matchingRealms.length === 0) {
+          return false;
+        }
+      }
+
+      if (
+        filterSettings.filterSelectedCards &&
+        filterSettings.selectedTypes.length > 0 &&
+        !filterSettings.selectedTypes.includes(type.toLowerCase())
+      ) {
+        return false;
+      }
+
+      if (
+        filterSettings.filterSelectedCards &&
+        filterSettings.selectedEnchantment.length > 0 &&
+        !filterSettings.selectedEnchantment.includes(enchantment.toLowerCase())
+      ) {
+        return false;
+      }
+
+      if (filterSettings.filterSelectedCards) {
+        return (
+          name.includes(searchQuery.toLowerCase()) ||
+          type.includes(searchQuery.toLowerCase())
+        );
+      } else {
+        return true; // No filter applied on searchQuery if filterSelectedCards is false
+      }
+    })
+    .filter((card) => {
+      if (filterSettings.filterSelectedCards) {
+        return (
+          card.WordCost >= filterSettings.wordCostRange[0] &&
+          card.WordCost <= filterSettings.wordCostRange[1] &&
+          card.DP >= filterSettings.dpRange[0] &&
+          card.DP <= filterSettings.dpRange[1] &&
+          card.HP >= filterSettings.hpRange[0] &&
+          card.HP <= filterSettings.hpRange[1]
+        );
+      } else {
+        return true; // No filter applied if filterSelectedCards is false
+      }
+    });
 
   return (
     <div className="flex min-h-screen">
@@ -428,7 +386,7 @@ export default function Deckbuilder_mobile() {
                   {section.headline} &darr;
                 </h2>
                 <div className="flex overflow-x-auto border-t border-b gap-x-4">
-                  {cardsFiltered.map((card) => {
+                  {filteredCards.map((card) => {
                     if (card.Type === section.type) {
                       return (
                         <div
@@ -493,7 +451,7 @@ export default function Deckbuilder_mobile() {
                   {section.headline}
                 </h2>
                 <div className="flex overflow-x-auto border-t border-b gap-x-4">
-                  {deckFiltered.map((card) => {
+                  {filteredSelectedCards.map((card) => {
                     if (card.Type === section.type) {
                       return (
                         <div
