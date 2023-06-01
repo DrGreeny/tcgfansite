@@ -110,5 +110,13 @@
     "tags": ["Psycho Virus"],
     "date": "2023-05-30",
     "author": "GreenyT"
+  },
+    {
+    "summary": "Psycho Virus on a Hero",
+    "question": "Does Psycho Virus equipped to Hero force the Hero to advance and attack ?",
+    "answer": "Yes, Hero must advance and attack.",
+    "tags": ["Psycho Virus"],
+    "date": "2023-06-01",
+    "author": "GreenyT"
   }
 ]
