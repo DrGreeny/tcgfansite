@@ -1,11 +1,28 @@
-import Faqs from "/db/faq"; // Import the FAQ component
+/* import Faqs from "/db/faq"; // Import the FAQ component */
 import Faq from "./Faq";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import axios from "axios";
+
 const FAQList = () => {
   const [searchTerm, setSearchTerm] = useState(""); // State for search term
+  const [faqs, setFaqs] = useState([]);
+
+  useEffect(() => {
+    const fetchFaqs = async () => {
+      try {
+        const response = await axios.get("/api/faqs"); // Assuming you have an API route set up to fetch the FAQs
+        setFaqs(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchFaqs();
+  }, []);
+
   // Filter FAQs based on search term
-  const filteredFaqs = Faqs.filter(
+  const filteredFaqs = faqs.filter(
     (faq) =>
       faq.question.toLowerCase().includes(searchTerm.toLowerCase()) ||
       faq.answer.toLowerCase().includes(searchTerm.toLowerCase()) ||
