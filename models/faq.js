@@ -21,8 +21,8 @@ const FaqSchema = new mongoose.Schema(
       maxLength: 100,
     },
     tags: [String],
-  }
-  // { timestamps: true }
+  },
+  { timestamps: true }
 );
 
 export default mongoose.models.Faq || mongoose.model("Faq", FaqSchema);

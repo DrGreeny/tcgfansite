@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import mongodb from "../../utils/mongodb";
-import jsondb from "../../db/faq";
-import Faq from "../../models/initFaq";
+import jsondb from "../../db/initFaq";
+import Faq from "../../models/faq";
 
 export default async function handler(req, res) {
   await mongodb.dbConnect();

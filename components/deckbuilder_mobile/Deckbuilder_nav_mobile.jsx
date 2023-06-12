@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import ConnectButton from "../ConnectButton";
 
 const links = [
   { href: "/", label: "Home" },
@@ -24,7 +25,7 @@ const Deckbuilder_nav_mobile = () => {
   };
 
   return (
-    <nav className="sticky z-10 top-0 bg-black py-1 h-8 border-b">
+    <nav className="sticky z-10 top-0 bg-black py-1 h-8 border-b flex">
       <div className="fixed flex justify-between items-center">
         <div className="ml-4 ">
           <button
@@ -47,6 +48,9 @@ const Deckbuilder_nav_mobile = () => {
             </svg>
           </button>
         </div>
+      </div>
+      <div className="ml-auto">
+        <ConnectButton />
       </div>
 
       {isMenuOpen && (
@@ -74,6 +78,7 @@ const Deckbuilder_nav_mobile = () => {
               </button>
             </div>
             <h2 className="text-2xl text-center font-bold mb-4">SpeakWords</h2>
+
             <ul className="flex flex-col items-center">
               {links.map((link) => (
                 <li

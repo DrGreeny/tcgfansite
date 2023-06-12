@@ -4,6 +4,7 @@ const userSchema = new mongoose.Schema({
   username: String,
   publicAddress: { type: String, unique: true, required: true },
   nonce: { type: String, required: true },
+  editRight: { type: Boolean, required: true },
 });
 
 const User = mongoose.models.User || mongoose.model("User", userSchema);

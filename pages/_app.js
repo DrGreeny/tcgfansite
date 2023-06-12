@@ -1,11 +1,14 @@
 import Layout from "../components/Layout";
 import "../styles/globals.css";
+import { AccountProvider } from "../components/contexts/AccountContext";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <AccountProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </AccountProvider>
   );
 }
 
