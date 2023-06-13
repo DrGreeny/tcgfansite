@@ -147,18 +147,32 @@ const GameSimulator = () => {
     setRealmChosen(false);
     setPlayerWords(0);
   }
+  function shuffleArray(array) {
+    // Function to shuffle the elements of an array using Fisher-Yates algorithm
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
   function pullCard() {
     if (deck.length === 0) {
       alert("No cards left in the deck!");
       return;
     }
 
-    const [firstCard, ...remainingDeck] = deck; // Destructure the first card from the deck
+    let shuffledDeck = [...deck]; // Create a copy of the deck
+
+    // Shuffle the deck using the shuffleArray function
+    shuffledDeck = shuffleArray(shuffledDeck);
+
+    const [firstCard, ...remainingDeck] = shuffledDeck; // Destructure the first card from the shuffled deck
 
     // Move the first card to the handCards array
     setHandCards((prevHandCards) => [...prevHandCards, firstCard]);
 
-    // Update the deck by removing the first card
+    // Update the deck by removing the first card from the shuffled deck
     setDeck(remainingDeck);
   }
 
