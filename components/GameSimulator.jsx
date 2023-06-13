@@ -18,7 +18,7 @@ const GameSimulator = () => {
     const file = event.target.files[0];
 
     // Check file extension
-    if (!file.name.endsWith(".json")) {
+    if (!file || !file.name || !file?.name.endsWith(".json")) {
       alert("Invalid file format. Please select a JSON file.");
       return;
     }
@@ -219,13 +219,13 @@ const GameSimulator = () => {
         {!realmChosen && importedDeck ? (
           <>
             <h2 className="font-bold text-2xl">Choose a Realm:</h2>
-            <div className="text-white flex justify-start gap-3 w-full">
+            <div className="text-white flex">
               {importedDeck.map((card, idx) => (
                 <div key={idx} className="my-2" onClick={handleRealmClick}>
                   {card.Type === "Realm" ? (
                     <div
                       key={idx}
-                      className="p-1 border rounded cursor-pointer flex-col w-28 h-28 text-white flex-shrink-0"
+                      className="mx-1 p-1 border rounded cursor-pointer flex-col w-28 h-28 text-white flex-shrink-0"
                       style={{
                         backgroundImage: `url(/Speak_Cards/${card.tokenId}.jpg)`,
                         backgroundSize: "cover",

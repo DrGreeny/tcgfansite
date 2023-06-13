@@ -11,6 +11,7 @@ const FAQList = () => {
   const [searchTerm, setSearchTerm] = useState(""); // State for search term
   const [faqs, setFaqs] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false); // State for controlling the modal
+  const [editedFaq, setEditedFaq] = useState(null);
 
   useEffect(() => {
     const fetchFaqs = async () => {
@@ -24,7 +25,10 @@ const FAQList = () => {
 
     fetchFaqs();
   }, []);
-
+  const handleEditEntry = (faq) => {
+    setEditedFaq(faq);
+    setIsModalOpen(true);
+  };
   // Filter FAQs based on search term
   const filteredFaqs = faqs.filter(
     (faq) =>
@@ -34,12 +38,21 @@ const FAQList = () => {
         tag.toLowerCase().includes(searchTerm.toLowerCase())
       )
   );
+  const fetchFaqs = async () => {
+    try {
+      const response = await axios.get("/api/faqs"); // Assuming you have an API route set up to fetch the FAQs
+      setFaqs(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   const handleAddEntry = () => {
     setIsModalOpen(true); // Open the modal when the button is clicked
   };
 
   const closeModal = () => {
     setIsModalOpen(false); // Close the modal
+    fetchFaqs();
   };
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
@@ -72,7 +85,17 @@ const FAQList = () => {
 
       {filteredFaqs.map((faq, index) => {
         return (
-          <div key={index} className="mb-10">
+          <div key={index} className="mb-10 ">
+            {hasEditRights && (
+              <div className="flex justify-end">
+                <button
+                  className=" border border-orange-400 py-1 px-3 rounded-xl"
+                  onClick={() => handleEditEntry(faq)}
+                >
+                  Edit
+                </button>
+              </div>
+            )}
             <Faq
               summary={faq.summary}
               question={faq.question}
@@ -108,7 +131,7 @@ const FAQList = () => {
                 </svg>
               </button>
             </div>
-            <FaqInputForm />
+            <FaqInputForm faq={editedFaq} />
             {/* Render the InputForm component within the modal */}
           </div>
         </div>

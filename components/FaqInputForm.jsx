@@ -2,18 +2,20 @@ import { useState, useContext, useEffect } from "react";
 import axios from "axios";
 import { AccountContext } from "./contexts/AccountContext";
 
-const FaqInputForm = () => {
+const FaqInputForm = ({ faq }) => {
   const { account } = useContext(AccountContext); // Access hasEditRights from the AccountContext
   const [nonce, setNonce] = useState("");
 
-  const [summary, setSummary] = useState("");
-  const [question, setQuestion] = useState("");
-  const [answer, setAnswer] = useState("");
-  const [author, setAuthor] = useState("");
-  const [tags, setTags] = useState("");
+  const [summary, setSummary] = useState(faq?.summary || "");
+  const [question, setQuestion] = useState(faq?.question || "");
+  const [answer, setAnswer] = useState(faq?.answer || "");
+  const [author, setAuthor] = useState(faq?.author || "");
+  const [tags, setTags] = useState(faq?.tags?.join(",") || "");
   const [signature, setSignature] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
+
+  const isEditMode = !!faq;
 
   useEffect(() => {
     const fetchNonce = async () => {
@@ -62,37 +64,54 @@ const FaqInputForm = () => {
       tags: tags.split(","),
     };
 
-    try {
-      // Step 2: Make the API call with signature and publicAddress
-      const response = await axios.post("/api/authentication", {
-        signature,
-        account,
-      });
-      console.log("Authentication successful:", response.data);
+    if (isEditMode) {
+      try {
+        console.log("ID: ", faq._id);
+        const faqResponse = await axios.put(`/api/faqs/${faq._id}`, newFaq);
+        console.log("FAQ updated:", faqResponse.data);
+        setSuccessMessage("FAQ updated successfully!");
+        setSummary("");
+        setQuestion("");
+        setAnswer("");
+        setAuthor("");
+        setTags("");
+      } catch (error) {
+        setErrorMessage("Error updating FAQ, check your input data!");
+        console.error("Error adding FAQ:", error);
+      }
+    } else {
+      try {
+        // Step 2: Make the API call with signature and publicAddress
+        const response = await axios.post("/api/authentication", {
+          signature,
+          account,
+        });
+        console.log("Authentication successful:", response.data);
 
-      const faqResponse = await axios.post("/api/faqs", newFaq);
-      console.log("FAQ added:", faqResponse.data);
-      setSuccessMessage("FAQ entry created successfully!");
-      // Reset form fields
-      setSummary("");
-      setQuestion("");
-      setAnswer("");
-      setAuthor("");
-      setTags("");
-    } catch (error) {
-      setErrorMessage("Error creating FAQ, check your input data!");
-      console.error("Error adding FAQ:", error);
+        const faqResponse = await axios.post("/api/faqs", newFaq);
+        console.log("FAQ added:", faqResponse.data);
+        setSuccessMessage("FAQ entry created successfully!");
+        // Reset form fields
+        setSummary("");
+        setQuestion("");
+        setAnswer("");
+        setAuthor("");
+        setTags("");
+      } catch (error) {
+        setErrorMessage("Error creating FAQ, check your input data!");
+        console.error("Error adding FAQ:", error);
+      }
     }
   };
   return (
     <div className="w-full">
       <div className="flex justify-center mb-4">
-        <h2 className="font-bold">Add FAQ</h2>
+        <h2 className="font-bold text-xl">Add FAQ</h2>
       </div>
 
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Author:</label>
+          <label className="font-bold">Author:</label>
           <input
             className="border border-lg px-2 py-1 w-full"
             type="text"
@@ -101,7 +120,7 @@ const FaqInputForm = () => {
           />
         </div>
         <div>
-          <label>Summary:</label>
+          <label className="font-bold">Summary:</label>
           <input
             className="border border-lg px-2 py-1 w-full"
             type="text"
@@ -110,7 +129,7 @@ const FaqInputForm = () => {
           />
         </div>
         <div>
-          <label>Question:</label>
+          <label className="font-bold">Question:</label>
           <textarea
             className="border border-lg px-2 py-1 w-full h-24"
             type="text"
@@ -119,7 +138,7 @@ const FaqInputForm = () => {
           />
         </div>
         <div>
-          <label>Answer:</label>
+          <label className="font-bold">Answer:</label>
           <textarea
             className="border border-lg px-2 py-1 w-full h-24"
             type="text"
@@ -128,7 +147,7 @@ const FaqInputForm = () => {
           />
         </div>
         <div>
-          <label>Tags (comma-separated):</label>
+          <label className="font-bold">Tags (comma-separated):</label>
           <input
             className="border border-lg px-2 py-1 w-full"
             type="text"
@@ -144,7 +163,7 @@ const FaqInputForm = () => {
               type="submit"
               className="border border-orange-700 px-2 py-1 rounded-lg"
             >
-              Submit
+              {isEditMode ? "Update" : "Submit"}
             </button>
           )}
 
