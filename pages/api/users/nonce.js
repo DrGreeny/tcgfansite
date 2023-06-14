@@ -11,10 +11,8 @@ export default async function handler(req, res) {
 
 async function handleGetRequest(req, res) {
   try {
-    await mongodb.dbConnect();
-
     const { "x-ethereum-address": account } = req.headers;
-
+    await mongodb.dbConnect();
     const user = await User.findOne({ publicAddress: account });
 
     if (!user) {

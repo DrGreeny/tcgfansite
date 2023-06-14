@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import axios from "axios";
 import { AccountContext } from "./contexts/AccountContext";
+import { ethers } from "ethers";
 
 const FaqInputForm = ({ faq }) => {
   const { account } = useContext(AccountContext); // Access hasEditRights from the AccountContext
@@ -16,6 +17,17 @@ const FaqInputForm = ({ faq }) => {
   const [successMessage, setSuccessMessage] = useState("");
 
   const isEditMode = !!faq;
+  const [provider, setProvider] = useState({});
+
+  useEffect(() => {
+    if (
+      typeof window.ethereum !== "undefined" ||
+      typeof window.web3 !== "undefined"
+    )
+      setProvider(new ethers.providers.Web3Provider(window.ethereum));
+    {
+    }
+  }, []);
 
   useEffect(() => {
     const fetchNonce = async () => {
@@ -50,6 +62,24 @@ const FaqInputForm = ({ faq }) => {
   const handleTagsChange = (e) => {
     setTags(e.target.value);
   };
+  const signMessage = async () => {
+    const signer = provider.getSigner();
+    const sig = await signer.signMessage(nonce);
+
+    setSignature(sig);
+
+    return sig;
+    /*     try {
+      const signature = await window.ethereum.request({
+        method: "personal_sign",
+        params: [nonce, account],
+        from: account,
+      });
+      setSignature(signature);
+    } catch (error) {
+      console.error("Error signing message:", error);
+    } */
+  };
 
   const handleSubmit = async (e) => {
     setErrorMessage("");
@@ -66,7 +96,13 @@ const FaqInputForm = ({ faq }) => {
 
     if (isEditMode) {
       try {
-        console.log("ID: ", faq._id);
+        const sig = await signMessage();
+
+        const data = { signature: sig, account: account };
+        // Step 2: Make the API call with signature and publicAddress
+        const response = await axios.post("/api/authentication", data);
+        console.log("Authentication successful:", response.data);
+
         const faqResponse = await axios.put(`/api/faqs/${faq._id}`, newFaq);
         console.log("FAQ updated:", faqResponse.data);
         setSuccessMessage("FAQ updated successfully!");
@@ -81,15 +117,14 @@ const FaqInputForm = ({ faq }) => {
       }
     } else {
       try {
+        const sig = await signMessage();
+
+        const data = { signature: sig, account: account };
         // Step 2: Make the API call with signature and publicAddress
-        const response = await axios.post("/api/authentication", {
-          signature,
-          account,
-        });
+        const response = await axios.post("/api/authentication", data);
         console.log("Authentication successful:", response.data);
 
-        const faqResponse = await axios.post("/api/faqs", newFaq);
-        console.log("FAQ added:", faqResponse.data);
+        await axios.post("/api/faqs", newFaq);
         setSuccessMessage("FAQ entry created successfully!");
         // Reset form fields
         setSummary("");
