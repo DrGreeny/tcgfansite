@@ -2,12 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CarouselElement from "./CarouselElement";
+import carouselItems from "../db/news.json";
 
 const Spotlight = () => {
   const carouselRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const carouselItems = [
+  /*   const carouselItems = [
     {
       id: 1,
       headline: "Game rules quiz coming to Shimmer Zealy Campaign",
@@ -23,7 +24,7 @@ const Spotlight = () => {
     },
 
     // ... more items
-  ];
+  ]; */
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -34,7 +35,7 @@ const Spotlight = () => {
       }
     }, 5000);
     return () => clearInterval(intervalId);
-  }, [currentIndex, carouselItems.length]);
+  });
 
   return (
     <div className="text-white mt-10 z-10">
@@ -56,7 +57,7 @@ const Spotlight = () => {
             key={item.id}
             headline={item.headline}
             summary={item.summary}
-            redirectTo={item.redirectTo}
+            redirectTo={`/news/${item.id}`}
           />
         ))}
       </Carousel>

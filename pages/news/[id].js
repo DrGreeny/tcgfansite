@@ -29,7 +29,7 @@ const NewsPage = () => {
           className="object-cover"
         />
       </div>
-      <div className="flex-col md:grid md:grid-cols-2 p-2 my-4">
+      <div className="flex-col md:grid md:grid-cols-2 p-2 my-10">
         <div className="  m-auto px-10 flex justify-center">
           <div className="whitespace-pre-line text-gray-200">
             <h1 className="text-4xl mb-4">{selectedNews?.headline}</h1>

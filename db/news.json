@@ -1,7 +1,20 @@
 [
   {
     "id": 1,
-    "headline": "Speak plans game rules quiz for Zealy",
+    "headline": "Game rules quiz coming to Shimmer Zealy Campaign",
+    "summary": "Speak starts Shimmer Zealy Campaign to engage with the community and support further growth of the project",
     "text": "<p>In an exciting development, the trading card game Speak is currently working on setting up a captivating initiative to engage its players and promote a deeper understanding of the game. As part of the upcoming Zealy Campaign within the renowned Shimmer Network, Speak is planning to introduce a stimulating game rules quiz (image leaked in discord). <br />Once launched, players will have the opportunity to test their knowledge of the game's intricate mechanics and gain valuable insights into its strategic elements. By participating in the quiz, enthusiasts will be able to unlock rewards and immerse themselves in the captivating world of Speak. <br />This initiative aims to encourage individuals to connect with the game, fostering a community of dedicated players who not only enjoy playing but also seek to expand their understanding of the game's rules. Stay tuned for updates on the official Zealy Campaign page at <a href='https://zealy.io/c/iotashimmer' style='color: orange;'>zealy.io/c/iotashimmer/</a>, as Speak works diligently to set up this engaging game rules quiz. Get ready to embark on an exciting journey, discovering the intricacies of Speak and embracing the thrill of strategic gameplay while earning well-deserved rewards.</p>"
+  },
+  {
+    "id": 2,
+    "headline": "Big Balance Patches and Game update released",
+    "summary": "A new balance patch was released by Atum to address issues found during beta testing. Read more about what has been changed in our news section.",
+    "text": "<br /><p>Game Update<br /> -It is now possible to attack with, add counters, and Mute Creatures you took control of</p> <br /><br /> <p>Balance Patches<br> -Basis Warrior: Reduced its DP buff from 3 to 2<br> -Cosmic Puppeteer: Added a cost of 1 to use its Ability<br> -Queen of Cosmic Orbits: Buffed HP from 45 to 50<br> -Guard of the Rabbit Hole: Reduced its Ability cost from 4 to 3, but added once per your turn limitation<br> -Witch of Minds: Removed once per turn limitation<br> -Angeldust Fox: Removed ability to convert Words into HP (DP is still possible)<br> -Dead Dust: Nerfed DP from 10 to 9 and HP from 6 to 3<br> -Split Arrow Archer: Increased cost from 3 to 4<br> -Null: Reduced cost from 4 to 3<br> -Shrine of Exchange: Reworked to draw 2 cards at a cost of 4, rather than 1 at a cost of 3<br> -Shrine of Greater Exchange: Reworked to draw 4 cards at a cost of 6, rather than 2 at a cost of 5<br> -Pray for Gold: Increased cost to 3 and reworked Effect: Declare a card type (Spell, Creature, etc) and excavate 3 cards from the deck. If any were the declared type, draw all 3 cards<br> -Rose of the Vanta Gold: Reworked Effect: doubles opponent's Creature's HP, but it is unable to attack<br> -Evil Contracts: Reduce DP it inflicts on your own hero from 10 to 5<br> -Cosmic Seer: Reworked Ability: Once per your turn, you can reveal one of your opponent&rsquo;s facedown cards or a random card in their hand<br> -Dimensions: Reduced cost from 4 to 2<br> -Ceremonial Dragon: Buffed DP from 2 to 4<br> -Bladesaw Runner: Reduced cost from 4 to 3<br> -Runaway Fruits: Text clarification<br> -Revive.exe: Text clarification<br> -Fusion Dragon: Text clarification (its Ability can only be used in your next turn)<br> -Rude awakening: Text clarification and reduced its cost from 8 to 7</p>"
+  },
+  {
+    "id": 3,
+    "headline": "The Pharaoh of Epoch revealed",
+    "summary": "Atum unveiled a thrilling surprise for its dedicated players with a new Special Edition card",
+    "text": "<p>Speak introduces 'The Pharaoh of Epoch.' This special card celebrates the partnership with Epoch Zero. Owners of a Speak game NFT and an Epoch Zero NFT will receive an exclusive airdrop. Unleash the Pharaoh's power in the game and embrace this extraordinary collaboration.</p>"
   }
 ]

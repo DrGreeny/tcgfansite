@@ -1,6 +1,8 @@
 import { Bracket } from "react-brackets";
-const checkmark = "\u2713";
-const rounds = [
+
+import { rounds } from "../db/tournaments/tournament_2";
+
+/* const rounds = [
   {
     title: "Round one",
     seeds: [
@@ -51,7 +53,7 @@ const rounds = [
       },
     ],
   },
-];
+]; */
 
 const Tournament = () => {
   return (

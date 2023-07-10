@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FaqLanding() {
   return (
-    <div className="flex-col my-4">
+    <div className="flex-col my-4 lg:grid lg:grid-cols-2">
       <div
         className="relative w-full flex justify-center"
         style={{
