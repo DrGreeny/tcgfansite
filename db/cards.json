@@ -59,7 +59,7 @@
     "DP": 5,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "Generate 1 Word during your Word Phases. Once per turn, you can use Words to increase the DP or HP of a card you control by the number of Words used until the end of the turn",
+    "Description": "Generate 1 Word during your Word Phases. Once per turn, you can use Words to increase the DP of a card you control by the number of Words used until the end of the turn",
     "explanations": [
       "Do not forget to add the extra 1 Word manually during your Word phase"
     ]
@@ -99,7 +99,7 @@
     "DP": 5,
     "HP": 55,
     "Continuous/ Equip": "",
-    "Description": "Increase the DP of all creatures you control by 3.",
+    "Description": "Increase the DP of all creatures you control by 2.",
     "explanations": [
       "In difference to the Cosmic Puppeteer this card permanently increases the DP of all creatures automatically without the need to set it during a specific phase"
     ]
@@ -139,7 +139,7 @@
     "DP": 5,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can use 4 Words to take control of 1 of your opponent´s Creatures until the end of the turn.",
+    "Description": "You can use 4 Words to take control of 1 of your opponent´s Creatures until the end of the turn.",
     "explanations": [
       "Be aware, that the ability of this card can be used in your or your opponent`s turn. This means you could also chain this ability into battles or other things, that potentially destroy one of your creatures, so that your attacked creature will be attacked but swapped to your opponents side before it is destroyed"
     ]
@@ -153,7 +153,7 @@
     "DP": 5,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, during your Main Phase, you can target 1 Creature you control: it gains 5 DP and HP. You can only target 1 Creature you control at a time.",
+    "Description": "Once per your turn, during your Main Phase, you can spend 1 Word to target a Creature you control: it gains 5 DP/HP. You can only target 1 Creature you control at a time.",
     "explanations": [
       "In difference to Basis Warrior Hero, the ability of this cards must be explicitly used in one of your main phases (probably Main Phase 1 to use the DP for your attack)"
     ]
@@ -167,7 +167,7 @@
     "DP": 4,
     "HP": 50,
     "Continuous/ Equip": "",
-    "Description": "You can use 4 Words to bounce a Creature",
+    "Description": "Once per your turn, you can use 3 Words to bounce a Creature",
     "explanations": [
       "Bouncing a creature means, that after it gets spoken, it is directly send back to the controllers hand"
     ]
@@ -179,7 +179,7 @@
     "Realm": ["Cosmic"],
     "WordCost": 0,
     "DP": 5,
-    "HP": 45,
+    "HP": 50,
     "Continuous/ Equip": "",
     "Description": "You can use 5 Words to exchange a Creature you control for a Creature your opponent controls",
     "explanations": [""]
@@ -217,7 +217,7 @@
     "tokenId": 40,
     "Type": "Creature",
     "Realm": ["Digital", "Human"],
-    "WordCost": 3,
+    "WordCost": 4,
     "DP": 3,
     "HP": 7,
     "Continuous/ Equip": "",
@@ -245,7 +245,7 @@
     "tokenId": 187,
     "Type": "Creature",
     "Realm": ["Digital", "Mythic"],
-    "WordCost": 4,
+    "WordCost": 3,
     "DP": 1,
     "HP": 7,
     "Continuous/ Equip": "",
@@ -271,7 +271,7 @@
     "tokenId": 189,
     "Type": "Creature",
     "Realm": ["Cosmic"],
-    "WordCost": 4,
+    "WordCost": 3,
     "DP": 0,
     "HP": 1,
     "Continuous/ Equip": "",
@@ -387,7 +387,7 @@
     "DP": 8,
     "HP": 12,
     "Continuous/ Equip": "",
-    "Description": "This card can only be spoken by discarding 2 Spells or Curses from your hand. This card is impervious to Enchantments. Once per your turn, you can add 1 Spell or Curse from the Silence to your hand",
+    "Description": "This card can only be spoken by discarding 2 Spells or Curses from your hand. This card is impervious to Enchantments. Starting in your next turn, once per your turn, you can add 1 Spell or Curse from the Silence to your hand",
     "explanations": [
       "The turn you speak this card you cannot use its ability to add 1 spell or curse to your hand"
     ]
@@ -1011,7 +1011,7 @@
     "Type": "Creature",
     "Realm": ["Dragon", "Psychadelic"],
     "WordCost": 4,
-    "DP": 2,
+    "DP": 4,
     "HP": 9,
     "Continuous/ Equip": "",
     "Description": "When this card attacks, roll a die: increase this card’s DP by the number rolled. At the end of the turn, reset its DP to normal",
@@ -1064,7 +1064,7 @@
     "DP": 2,
     "HP": 6,
     "Continuous/ Equip": "",
-    "Description": "If a Creature you control is sent to the Silence, you can speak this card from your hand without Words. When this card is destroyed, you can use 3 Words to add it to your hand",
+    "Description": "If a Creature of yours is sent to the Silence, you can speak this card from your hand without Words. When this card is destroyed, you can use 3 Words to add it to your hand",
     "explanations": [""]
   },
   {
@@ -1196,7 +1196,7 @@
     "DP": 5,
     "HP": 12,
     "Continuous/ Equip": "",
-    "Description": "Once per your turn, you can view the top 3 cards of your deck. Then, arrange them in any order and return them to the top of your deck",
+    "Description": "Once per your turn, you can reveal one of your opponent’s facedown cards or a random card in their hand",
     "explanations": [""]
   },
   {
@@ -1205,8 +1205,8 @@
     "Type": "Creature",
     "Realm": ["Cosmic", "Undead"],
     "WordCost": 3,
-    "DP": 10,
-    "HP": 6,
+    "DP": 9,
+    "HP": 3,
     "Continuous/ Equip": "",
     "Description": "When this card destroys a Creature, return it to its owner’s hand",
     "explanations": [
@@ -1458,11 +1458,11 @@
     "tokenId": 103,
     "Type": "Spell",
     "Realm": [""],
-    "WordCost": 3,
+    "WordCost": 4,
     "DP": 0,
     "HP": 0,
     "Continuous/ Equip": "Single",
-    "Description": "Draw a card",
+    "Description": "Draw 2 cards",
     "explanations": [""]
   },
   {
@@ -1710,11 +1710,11 @@
     "tokenId": 125,
     "Type": "Spell",
     "Realm": [""],
-    "WordCost": 1,
+    "WordCost": 3,
     "DP": 0,
     "HP": 0,
     "Continuous/ Equip": "Single",
-    "Description": "Excavate the top card of your deck. You can then use Words equal to its cost to add it to your hand",
+    "Description": "Declare a card type. Then, excavate 3 cards from your deck. If any were of the declared type, add the 3 cards to your hand",
     "explanations": [""]
   },
   {
@@ -1746,11 +1746,11 @@
     "tokenId": 128,
     "Type": "Spell",
     "Realm": [""],
-    "WordCost": 5,
+    "WordCost": 6,
     "DP": 0,
     "HP": 0,
     "Continuous/ Equip": "Single",
-    "Description": "Draw 2 cards",
+    "Description": "Draw 4 cards",
     "explanations": [""]
   },
   {
@@ -1782,7 +1782,7 @@
     "tokenId": 131,
     "Type": "Spell",
     "Realm": [""],
-    "WordCost": 4,
+    "WordCost": 2,
     "DP": 0,
     "HP": 0,
     "Continuous/ Equip": "Single",
@@ -1920,7 +1920,7 @@
     "DP": 0,
     "HP": 0,
     "Continuous/ Equip": "Single",
-    "Description": "Take 2 Words from your opponent",
+    "Description": "This card can only be spoken if your opponent has 2 or more Words: take 2 Words from your opponent",
     "explanations": [""]
   },
   {
@@ -1976,11 +1976,11 @@
     "tokenId": 154,
     "Type": "Curse",
     "Realm": [""],
-    "WordCost": 8,
+    "WordCost": 7,
     "DP": 0,
     "HP": 0,
     "Continuous/ Equip": "Single",
-    "Description": "Advance your opponent's Hero",
+    "Description": "Advance your opponent’s Hero. Your opponent cannot retreat their Hero for the remainder of the turn",
     "explanations": [""]
   },
   {
@@ -2112,7 +2112,7 @@
     "DP": 0,
     "HP": 0,
     "Continuous/ Equip": "Continuous",
-    "Description": "During your Main Phases, you can inflict 10 DP to your Hero to draw a card",
+    "Description": "During your Main Phases, you can inflict 5 DP to your Hero to draw a card",
     "explanations": [""]
   },
   {
@@ -2172,7 +2172,7 @@
     "DP": 0,
     "HP": 0,
     "Continuous/ Equip": "Equip",
-    "Description": "Equip to an opponent’s Creature: double its DP. Each time it attacks, reduce its DP by 2",
+    "Description": "Equip to an opponent’s Creature: its HP is doubled, but it can no longer attack",
     "explanations": [""]
   },
   {
