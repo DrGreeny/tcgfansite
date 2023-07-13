@@ -740,7 +740,7 @@ const DeckBuilder = () => {
                   </div>
                   <div className="flex justify-between">
                     <div className="italic my-2">
-                      {hoveredCard.Type}
+                      {hoveredCard.Realm.join(", ")}
                       {["Spell", "Curse"].includes(hoveredCard.Type) && (
                         <span> / {hoveredCard["Continuous/ Equip"]}</span>
                       )}
