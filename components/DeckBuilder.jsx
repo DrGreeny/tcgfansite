@@ -4,7 +4,7 @@ import SaveDeck from "./SaveDeck";
 import Image from "next/image";
 import Range from "rc-slider";
 import "rc-slider/assets/index.css";
-
+import { Tooltip } from "react-tooltip";
 const DeckBuilder = () => {
   const [selectedCards, setSelectedCards] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -366,7 +366,15 @@ const DeckBuilder = () => {
   const handleHPSliderChange = (value) => {
     setHPRange(value);
   };
-
+  const typesWOHero = ["Total", "Creatures", "Spells", "Curses", "Realms"];
+  const typesWHero = [
+    "Total",
+    "Hero",
+    "Creatures",
+    "Spells",
+    "Curses",
+    "Realms",
+  ];
   return (
     <div
       className=" "
@@ -375,12 +383,8 @@ const DeckBuilder = () => {
       }}
     >
       {expanded && (
-        <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52 border-b-4 z-10">
+        <div className="grid grid-cols-5 text-white text-sm sticky top-0 bg-black h-52  z-10">
           <div className="col-span-2 ">
-            <div className="flex justify-center p-2">
-              <h3 className="font-bold">Filter Options</h3>
-            </div>
-
             <div className="bg-black text-white p-2">
               <div className="flex justify-around">
                 <div className="">
@@ -551,6 +555,30 @@ const DeckBuilder = () => {
                   </div>
                 </div>
               </div>
+              <div className="flex justify-end mt-4 gap-x-4 items-center">
+                <SaveDeck selectedCards={selectedCards} />
+                <button
+                  className="px-4 py-1 ml-2 bg-red-500 text-white rounded"
+                  onClick={() => setSelectedCards([])}
+                >
+                  Clear deck
+                </button>
+                <div className="cursor-pointer">
+                  <label
+                    htmlFor="import-json"
+                    className="relative border border-orange-600 px-4 py-1 rounded-md text-white"
+                  >
+                    <span className="inline-block ">Import Json</span>
+                    <input
+                      id="import-json"
+                      type="file"
+                      accept=".json"
+                      onChange={handleImportJson}
+                      className="opacity-0 absolute top-0 left-0 w-full h-full "
+                    />
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -563,84 +591,141 @@ const DeckBuilder = () => {
             />
           </div>
           <div className="col-span-2 p-2 flex-col bg-black">
-            <div className="flex justify-center mb-4 font-bold">
-              <h3 className="">Data and Statistics</h3>
-            </div>
-
-            <div className="flex gap-1 justify-around text-xs">
-              <div className="">
+            <div className=" text-xs">
+              <div className="flex justify-between">
                 {/*grid grid-cols-2 gap-x-2 */}
-                <p>
-                  Overall Card Count:{" "}
-                  {selectedCards.reduce((count, card) => count + card.count, 0)}
-                </p>
-                <p className="">Heros:{countByType("hero")}</p>
-                <p>Creatures:{countByType("creature")}</p>
-                <p>Curses:{countByType("curse")}</p>
-                <p>Spells: {countByType("spell")}</p>
-                <p>Realms: {countByType("realm")}</p>
+                <div className="flex-col flex items-center justify-center gap-y-2">
+                  <p>Total Cards</p>
+                  <p className="text-lg  rounded-full border-red-900 border-4 w-12 h-12 flex items-center justify-center">
+                    {selectedCards.reduce(
+                      (count, card) => count + card.count,
+                      0
+                    )}
+                  </p>
+                </div>
+                <div className="flex-col flex items-center justify-center gap-y-2">
+                  <p>Hero</p>
+                  <p className="text-lg border rounded-full w-8 h-8 flex items-center justify-center">
+                    {countByType("hero")}
+                  </p>
+                </div>
+                <div className="flex-col flex items-center justify-center gap-y-2">
+                  <p>Creatures</p>
+                  <p className="text-lg border rounded-full w-8 h-8 flex items-center justify-center">
+                    {countByType("creature")}
+                  </p>
+                </div>
+                <div className="flex-col flex items-center justify-center gap-y-2">
+                  <p>Curses</p>
+                  <p
+                    className="text-lg border rounded-full w-8 h-8 flex items-center justify-center whitespace-pre-line"
+                    data-tooltip-id="curses-tooltip"
+                    data-tooltip-content={`E / S / C \n${equipCursesCount} / ${singleCursesCount} / ${continuousCursesCount}`}
+                  >
+                    {countByType("curse")}
+                    <Tooltip id="curses-tooltip" />
+                  </p>
+                </div>
+                <div className="flex-col flex items-center justify-center gap-y-2">
+                  <p>Spells</p>
+                  <p
+                    className="text-lg border rounded-full w-8 h-8 flex items-center justify-center whitespace-pre-line"
+                    data-tooltip-id="spells-tooltip"
+                    data-tooltip-content={`E / S / C \n ${equipSpellsCount} / ${singleSpellsCount} / ${continuousSpellsCount}`}
+                  >
+                    {countByType("spell")}
+                    <Tooltip id="spells-tooltip" />
+                  </p>
+                </div>
+                <div className="flex-col flex items-center justify-center gap-y-2">
+                  <p>Realms</p>
+                  <p className="text-lg border rounded-full w-8 h-8 flex items-center justify-center">
+                    {countByType("realm")}
+                  </p>
+                </div>
               </div>
 
-              <div className="">
-                {/*grid grid-cols-2 gap-x-2*/}
-                <p className="">Creature WordCost: {creatureWordCost}</p>
-                <p className="">Spell WordCost: {spellWordCost}</p>
-                <p className="">Curse WordCost:{curseWordCost}</p>
-                <p className="">Total WordCost: {totalWordCost}</p>
+              {/*Hier kommen jetzt alle Word Cost */}
+              <div className="flex-col gap-1 justify-around text-xs">
+                <div className="flex justify-between  p-1">
+                  <div className="text-center font-bold text-lg my-auto">
+                    Words
+                  </div>
+
+                  <div className="flex-col flex items-center justify-center gap-y-2">
+                    <p>Total </p>
+                    <p className="text-lg border rounded-full w-8 h-8 flex items-center justify-center">
+                      {totalWordCost}
+                    </p>
+                  </div>
+                  <div className="flex-col flex items-center justify-center gap-y-2">
+                    <p>Creatures</p>
+                    <p className="text-lg border rounded-full w-8 h-8 flex items-center justify-center">
+                      {creatureWordCost}
+                    </p>
+                  </div>
+                  <div className="flex-col flex items-center justify-center gap-y-2">
+                    <p>Spells</p>
+                    <p className="text-lg border rounded-full w-8 h-8 flex items-center justify-center">
+                      {spellWordCost}
+                    </p>
+                  </div>
+                  <div className="flex-col flex items-center justify-center gap-y-2">
+                    <p>Curses</p>
+                    <p className="text-lg border rounded-full w-8 h-8 flex items-center justify-center">
+                      {curseWordCost}
+                    </p>
+                  </div>
+                  <div className="w-8 h-8"></div>
+                </div>
               </div>
-              <div className="">
-                {/*grid grid-cols-2 gap-x-2*/}
-                <p className="">Creature total DP: {totalDp}</p>
-                <p className="">Creature total HP: {totalHp}</p>
-                <p className="">
-                  Average DP:{" "}
-                  {Math.round((totalDp / countByType("creature")) * 10) / 10}
-                </p>
-                <p className="">
-                  Average HP:{" "}
-                  {Math.round((totalHp / countByType("creature")) * 10) / 10}
-                </p>
+              <div className="flex justify-between p-1">
+                <div className="text-center font-bold text-lg my-auto">
+                  Damage&Health
+                </div>
+
+                <div className="flex-col flex items-center justify-center gap-y-2">
+                  <p>Total DP/HP </p>
+                  <p className="text-lg border rounded-full px-2 items-center justify-center">
+                    {totalDp}
+                    {" / "}
+                    {totalHp}
+                  </p>
+                </div>
+                <div className="flex-col flex items-center justify-center gap-y-2">
+                  <p>Average DP/HP </p>
+                  <p className="text-lg border rounded-full px-2 items-center justify-center">
+                    {isNaN(
+                      Math.round((totalDp / countByType("creature")) * 10) / 10
+                    )
+                      ? 0
+                      : Math.round((totalDp / countByType("creature")) * 10) /
+                        10}
+                    {" / "}
+                    {isNaN(
+                      Math.round((totalHp / countByType("creature")) * 10) / 10
+                    )
+                      ? 0
+                      : Math.round((totalHp / countByType("creature")) * 10) /
+                        10}
+                  </p>
+                </div>
+                <div></div>
               </div>
-              <div className="text-white ">
+
+              {/*      <div className="flex justify-around ">
                 <p>Equip Spells: {equipSpellsCount}</p>
                 <p>Equip Curses: {equipCursesCount}</p>
                 <p>Single Spells: {singleSpellsCount}</p>
                 <p>Single Curses: {singleCursesCount}</p>
                 <p>Continuous Spells:{continuousSpellsCount}</p>
                 <p>Continuous Curses:{continuousCursesCount}</p>
-              </div>
-            </div>
-            <div className="flex justify-center mt-4 gap-x-4 items-center">
-              <SaveDeck selectedCards={selectedCards} />
-              <button
-                className="px-4 py-1 ml-2 bg-red-500 text-white rounded"
-                onClick={() => setSelectedCards([])}
-              >
-                Clear deck
-              </button>
-              <div className="cursor-pointer">
-                <label
-                  htmlFor="import-json"
-                  className="relative border border-orange-600 px-4 py-1 rounded-md text-white"
-                >
-                  <span className="inline-block ">Import Json</span>
-                  <input
-                    id="import-json"
-                    type="file"
-                    accept=".json"
-                    onChange={handleImportJson}
-                    className="opacity-0 absolute top-0 left-0 w-full h-full "
-                  />
-                </label>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       )}
       <div className="flex justify-around">
-        <div className="flex justify-center mb-3">
-          <h2 className="text-lg font-bold text-white">All Cards</h2>
-        </div>
         <button
           className="text-gray-200 -translate-y-0 z-20"
           onClick={toggleExpand}
@@ -674,9 +759,6 @@ const DeckBuilder = () => {
           )}
           {expanded ? "Collapse options" : "Expand options"}
         </button>
-        <div className="flex justify-center mb-3">
-          <h2 className="text-lg font-bold text-white">Your Deck</h2>
-        </div>
       </div>
       <div className="grid grid-cols-7 gap-4  ">
         <div
@@ -685,7 +767,7 @@ const DeckBuilder = () => {
             height: expanded ? `calc(100vh - 312px)` : `calc(100vh - 104px)`,
           }}
         >
-          <div className="flex flex-wrap gap-4 sticky top-64 h-full overflow-y-auto hide-scrollbar">
+          <div className="flex flex-wrap sticky top-64 h-full overflow-y-auto hide-scrollbar justify-around">
             {filteredCards.map((card) => (
               <div
                 key={card.name}
