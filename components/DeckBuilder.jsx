@@ -685,7 +685,7 @@ const DeckBuilder = () => {
             height: expanded ? `calc(100vh - 312px)` : `calc(100vh - 104px)`,
           }}
         >
-          <div className="flex flex-wrap gap-4 sticky top-64 h-full overflow-y-auto">
+          <div className="flex flex-wrap gap-4 sticky top-64 h-full overflow-y-auto hide-scrollbar">
             {filteredCards.map((card) => (
               <div
                 key={card.name}
@@ -764,9 +764,9 @@ const DeckBuilder = () => {
           style={{
             height: expanded ? `calc(100vh - 312px)` : `calc(100vh - 104px)`,
           }}
-          className="col-span-4 border-l pl-2"
+          className="col-span-4  pl-2"
         >
-          <div className=" flex-col flex-wrap gap-4 sticky top-64 h-full overflow-y-auto pr-2">
+          <div className=" flex-col flex-wrap gap-4 sticky top-64 h-full overflow-y-auto hide-scrollbar pr-2">
             {filteredSelectedCards.some((card) => card.Type === "Hero") ? (
               <div className="border-gray-400 border-b px-2 font-bold my-1">
                 <h3 className="text-gray-300">Hero</h3>

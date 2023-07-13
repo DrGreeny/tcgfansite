@@ -60,7 +60,7 @@ const FAQList = () => {
   return (
     <div className="text-white p-6">
       <Link
-        className="border border-orange-400 py-1 px-3 rounded-xl"
+        className="border border-orange-400 py-1 px-3 rounded-xl text-orange-400"
         href="/faq"
       >
         &#60; Back

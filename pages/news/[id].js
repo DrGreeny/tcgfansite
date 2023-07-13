@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import news from "/db/news.json";
 import ReactHtmlParser from "react-html-parser";
 import Image from "next/image";
-
+import Link from "next/link";
 const NewsPage = () => {
   const router = useRouter();
   const { id } = router.query;
@@ -20,7 +20,7 @@ const NewsPage = () => {
   }
 
   return (
-    <div className="flex-col">
+    <div className="flex-col pb-10 flex justify-center items-center">
       <div className="relative w-full h-32 mt-10">
         <Image
           src="/news/banner_1500x500.jpg"
@@ -55,6 +55,12 @@ const NewsPage = () => {
           </div>
         </div>
       </div>
+      <Link
+        className="border border-orange-400 py-1 px-3 rounded-xl text-orange-400"
+        href="/"
+      >
+        &#60; Back
+      </Link>
     </div>
   );
 };

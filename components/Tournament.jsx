@@ -1,8 +1,8 @@
 import { Bracket } from "react-brackets";
 
-import { rounds } from "../db/tournaments/tournament_2";
-
-/* const rounds = [
+import { tournament2 } from "../db/tournaments/tournament_2";
+import { tournament3 } from "../db/tournaments/tournament_3";
+/* const tournament2 = [
   {
     title: "Round one",
     seeds: [
@@ -59,11 +59,35 @@ const Tournament = () => {
   return (
     <div className="text-white p-2">
       <div
-        className="flex-col xl:grid xl:grid-cols-2 items-center"
+        className="flex-col xl:grid xl:grid-cols-2 items-center gap-y-10 pt-10"
         style={{
           minHeight: `calc(100vh - 64px)`,
         }}
       >
+        <div className="p-2 md:p-8 xl:p-12 flex-col justify-center mb-8">
+          <h1 className="text-4xl mb-12 text-center">
+            Third Beta Tournamet - growing interest
+          </h1>
+          <p className="whitespace-pre-line text-justify">
+            The third tournament of the Speak Trading Card Game concluded with
+            great excitement and intense competition. Among the numerous
+            contestants, enzi and arti stood out as highly active community
+            members.
+            <br />
+            <br /> In the final match, enzi and arti showcased their strategic
+            brilliance and unique deck designs. enzi`s elemental creatures
+            clashed with arti`s mystical forces, creating a captivating
+            spectacle. Ultimately, enzi emerged as the victor, demonstrating
+            their skillful gameplay. <br /> <br />
+            The tournament highlighted the dedication and talent of the Speak
+            Trading Card Game community. Players and fans eagerly anticipate
+            future tournaments, where new contenders will emerge and the game`s
+            competitive journey will continue.
+          </p>
+        </div>
+        <div className="m-auto ">
+          <Bracket rounds={tournament3} />
+        </div>
         <div className="p-2 md:p-8 xl:p-12 flex-col justify-center mb-8">
           <h1 className="text-4xl mb-12 text-center">
             Second Beta Tournamet finished succesfully
@@ -95,7 +119,7 @@ const Tournament = () => {
           </p>
         </div>
         <div className="m-auto ">
-          <Bracket rounds={rounds} />
+          <Bracket rounds={tournament2} />
         </div>
       </div>
     </div>

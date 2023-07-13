@@ -1,5 +1,5 @@
 const checkmark = "\u2713";
-export const rounds = [
+export const tournament2 = [
   {
     title: "Round one",
     seeds: [
