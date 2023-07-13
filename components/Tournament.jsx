@@ -75,10 +75,10 @@ const Tournament = () => {
             members.
             <br />
             <br /> In the final match, enzi and arti showcased their strategic
-            brilliance and unique deck designs. enzi`s elemental creatures
-            clashed with arti`s mystical forces, creating a captivating
-            spectacle. Ultimately, enzi emerged as the victor, demonstrating
-            their skillful gameplay. <br /> <br />
+            brilliance and unique deck designs. enzi`s creatures clashed with
+            arti`s forces, creating a captivating spectacle. Ultimately, arti
+            emerged as the victor, demonstrating his skillful gameplay. <br />{" "}
+            <br />
             The tournament highlighted the dedication and talent of the Speak
             Trading Card Game community. Players and fans eagerly anticipate
             future tournaments, where new contenders will emerge and the game`s
