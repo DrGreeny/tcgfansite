@@ -11,4 +11,9 @@
     "ids": ["8","96"],
     "description": "Heavy Artillery can attack from behind the creatures, which is even more impressive if its damage is high"
   }
+  ,
+   {
+    "ids": ["36","36","7"],
+    "description": "If V3 is destroyed you can just speak another V3 from the silence again to the field and repeat that every turn. That way you can significantly increase DP and HP of the Cybernetic Droid "
+  }
 ]
