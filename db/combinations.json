@@ -6,5 +6,9 @@
    {
     "ids": ["19","83","102"],
     "description": "Scarecrows must be attacked by the opponent, with Prickly Shield the opponent should think twice about attacking with a creature, but be aware, that Prickly Shield does not protect you against heroes"
+  },
+   {
+    "ids": ["8","96"],
+    "description": "Heavy Artillery can attack from behind the creatures, which is even more impressive if its damage is high"
   }
 ]
