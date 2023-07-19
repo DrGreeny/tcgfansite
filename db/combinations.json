@@ -1,0 +1,10 @@
+[
+  {
+    "ids": ["19","83","156"],
+    "description": "Scarecrows must be attacked by the opponent, but it cannot be destroyed with the use of ignition."
+  },
+   {
+    "ids": ["19","83","102"],
+    "description": "Scarecrows must be attacked by the opponent, with Prickly Shield the opponent should think twice about attacking with a creature, but be aware, that Prickly Shield does not protect you against heroes"
+  }
+]
